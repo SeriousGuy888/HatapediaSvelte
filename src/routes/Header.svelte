@@ -7,12 +7,8 @@
   <ThemeToggle />
 </nav>
 
-<style>
+<style lang="postcss">
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: #eee;
+    @apply flex justify-between items-center p-4 bg-blue-900;
   }
 </style>
