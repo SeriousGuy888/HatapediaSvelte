@@ -1,5 +1,13 @@
 <script>
-  import "../app.css";
+  import "../app.css"
+  import Header from "./header.svelte"
+  import Footer from "./footer.svelte"
 </script>
 
-<slot />
+<div>
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</div>
