@@ -1,6 +1,7 @@
 <script>
   import { browser } from "$app/environment"
   import { Sun, Moon } from "lucide-svelte"
+  import { draw, fly } from "svelte/transition"
 
   const THEME_KEY = "theme"
   const THEMES = {
@@ -39,9 +40,13 @@
 
 <button aria-label="Toggle colour theme" on:click={toggleDarkMode}>
   {#if darkMode}
-    <Sun size="24" />
+    <div in:fly={{ y: -5 }}>
+      <Moon size="24" />
+    </div>
   {:else}
-    <Moon size="24" />
+    <div in:fly={{ y: 5 }}>
+      <Sun size="24" />
+    </div>
   {/if}
 </button>
 
