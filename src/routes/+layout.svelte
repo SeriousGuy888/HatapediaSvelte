@@ -1,13 +1,19 @@
 <script>
   import "../app.css"
-  import Header from "./header.svelte"
-  import Footer from "./footer.svelte"
+  import Header from "./Header.svelte"
 </script>
 
-<div>
+<div class="layout">
   <Header />
-  <main>
+  <main class="dark:bg-black">
     <slot />
   </main>
-  <Footer />
 </div>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+  }
+</style>
