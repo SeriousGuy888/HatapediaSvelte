@@ -1,9 +1,10 @@
 <script>
-    import ThemeToggle from "./ThemeToggle.svelte"
+  import Logo from "./Logo.svelte"
+  import ThemeToggle from "./ThemeToggle.svelte"
 </script>
 
 <nav>
-  <p>header</p>
+  <Logo />
   <ThemeToggle />
 </nav>
 
