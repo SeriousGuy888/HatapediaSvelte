@@ -1,19 +1,30 @@
-import { json } from "@sveltejs/kit"
 import type { Article } from "$lib/types"
+import { json } from "@sveltejs/kit"
+
+const slugMap: Record<string, string> = (await import("../../../content/slugs.json")).default
 
 async function getArticles() {
   let articles: Article[] = []
 
-  const paths = import.meta.glob("/src/content/articles/*.md", { eager: true })
+  for (const slug in slugMap) {
+    const fileName = slugMap[slug]
 
-  for (const path in paths) {
-    const file = paths[path]
-    const slug = path.split("/").at(-1)?.replace(".md", "")
+    try {
+      const file = await import(/* @vite-ignore */ `/src/content/articles/${fileName}.md`)
+      if (file && typeof file === "object" && "metadata" in file) {
+        let metadata = file.metadata
+        if (!("title" in metadata)) {
+          metadata.title = fileName
+        }
 
-    if (file && typeof file === "object" && "metadata" in file && slug) {
-      const metadata = file.metadata as Omit<Article, "slug">
-      const post = { ...metadata, slug } satisfies Article
-      articles.push(post)
+        const article = { ...metadata, slug } as Article
+        articles.push(article)
+      }
+    } catch (error) {
+      // Most likely a file in the slug map that doesn't exist
+      
+      console.error(error)
+      continue
     }
   }
 
