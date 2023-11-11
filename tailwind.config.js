@@ -30,6 +30,12 @@ export default {
             "blockquote p:last-of-type::after": {
               content: "",
             },
+            pre: {
+              color: theme("colors.gray.700"),
+              backgroundColor: theme("colors.gray.100"),
+              padding: theme("spacing.1"),
+              borderRadius: theme("borderRadius.lg"),
+            },
             code: {
               color: theme("colors.gray.700"),
               backgroundColor: theme("colors.gray.100"),
@@ -56,6 +62,10 @@ export default {
             color: theme("colors.gray.300"),
             a: {
               color: theme("colors.blue.400"),
+            },
+            pre: {
+              color: theme("colors.gray.300"),
+              backgroundColor: theme("colors.gray.800"),
             },
             code: {
               color: theme("colors.gray.300"),
