@@ -2,6 +2,7 @@
 
 export type Article = {
   title: string
+  subtitle?: string
   slug: string
   tags?: string[]
 }
