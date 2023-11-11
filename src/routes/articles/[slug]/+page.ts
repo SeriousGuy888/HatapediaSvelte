@@ -10,7 +10,10 @@ export async function load({ params }) {
 
     return {
       content: article.default,
-      meta: article.metadata,
+      meta: {
+        title: fileName, // Default to the file name if no title is provided
+        ...article.metadata
+      },
     }
   } catch (e) {
     console.error(e)
