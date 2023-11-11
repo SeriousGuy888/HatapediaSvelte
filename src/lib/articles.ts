@@ -11,11 +11,7 @@ export async function getArticles() {
       const file = await import(/* @vite-ignore */ `/src/content/articles/${fileName}.md`)
       if (file && typeof file === "object" && "metadata" in file) {
         let metadata = file.metadata
-        if (!("title" in metadata)) {
-          metadata.title = fileName
-        }
-
-        const article = { ...metadata, slug } as Article
+        const article = preprocessMetadata(metadata, fileName)
         articles.push(article)
       }
     } catch (error) {
@@ -24,6 +20,7 @@ export async function getArticles() {
       console.error(error)
       continue
     }
+    
   }
 
   // articles = articles.sort(
@@ -31,4 +28,30 @@ export async function getArticles() {
   // )
 
   return articles
+}
+
+
+function preprocessMetadata(metadata: Record<string, unknown>, fileName: string): Article {
+  if (!("title" in metadata)) {
+    metadata.title = fileName
+  }
+  if (!("subtitle" in metadata)) {
+    metadata.subtitle = ""
+  }
+
+  if (!("date_created" in metadata)) {
+    metadata.date_created = "1970-01-01"
+  }
+  if (!("date_modified" in metadata)) {
+    metadata.date_modified = "1970-01-01"
+  }
+
+  if (!("tags" in metadata)) {
+    metadata.tags = []
+  }
+
+  delete metadata.aliases
+  delete metadata.image
+
+  return metadata as Article
 }

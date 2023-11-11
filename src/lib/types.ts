@@ -1,8 +1,8 @@
-// export type Categories = "sveltekit" | "svelte"
-
 export type Article = {
-  title: string
-  subtitle?: string
   slug: string
-  tags?: string[]
+  title: string
+  subtitle: string
+  tags: string[]
+  date_created: string
+  date_modified: string
 }
