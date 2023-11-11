@@ -29,7 +29,12 @@ function generateSlugMap() {
 }
 
 function sluggify(fileName) {
-  return fileName.toLowerCase().replace(/\s/g, "_").replace(/\.md$/, "")
+  return fileName
+    .toLowerCase()
+    .replace(/\s/g, "_")
+    .replace(/\.md$/, "")
+    .normalize("NFD") // Remove diacritics from letters, eg: café -> cafe
+    .replace(/\p{Diacritic}/gu, "")
 }
 
 function warnIfDuplicateSlugs(slugs) {
