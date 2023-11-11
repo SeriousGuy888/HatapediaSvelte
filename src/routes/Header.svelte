@@ -9,6 +9,6 @@
 
 <style lang="postcss">
   nav {
-    @apply flex justify-between items-center p-4 bg-blue-900;
+    @apply flex justify-between items-center py-4 px-8 gap-8 bg-blue-900;
   }
 </style>
