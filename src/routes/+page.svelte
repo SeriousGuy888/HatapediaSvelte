@@ -15,7 +15,7 @@
     {#each data.articles as article}
       <li class="article">
         <a href="/articles/{article.slug}">
-          <h2>{article.title}</h2>
+          <h2>{article.title ?? article.slug}</h2>
         </a>
       </li>
     {/each}
