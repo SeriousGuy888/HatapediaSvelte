@@ -5,8 +5,6 @@ import { mdsvex } from "mdsvex"
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
   extensions: [".md"],
-  remarkPlugins: [],
-  rehypePlugins: [],
 }
 
 /** @type {import('@sveltejs/kit').Config} */

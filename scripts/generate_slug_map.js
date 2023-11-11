@@ -1,5 +1,6 @@
 import fs from "fs"
 import path from "path"
+import { sluggify } from "../utils"
 
 const slugsFile = path.join(process.cwd(), "src/content/slugs.json")
 const articlesDir = path.join(process.cwd(), "src/content/articles/")
@@ -26,15 +27,6 @@ function generateSlugMap() {
   fs.writeFileSync(slugsFile, JSON.stringify(slugs))
 
   console.log(`Successfully wrote ${Object.keys(slugs).length} article slugs to ${slugsFile}.`)
-}
-
-function sluggify(fileName) {
-  return fileName
-    .toLowerCase()
-    .replace(/\s/g, "_")
-    .replace(/\.md$/, "")
-    .normalize("NFD") // Remove diacritics from letters, eg: café -> cafe
-    .replace(/\p{Diacritic}/gu, "")
 }
 
 function warnIfDuplicateSlugs(slugs) {

@@ -1,7 +1,7 @@
 <script>
   import { browser } from "$app/environment"
   import { Sun, Moon } from "lucide-svelte"
-  import { draw, fly } from "svelte/transition"
+  import { fly } from "svelte/transition"
 
   const THEME_KEY = "theme"
   const THEMES = {

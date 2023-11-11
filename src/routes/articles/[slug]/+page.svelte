@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ArticleTag from './ArticleTag.svelte'
+  import ArticleTag from "./ArticleTag.svelte"
 
   export let data
 </script>
@@ -18,11 +18,13 @@
         <p>{data.meta.subtitle}</p>
       {/if}
     </hgroup>
-    <div class="tag-list">
-      {#each data.meta.tags as tag}
-        <ArticleTag tag={tag} />
-      {/each}
-    </div>
+    {#if data.meta.tags?.length > 0}
+      <div class="tag-list">
+        {#each data.meta.tags as tag}
+          <ArticleTag {tag} />
+        {/each}
+      </div>
+    {/if}
   </header>
 
   <div class="prose dark:prose-invert">

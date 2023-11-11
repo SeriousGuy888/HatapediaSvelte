@@ -6,13 +6,13 @@ export async function load({ params }) {
   const fileName: string | undefined = (slugMap as Record<string, string>)[slug]
 
   try {
-    const article = await import(/* @vite-ignore */ `../../../content/articles/${fileName}.md`)
+    const article = await import(`../../../content/articles/${fileName}.md`)
 
     return {
       content: article.default,
       meta: {
         title: fileName, // Default to the file name if no title is provided
-        ...article.metadata
+        ...article.metadata,
       },
     }
   } catch (e) {

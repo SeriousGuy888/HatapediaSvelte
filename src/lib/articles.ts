@@ -1,24 +1,27 @@
 import type { Article } from "$lib/types"
+
 const slugMap: Record<string, string> = (await import("../content/slugs.json")).default
 
 export async function getArticles() {
+  const articleFiles = import.meta.glob("../content/articles/*.md", { eager: true })
+
   let articles: Article[] = []
 
-  for (const slug in slugMap) {
-    const fileName = slugMap[slug]
+  for (const path in articleFiles) {
+    const fileName = path.split("/").pop()!.replace(".md", "")
 
-    try {
-      const file = await import(/* @vite-ignore */ `/src/content/articles/${fileName}.md`)
-      if (file && typeof file === "object" && "metadata" in file) {
-        let metadata = file.metadata
-        const article = preprocessMetadata(metadata, fileName, slug)
-        articles.push(article)
-      }
-    } catch (error) {
-      // Most likely a file in the slug map that doesn't exist
+    const file = articleFiles[path]
+    const slug = Object.keys(slugMap).find((key) => slugMap[key] === fileName)
 
-      console.error(error)
+    if (!slug) {
+      console.warn(`No slug found for ${fileName}`)
       continue
+    }
+
+    if (file && typeof file === "object" && "metadata" in file) {
+      const metadata = file.metadata as any
+      const article = preprocessMetadata(metadata, fileName, slug)
+      articles.push(article)
     }
   }
 
