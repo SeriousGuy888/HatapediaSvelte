@@ -11,7 +11,7 @@ export async function getArticles() {
       const file = await import(/* @vite-ignore */ `/src/content/articles/${fileName}.md`)
       if (file && typeof file === "object" && "metadata" in file) {
         let metadata = file.metadata
-        const article = preprocessMetadata(metadata, fileName)
+        const article = preprocessMetadata(metadata, fileName, slug)
         articles.push(article)
       }
     } catch (error) {
@@ -20,7 +20,6 @@ export async function getArticles() {
       console.error(error)
       continue
     }
-    
   }
 
   // articles = articles.sort(
@@ -30,8 +29,11 @@ export async function getArticles() {
   return articles
 }
 
-
-function preprocessMetadata(metadata: Record<string, unknown>, fileName: string): Article {
+function preprocessMetadata(
+  metadata: Record<string, unknown>,
+  fileName: string,
+  slug: string,
+): Article {
   if (!("title" in metadata)) {
     metadata.title = fileName
   }
@@ -53,5 +55,5 @@ function preprocessMetadata(metadata: Record<string, unknown>, fileName: string)
   delete metadata.aliases
   delete metadata.image
 
-  return metadata as Article
+  return { ...metadata, slug } as Article
 }
