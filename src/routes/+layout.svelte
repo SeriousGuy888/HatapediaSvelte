@@ -17,7 +17,7 @@
     min-height: 100vh;
   }
 
-  .layout {
+  :global(body) {
     @apply transition-colors duration-300 ease-in-out;
   }
 
