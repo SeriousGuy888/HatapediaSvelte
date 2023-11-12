@@ -5,4 +5,5 @@ export type Article = {
   tags: string[]
   date_created: string
   date_modified: string
+  aliases?: string[]
 }

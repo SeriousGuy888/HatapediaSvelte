@@ -18,6 +18,7 @@
     keys: [
       { name: "slug", weight: 1.2 },
       { name: "title", weight: 1 },
+      { name: "aliases", weight: 1 },
       { name: "tags", weight: 0.4 },
       { name: "subtitle", weight: 0.2 },
     ],

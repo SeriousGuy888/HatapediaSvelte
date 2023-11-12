@@ -51,7 +51,6 @@ function preprocessMetadata(
     metadata.tags = []
   }
 
-  delete metadata.aliases
   delete metadata.image
 
   return { ...metadata, slug } as Article
