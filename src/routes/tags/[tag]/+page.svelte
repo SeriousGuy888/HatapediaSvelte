@@ -5,8 +5,8 @@
 
   export let data
 
-  const tag = $page.params.tag
-  const title = `#${tag} - ${siteTitle}`
+  let title = ""
+  $: title = `#${$page.params.tag} - ${siteTitle}`
 </script>
 
 <svelte:head>
@@ -20,10 +20,12 @@
     <h1
       class="text-2xl sm:text-4xl font-bold tracking-tight bg-purple-300 dark:bg-purple-900 w-fit px-4 py-2 sm:px-8 sm:py-4 rounded-full"
     >
-      #{tag}
+      #{$page.params.tag}
     </h1>
   </hgroup>
-  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8 sm:mt-12">
+  <section
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8 sm:mt-12"
+  >
     {#each data.articles as article}
       <ArticleLinkCard {article} />
     {/each}
