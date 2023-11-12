@@ -27,11 +27,11 @@
   onDestroy(() => unsubscribe()) // When user leaves the page, unsubscribe from the store
 </script>
 
-<head>
+<svelte:head>
   <title>
     {config.title}
   </title>
-</head>
+</svelte:head>
 
 <div class="w-full p-12 sm:p-24">
   <hgroup class="text-center">
