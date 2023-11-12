@@ -21,7 +21,7 @@
     @apply transition-colors duration-300 ease-in-out;
   }
 
-  :global(body.dark) .layout {
+  :global(body.dark) {
     @apply text-white bg-black;
   }
 </style>
