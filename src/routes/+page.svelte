@@ -1,8 +1,27 @@
 <script lang="ts">
-  import * as config from "$lib/config"
+  import ArticleTag from "$lib/components/ArticleTag.svelte"
+import * as config from "$lib/config"
+  import { createSearchStore, handleSearch } from "$lib/stores/search.js"
+  import type { Article } from "$lib/types.js"
   import { Map, CloudLightning } from "lucide-svelte"
+  import { onDestroy } from "svelte"
 
   export let data
+
+  const { articles } = data
+
+  const searchableArticles: (Article & { searchTerms: string })[] = articles.map((article) => ({
+    ...article,
+    searchTerms: `
+      ${article.title.toLowerCase()}
+      ${article.subtitle.toLowerCase()}
+      ${article.slug}
+      ${article.tags.map((t) => `#${t}`).join(" ")}`,
+  }))
+
+  const searchStore = createSearchStore(searchableArticles)
+  const unsubscribe = searchStore.subscribe((value) => handleSearch(value))
+  onDestroy(() => unsubscribe()) // When user leaves the page, unsubscribe from the store
 </script>
 
 <head>
@@ -10,16 +29,6 @@
     {config.title}
   </title>
 </head>
-
-<!-- <ul>
-  {#each data.articles as article}
-    <li>
-      <a href="/articles/{article.slug}">
-        <h2>{article.title ?? article.slug}</h2>
-      </a>
-    </li>
-  {/each}
-</ul> -->
 
 <div class="w-full p-12 sm:p-24">
   <hgroup class="text-center">
@@ -45,7 +54,37 @@
       type="text"
       class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-blue-400 w-full sm:max-w-4xl"
       placeholder="Search HATApedia..."
+      bind:value={$searchStore.query}
     />
+  </section>
+  <section class="major-section">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {#each $searchStore.results as result}
+        <a
+          href="/articles/{result.slug}"
+          class={`
+            p-4 rounded-xl
+            bg-gray-100 dark:bg-gray-900
+            shadow-sm shadow-gray-300 dark:shadow-gray-700
+            hover:shadow-md transition-shadow duration-100 ease-in-out
+          `}
+        >
+          <div>
+            <h2 class="text-lg lg:text-xl font-bold dotdotdot">
+              {result.title}
+            </h2>
+            <p class="text-xs opacity-75 uppercase dotdotdot">
+              {result.subtitle}
+            </p>
+            <div class="flex gap-2 mt-4 flex-wrap">
+              {#each result.tags as tag}
+                <ArticleTag tag={tag} size="small" />
+              {/each}
+            </div>
+          </div>
+        </a>
+      {/each}
+    </div>
   </section>
 </div>
 
@@ -64,5 +103,18 @@
 
   .link-label {
     @apply hidden sm:block;
+  }
+
+  .dotdotdot {
+    @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ArticleTag from "./ArticleTag.svelte"
+  import ArticleTag from "../../../lib/components/ArticleTag.svelte"
 
   export let data
 </script>
