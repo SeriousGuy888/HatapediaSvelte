@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
   import ArticleTag from "$lib/components/ArticleTag.svelte"
   import * as config from "$lib/config"
   import { createSearchStore, handleSearch } from "$lib/stores/search.js"
@@ -66,29 +67,7 @@
   <section class="major-section">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {#each $searchStore.results as result}
-        <a
-          href="/articles/{result.slug}"
-          class={`
-            p-4 rounded-xl
-            bg-gray-100 dark:bg-gray-900
-            shadow-sm shadow-gray-300 dark:shadow-gray-700
-            hover:shadow-md transition-shadow duration-100 ease-in-out
-          `}
-        >
-          <div>
-            <h2 class="text-lg lg:text-xl font-bold dotdotdot">
-              {result.title}
-            </h2>
-            <p class="text-xs opacity-75 uppercase dotdotdot">
-              {result.subtitle}
-            </p>
-            <div class="flex gap-2 mt-4 flex-wrap">
-              {#each result.tags as tag}
-                <ArticleTag {tag} size="small" />
-              {/each}
-            </div>
-          </div>
-        </a>
+        <ArticleLinkCard article={result} />
       {/each}
     </div>
   </section>
