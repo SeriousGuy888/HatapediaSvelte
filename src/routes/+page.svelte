@@ -2,7 +2,7 @@
   import ArticleTag from "$lib/components/ArticleTag.svelte"
   import * as config from "$lib/config"
   import { createSearchStore, handleSearch } from "$lib/stores/search.js"
-  import { Map, CloudLightning } from "lucide-svelte"
+  import { Map, CloudLightning, Search } from "lucide-svelte"
   import { onDestroy } from "svelte"
 
   export let data
@@ -51,13 +51,16 @@
       </div>
     </a>
   </section>
-  <section class="major-section text-center">
-    <input
-      type="text"
-      class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-blue-400 w-full sm:max-w-4xl"
-      placeholder="Search HATApedia..."
-      bind:value={$searchStore.query}
-    />
+  <section class="major-section grid place-items-center">
+    <div class="relative w-full sm:max-w-3xl">
+      <input
+        type="text"
+        class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-blue-600 dark:border-blue-400 w-full sm:text-xl"
+        placeholder="Search for an article..."
+        bind:value={$searchStore.query}
+      />
+      <Search class="absolute right-2 top-2 w-6 h-6 text-blue-600 dark:text-blue-400" />
+    </div>
   </section>
   <section class="major-section">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
