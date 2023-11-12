@@ -1,8 +1,7 @@
 <script lang="ts">
   import ArticleTag from "$lib/components/ArticleTag.svelte"
-import * as config from "$lib/config"
+  import * as config from "$lib/config"
   import { createSearchStore, handleSearch } from "$lib/stores/search.js"
-  import type { Article } from "$lib/types.js"
   import { Map, CloudLightning } from "lucide-svelte"
   import { onDestroy } from "svelte"
 
@@ -10,16 +9,14 @@ import * as config from "$lib/config"
 
   const { articles } = data
 
-  const searchableArticles: (Article & { searchTerms: string })[] = articles.map((article) => ({
-    ...article,
-    searchTerms: `
-      ${article.title.toLowerCase()}
-      ${article.subtitle.toLowerCase()}
-      ${article.slug}
-      ${article.tags.map((t) => `#${t}`).join(" ")}`,
-  }))
-
-  const searchStore = createSearchStore(searchableArticles)
+  const searchStore = createSearchStore(articles, {
+    keys: [
+      { name: "slug", weight: 1.2 },
+      { name: "title", weight: 1 },
+      { name: "tags", weight: 0.4 },
+      { name: "subtitle", weight: 0.2 },
+    ],
+  })
   const unsubscribe = searchStore.subscribe((value) => handleSearch(value))
   onDestroy(() => unsubscribe()) // When user leaves the page, unsubscribe from the store
 </script>
@@ -78,7 +75,7 @@ import * as config from "$lib/config"
             </p>
             <div class="flex gap-2 mt-4 flex-wrap">
               {#each result.tags as tag}
-                <ArticleTag tag={tag} size="small" />
+                <ArticleTag {tag} size="small" />
               {/each}
             </div>
           </div>
