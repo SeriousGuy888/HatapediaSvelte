@@ -7,7 +7,12 @@
 
   export let data
 
-  const { articles } = data
+  const articles = data.articles.sort((a, b) => {
+    // Move more recently modified articles to the top
+    if (a.date_modified > b.date_modified) return -1
+    if (a.date_modified < b.date_modified) return 1
+    return 0
+  })
 
   const searchStore = createSearchStore(articles, {
     keys: [
