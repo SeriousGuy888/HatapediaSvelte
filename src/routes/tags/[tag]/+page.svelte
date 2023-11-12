@@ -1,6 +1,7 @@
 <script lang="ts">
   import { title as siteTitle } from "$lib/config"
   import { page } from "$app/stores"
+  import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
 
   export let data
 
@@ -14,12 +15,17 @@
   <meta property="og:title" content={title} />
 </svelte:head>
 
-<h1>#{tag}</h1>
-
-<br />
-
-<section class="flex flex-col gap-2">
-  {#each data.articles as article}
-    <a href="/articles/{article.slug}">{article.title}</a>
-  {/each}
-</section>
+<div class="w-full p-8 sm:p-16">
+  <hgroup>
+    <h1
+      class="text-2xl sm:text-4xl font-bold tracking-tight bg-purple-300 dark:bg-purple-900 w-fit px-4 py-2 sm:px-8 sm:py-4 rounded-full"
+    >
+      #{tag}
+    </h1>
+  </hgroup>
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8 sm:mt-12">
+    {#each data.articles as article}
+      <ArticleLinkCard {article} />
+    {/each}
+  </section>
+</div>
