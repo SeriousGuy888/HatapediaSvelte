@@ -28,3 +28,18 @@
     </div>
   </div>
 </a>
+
+<style lang="postcss">
+  .dotdotdot {
+    @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>

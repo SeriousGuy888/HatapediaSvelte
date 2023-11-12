@@ -89,17 +89,4 @@
   .link-label {
     @apply hidden sm:block;
   }
-
-  .dotdotdot {
-    @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
-  }
-
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
 </style>
