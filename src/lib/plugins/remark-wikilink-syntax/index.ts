@@ -133,7 +133,7 @@ function getLinkNode(
     data: {
       hProperties: {
         // make link red if page doesn't exist
-        className: isRedLink ? "redLink" : "",
+        className: isRedLink ? "red-link" : "",
       },
     },
   }

@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+  TODO: move this red-link stuff to somewhere better
+*/
+.prose a.red-link {
+  color: #e53e3e;
+}

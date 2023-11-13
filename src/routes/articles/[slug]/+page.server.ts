@@ -31,7 +31,9 @@ export async function load({ params }) {
     const file = await unified()
       .use(remarkParse)
       .use(remarkGfm)
-      .use(remarkWikiLinks)
+      .use(remarkWikiLinks, {
+        existingPageNames: Object.keys(slugMap),
+      })
       .use(remarkCallouts)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
