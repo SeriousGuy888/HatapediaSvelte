@@ -33,9 +33,9 @@ export async function load({ params }) {
       .use(remarkGfm)
       .use(remarkWikiLinks)
       .use(remarkCallouts)
-      .use(remarkRehype)
-      .use(rehypeStringify)
+      .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
+      .use(rehypeStringify, { allowDangerousHtml: true })
       .process(content)
 
     return {
