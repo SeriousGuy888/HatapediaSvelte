@@ -28,7 +28,8 @@
   </header>
 
   <div class="prose dark:prose-invert">
-    <svelte:component this={data.content} />
+    <!-- <svelte:component this={data.content} /> -->
+    {@html data.content}
   </div>
 </article>
 
