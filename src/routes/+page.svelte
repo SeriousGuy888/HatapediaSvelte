@@ -64,8 +64,8 @@
       <Search class="absolute right-2 top-2 w-6 h-6 text-blue-600 dark:text-blue-400" />
     </div>
   </section>
-  <section class="major-section">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <section class="major-section grid place-items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl">
       {#each $searchStore.results as result}
         <ArticleLinkCard article={result} />
       {/each}
