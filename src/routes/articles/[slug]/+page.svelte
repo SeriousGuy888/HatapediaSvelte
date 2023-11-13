@@ -1,5 +1,6 @@
 <script lang="ts">
   import ArticleTag from "../../../lib/components/ArticleTag.svelte"
+  import "@portaljs/remark-callouts/styles.css"
 
   export let data
 </script>

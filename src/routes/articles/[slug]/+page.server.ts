@@ -7,6 +7,9 @@ import matter from "gray-matter"
 
 import { unified } from "unified"
 import remarkParse from "remark-parse"
+import remarkGfm from "remark-gfm"
+import remarkWikiLinks from "$lib/plugins/remark-wikilink-syntax"
+import remarkCallouts from "@portaljs/remark-callouts"
 import remarkRehype from "remark-rehype"
 
 import rehypeStringify from "rehype-stringify"
@@ -16,6 +19,10 @@ export async function load({ params }) {
   const slug = params.slug
   const fileName: string | undefined = (slugMap as Record<string, string>)[slug]
 
+  if (!fileName) {
+    throw error(404, `Could not read article for slug ${slug}`)
+  }
+
   try {
     const article = await import(`../../../content/articles/${fileName}.md?raw`)
 
@@ -23,6 +30,9 @@ export async function load({ params }) {
 
     const file = await unified()
       .use(remarkParse)
+      .use(remarkGfm)
+      .use(remarkWikiLinks)
+      .use(remarkCallouts)
       .use(remarkRehype)
       .use(rehypeStringify)
       .use(rehypeSlug)

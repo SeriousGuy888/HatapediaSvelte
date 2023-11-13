@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { browser } from "$app/environment"
   import { Sun, Moon } from "lucide-svelte"
   import { fly } from "svelte/transition"
@@ -12,15 +12,17 @@
 
   let darkMode = false
 
+  const getRootEl = () => document.querySelector("html")
+
   function toggleDarkMode() {
     darkMode = !darkMode
 
     localStorage.setItem(THEME_KEY, darkMode ? THEMES.DARK : THEMES.LIGHT)
 
     if (darkMode) {
-      document.body.classList.add(DARK_CLASS)
+      getRootEl()?.classList.add(DARK_CLASS)
     } else {
-      document.body.classList.remove(DARK_CLASS)
+      getRootEl()?.classList.remove(DARK_CLASS)
     }
   }
 
@@ -30,10 +32,10 @@
 
     if (storedTheme === THEMES.DARK || (!storedTheme && devicePrefersDark)) {
       darkMode = true
-      document.body.classList.add(DARK_CLASS)
+      getRootEl()?.classList.add(DARK_CLASS)
     } else {
       darkMode = false
-      document.body.classList.remove(DARK_CLASS)
+      getRootEl()?.classList.remove(DARK_CLASS)
     }
   }
 </script>
@@ -49,6 +51,3 @@
     </div>
   {/if}
 </button>
-
-<style lang="postcss">
-</style>

@@ -17,11 +17,11 @@
     min-height: 100vh;
   }
 
-  :global(body) {
+  :global(:root) {
     @apply transition-colors duration-300 ease-in-out;
   }
 
-  :global(body.dark) {
+  :global(:root.dark) {
     @apply text-white bg-black;
   }
 </style>
