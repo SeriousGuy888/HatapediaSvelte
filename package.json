@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@esbuild-plugins/node-globals-polyfill": "^0.2.3",
 		"@portaljs/remark-callouts": "^1.0.5",
+		"@tailwindcss/container-queries": "^0.1.1",
 		"fuse.js": "^7.0.0",
 		"gray-matter": "^4.0.3",
 		"lucide-svelte": "^0.292.0",

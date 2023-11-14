@@ -1,5 +1,5 @@
 <script>
-    import HeaderSearchBar from "./HeaderSearchBar.svelte"
+    import HeaderSearchBar from "./HeaderQuickSwitcher.svelte"
   import Logo from "./Logo.svelte"
   import ThemeToggle from "./ThemeToggle.svelte"
 </script>
