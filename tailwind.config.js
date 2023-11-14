@@ -35,6 +35,7 @@ export default {
               backgroundColor: theme("colors.gray.100"),
               padding: theme("spacing.1"),
               borderRadius: theme("borderRadius.lg"),
+              whiteSpace: "pre-wrap",
             },
             code: {
               color: theme("colors.gray.700"),

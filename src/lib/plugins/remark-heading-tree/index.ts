@@ -27,6 +27,8 @@ const headingTree: Plugin = (): any => {
   }
 }
 
+export default headingTree
+
 function getHeadings(node: Root): TocNode[] {
   const output: TocNode[] = []
   const indexMap: { [key: number]: TocNode } = {}
@@ -48,11 +50,7 @@ function addID(node: Heading, slugger: GithubSlugger): void {
   }
 }
 
-function transformNode(
-  node: Heading,
-  output: TocNode[],
-  indexMap: { [key: number]: TocNode },
-) {
+function transformNode(node: Heading, output: TocNode[], indexMap: { [key: number]: TocNode }) {
   const transformedNode: TocNode = {
     value: toString(node),
     depth: node.depth,
@@ -71,5 +69,3 @@ function transformNode(
     }
   }
 }
-
-export default headingTree

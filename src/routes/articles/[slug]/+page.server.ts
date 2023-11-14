@@ -2,6 +2,8 @@ import type { Article } from "$lib/types"
 
 import { error } from "@sveltejs/kit"
 import slugMap from "../../../content/slugs.json"
+import inlinksIndex from "../../../content/inlinks.json"
+import { getArticleMetadata } from "$lib/articles"
 
 import matter from "gray-matter"
 
@@ -42,12 +44,18 @@ export async function load({ params }) {
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(content)
 
+    const inlinkSlugs = (inlinksIndex as Record<string, string[]>)[slug] ?? []
+    const inlinks = await Promise.all(
+      inlinkSlugs.map(async (slug) => await getArticleMetadata(slug)),
+    )
+
     return {
       content: file.value as string,
       meta: {
         title: fileName, // Default to the file name if no title is provided
         ...metadata,
         headings: (file.data as any).headings,
+        inlinks,
       } as Article,
     }
   } catch (e) {

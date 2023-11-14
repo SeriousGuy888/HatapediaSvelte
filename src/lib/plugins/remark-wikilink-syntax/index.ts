@@ -48,7 +48,9 @@ const wikilinkSyntax: Plugin<[Options?], Root> = (
     existingPageNames: [],
   },
 ) => {
-  return (tree, file) => {
+  return (tree: Root, file) => {
+    const linkedSlugs = new Set()
+
     findAndReplace(tree, wikilinkRegex, (matchedStr: string) => {
       const linkElems = extractLinkElements(matchedStr)
       if (!linkElems) {
@@ -60,14 +62,22 @@ const wikilinkSyntax: Plugin<[Options?], Root> = (
       if (isImage) {
         return getImageNode(matchedStr, pageName, altText, headingAnchor)
       } else {
-        return getLinkNode(
+        const [linkNode, pageSlug] = getLinkNode(
           pageName,
           altText,
           headingAnchor,
           options.existingPageNames,
         )
+
+        linkedSlugs.add(pageSlug)
+        return linkNode
       }
     })
+
+    file.data = {
+      ...(file.data ?? {}),
+      outlinks: Array.from(linkedSlugs),
+    }
   }
 }
 
@@ -80,12 +90,10 @@ function getImageNode(
   headingAnchor: string,
 ): Image {
   if (headingAnchor) {
-    console.warn(
-      `Heading anchors are not supported for images: ${wikilink}. Ignoring anchor.`,
-    )
+    console.warn(`Heading anchors are not supported for images: ${wikilink}. Ignoring anchor.`)
   }
 
-  const imageSize = sizeOf(`./src/content/images/${fileName}`)
+  // const imageSize = sizeOf(`./src/content/images/${fileName}`)
 
   const imgNode: Image = {
     type: "image",
@@ -95,8 +103,8 @@ function getImageNode(
     data: {
       hProperties: {
         className: "wikilink-image",
-        width: imageSize.width,
-        height: imageSize.height,
+        // width: imageSize.width,
+        // height: imageSize.height,
       },
     },
   }
@@ -109,7 +117,7 @@ function getLinkNode(
   altText: string,
   headingAnchor: string,
   existingPageNames: string[],
-): Link {
+): [Link, string] {
   const pageSlug: string = pageName ? sluggify(pageName) : ""
   const href = `${pageSlug}${headingAnchor ? "#" + headingAnchor : ""}`
 
@@ -138,7 +146,7 @@ function getLinkNode(
     },
   }
 
-  return linkNode
+  return [linkNode, pageSlug]
 }
 
 /**
@@ -148,7 +156,7 @@ function getLinkNode(
 export function getOutlinkList(tree: Root) {
   // set of all slugs to which there are wikilinks to
   const outlinks = new Set<string>()
-  
+
   // loop through the tree and find all wikilinks in text nodes, and add them to the list of outlinks
   visit(tree, "text", testForWikilink)
 

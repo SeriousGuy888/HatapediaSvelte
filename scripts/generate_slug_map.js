@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import { sluggify } from "../utils/sluggify"
+import { sluggify } from "../utils/sluggify.js"
 
 const slugsFile = path.join(process.cwd(), "src/content/slugs.json")
 const articlesDir = path.join(process.cwd(), "src/content/articles/")

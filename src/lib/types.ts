@@ -5,8 +5,11 @@ export type Article = {
   title: string
   subtitle: string
   tags: string[]
+
   date_created: string
   date_modified: string
   aliases?: string[]
+
   headings?: TocNode[]
+  inlinks?: Article[]
 }

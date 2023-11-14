@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "node scripts/generate_slug_map.js",
+		"prebuild": "node scripts/generate_slug_map.js && ts-node --esm scripts/gather_inlinks.ts",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -30,6 +30,7 @@
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
 		"tailwindcss": "^3.3.5",
+		"ts-node": "^10.9.1",
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
 		"vite": "^4.4.2"
@@ -47,6 +48,7 @@
 		"remark-gfm": "^4.0.0",
 		"remark-parse": "^11.0.0",
 		"remark-rehype": "^11.0.0",
+		"remark-stringify": "^11.0.0",
 		"unified": "^11.0.4",
 		"unified-stream": "^3.0.0"
 	}

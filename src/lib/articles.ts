@@ -1,8 +1,5 @@
-import remarkHeadingTree from "$lib/plugins/remark-heading-tree"
 import type { Article } from "$lib/types"
 import matter from "gray-matter"
-import remarkParse from "remark-parse"
-import { unified } from "unified"
 
 const slugMap: Record<string, string> = (await import("../content/slugs.json")).default
 
@@ -24,10 +21,10 @@ export async function getArticles() {
     }
 
     // Separate the metadata from the content with gray-matter
-    const { data: metadata, content: markdownContent } = matter(fileContent)
+    const { data: metadata } = matter(fileContent)
 
     if (metadata) {
-      const article = await preprocessMetadata(metadata, markdownContent, fileName, slug)
+      const article = await preprocessMetadata(metadata, fileName, slug)
       articles.push(article)
     }
   }
@@ -37,7 +34,6 @@ export async function getArticles() {
 
 async function preprocessMetadata(
   metadata: Record<string, unknown>,
-  markdownContent: string,
   fileName: string,
   slug: string,
 ): Promise<Article> {
@@ -59,12 +55,28 @@ async function preprocessMetadata(
     metadata.tags = []
   }
 
-  // if (!("headings" in metadata)) {
-  //   const vfile = await unified().use(remarkParse).use(remarkHeadingTree).process(markdownContent)
-  //   metadata.headings = (vfile.data as any).headings
-  // }
-
   delete metadata.image
+  delete metadata.outlinks
+  delete metadata.headings
 
   return { ...metadata, slug } as Article
+
+  // http://127.0.0.1:5173/api/articles
+}
+
+export async function getArticleMetadata(slug: string) {
+  const fileName: string | undefined = slugMap[slug]
+
+  if (!fileName) {
+    throw new Error(`Could not read article for slug ${slug}`)
+  }
+
+  try {
+    const article = await import(`../content/articles/${fileName}.md?raw`)
+    const { data: metadata } = matter(article.default)
+    return preprocessMetadata(metadata, fileName, slug)
+  } catch (e) {
+    console.error(e)
+    throw new Error(`Could not read ${fileName}`)
+  }
 }
