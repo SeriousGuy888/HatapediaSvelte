@@ -5,23 +5,15 @@
   export let article: Article
 </script>
 
-<a
-  href="/articles/{article.slug}"
-  class={`
-    p-4 rounded-xl
-    bg-gray-100 dark:bg-gray-900
-    shadow-sm shadow-gray-300 dark:shadow-gray-700
-    hover:shadow-md transition-shadow duration-100 ease-in-out
-  `}
->
+<a href="/articles/{article.slug}">
   <div>
-    <h2 class="text-lg lg:text-xl font-bold dotdotdot">
+    <h2 class="title dotdotdot">
       {article.title}
     </h2>
-    <p class="text-xs opacity-75 uppercase dotdotdot">
+    <p class="subtitle dotdotdot">
       {article.subtitle}
     </p>
-    <div class="flex gap-2 mt-4 flex-wrap">
+    <div class="tag-list">
       {#each article.tags as tag}
         <ArticleTag {tag} size="small" />
       {/each}
@@ -30,6 +22,25 @@
 </a>
 
 <style lang="postcss">
+  a {
+    @apply p-4 rounded-xl;
+    @apply bg-gray-100 dark:bg-gray-900;
+    @apply shadow-sm shadow-gray-300 dark:shadow-gray-700;
+    @apply hover:shadow-md transition-shadow duration-100 ease-in-out;
+  }
+
+  .title {
+    @apply text-lg lg:text-xl font-bold;
+  }
+
+  .subtitle {
+    @apply text-xs opacity-75 uppercase;
+  }
+
+  .tag-list {
+    @apply flex flex-wrap gap-2 mt-4;
+  }
+
   .dotdotdot {
     @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
   }
