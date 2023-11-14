@@ -45,7 +45,7 @@
       {@html data.content}
     </section>
 
-    {#if data.meta.inlinks}
+    {#if data.meta.inlinks?.length}
       <section class="pt-16 mt-16 border-t-2 border-gray-200 dark:border-gray-700">
         <div class="pb-6">
           <h2 class="text-3xl font-bold">Inlinks</h2>
