@@ -9,6 +9,7 @@ import { unified } from "unified"
 import remarkParse from "remark-parse"
 import remarkGfm from "remark-gfm"
 import remarkWikiLinks from "$lib/plugins/remark-wikilink-syntax"
+import remarkHeadingTree from "$lib/plugins/remark-heading-tree"
 import remarkCallouts from "@portaljs/remark-callouts"
 import remarkRehype from "remark-rehype"
 
@@ -34,6 +35,7 @@ export async function load({ params }) {
       .use(remarkWikiLinks, {
         existingPageNames: Object.keys(slugMap),
       })
+      .use(remarkHeadingTree)
       .use(remarkCallouts)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
@@ -45,6 +47,7 @@ export async function load({ params }) {
       meta: {
         title: fileName, // Default to the file name if no title is provided
         ...metadata,
+        headings: (file.data as any).headings,
       } as Article,
     }
   } catch (e) {

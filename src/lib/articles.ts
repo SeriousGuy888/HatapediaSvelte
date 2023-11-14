@@ -1,26 +1,33 @@
+import remarkHeadingTree from "$lib/plugins/remark-heading-tree"
 import type { Article } from "$lib/types"
+import matter from "gray-matter"
+import remarkParse from "remark-parse"
+import { unified } from "unified"
 
 const slugMap: Record<string, string> = (await import("../content/slugs.json")).default
 
 export async function getArticles() {
-  const articleFiles = import.meta.glob("../content/articles/*.md", { eager: true })
+  const articleFiles = import.meta.glob("../content/articles/*.md", { as: "raw", eager: true })
 
   let articles: Article[] = []
 
   for (const path in articleFiles) {
-    const fileName = path.split("/").pop()!.replace(".md", "")
-
-    const file = articleFiles[path]
+    const fileContent: string = articleFiles[path]
+    const fileName = path.split("/").pop()!.replace(/.md$/i, "")
     const slug = Object.keys(slugMap).find((key) => slugMap[key] === fileName)
 
     if (!slug) {
-      console.warn(`No slug found for ${fileName}`)
+      console.warn(
+        `No slug found for ${fileName}. This article will not be included in the list of all articles.`,
+      )
       continue
     }
 
-    if (file && typeof file === "object" && "metadata" in file) {
-      const metadata = file.metadata as any
-      const article = preprocessMetadata(metadata, fileName, slug)
+    // Separate the metadata from the content with gray-matter
+    const { data: metadata, content: markdownContent } = matter(fileContent)
+
+    if (metadata) {
+      const article = await preprocessMetadata(metadata, markdownContent, fileName, slug)
       articles.push(article)
     }
   }
@@ -28,11 +35,12 @@ export async function getArticles() {
   return articles
 }
 
-function preprocessMetadata(
+async function preprocessMetadata(
   metadata: Record<string, unknown>,
+  markdownContent: string,
   fileName: string,
   slug: string,
-): Article {
+): Promise<Article> {
   if (!("title" in metadata)) {
     metadata.title = fileName
   }
@@ -50,6 +58,11 @@ function preprocessMetadata(
   if (!("tags" in metadata)) {
     metadata.tags = []
   }
+
+  // if (!("headings" in metadata)) {
+  //   const vfile = await unified().use(remarkParse).use(remarkHeadingTree).process(markdownContent)
+  //   metadata.headings = (vfile.data as any).headings
+  // }
 
   delete metadata.image
 

@@ -1,3 +1,5 @@
+import type { TocNode } from "$lib/plugins/remark-heading-tree"
+
 export type Article = {
   slug: string
   title: string
@@ -6,4 +8,5 @@ export type Article = {
   date_created: string
   date_modified: string
   aliases?: string[]
+  headings?: TocNode[]
 }
