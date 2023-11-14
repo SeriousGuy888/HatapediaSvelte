@@ -23,7 +23,7 @@ export async function load({ params }) {
   const fileName: string | undefined = (slugMap as Record<string, string>)[slug]
 
   if (!fileName) {
-    throw error(404, `Could not read article for slug ${slug}`)
+    throw error(404, `No article found for "${slug}".`)
   }
 
   try {

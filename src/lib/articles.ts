@@ -68,7 +68,7 @@ export async function getArticleMetadata(slug: string) {
   const fileName: string | undefined = slugMap[slug]
 
   if (!fileName) {
-    throw new Error(`Could not read article for slug ${slug}`)
+    throw new Error(`No article found for "${slug}".`)
   }
 
   try {
@@ -77,6 +77,6 @@ export async function getArticleMetadata(slug: string) {
     return preprocessMetadata(metadata, fileName, slug)
   } catch (e) {
     console.error(e)
-    throw new Error(`Could not read ${fileName}`)
+    throw new Error(`Could not read file "${fileName}" for slug "${slug}".`)
   }
 }
