@@ -5,6 +5,7 @@
   import { onDestroy } from "svelte"
   import SearchBox from "./SearchBox.svelte"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
+  import { browser } from "$app/environment"
 
   const searchStore = createSearchStore($allArticleMeta, articleSearchConfig)
   let unsubscribe = searchStore.subscribe((value) => handleSearch(value))
@@ -25,11 +26,25 @@
 </script>
 
 <!-- Button to open search -->
-<button on:click={openModal} aria-label="Open the search modal">
+<button on:click={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle">
+  <div class="hidden sm:flex gap-1 keyboard-shortcut-tooltip">
+    <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
+    <kbd>K</kbd>
+  </div>
   <Search size="24" color="white" />
 </button>
 
-<!-- Search Modal -->
+<!-- Listen for keyboard shortcut globally while component is mounted -->
+<svelte:window
+  on:keydown={(e) => {
+    if (e.key === "k" && e.ctrlKey) {
+      e.preventDefault() // Prevents the browser from focusing the address bar
+      openModal() // Open the search modal
+    }
+  }}
+/>
+
+<!-- Search modal -->
 <div
   class={`
     ${modalOpen ? "grid place-items-center" : "hidden"}
@@ -65,3 +80,19 @@
     </section>
   </aside>
 </div>
+
+<style lang="postcss">
+  kbd {
+    @apply bg-gray-700;
+    @apply rounded border border-gray-500;
+    @apply px-1 text-sm;
+    @apply text-white;
+  }
+
+  /* Detect mobile devices */
+  @media (hover: none) {
+    .keyboard-shortcut-tooltip {
+      @apply hidden;
+    }
+  }
+</style>
