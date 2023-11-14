@@ -46,8 +46,8 @@
     </section>
 
     {#if data.meta.inlinks}
-      <section>
-        <div class="py-6">
+      <section class="pt-16 mt-16 border-t-2 border-gray-200 dark:border-gray-700">
+        <div class="pb-6">
           <h2 class="text-3xl font-bold">Inlinks</h2>
           <p class="text-sm italic">
             Links to
