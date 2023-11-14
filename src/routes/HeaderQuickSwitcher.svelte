@@ -62,6 +62,7 @@
     fixed inset-0 z-10
     bg-black bg-opacity-75
     cursor-zoom-out
+    select-none
   `}
     on:click={closeModal}
     on:keydown={(e) => {
