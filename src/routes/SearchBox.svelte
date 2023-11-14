@@ -2,6 +2,7 @@
   import type { createSearchStore } from "$lib/stores/search"
   import { Search } from "lucide-svelte"
 
+  export let placeholder = "Search..."
   export let searchStore: ReturnType<typeof createSearchStore>
   export function focus() {
     // Focus the input after the modal opens
@@ -18,7 +19,7 @@
   <input
     type="text"
     class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-blue-600 dark:border-blue-400 w-full sm:text-xl"
-    placeholder="Search for an article..."
+    {placeholder}
     bind:value={$searchStore.query}
     bind:this={inputRef}
   />

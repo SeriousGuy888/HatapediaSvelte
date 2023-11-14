@@ -6,6 +6,7 @@
   import SearchBox from "./SearchBox.svelte"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
   import { browser } from "$app/environment"
+  import { fade, fly } from "svelte/transition"
 
   const searchStore = createSearchStore($allArticleMeta, articleSearchConfig)
   let unsubscribe = searchStore.subscribe((value) => handleSearch(value))
@@ -17,7 +18,11 @@
   function openModal() {
     modalOpen = true
     $searchStore.query = ""
-    searchBox?.focus()
+
+    // Modal element doesn't exist yet, so we wait for the next tick
+    setTimeout(() => {
+      searchBox?.focus()
+    }, 0)
   }
 
   function closeModal() {
@@ -38,48 +43,58 @@
 <svelte:window
   on:keydown={(e) => {
     if (e.key === "k" && e.ctrlKey) {
-      e.preventDefault() // Prevents the browser from focusing the address bar
-      openModal() // Open the search modal
+      // Prevents the browser from focusing the address bar
+      e.preventDefault()
+
+      // Toggle modal
+      modalOpen ? closeModal() : openModal()
     }
   }}
 />
 
 <!-- Search modal -->
-<div
-  class={`
-    ${modalOpen ? "grid place-items-center" : "hidden"}
+
+{#if modalOpen}
+  <div
+    class={`
+    grid place-items-center
     py-24 px-8
     fixed inset-0 z-10
     bg-black bg-opacity-75
     cursor-zoom-out
   `}
-  on:click={closeModal}
-  on:keydown={(e) => {
-    if (e.key === "Escape") closeModal()
-  }}
-  aria-hidden={modalOpen ? "false" : "true"}
->
-  <aside
-    class="cursor-default bg-slate-100 dark:bg-slate-800 rounded-lg w-full max-w-2xl @container"
-    on:click={(e) => {
-      e.stopPropagation()
+    on:click={closeModal}
+    on:keydown={(e) => {
+      if (e.key === "Escape") closeModal()
     }}
-    aria-hidden
+    aria-hidden={modalOpen ? "false" : "true"}
+    in:fade={{ duration: 100 }}
+    out:fade={{ duration: 100 }}
   >
-    <section class="p-8">
-      <SearchBox {searchStore} bind:this={searchBox} />
-    </section>
-    <section
-      class="p-8 rounded-b-lg bg-slate-200 dark:bg-slate-700 h-96 overflow-y-auto no-scrollbar"
+    <aside
+      class="cursor-default bg-slate-100 dark:bg-slate-800 rounded-lg w-full max-w-2xl @container"
+      on:click={(e) => {
+        e.stopPropagation()
+      }}
+      aria-hidden
+      in:fly={{ duration: 100, y: 100 }}
+      out:fly={{ duration: 100, y: 100 }}
     >
-      <ul class="grid gap-4 grid-cols-1 @lg:grid-cols-2">
-        {#each $searchStore.results as article}
-          <ArticleLinkCard {article} />
-        {/each}
-      </ul>
-    </section>
-  </aside>
-</div>
+      <section class="p-8">
+        <SearchBox {searchStore} bind:this={searchBox} placeholder="Search HATApedia..." />
+      </section>
+      <section
+        class="p-8 rounded-b-lg bg-slate-200 dark:bg-slate-700 h-96 overflow-y-auto no-scrollbar"
+      >
+        <ul class="grid gap-4 grid-cols-1 @lg:grid-cols-2">
+          {#each $searchStore.results as article}
+            <ArticleLinkCard {article} />
+          {/each}
+        </ul>
+      </section>
+    </aside>
+  </div>
+{/if}
 
 <style lang="postcss">
   kbd {

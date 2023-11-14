@@ -45,7 +45,7 @@
     </a>
   </section>
   <section class="major-section mx-auto grid place-items-center sm:max-w-3xl">
-    <SearchBox {searchStore} />
+    <SearchBox {searchStore} placeholder="Search for an article..." />
   </section>
   <section class="major-section grid place-items-center">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl">
