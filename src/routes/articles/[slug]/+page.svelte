@@ -3,7 +3,6 @@
   import "@portaljs/remark-callouts/styles.css"
   import TableOfContents from "./TableOfContents.svelte"
   import type { TocNode } from "$lib/plugins/remark-heading-tree"
-  import { articleSearchConfig } from "$lib/stores/article_store.js"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
 
   export let data
@@ -14,7 +13,9 @@
     children: [],
     depth: 0,
   }
-  const headings = data.meta.headings ?? []
+  
+  let headings: TocNode[] = []
+  $: headings = data.meta.headings ?? []
 </script>
 
 <svelte:head>
