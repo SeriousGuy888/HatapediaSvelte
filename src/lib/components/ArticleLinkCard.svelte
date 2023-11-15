@@ -3,9 +3,23 @@
   import ArticleTag from "$lib/components/ArticleTag.svelte"
 
   export let article: Article
+  export let selected = false
+
+  let elem: HTMLAnchorElement | null = null
+
+  $: {
+    if (selected) {
+      elem?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      })
+      elem?.focus()
+    }
+  }
 </script>
 
-<a href="/articles/{article.slug}">
+<a href="/articles/{article.slug}" class:selected={selected} bind:this={elem}>
   <div>
     <h2 class="title dotdotdot">
       {article.title}
@@ -23,10 +37,18 @@
 
 <style lang="postcss">
   a {
-    @apply p-4 rounded-xl;
+    @apply p-4 rounded-lg;
     @apply bg-gray-100 dark:bg-gray-900;
-    @apply shadow-sm shadow-gray-300 dark:shadow-gray-700;
-    @apply hover:shadow-md transition-shadow duration-100 ease-in-out;
+    @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
+    @apply transition-shadow duration-100 ease-in-out;
+    @apply border-t-8 border-transparent;
+  }
+
+  a:hover,
+  a:focus,
+  .selected {
+    @apply border-purple-400 dark:border-purple-600;
+    @apply outline-none;
   }
 
   .title {

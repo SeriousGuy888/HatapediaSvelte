@@ -12,21 +12,28 @@
   let unsubscribe = searchStore.subscribe((value) => handleSearch(value))
   onDestroy(() => unsubscribe())
 
+  let selectedResultIndex = 0
+
   let searchBox: SearchBox | null = null
   let modalOpen = false
 
   function openModal() {
     modalOpen = true
     $searchStore.query = ""
+    selectedResultIndex = 0
 
-    // Modal element doesn't exist yet, so we wait for the next tick
-    setTimeout(() => {
-      searchBox?.focus()
-    }, 0)
+    focusSearchBox()
   }
 
   function closeModal() {
     modalOpen = false
+  }
+
+  function focusSearchBox() {
+    // Modal element might not exist yet, so we wait for the next tick
+    setTimeout(() => {
+      searchBox?.focus()
+    }, 0)
   }
 </script>
 
@@ -66,7 +73,27 @@
   `}
     on:click={closeModal}
     on:keydown={(e) => {
-      if (e.key === "Escape") closeModal()
+      switch (e.key) {
+        case "Escape":
+          closeModal()
+          break
+        case "ArrowDown":
+          e.preventDefault()
+          selectedResultIndex = Math.min(selectedResultIndex + 1, $searchStore.results.length - 1)
+          break
+        case "ArrowUp":
+          e.preventDefault()
+          selectedResultIndex = Math.max(selectedResultIndex - 1, 0)
+          break
+        case "Enter":
+          if ($searchStore.results.length > 0) {
+            window.location.href = `/articles/${$searchStore.results[selectedResultIndex].slug}`
+          }
+          break
+        default:
+          focusSearchBox()
+          break
+      }
     }}
     aria-hidden={modalOpen ? "false" : "true"}
     in:fade={{ duration: 100 }}
@@ -88,8 +115,8 @@
         class="p-8 rounded-b-lg bg-slate-200 dark:bg-slate-700 h-96 overflow-y-auto no-scrollbar"
       >
         <ul class="grid gap-4 grid-cols-1 @lg:grid-cols-2">
-          {#each $searchStore.results as article}
-            <ArticleLinkCard {article} />
+          {#each $searchStore.results as article, i}
+            <ArticleLinkCard {article} selected={selectedResultIndex === i} />
           {/each}
         </ul>
       </section>
