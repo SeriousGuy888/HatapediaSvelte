@@ -13,7 +13,7 @@
     children: [],
     depth: 0,
   }
-  
+
   let headings: TocNode[] = []
   $: headings = data.meta.headings ?? []
 </script>
@@ -92,5 +92,19 @@
 
   .tag-list {
     @apply flex flex-wrap gap-2 mt-4;
+  }
+
+  /* Animation to highlight headings when their anchor link is followed */
+  @keyframes target {
+    0% {
+      text-decoration: underline;
+    }
+    100% {
+      text-decoration: underline;
+    }
+  }
+
+  :global(.prose :target):is(h1, h2, h3, h4, h5, h6) {
+    animation: target 1s;
   }
 </style>
