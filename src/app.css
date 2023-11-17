@@ -1,21 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "$lib/styles/tailwind.css";
+@import "$lib/styles/scrollbars.css";
 
 /*
   TODO: move this red-link stuff to somewhere better
 */
 .prose a.red-link {
-  color: #e53e3e;
+  @apply text-red-600 dark:text-red-500;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+/* https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor */

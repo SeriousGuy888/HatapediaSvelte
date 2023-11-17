@@ -1,0 +1,26 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+:root.dark {
+  body {
+    scrollbar-color: #353535 #151515;
+
+    &::-webkit-scrollbar-track {
+      box-shadow: #151515;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #353535;
+    }
+  }
+}
