@@ -55,12 +55,13 @@
   <title>Map - {config.title}</title>
 </svelte:head>
 
-<div class="w-full h-full bg-black" bind:this={mapElement} />
+<div class="w-full h-full" bind:this={mapElement} />
 
 <style>
   @import "leaflet/dist/leaflet.css";
 
   div {
+    background-color: black;
     image-rendering: pixelated;
   }
 </style>
