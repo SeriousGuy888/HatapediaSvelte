@@ -19,20 +19,22 @@
   }
 </script>
 
+<!-- TODO: Make this not render broken when JS is disabled -->
+
 <a href="/articles/{article.slug}" class:selected={selected} bind:this={elem}>
-  <div>
+  <span>
     <h2 class="title dotdotdot">
       {article.title}
     </h2>
     <p class="subtitle dotdotdot">
       {article.subtitle}
     </p>
-    <div class="tag-list">
+    <span class="tag-list">
       {#each article.tags as tag}
         <ArticleTag {tag} size="small" />
       {/each}
-    </div>
-  </div>
+    </span>
+  </span>
 </a>
 
 <style lang="postcss">
