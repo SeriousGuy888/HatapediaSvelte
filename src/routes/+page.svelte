@@ -26,6 +26,11 @@
 </svelte:head>
 
 <div class="w-full p-12 sm:p-24">
+  <div class="bg-image-container">
+    <div class="bg-image hidden dark:block">
+      <div class="bg-fade" />
+    </div>
+  </div>
   <hgroup class="text-center">
     <h1 class="text-3xl sm:text-6xl font-bold tracking-tight">HATApedia</h1>
     <p class="text-xs sm:text-sm opacity-75">Maintained by the God of News</p>
@@ -57,6 +62,33 @@
 </div>
 
 <style lang="postcss">
+  .bg-image-container {
+    @apply absolute inset-0 max-w-full overflow-hidden;
+
+    z-index: -10;
+    isolation: auto;
+  }
+
+  .bg-image {
+    @apply w-full h-full;
+
+    background-image: url("/banner_images/hero.webp");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    /* prevents blur filter from fraying at the edges */
+    transform: scale(1.1);
+
+    filter: brightness(0.5) grayscale(0.5) blur(3px);
+  }
+
+  .bg-fade {
+    @apply absolute inset-0;
+
+    background-image: linear-gradient(#0000, #000f);
+  }
+
   .major-section {
     @apply mt-6 sm:mt-12;
   }
