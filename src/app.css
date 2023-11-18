@@ -6,8 +6,18 @@
 /*
   TODO: move this red-link stuff to somewhere better
 */
-.prose a.red-link {
-  @apply text-red-600 dark:text-red-500;
+.prose {
+  a.red-link {
+    @apply text-red-600 dark:text-red-500;
+  }
+
+  ruby > rt {
+    @apply tracking-widest;
+
+    font-size: 80%;
+    opacity: 60%;
+    font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  }
 }
 
 /* https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor */
