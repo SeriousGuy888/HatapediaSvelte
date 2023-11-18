@@ -30,7 +30,6 @@
 		"mdast": "^3.0.0",
 		"mdast-util-find-and-replace": "^3.0.1",
 		"mdast-util-to-string": "^4.0.0",
-		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.31",
 		"postcss-import": "^15.1.0",
 		"prettier": "^2.8.0",
