@@ -51,28 +51,31 @@ const wikilinkSyntax: Plugin<[Options?], Root> = (
   return (tree: Root, file) => {
     const linkedSlugs = new Set()
 
-    findAndReplace(tree, wikilinkRegex, (matchedStr: string) => {
-      const linkElems = extractLinkElements(matchedStr)
-      if (!linkElems) {
-        return null
-      }
+    findAndReplace(tree, [
+      wikilinkRegex,
+      (matchedStr: string) => {
+        const linkElems = extractLinkElements(matchedStr)
+        if (!linkElems) {
+          return null
+        }
 
-      const { isImage, pageName, altText, headingAnchor } = linkElems
+        const { isImage, pageName, altText, headingAnchor } = linkElems
 
-      if (isImage) {
-        return getImageNode(matchedStr, pageName, altText, headingAnchor)
-      } else {
-        const [linkNode, pageSlug] = getLinkNode(
-          pageName,
-          altText,
-          headingAnchor,
-          options.existingPageNames,
-        )
+        if (isImage) {
+          return getImageNode(matchedStr, pageName, altText, headingAnchor)
+        } else {
+          const [linkNode, pageSlug] = getLinkNode(
+            pageName,
+            altText,
+            headingAnchor,
+            options.existingPageNames,
+          )
 
-        linkedSlugs.add(pageSlug)
-        return linkNode
-      }
-    })
+          linkedSlugs.add(pageSlug)
+          return linkNode
+        }
+      },
+    ])
 
     file.data = {
       ...(file.data ?? {}),
