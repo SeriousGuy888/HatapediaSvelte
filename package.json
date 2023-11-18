@@ -25,6 +25,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"github-slugger": "^2.0.0",
+		"image-size": "^1.0.2",
 		"leaflet": "^1.9.4",
 		"mdast": "^3.0.0",
 		"mdast-util-find-and-replace": "^3.0.1",
