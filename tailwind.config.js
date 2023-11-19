@@ -10,6 +10,13 @@ export default {
       mono: ["Fira Code", "Consolas", "monospace"],
     },
     extend: {
+      colors: {
+        brand: "var(--brand)",
+        foreground: "var(--foreground)",
+        background: "var(--background)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

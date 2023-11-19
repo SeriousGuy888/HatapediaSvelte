@@ -19,9 +19,6 @@
 
   :global(:root) {
     @apply transition-colors duration-300 ease-in-out;
-  }
-
-  :global(:root.dark) {
-    @apply text-white bg-black;
+    @apply text-foreground bg-background;
   }
 </style>

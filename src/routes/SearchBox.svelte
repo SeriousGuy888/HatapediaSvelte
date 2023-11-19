@@ -18,10 +18,10 @@
 <div class="relative w-full">
   <input
     type="text"
-    class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-blue-600 dark:border-blue-400 w-full sm:text-xl"
+    class="appearance-none bg-transparent p-2 focus:outline-none border-b-2 border-secondary w-full sm:text-xl"
     {placeholder}
     bind:value={$searchStore.query}
     bind:this={inputRef}
   />
-  <Search class="absolute right-2 top-2 w-6 h-6 text-blue-600 dark:text-blue-400" />
+  <Search class="absolute right-2 top-2 w-6 h-6 text-secondary" />
 </div>

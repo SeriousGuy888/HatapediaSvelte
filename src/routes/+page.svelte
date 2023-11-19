@@ -49,7 +49,7 @@
       </div>
     </a>
   </section>
-  <section class="major-section mx-auto grid place-items-center sm:max-w-3xl">
+  <section class="major-section mx-auto grid place-items-center max-w-7xl">
     <SearchBox {searchStore} placeholder="Search for an article..." />
   </section>
   <section class="major-section grid place-items-center">
@@ -95,10 +95,11 @@
 
   .page-link {
     @apply rounded-full p-2 sm:px-4;
-    @apply sm:border-2 border-black dark:border-white;
     @apply transition-colors duration-300 ease-in-out;
     @apply flex gap-2 items-center;
-    @apply hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black;
+    @apply sm:border-2;
+    @apply border-foreground text-foreground;
+    @apply hover:bg-foreground hover:text-background;
   }
 
   .link-label {

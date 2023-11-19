@@ -43,7 +43,7 @@
     <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
     <kbd>K</kbd>
   </div>
-  <Search size="24" color="white" />
+  <Search size="24" />
 </button>
 
 <!-- Listen for keyboard shortcut globally while component is mounted -->

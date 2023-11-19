@@ -1,0 +1,17 @@
+@layer base {
+  :root {
+    --brand: hsl(19, 73%, 24%);
+
+    --foreground: hsl(18, 72%, 7%);
+    --background: hsl(18, 100%, 98%);
+    --primary: hsl(20, 66%, 68%);
+    --secondary: hsl(20, 66%, 38%);
+
+    &.dark {
+      --foreground: hsl(18, 72%, 93%);
+      --background: hsl(18, 100%, 2%);
+      --primary: hsl(20, 66%, 32%);
+      --secondary: hsl(20, 66%, 62%);
+    }
+  }
+}

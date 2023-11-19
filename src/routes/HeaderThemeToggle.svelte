@@ -43,11 +43,11 @@
 <button aria-label="Toggle colour theme" on:click={toggleDarkMode}>
   {#if darkMode}
     <div in:fly={{ y: -5 }}>
-      <Moon size="24" color="white" />
+      <Moon size="24" />
     </div>
   {:else}
     <div in:fly={{ y: 5 }}>
-      <Sun size="24" color="white" />
+      <Sun size="24" />
     </div>
   {/if}
 </button>

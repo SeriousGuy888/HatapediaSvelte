@@ -49,7 +49,7 @@
   a:hover,
   a:focus,
   .selected {
-    @apply border-purple-400 dark:border-purple-600;
+    @apply border-primary;
     @apply outline-none;
   }
 
