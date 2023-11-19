@@ -18,7 +18,7 @@
 <div class="w-full grid place-items-center p-8 sm:p-16">
   <hgroup>
     <h1
-      class="text-2xl sm:text-4xl font-bold tracking-tight bg-purple-300 dark:bg-purple-900 w-fit px-4 py-2 sm:px-8 sm:py-4 rounded-full"
+      class="text-2xl sm:text-4xl font-bold tracking-tight bg-primary w-fit px-4 py-2 sm:px-8 sm:py-4 rounded-full"
     >
       #{$page.params.tag}
     </h1>
