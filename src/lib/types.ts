@@ -6,8 +6,8 @@ export type Article = {
   subtitle: string
   tags: string[]
 
-  date_created: string
-  date_modified: string
+  date_created: Date
+  date_modified: Date
   aliases?: string[]
 
   headings?: TocNode[]

@@ -16,6 +16,8 @@
 
   let headings: TocNode[] = []
   $: headings = data.meta.headings ?? []
+
+  const toIsoDate = (date: Date) => date.toISOString().split("T")[0]
 </script>
 
 <svelte:head>
@@ -40,6 +42,16 @@
           {/each}
         </div>
       {/if}
+      <ul class="article-properties">
+        <li>
+          Published
+          <span>{toIsoDate(data.meta.date_created)}</span>
+        </li>
+        <li>
+          Updated
+          <span>{toIsoDate(data.meta.date_modified)}</span>
+        </li>
+      </ul>
     </header>
 
     <section class="prose dark:prose-invert">
@@ -92,6 +104,18 @@
 
   .tag-list {
     @apply flex flex-wrap gap-2 mt-4;
+  }
+
+  .article-properties {
+    @apply flex flex-wrap justify-between gap-2 mt-8;
+
+    li {
+      @apply text-sm;
+
+      span {
+        @apply font-bold;
+      }
+    }
   }
 
   /* Animation to highlight headings when their anchor link is followed */
