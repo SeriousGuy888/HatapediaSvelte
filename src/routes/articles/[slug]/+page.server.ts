@@ -11,7 +11,7 @@ import { unified } from "unified"
 import remarkParse from "remark-parse"
 import remarkGfm from "remark-gfm"
 import remarkWikiLinks from "$lib/plugins/remark-wikilink-syntax"
-import remarkHeadingTree from "$lib/plugins/remark-heading-tree"
+import remarkHeadingTree, { type TocNode } from "$lib/plugins/remark-heading-tree"
 import remarkCallouts from "@portaljs/remark-callouts"
 import remarkRehype from "remark-rehype"
 
@@ -49,12 +49,15 @@ export async function load({ params }) {
       inlinkSlugs.map(async (slug) => await getArticleMetadata(slug)),
     )
 
+    const parsedContent = file.value as string
+    const headings: TocNode[] | undefined = (file.data as any).headings
+
     return {
-      content: file.value as string,
+      content: parsedContent,
       meta: {
         title: fileName, // Default to the file name if no title is provided
         ...metadata,
-        headings: (file.data as any).headings,
+        headings,
         inlinks,
       } as Article,
     }
