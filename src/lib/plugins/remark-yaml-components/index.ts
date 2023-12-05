@@ -1,6 +1,7 @@
 import { visit } from "unist-util-visit"
 import type * as mdast from "mdast"
 import type * as unified from "unified"
+import { parse } from "yaml"
 
 interface Options {
   /**
@@ -41,15 +42,17 @@ const convertYamlCodeblocks: unified.Plugin<[Options?], mdast.Root> = (options) 
         return
       }
 
+      // node.value is the content of the code block
+      const yaml = node.value
+
       const replacementNode: mdast.Html = {
         type: "html",
         data: {
           // hName: conversionMap[lang], // <NationInfobox ... />
           hName: "div",
           hProperties: {
-            // yaml: node.value, // the yaml data
             "data-component": conversionMap[lang],
-            "data-prop-yaml": node.value,
+            "data-props": JSON.stringify(parse(yaml)), // the yaml data, stringified as json
           },
         },
         value: "",

@@ -6,6 +6,7 @@ import DynamicComponentWrapper from "./DynamicComponentWrapper.svelte"
 
 const components: Record<string, () => Promise<any>> = {
   CharacterInfobox: () => import("$lib/components/article_elements/CharacterInfobox.svelte"),
+  YouTubeVideo: () => import("$lib/components/article_elements/YouTubeVideo.svelte"),
 }
 
 async function instantiateComponent(element: Element) {
@@ -15,7 +16,7 @@ async function instantiateComponent(element: Element) {
 
     // Store here the Svelte component to be rendered in its place if found
     let component: SvelteComponent | null = null
-    const props: Record<string, any> = {}
+    let props: Record<string, any> = {}
 
     // Loop through all the attributes of the element
     for (const attrName of attrNames) {
@@ -36,12 +37,12 @@ async function instantiateComponent(element: Element) {
         await tick() // Wait for Svelte to tick
         component = (await componentImporter()).default
         console.log("Loaded dynamic component", value)
-      } else if (attrName.startsWith("data-prop-")) {
-        // Remove the "data-prop-" prefix from the attribute name
-        const propName = attrName.slice("data-prop".length + 1)
-
-        // Store the string value of the attribute as a prop
-        props[propName] = value
+      } else if (attrName === "data-props") {
+        try {
+          props = JSON.parse(value)
+        } catch (e) {
+          console.error(`Error parsing props for component ${component?.name}:`, e)
+        }
       }
     }
 
@@ -50,6 +51,7 @@ async function instantiateComponent(element: Element) {
     }
 
     console.log("Instantiating dynamic component", component.name, "in place of", element)
+    console.log("Props:", props)
 
     const instance = new DynamicComponentWrapper({
       target: element,
