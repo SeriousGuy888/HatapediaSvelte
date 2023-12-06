@@ -24,6 +24,7 @@
         src={banner ? `/images/${banner}` : "/images/no_banner.png"}
         alt={name ? `Banner of ${name}` : `Banner`}
         class="rounded-md m-0"
+        loading="lazy"
       />
     </div>
     <div class="flex flex-col content-start flex-[4] gap-2 min-w-[120px]">
