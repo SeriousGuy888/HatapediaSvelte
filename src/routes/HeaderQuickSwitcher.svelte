@@ -7,6 +7,7 @@
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
   import { browser } from "$app/environment"
   import { fade, fly } from "svelte/transition"
+  import { goto } from "$app/navigation"
 
   const searchStore = createSearchStore($allArticleMeta, articleSearchConfig)
   let unsubscribe = searchStore.subscribe((value) => handleSearch(value))
@@ -87,7 +88,7 @@
           break
         case "Enter":
           if ($searchStore.results.length > 0) {
-            window.location.href = `/articles/${$searchStore.results[selectedResultIndex].slug}`
+            goto(`/articles/${$searchStore.results[selectedResultIndex].slug}`)
           }
           break
         default:
@@ -116,7 +117,11 @@
       >
         <ul class="grid gap-4 grid-cols-1 @lg:grid-cols-2">
           {#each $searchStore.results as article, i}
-            <ArticleLinkCard {article} selected={selectedResultIndex === i} />
+            <ArticleLinkCard
+              {article}
+              selected={selectedResultIndex === i}
+              on:navigate={closeModal}
+            />
           {/each}
         </ul>
       </section>

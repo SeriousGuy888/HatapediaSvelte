@@ -1,9 +1,13 @@
 <script lang="ts">
   import type { Article } from "$lib/types"
   import ArticleTag from "$lib/components/ArticleTag.svelte"
+  import { goto } from "$app/navigation"
+  import { createEventDispatcher } from "svelte"
 
   export let article: Article
   export let selected = false
+
+  const dispatch = createEventDispatcher()
 
   let elem: HTMLAnchorElement | null = null
 
@@ -21,7 +25,15 @@
 
 <!-- TODO: Make this not render broken when JS is disabled -->
 
-<a href="/articles/{article.slug}" class:selected={selected} bind:this={elem}>
+<a
+  href="/articles/{article.slug}"
+  class:selected
+  bind:this={elem}
+  on:click={() => {
+    goto(`/articles/${article.slug}`)
+    dispatch("navigate")
+  }}
+>
   <span>
     <h2 class="title dotdotdot">
       {article.title}
