@@ -9,6 +9,7 @@ tags:
 
 This rewrite of the entire website in SvelteKit instead of NextJS has been a long time coming. It took a couple of months, but it is pretty epique.
 
+- `2023-12-06` The new and improved quickswitcher (Ctrl + K) will now use soft navigation (ie: no page reload), making it much faster to use, and it will close itself after you press enter.
 - `2023-12-05` Successfully reimplemented the infoboxes feature using dynamic components in Svelte. This was one of the major obstacles preventing me from migrating the site to SvelteKit for a while. It took a couple of weeks to figure out, but I have finally made a breakthrough today.
 - `todo` look through the commit history for more details for the changelog
 
