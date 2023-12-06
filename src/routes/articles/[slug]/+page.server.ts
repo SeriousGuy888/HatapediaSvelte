@@ -45,7 +45,7 @@ export async function load({ params }) {
             code block should be replaced with a custom Svelte component.
             eg: ```infobox-nation``` -> <NationInfobox> </NationInfobox>
           */
-         // "infobox-nation": "NationInfobox",
+         "infobox-nation": "NationInfobox",
          "infobox-character": "CharacterInfobox",
          // "infobox-timeline": "TimelineInfobox",
          "youtube": "YouTubeVideo",

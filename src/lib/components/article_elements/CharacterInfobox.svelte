@@ -1,4 +1,6 @@
 <script lang="ts">
+  import InfoboxFact from "./_InfoboxFact.svelte"
+
   export let name: string | undefined
   export let facts: Record<string, string[] | string> = {}
   export let image: string | null = null
@@ -39,30 +41,7 @@
     {/if}
     <div class="flex flex-col content-start flex-[4] gap-2 min-w-[120px]">
       {#each Object.keys(facts) as key}
-        <section
-          class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
-        >
-          <div class="px-2 py-1">
-            <p class="uppercase text-gray-600 dark:text-gray-300 print:text-black text-xs my-0">
-              {key}
-            </p>
-            <span class="text-md text-black dark:text-white print:text-black my-0">
-              <!--           
-                If the value is an array, render it as a ul,
-                otherwise render it as a regular string.
-              -->
-              {#if facts[key] instanceof Array && facts[key].length > 1}
-                <ul class="list-disc">
-                  {#each facts[key] as item}
-                    <li class="m-0">{item}</li>
-                  {/each}
-                </ul>
-              {:else}
-                {facts[key] ?? "Unknown"}
-              {/if}
-            </span>
-          </div>
-        </section>
+        <InfoboxFact title={key} value={facts?.[key]} />
       {/each}
     </div>
   </section>

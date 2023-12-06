@@ -7,6 +7,7 @@ import DynamicComponentWrapper from "./DynamicComponentWrapper.svelte"
 const components: Record<string, () => Promise<any>> = {
   CharacterInfobox: () => import("$lib/components/article_elements/CharacterInfobox.svelte"),
   YouTubeVideo: () => import("$lib/components/article_elements/YouTubeVideo.svelte"),
+  NationInfobox: () => import("$lib/components/article_elements/NationInfobox.svelte"),
 }
 
 async function instantiateComponent(element: Element) {
