@@ -5,9 +5,9 @@ import { tick, type SvelteComponent } from "svelte"
 import DynamicComponentWrapper from "./DynamicComponentWrapper.svelte"
 
 const components: Record<string, () => Promise<any>> = {
-  CharacterInfobox: () => import("$lib/components/article_elements/CharacterInfobox.svelte"),
-  YouTubeVideo: () => import("$lib/components/article_elements/YouTubeVideo.svelte"),
-  NationInfobox: () => import("$lib/components/article_elements/NationInfobox.svelte"),
+  CharacterInfobox: () => import("$lib/dynamic_components/components/CharacterInfobox.svelte"),
+  YouTubeVideo: () => import("$lib/dynamic_components/components/YouTubeVideo.svelte"),
+  NationInfobox: () => import("$lib/dynamic_components/components/NationInfobox.svelte"),
 }
 
 async function instantiateComponent(element: Element) {
