@@ -24,7 +24,7 @@
       <img
         src={banner ? getImageWikilinkSrc(banner) : "/images/no_banner.png"}
         alt={name ? `Banner of ${name}` : `Banner`}
-        class="rounded-md m-0"
+        class="rounded-md m-0 w-full"
         loading="lazy"
       />
     </div>
