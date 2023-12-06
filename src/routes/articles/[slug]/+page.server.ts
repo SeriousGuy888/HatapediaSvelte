@@ -17,6 +17,7 @@ import remarkRehype from "remark-rehype"
 
 import rehypeStringify from "rehype-stringify"
 import rehypeSlug from "rehype-slug"
+import remarkYamlComponents from "$lib/plugins/remark-yaml-components"
 
 export async function load({ params }) {
   const slug = params.slug
@@ -36,6 +37,19 @@ export async function load({ params }) {
       .use(remarkGfm)
       .use(remarkWikiLinks, {
         existingPageNames: Object.keys(slugMap),
+      })
+      .use(remarkYamlComponents, {
+        conversionMap: {
+          /*
+            This map specifies the code block languages that indicate that the
+            code block should be replaced with a custom Svelte component.
+            eg: ```infobox-nation``` -> <NationInfobox> </NationInfobox>
+          */
+         // "infobox-nation": "NationInfobox",
+         "infobox-character": "CharacterInfobox",
+         // "infobox-timeline": "TimelineInfobox",
+         "youtube": "YouTubeVideo",
+        },
       })
       .use(remarkHeadingTree)
       .use(remarkCallouts)

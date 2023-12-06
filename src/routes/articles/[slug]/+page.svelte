@@ -4,9 +4,13 @@
   import TableOfContents from "./TableOfContents.svelte"
   import type { TocNode } from "$lib/plugins/remark-heading-tree"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
+  import { onMount, tick } from "svelte"
+  import { instantiateDynamicComponents } from "$lib/dynamic_components/dynamic_components_in_md.js"
 
   export let data
 
+  // A link in the table of contents that links to the top of the page
+  // always exists, and is always the first element in the array.
   const topLink: TocNode = {
     id: "_top",
     value: "(top)",
@@ -18,6 +22,35 @@
   $: headings = data.meta.headings ?? []
 
   const toIsoDate = (date: Date) => date.toISOString().split("T")[0]
+
+  // https://github.com/dimfeld/website/blob/54c30d47ecaa02fabfc5c5ccedf419035da02c77/src/routes/writing/_Article.svelte
+  let isMounted = false // Needed to prevent mounting before the DOM is ready
+  let destroyComponents: Promise<() => void> | null = null
+
+  onMount(() => {
+    isMounted = true
+    remountDynamicComponents()
+    return unmountDynamicComponents
+  })
+
+  async function remountDynamicComponents() {
+    if (!isMounted) {
+      return
+    }
+    unmountDynamicComponents()
+    await tick()
+    destroyComponents = instantiateDynamicComponents()
+  }
+
+  function unmountDynamicComponents() {
+    if (destroyComponents) {
+      destroyComponents.then((destroy) => destroy())
+      destroyComponents = null
+    }
+  }
+
+  // When the page changes, remount the dynamic components
+  $: data.content, remountDynamicComponents()
 </script>
 
 <svelte:head>
