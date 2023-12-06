@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
   export let name: string | null = null
@@ -21,7 +22,7 @@
   >
     <div class="flex-1 min-w-[80px] aspect-[1/2] relative" style="image-rendering: pixelated;">
       <img
-        src={banner ? `/images/${banner}` : "/images/no_banner.png"}
+        src={banner ? getImageWikilinkSrc(banner) : "/images/no_banner.png"}
         alt={name ? `Banner of ${name}` : `Banner`}
         class="rounded-md m-0"
         loading="lazy"

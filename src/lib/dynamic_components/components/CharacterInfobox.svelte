@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
   export let name: string | undefined
@@ -20,7 +21,7 @@
       <figure class="@sm:flex-1 m-0 w-full flex justify-center">
         {#if image}
           <img
-            src="/images/{image}"
+            src={getImageWikilinkSrc(image)}
             alt="Image of {name}"
             width="256"
             height="256"
