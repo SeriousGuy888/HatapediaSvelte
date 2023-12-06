@@ -53,6 +53,7 @@
   a {
     @apply p-4 rounded-lg;
     @apply bg-gray-100 dark:bg-gray-900;
+    @apply text-black dark:text-white;
     @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
     @apply transition-shadow duration-100 ease-in-out;
     @apply border-t-8 border-transparent;
