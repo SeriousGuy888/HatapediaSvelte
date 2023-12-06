@@ -89,6 +89,7 @@
         case "Enter":
           if ($searchStore.results.length > 0) {
             goto(`/articles/${$searchStore.results[selectedResultIndex].slug}`)
+            closeModal()
           }
           break
         default:
