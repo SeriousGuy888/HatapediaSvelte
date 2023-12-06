@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { getImageWikilinkSrc } from "../imageWikilinkParser"
+  import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
   export let name: string | undefined
