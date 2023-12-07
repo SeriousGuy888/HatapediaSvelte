@@ -4,6 +4,7 @@ import { visit } from "unist-util-visit"
 import type { Image, Link, Root, Text } from "mdast"
 import { sluggify } from "../../../../utils/sluggify.js"
 import { slug as githubAnchorSlug } from "github-slugger"
+import sizeOf from "image-size"
 
 interface Options {
   existingPageNames: string[]
@@ -95,7 +96,7 @@ function getImageNode(
     console.warn(`Heading anchors are not supported for images: ${wikilink}. Ignoring anchor.`)
   }
 
-  // const imageSize = sizeOf(`./src/content/images/${fileName}`)
+  const imageSize = sizeOf(`./src/content/images/${fileName}`)
 
   const imgNode: Image = {
     type: "image",
@@ -105,8 +106,8 @@ function getImageNode(
     data: {
       hProperties: {
         className: "wikilink-image",
-        // width: imageSize.width,
-        // height: imageSize.height,
+        width: imageSize.width,
+        height: imageSize.height,
       },
     },
   }
