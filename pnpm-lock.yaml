@@ -55,6 +55,9 @@ devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.1.5
     version: 11.1.5(tslib@2.6.2)(typescript@5.2.2)
+  '@svelte-drama/swr':
+    specifier: ^1.2.3
+    version: 1.2.3(svelte@4.2.2)
   '@sveltejs/adapter-auto':
     specifier: ^2.1.1
     version: 2.1.1(@sveltejs/kit@1.27.4)
@@ -535,6 +538,14 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@svelte-drama/swr@1.2.3(svelte@4.2.2):
+    resolution: {integrity: sha512-aIKtf6+UBGGWNPEOjx7+uT96bjjDFmjC0v6Hc4W18L/kozNRM1dsPB5DZFF2xOPvXU/vGf6CbfG2NT8egqQiqQ==}
+    peerDependencies:
+      svelte: ^3.54.0 || ^4.0.0
+    dependencies:
+      svelte: 4.2.2
     dev: true
 
   /@sveltejs/adapter-auto@2.1.1(@sveltejs/kit@1.27.4):

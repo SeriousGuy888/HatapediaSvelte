@@ -4,6 +4,7 @@
   import type { TemperatureUnit, WeatherData } from "$lib/weather/weatherapi_types.js"
   import SelectDropdown from "./SelectDropdown.svelte"
   import { onMount } from "svelte"
+  import { swr } from "@svelte-drama/swr"
 
   export let data
 
@@ -14,16 +15,24 @@
 
   let weatherData: WeatherData | null = null
 
+  // Create a SWR model to fetch the weather data
+  // will cache the data so if the user switches back to the same city it will be instant
+  // and won't require another API call
+  const model = swr<string, WeatherData>({
+    key(id: string) {
+      return id
+    },
+    async fetcher(url: string) {
+      console.log("fetching", url)
+      const res = await fetch(url)
+      const data = await res.json()
+      return data.body
+    },
+    maxAge: 1000 * 60 * 15, // 15 minutes
+  })
+
   async function updateWeatherData() {
-    fetch(`/api/weather/${selectedCityId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        weatherData = data.body
-      })
-      .catch((err) => {
-        console.error(err)
-        weatherData = null
-      })
+    weatherData = await model.fetch(`/api/weather/${selectedCityId}`)
   }
 
   // query the weather once on mount (it will also update when the city changes)
