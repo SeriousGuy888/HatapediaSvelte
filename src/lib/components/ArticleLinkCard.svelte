@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Article } from "$lib/types"
   import ArticleTag from "$lib/components/ArticleTag.svelte"
-  import { goto } from "$app/navigation"
+  // import { goto } from "$app/navigation"
   import { createEventDispatcher } from "svelte"
 
   export let article: Article
@@ -30,7 +30,8 @@
   class:selected
   bind:this={elem}
   on:click={() => {
-    goto(`/articles/${article.slug}`)
+    // This sometimes makes the link go to the wrong place for some reason
+    // goto(`/articles/${article.slug}`)
     dispatch("navigate")
   }}
 >
