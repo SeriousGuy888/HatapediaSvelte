@@ -92,7 +92,7 @@
         <h1 class="relative">
           <span class="text-7xl">{ready ? actualTemp : "..."}</span>
           <span class="text-xl absolute -right-6 top-2">
-            {ready && unitSymbol}
+            {ready ? unitSymbol : ""}
           </span>
         </h1>
         <p class="text-xs">
@@ -137,8 +137,6 @@
         Last Updated:{" "}
         {#if currWeather}
           {currWeather.last_updated}
-          <!-- {moment.tz(currWeather.last_updated, weatherData.location.tz_id) .utc()
-          .format("YYYY-MM-DD HH:mm (UTC)")} -->
         {:else}
           _________
         {/if}
