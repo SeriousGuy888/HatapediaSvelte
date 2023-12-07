@@ -3,6 +3,7 @@
   import type { CityDisplayData } from "$lib/weather/weatherCitiesManager"
   import type { TemperatureUnit, WeatherData } from "$lib/weather/weatherapi_types.js"
   import SelectDropdown from "./SelectDropdown.svelte"
+  import { onMount } from "svelte"
 
   export let data
 
@@ -24,6 +25,11 @@
         weatherData = null
       })
   }
+
+  // query the weather once on mount (it will also update when the city changes)
+  onMount(() => {
+    updateWeatherData()
+  })
 </script>
 
 <svelte:head>
