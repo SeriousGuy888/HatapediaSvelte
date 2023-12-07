@@ -64,12 +64,18 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.5)
+  '@types/hast':
+    specifier: ^3.0.3
+    version: 3.0.3
   '@types/leaflet':
     specifier: ^1.9.8
     version: 1.9.8
   '@types/mdast':
     specifier: ^4.0.3
     version: 4.0.3
+  '@types/unist':
+    specifier: ^3.0.2
+    version: 3.0.2
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.0.0
     version: 6.10.0(@typescript-eslint/parser@6.10.0)(eslint@8.53.0)(typescript@5.2.2)
@@ -660,7 +666,6 @@ packages:
     resolution: {integrity: sha512-2fYGlaDy/qyLlhidX42wAH0KBi2TCjKMH8CHmBXgRlJ3Y+OXTiqsPQ6IWarZKwF1JoUcAJdPogv1d4b0COTpmQ==}
     dependencies:
       '@types/unist': 3.0.2
-    dev: false
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}

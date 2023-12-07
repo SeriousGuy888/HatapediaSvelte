@@ -11,13 +11,14 @@ import { unified } from "unified"
 import remarkParse from "remark-parse"
 import remarkGfm from "remark-gfm"
 import remarkWikiLinks from "$lib/plugins/remark-wikilink-syntax"
+import remarkYamlComponents from "$lib/plugins/remark-yaml-components"
+import remarkGroupImages from "$lib/plugins/remark-group-images"
 import remarkHeadingTree, { type TocNode } from "$lib/plugins/remark-heading-tree"
 import remarkCallouts from "@portaljs/remark-callouts"
 import remarkRehype from "remark-rehype"
 
 import rehypeStringify from "rehype-stringify"
 import rehypeSlug from "rehype-slug"
-import remarkYamlComponents from "$lib/plugins/remark-yaml-components"
 
 export async function load({ params }) {
   const slug = params.slug
@@ -51,6 +52,7 @@ export async function load({ params }) {
          "youtube": "YouTubeVideo",
         },
       })
+      .use(remarkGroupImages)
       .use(remarkHeadingTree)
       .use(remarkCallouts)
       .use(remarkRehype, { allowDangerousHtml: true })

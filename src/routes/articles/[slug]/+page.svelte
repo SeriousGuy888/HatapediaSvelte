@@ -160,6 +160,26 @@
     }
   }
 
+  :global(img) {
+    @apply rounded;
+  }
+
+  :global(.gallery) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  :global(.gallery > img) {
+    flex: 1 1 200px;
+    margin: 0;
+    overflow: hidden;
+    min-height: 8rem;
+    object-fit: cover;
+  }
+
   /* Animation to highlight headings when their anchor link is followed */
   @keyframes target {
     0% {
