@@ -31,7 +31,6 @@
 		"github-slugger": "^2.0.0",
 		"image-size": "^1.0.2",
 		"leaflet": "^1.9.4",
-		"mdast": "^3.0.0",
 		"mdast-util-find-and-replace": "^3.0.1",
 		"mdast-util-to-string": "^4.0.0",
 		"postcss": "^8.4.31",

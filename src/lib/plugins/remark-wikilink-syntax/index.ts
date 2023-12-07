@@ -4,7 +4,6 @@ import { visit } from "unist-util-visit"
 import type { Image, Link, Root, Text } from "mdast"
 import { sluggify } from "../../../../utils/sluggify.js"
 import { slug as githubAnchorSlug } from "github-slugger"
-import sizeOf from "image-size"
 
 interface Options {
   existingPageNames: string[]

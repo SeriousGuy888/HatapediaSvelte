@@ -98,7 +98,7 @@ const masterCityList: Record<string, City> = {
     ...
   }
 */
-export function getClientCityList(): { [id: string]: CityDisplayData } {
+export function getClientCityList(): Record<string, CityDisplayData> {
   return Object.keys(masterCityList).reduce(
     (acc, cityId) => ({
       ...acc,

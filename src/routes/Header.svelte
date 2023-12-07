@@ -8,6 +8,7 @@
   <section class="text-sm text-text">
     <Logo />
     <a href="/map">Map</a>
+    <a href="/weather">Weather</a>
   </section>
   <section>
     <HeaderSearchBar />

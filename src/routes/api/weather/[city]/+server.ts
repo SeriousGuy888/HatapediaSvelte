@@ -1,6 +1,6 @@
 import { WEATHER_API_COM_API_KEY as apiKey } from "$env/static/private"
-import type { WeatherData } from "../weatherapi_types.ts"
-import { getFakeCityRealCityMap } from "../weatherCitiesManager.ts"
+import type { WeatherData } from "../../../../lib/weather/weatherapi_types.ts"
+import { getFakeCityRealCityMap } from "../../../../lib/weather/weatherCitiesManager.ts"
 import { json } from "@sveltejs/kit"
 
 export async function GET({ params }) {
