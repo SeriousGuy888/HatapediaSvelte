@@ -44,7 +44,7 @@
       options={Object.entries(cities).reduce(
         (acc, [id, displayData]) => ({
           ...acc,
-          [id]: displayData.name,
+          [id]: `${displayData.name}, ${displayData.country}`,
         }),
         {},
       )}
