@@ -160,7 +160,7 @@
     }
   }
 
-  :global(img) {
+  :global(.wikilink-image) {
     @apply rounded;
   }
 
