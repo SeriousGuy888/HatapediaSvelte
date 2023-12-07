@@ -5,6 +5,7 @@
   import SelectDropdown from "./SelectDropdown.svelte"
   import { onMount } from "svelte"
   import { swr } from "@svelte-drama/swr"
+  import RadioSwitch from "./RadioSwitch.svelte"
 
   export let data
 
@@ -60,7 +61,7 @@
       bind:value={selectedCityId}
       on:change={updateWeatherData}
     />
-    <SelectDropdown
+    <RadioSwitch
       options={{
         celsius: "Celsius",
         kelvin: "Kelvin",
