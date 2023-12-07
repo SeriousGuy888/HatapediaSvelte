@@ -31,7 +31,7 @@
   <meta property="og:description" content="Live weather updates from HATA!" />
 </svelte:head>
 
-<section class="my-12 w-full max-w-[90vw] lg:max-w-prose">
+<section class="my-12 mx-auto w-[90%] sm:max-w-prose">
   <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
     <select
       bind:value={selectedCityId}
