@@ -11,7 +11,7 @@
 {#if !options}
   <p>No options provided for SelectDropdown!</p>
 {:else}
-  <div class="relative @container-normal/dropdown">
+  <div class="relative">
     <select
       class={`
           w-full h-full
