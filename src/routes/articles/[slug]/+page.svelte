@@ -60,6 +60,23 @@
 </svelte:head>
 
 <div class="relative" id="_top">
+  <aside
+    class={`
+      absolute left-0 top-0
+      h-full
+      w-0 xl:w-64 overflow-clip
+      transition-all duration-300 ease-in-out
+
+      bg-opacity-20 bg-gray-200 dark:bg-opacity-30 dark:bg-gray-900
+    `}
+  >
+    <div class="sticky top-0 px-2 pt-4">
+      <p class="text-center font-bold">Contents</p>
+      <div class="-ml-3">
+        <TableOfContents headings={[topLink, ...headings]} />
+      </div>
+    </div>
+  </aside>
   <article class="article-container max-w-prose">
     <header>
       <hgroup>
@@ -111,12 +128,6 @@
       </section>
     {/if}
   </article>
-
-  <aside class="absolute left-0 top-0 h-full w-64 hidden xl:block">
-    <div class="sticky top-0 p-2 -ml-3">
-      <TableOfContents headings={[topLink, ...headings]} />
-    </div>
-  </aside>
 </div>
 
 <style lang="postcss">

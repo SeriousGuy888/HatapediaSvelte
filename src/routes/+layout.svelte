@@ -5,7 +5,9 @@
 
 <div class="layout">
   <Header />
-  <main>
+  
+  <!-- grid gets rid of some weird spacing for some reason -->
+  <main class="grid">
     <slot />
   </main>
 </div>
