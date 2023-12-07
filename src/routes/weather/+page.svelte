@@ -2,6 +2,7 @@
   import WeatherCard from "./WeatherCard.svelte"
   import type { CityDisplayData } from "$lib/weather/weatherCitiesManager"
   import type { TemperatureUnit, WeatherData } from "$lib/weather/weatherapi_types.js"
+  import SelectDropdown from "./SelectDropdown.svelte"
 
   export let data
 
@@ -33,21 +34,24 @@
 
 <section class="my-12 mx-auto w-[90%] sm:max-w-prose">
   <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
-    <select
+    <SelectDropdown
+      options={Object.entries(cities).reduce(
+        (acc, [id, displayData]) => ({
+          ...acc,
+          [id]: displayData.name,
+        }),
+        {},
+      )}
       bind:value={selectedCityId}
-      on:change={() => {
-        updateWeatherData()
+      on:change={updateWeatherData}
+    />
+    <SelectDropdown
+      options={{
+        celsius: "Celsius",
+        kelvin: "Kelvin",
       }}
-    >
-      {#each Object.keys(cities) as cityId}
-        <option value={cityId}>{cities[cityId].name.toUpperCase()}, {cities[cityId].country}</option
-        >
-      {/each}
-    </select>
-    <select bind:value={selectedTempUnit}>
-      <option value="celsius">Celsius</option>
-      <option value="kelvin">Kelvin</option>
-    </select>
+      bind:value={selectedTempUnit}
+    />
   </aside>
   <WeatherCard
     cityName={cities[selectedCityId].name}
