@@ -7,6 +7,11 @@ const config = {
   preprocess: [vitePreprocess()],
   kit: {
     adapter: adapter(),
+    prerender: {
+      // Stops the build from failing because of dangling links in articles
+      // since there are a lot of links to non-existent articles
+      handleHttpError: "warn",
+    },
   },
 }
 

@@ -20,6 +20,12 @@ import remarkRehype from "remark-rehype"
 import rehypeStringify from "rehype-stringify"
 import rehypeSlug from "rehype-slug"
 
+export const prerender = true
+
+export function entries() {
+  return Object.keys(slugMap).map((slug) => ({ slug }))
+}
+
 export async function load({ params }) {
   const slug = params.slug
   const fileName: string | undefined = (slugMap as Record<string, string>)[slug]
@@ -46,10 +52,10 @@ export async function load({ params }) {
             code block should be replaced with a custom Svelte component.
             eg: ```infobox-nation``` -> <NationInfobox> </NationInfobox>
           */
-         "infobox-nation": "NationInfobox",
-         "infobox-character": "CharacterInfobox",
-         // "infobox-timeline": "TimelineInfobox",
-         "youtube": "YouTubeVideo",
+          "infobox-nation": "NationInfobox",
+          "infobox-character": "CharacterInfobox",
+          // "infobox-timeline": "TimelineInfobox",
+          youtube: "YouTubeVideo",
         },
       })
       .use(remarkGroupImages)
