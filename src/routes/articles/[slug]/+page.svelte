@@ -59,18 +59,16 @@
   <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="relative" id="_top">
+<div class="grid grid-cols-[auto,1fr]" id="_top">
   <aside
     class={`
-      absolute left-0 top-0
       h-full
-      w-0 xl:w-64 overflow-clip
+      w-0 lg:w-64 overflow-clip
       transition-all duration-300 ease-in-out
-
       bg-opacity-20 bg-gray-200 dark:bg-opacity-30 dark:bg-gray-900
     `}
   >
-    <div class="sticky top-0 px-2 pt-4">
+    <div class="sticky top-0 px-2 pt-4 max-h-screen overflow-y-auto">
       <p class="text-center font-bold">Contents</p>
       <div class="-ml-3">
         <TableOfContents headings={[topLink, ...headings]} />
