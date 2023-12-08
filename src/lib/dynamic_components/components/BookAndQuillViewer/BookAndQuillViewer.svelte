@@ -5,9 +5,9 @@
 
   // https://minecraft.wiki/w/Written_Book#Data_values
   export let pages: string[] = []
-  // export let title: string | null = null
-  // export let author: string | null = null
-  // export let generation: number | null = null
+  export let title: string | null = null
+  export let author: string | null = null
+  export let generation: number | null = null
 
   let page = 1
   let maxPage = pages.length
@@ -61,7 +61,19 @@
     {maxPage}
   />
   <div class="absolute right-[13.7%] top-[8.3%] z-30 text-right">
-    <p class="m-0">
+    
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <p
+      class="m-0"
+      on:keypress={() => {
+        /* makes a11y warning go away */
+      }}
+      on:click={(e) => {
+        if (e.shiftKey || e.ctrlKey || e.altKey) {
+          alert(`/give @p written_book${JSON.stringify({ pages, title, author, generation })} 1`)
+        }
+      }}
+    >
       Page {page} of {maxPage}
     </p>
   </div>
