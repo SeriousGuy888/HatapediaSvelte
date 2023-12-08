@@ -57,6 +57,7 @@ export async function load({ params }) {
           "infobox-character": "CharacterInfobox",
           // "infobox-timeline": "TimelineInfobox",
           youtube: "YouTubeVideo",
+          "book-and-quill": "BookAndQuillViewer",
         },
       })
       .use(remarkGroupImages)
