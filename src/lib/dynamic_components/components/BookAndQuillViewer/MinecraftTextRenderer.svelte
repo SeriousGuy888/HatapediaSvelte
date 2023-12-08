@@ -23,8 +23,6 @@
         })
       }
     }
-
-    console.log(flattenedExtras)
   }
 
   function mcColourToHex(mcCol: string) {
