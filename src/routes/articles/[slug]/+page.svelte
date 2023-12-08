@@ -102,7 +102,7 @@
       </ul>
     </header>
 
-    <section class="prose dark:prose-invert">
+    <section class="prose dark:prose-invert article-content">
       {@html data.content}
     </section>
 
@@ -160,11 +160,11 @@
     }
   }
 
-  :global(.wikilink-image) {
+  :global(.article-content .wikilink-image) {
     @apply rounded;
   }
 
-  :global(.gallery) {
+  :global(.article-content .gallery) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -172,7 +172,7 @@
     margin: 2rem 0;
   }
 
-  :global(.gallery > img) {
+  :global(.article-content .gallery > img) {
     flex: 1 1 200px;
     margin: 0;
     overflow: hidden;
