@@ -8,6 +8,7 @@ export default {
       sans: ["Montserrat", "sans-serif"],
       serif: ["Merriweather", "serif"],
       mono: ["Fira Code", "Consolas", "monospace"],
+      minecraft: ["MinecraftSeven", "monospace"], // Minecraft font
     },
     extend: {
       colors: {

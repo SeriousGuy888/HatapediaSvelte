@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "MinecraftSeven";
+  font-style: normal;
+  font-weight: normal;
+
+  /* From https://github.com/Mojang/web-theme-bootstrap/tree/main/assets/fonts */
+  src: local("Minecraft Seven v2"), local("Minecraft-Seven_v2"),
+    url("/fonts/Minecraft-Seven_v2.woff");
+}
