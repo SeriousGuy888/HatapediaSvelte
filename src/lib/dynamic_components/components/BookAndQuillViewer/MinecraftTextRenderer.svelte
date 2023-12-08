@@ -69,8 +69,8 @@
 
 {#each flattenedExtras as textComponent}
   {@const lines = textComponent.text?.split("\\n") ?? []}
-  <p
-    class="text-minecraft"
+  <span
+    class="font-minecraft"
     style={`
       color: ${mcColourToHex(textComponent.color ?? "black")};
       font-weight: ${textComponent.bold ? "bold" : "normal"};
@@ -89,5 +89,5 @@
         {/if}
       </span>
     {/each}
-  </p>
+  </span>
 {/each}
