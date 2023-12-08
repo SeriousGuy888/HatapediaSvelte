@@ -17,6 +17,7 @@ import remarkHeadingTree, { type TocNode } from "$lib/plugins/remark-heading-tre
 import remarkCallouts from "@portaljs/remark-callouts"
 import remarkRehype from "remark-rehype"
 
+import rehypeExternalLinks from "rehype-external-links"
 import rehypeStringify from "rehype-stringify"
 import rehypeSlug from "rehype-slug"
 
@@ -63,6 +64,7 @@ export async function load({ params }) {
       .use(remarkCallouts)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
+      .use(rehypeExternalLinks, { target: "_blank" })
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(content)
 
