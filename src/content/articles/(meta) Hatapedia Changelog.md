@@ -9,6 +9,8 @@ tags:
 
 This rewrite of the entire website in SvelteKit instead of NextJS has been a long time coming. It took a couple of months, but it is pretty epique.
 
+- `2023-12-08` Reimplemented the book and quill viewer from the old website. Not much special about it, but it's nice to have it back.
+  - Also it will now display the correct text colours as specified by the book and quill's Minecraft text. (previously it was just using the same CSS colour names)
 - `2023-12-06`
   - The new and improved quickswitcher (Ctrl + K) will now use soft navigation (ie: no page reload), making it much faster to use, and it will close itself after you press enter.
   - Images will now be grouped together into a gallery if they are placed next to each other in the article, meaning images will take up less vertical space in articles. The image viewer functionality from [[#2023-08-18]] has not yet been reimplemented because I hate writing remark plugins; I don't know how to make a div that has children because there is no documentation for that.
