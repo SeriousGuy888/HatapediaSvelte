@@ -43,7 +43,9 @@
         if (!bookContainer) return
 
         const containerHeight = bookContainer.clientHeight
-        fontSize = (6.25 / 180) * containerHeight
+        // 22.5 is some arbitrary constant that makes the font size look about
+        // the same as it does in game
+        fontSize = containerHeight / 22.5
       }).observe(bookContainer)
     }
   }
@@ -61,7 +63,6 @@
     {maxPage}
   />
   <div class="absolute right-[13.7%] top-[8.3%] z-30 text-right">
-    
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <p
       class="m-0"
