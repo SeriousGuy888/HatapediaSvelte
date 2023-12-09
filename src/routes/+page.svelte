@@ -36,13 +36,13 @@
     <p class="text-xs sm:text-sm opacity-75">Maintained by the God of News</p>
   </hgroup>
   <section class="major-section flex gap-2 sm:gap-3 justify-center">
-    <a href="/map">
+    <a href="/map" aria-label="Link to map page">
       <div class="page-link">
         <Map class="w-6 h-6" />
         <span class="link-label leading-none h-fit">World Map</span>
       </div>
     </a>
-    <a href="/weather">
+    <a href="/weather" aria-label="Link to weather page">
       <div class="page-link">
         <CloudLightning class="w-6 h-6" />
         <span class="link-label leading-none h-fit">Weather</span>
