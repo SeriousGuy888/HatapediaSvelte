@@ -49,6 +49,9 @@
 </svelte:head>
 
 <section class="my-12 mx-auto w-[90%] sm:max-w-prose">
+  <noscript class="block text-center text-xl mb-8">
+    <p>Please enable JavaScript in your browser to view the weather.</p>
+  </noscript>
   <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
     <SelectDropdown
       options={Object.entries(cities).reduce(
