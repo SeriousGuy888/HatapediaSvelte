@@ -23,6 +23,7 @@
   }
 
   let target = `/articles/${article.slug}`
+  $: target = `/articles/${article.slug}`
   function goThere() {
     goto(target)
     dispatch("navigate")
