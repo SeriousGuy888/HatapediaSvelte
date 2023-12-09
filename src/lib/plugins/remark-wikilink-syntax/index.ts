@@ -108,6 +108,7 @@ function getImageNode(
         className: "wikilink-image",
         width: imageSize.width,
         height: imageSize.height,
+        loading: "lazy"
       },
     },
   }
