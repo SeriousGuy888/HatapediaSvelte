@@ -7,7 +7,7 @@
 <div class="layout">
   <!-- Used to push content down so it's not hidden behind the header -->
   <div class="h-16" />
-  
+
   <!-- grid gets rid of some weird spacing for some reason -->
   <main class="grid">
     <slot />
@@ -20,6 +20,14 @@
     grid-template-rows: auto 1fr;
     min-height: 100%;
     max-width: 100vw;
+  }
+
+  /* 
+    Prevents the content from being hidden behind the header, such as the
+    target heading of an anchor link.
+  */
+  :global(html) {
+    scroll-padding-top: 6rem;
   }
 
   :global(:root) {
