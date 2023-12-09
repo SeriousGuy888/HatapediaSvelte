@@ -1,5 +1,5 @@
 <div>
   <a href="/">
-    <span class="text-lg font-bold">HATApedia</span>
+    <span class="text-md sm:text-lg font-bold">HATApedia</span>
   </a>
 </div>

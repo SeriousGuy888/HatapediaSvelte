@@ -4,7 +4,9 @@
   import ThemeToggle from "./HeaderThemeToggle.svelte"
 </script>
 
-<nav class="flex justify-between items-center py-4 px-8 gap-8 bg-brand text-white">
+<nav
+  class="fixed flex justify-between items-center py-4 px-8 gap-8 bg-brand text-white inset-x-0 max-w-[100vw] z-10 h-16"
+>
   <section class="text-sm text-text">
     <Logo />
     <a href="/map">Map</a>

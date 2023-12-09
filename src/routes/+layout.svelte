@@ -3,8 +3,10 @@
   import Header from "./Header.svelte"
 </script>
 
+<Header />
 <div class="layout">
-  <Header />
+  <!-- Used to push content down so it's not hidden behind the header -->
+  <div class="h-16" />
   
   <!-- grid gets rid of some weird spacing for some reason -->
   <main class="grid">
@@ -16,7 +18,8 @@
   .layout {
     display: grid;
     grid-template-rows: auto 1fr;
-    min-height: 100vh;
+    min-height: 100%;
+    max-width: 100vw;
   }
 
   :global(:root) {

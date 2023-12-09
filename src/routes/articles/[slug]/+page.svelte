@@ -68,7 +68,7 @@
       bg-opacity-20 bg-gray-200 dark:bg-opacity-30 dark:bg-gray-900
     `}
   >
-    <div class="sticky top-0 px-2 pt-4 max-h-screen overflow-y-auto">
+    <div class="sticky top-16 px-2 pt-4 max-h-full overflow-y-auto">
       <p class="text-center font-bold">Contents</p>
       <div class="-ml-3">
         <TableOfContents headings={[topLink, ...headings]} />
