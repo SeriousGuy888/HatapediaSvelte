@@ -9,6 +9,9 @@ tags:
 
 This rewrite of the entire website in SvelteKit instead of NextJS has been a long time coming. It took a couple of months, but it is pretty epique.
 
+- `2023-12-11`
+  - Made the scrollbar look nicer in light mode.
+    - The scrollbar no longer changes width when switching between light and dark mode.
 - `2023-12-08` 
   - Reimplemented the book and quill viewer from the old website. Not much special about it, but it's nice to have it back.
     - Also it will now display the correct text colours as specified by the book and quill's Minecraft text. (previously it was just using the same CSS colour names)

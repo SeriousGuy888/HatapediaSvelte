@@ -9,17 +9,25 @@
   }
 }
 
-/* make scrollbars appear dark in dark mode */
-:root.dark {
-  scrollbar-color: #4b4b4b #1e1e1e;
-
+:root {
   ::-webkit-scrollbar {
-    background-color: #1e1e1e;
+    background-color: #f5f5f5;
     width: 12px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #4b4b4b;
+    background-color: #ccc;
     border-radius: 10px;
+  }
+
+  /* make scrollbars appear dark in dark mode */
+  &.dark {
+    ::-webkit-scrollbar {
+      background-color: #1e1e1e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #4b4b4b;
+    }
   }
 }
