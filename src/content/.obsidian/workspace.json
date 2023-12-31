@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6a68243ca070abed",
+        "id": "282a853f892ffe99",
         "type": "tabs",
         "children": [
           {
-            "id": "53cef190c6088fd0",
+            "id": "bd629b72d2c08f1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/List of Coups and Coup Attempts by Country.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10cdd426d4e86548",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/No.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "168c405c4204e68f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/Remy Republic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "69989c26b52795ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/Remy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80019358a4ba54df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/(meta) Hatapedia Changelog.md",
+                "file": "articles/HATA 2 Chronicle.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/(meta) Hatapedia Changelog.md",
+                "file": "articles/HATA 2 Chronicle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/(meta) Hatapedia Changelog.md",
+                "file": "articles/HATA 2 Chronicle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/(meta) Hatapedia Changelog.md"
+                "file": "articles/HATA 2 Chronicle.md"
               }
             }
           }
@@ -193,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/(meta) Hatapedia Changelog.md",
+                "file": "articles/HATA 2 Chronicle.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -240,8 +191,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "80019358a4ba54df",
+  "active": "bd629b72d2c08f1d",
   "lastOpenFiles": [
+    "articles/HATA.md",
+    "articles/HATA 2 Chronicle.md",
+    "Untitled.md",
+    "articles/List of Coups and Coup Attempts by Country.md",
+    "articles/No.md",
+    "articles/Remy Republic.md",
+    "articles/Remy.md",
+    "articles/(meta) Hatapedia Changelog.md",
     "articles/Billzoplace.md",
     "articles/Boxing Matchbox War.md",
     "articles/Che Forguera.md",
@@ -260,14 +219,6 @@
     "articles/United Nations.md",
     "articles/Tobytopia.md",
     "articles/Toby.md",
-    "articles/Arvi.md",
-    "articles/Anna.md",
-    "articles/Arvi Tower.md",
-    "articles/Billzo Shoom.md",
-    "articles/Flagrant Fowls.md",
-    "articles/HATA.md",
-    "articles/Remy.md",
-    "articles/(meta) Hatapedia Changelog.md",
     "images/billzoplace_2023-08-22.webp",
     "images/Billzoplace-20231018152826409.webp",
     "images/Toby hata logo 2023-06-20.png",

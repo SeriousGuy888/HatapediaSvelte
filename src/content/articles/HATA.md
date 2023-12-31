@@ -6,7 +6,7 @@ aliases:
   - HATAsurv
   - HATAwar
 date_created: 2023-06-21
-date_modified: 2023-10-12
+date_modified: 2023-12-31
 ---
 
 # What is HATA?

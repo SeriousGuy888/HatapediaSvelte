@@ -3,7 +3,7 @@ title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 image: "[[Remy Republic Banner.png]]"
 date_created: 2023-05-01
-date_modified: 2023-11-11
+date_modified: 2023-12-31
 tags:
   - country
   - place
