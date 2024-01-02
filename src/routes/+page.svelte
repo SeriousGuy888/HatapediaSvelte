@@ -39,7 +39,7 @@
     <a href="/map" aria-label="Link to map page">
       <div class="page-link">
         <Map class="w-6 h-6" />
-        <span class="link-label leading-none h-fit">World Map</span>
+        <span class="link-label leading-none h-fit"><del>World Map</del></span>
       </div>
     </a>
     <a href="/weather" aria-label="Link to weather page">
