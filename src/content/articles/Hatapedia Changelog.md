@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2023-12-31
+date_modified: 2024-01-02
 tags:
   - meta
 ---
@@ -11,7 +11,7 @@ This rewrite of the entire website in SvelteKit instead of NextJS has been a lon
 
 - **2024-01-01**
   - Added out of order notice to the world map page. It's currently broken and I'm not entirely sure why.
-- **2023-12-11**
+- **2023-12-11** 
   - Made the scrollbar look nicer in light mode.
     - The scrollbar no longer changes width when switching between light and dark mode.
 - **2023-12-08**
