@@ -36,11 +36,14 @@ const convertYamlCodeblocks: unified.Plugin<[Options?], mdast.Root> = (options) 
 
       // node.lang is the language name specified in markdown ```(lang) ... ```
       const lang = node.lang
+
       if (!lang || conversionMap[lang] === undefined) {
         // if no lang is specified, or the conversion map does not say to convert this lang,
         // skip to the next code block
         return
       }
+      
+      const dynamicComponentName = conversionMap[lang]
 
       // node.value is the content of the code block
       const yaml = node.value
@@ -48,14 +51,17 @@ const convertYamlCodeblocks: unified.Plugin<[Options?], mdast.Root> = (options) 
       const replacementNode: mdast.Html = {
         type: "html",
         data: {
-          // hName: conversionMap[lang], // <NationInfobox ... />
           hName: "div",
           hProperties: {
-            "data-component": conversionMap[lang],
+            "data-component": dynamicComponentName,
             "data-props": JSON.stringify(parse(yaml)), // the yaml data, stringified as json
           },
         },
-        value: "",
+        value: `
+          <noscript style="display: block; margin: 2rem 0; color: red;">
+            [JavaScript must be enabled to view this ${dynamicComponentName}]
+          </noscript>
+        `,
       }
 
       // replace the codeblock with the JSX node
