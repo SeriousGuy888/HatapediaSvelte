@@ -1,5 +1,5 @@
 ---
-subtitle: Corporatocratic Pirate Republic
+subtitle: Corporatocratic One-Crew Pirate Republic
 tags:
   - country
   - organisation
