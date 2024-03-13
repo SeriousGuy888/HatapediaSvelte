@@ -65,7 +65,7 @@
 {#if isInvalid}
   <p>[Invalid timeline data!]</p>
 {:else}
-  <div class="not-prose">
+  <div class="not-prose my-8 xl:-mx-36">
     <TimelineHeader
       {selectedEvent}
       {selectedEventColours}
