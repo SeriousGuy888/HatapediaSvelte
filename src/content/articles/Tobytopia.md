@@ -132,6 +132,10 @@ events:
 
 On 2023-02-25, General [[Che Forguera]] officially declared a state of war between the Fortuguese resistance fighters and the Tobytopian government. [[Toby]] initially did not at all acknoledge this insurrection, being too preoccupied constructing his large DVD player.
 
+```youtube
+video: m9Mk31BjK-Q
+```
+
 On 2023-04-29, General Forguera officially met with [[Remy]], Glorious Leader of the [[Remy Republic]]. The Glorious Leader generously offered assistance in the form of forgutarian aid and infrastructure projects to General Forguera's forces, which Forguera graciously accepted. Four days later, on 2023-05-03, the Remyan Parliament officially approved further diplomatic negotiations with Che Forguera's forces, though details are not yet known.
 
 ![[Authentic Fortuguese Army.png]]

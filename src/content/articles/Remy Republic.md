@@ -130,6 +130,10 @@ trembled in fear and retreated outwards.
 
 ### Western Hawainot Offensive
 
+```youtube
+video: 0rIYGpypZ0k
+```
+
 The Remy Republic initiated a military operation led by General [[Fletcher Quadratic]] and swiftly invaded the western islands of the Hawainot Archipelago. Remy was then able to collect his jungle wood and cocoa beans so that he can finally begin producing his pogstries.
 
 The military operation unfortunately was in fact very rushed in its planning and the logistics were not well prepared for. The food shipments did not arrive and Remy was forced to live off the land for the duration of the operation.

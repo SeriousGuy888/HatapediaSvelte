@@ -26,6 +26,4 @@ facts:
 
 # woggi
 
-<Youtube id="dQw4w9WgXcQ" />
-
 qwa

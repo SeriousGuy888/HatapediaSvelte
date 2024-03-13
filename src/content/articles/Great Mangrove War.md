@@ -101,6 +101,10 @@ This rapid spread of mangrove trees starting on 2023-01-05 would become known as
 
 On 2023-01-22, after Holden and Toby came to Forgsville and tried to burn down Remy's house, Remy retalliated by burning down a large portion of the Swamp of Secrets in Tobytopia. This crisis boiled over into an epique duel between Remy and Holden, which Remy would win 2 to 1.
 
+```youtube
+video: pXPVKZaFRZI
+```
+
 # Resolution
 
 On the same day, as a result of the Remyan victory, Remy and Holden came to the following agreement.
