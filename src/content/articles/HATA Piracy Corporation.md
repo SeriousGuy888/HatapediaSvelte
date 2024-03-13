@@ -18,3 +18,7 @@ The Corporation's territories are chiefly situated upon the [[Untitled Mushroom 
 - [[Lighthouse Rock]]
 - [[Rest Stop Island]]
 - [[Polar Port]]
+
+## Map
+
+![[HATA Piracy Corporation-20240313175955565.webp]]
