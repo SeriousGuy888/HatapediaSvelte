@@ -62,7 +62,10 @@
   <title>{data.meta.title}</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.meta.title} />
-  <meta property="description" content="{data.content}" />
+  <meta
+    property="description"
+    content="{data.meta.subtitle}\n{data.meta.tags.map((s) => '#' + s).join(', ')}"
+  />
 </svelte:head>
 
 <svelte:window
