@@ -40,7 +40,7 @@
 
 <!-- Button to open search -->
 <button on:click={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle">
-  <div class="hidden sm:flex gap-1 keyboard-shortcut-tooltip">
+  <div class="hidden sm:flex gap-1 hide-on-touch">
     <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
     <kbd>K</kbd>
   </div>
@@ -136,12 +136,5 @@
     @apply rounded border border-gray-500;
     @apply px-1 text-sm;
     @apply text-white;
-  }
-
-  /* Detect mobile devices */
-  @media (hover: none) {
-    .keyboard-shortcut-tooltip {
-      @apply hidden;
-    }
   }
 </style>
