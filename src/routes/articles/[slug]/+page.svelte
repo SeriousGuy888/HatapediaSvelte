@@ -62,6 +62,7 @@
   <title>{data.meta.title}</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.meta.title} />
+  <meta property="description" content="{data.content}" />
 </svelte:head>
 
 <svelte:window

@@ -3,6 +3,11 @@
   import Header from "./Header.svelte"
 </script>
 
+<svelte:head> 
+  <meta property="og:title" content="HATApedia">
+  <meta property="og:description" content="A resource for all things HATA." />
+</svelte:head>
+
 <Header />
 <div class="layout">
   <!-- Used to push content down so it's not hidden behind the header -->
