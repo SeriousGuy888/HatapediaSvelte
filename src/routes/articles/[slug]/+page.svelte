@@ -75,7 +75,7 @@
       </div>
     </div>
   </aside>
-  <article class="article-container max-w-prose">
+  <article class="article-container">
     <header>
       <hgroup>
         <h1>{data.meta.title}</h1>
@@ -141,7 +141,7 @@
   }
 
   .article-container {
-    @apply max-w-prose mx-auto px-4 my-8;
+    @apply w-full max-w-sm md:max-w-prose mx-auto px-4 my-8;
   }
 
   .tag-list {
