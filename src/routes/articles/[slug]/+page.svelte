@@ -64,7 +64,7 @@
   <meta property="og:title" content={data.meta.title} />
   <meta
     property="og:description"
-    content="{data.meta.subtitle}\n{data.meta.tags.map((s) => '#' + s).join(', ')}"
+    content="{data.meta.subtitle}. [Tags]: {data.meta.tags.map((s) => '#' + s).join(', ')}"
   />
 </svelte:head>
 
