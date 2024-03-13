@@ -4,7 +4,7 @@ image: "[[Remy Portrait.png]]"
 aliases:
   - Glorious Leader
 date_created: 2023-05-01
-date_modified: 2023-11-12
+date_modified: 2024-03-13
 tags:
   - character
 ---
@@ -21,7 +21,7 @@ facts:
   - Former Interim Dictator of Tobytopia
   - Former Captain of the Flagrant Fowls
   full name: "RemyHemy"
-  aka: "Blaze"
+  species: "Blaze"
   favourite font: Times New Roman
 ```
 
