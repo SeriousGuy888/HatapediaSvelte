@@ -23,6 +23,8 @@
   <title>
     {config.title}
   </title>
+  <meta property="og:title" content="HATApedia">
+  <meta property="og:description" content="A resource for all things HATA." />
 </svelte:head>
 
 <div class="w-full p-12 sm:p-24">
