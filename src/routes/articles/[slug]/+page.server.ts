@@ -55,7 +55,7 @@ export async function load({ params }) {
           */
           "infobox-nation": "NationInfobox",
           "infobox-character": "CharacterInfobox",
-          // "infobox-timeline": "TimelineInfobox",
+          "infobox-timeline": "TimelineInfobox",
           youtube: "YouTubeVideo",
           "book-and-quill": "BookAndQuillViewer",
         },
