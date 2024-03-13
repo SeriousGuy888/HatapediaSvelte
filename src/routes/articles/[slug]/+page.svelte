@@ -176,7 +176,7 @@
   }
 
   .article-container {
-    @apply w-full max-w-sm md:max-w-prose mx-auto px-4 my-8;
+    @apply w-full max-w-sm md:max-w-prose mx-auto px-4 my-8 min-h-screen;
   }
 
   .tag-list {
