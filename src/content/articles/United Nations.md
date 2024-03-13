@@ -3,7 +3,11 @@ title: United Nations
 subtitle: Supranational Organisation
 image: "[[United Nations Banner.png]]"
 date_created: 2023-05-01
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - organisation
+  - hata1
+  - hata2
 ---
 
 The United Nations is an organisation intended to solve international disputes and issues in a peaceful manner on the server.

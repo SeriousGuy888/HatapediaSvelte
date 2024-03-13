@@ -2,10 +2,13 @@
 subtitle: Shooting in Equalsosceles, Hawainot
 timeline:
   events:
-  - date: 2023-02-16
-    title: "Election Night Shooting"
+    - date: 2023-02-16
+      title: Election Night Shooting
 date_created: 2023-05-29
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - event
+  - hata1
 ---
 
 On the night of the [[Remy Republic#Election|Remyan election]], fireworks (believed to be [[big damage missile|big damage missiles]]) shot from a crossbow exploded and killed two resident villagers on [[Equalsosceles Island]] in [[Hawainot]]. Several more villagers were wounded but not killed.

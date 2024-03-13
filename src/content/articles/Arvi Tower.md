@@ -1,9 +1,10 @@
 ---
 subtitle: Destroyed Tower in No
 date_created: 2023-07-09
-date_modified: 2023-11-12
+date_modified: 2024-03-13
 tags:
   - place
+  - hata1
 ---
 
 # History

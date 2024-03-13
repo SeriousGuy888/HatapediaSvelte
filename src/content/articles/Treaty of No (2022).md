@@ -3,7 +3,10 @@ subtitle: Trade Agreement
 timeline:
   date: 2022-12-25
 date_created: 2023-05-01
-date_modified: 2023-11-11
+date_modified: 2024-03-13
+tags:
+  - treaty
+  - hata1
 ---
 
 The Treaty of No (2022) is a treaty signed on 2022-12-25 between the [[Remy Republic]] and [[Billzoplace]]. As this was during Remy's absence (vacation to France), it was [[Remyforg]] who represented the Remy Republic in the meeting with [[Billzo Shoom]].

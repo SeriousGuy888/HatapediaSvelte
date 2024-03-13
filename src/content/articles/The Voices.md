@@ -2,7 +2,11 @@
 title: The Voices
 subtitle: THEY'RE NOT REAL THEY'RE NOT REAL THEY'RE NOT REAL
 date_created: 2023-05-01
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - character
+  - hata1
+  - hata2
 ---
 
 The Voices are an unknown entity that manifests as voices in the

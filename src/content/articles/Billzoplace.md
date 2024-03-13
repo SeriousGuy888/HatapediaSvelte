@@ -3,10 +3,11 @@ title: Billzoplace
 subtitle: Unitary One-Party Republic
 image: "[[Billzoplace Banner.png]]"
 date_created: 2023-06-19
-date_modified: 2023-11-10
+date_modified: 2024-03-13
 tags:
   - country
   - place
+  - hata1
 ---
 
 Billzoplace, also informally known as Billzonia, is the a city state based around the three-way intersection of the Remy Sea, the Sheapland River, and the Spawn River.

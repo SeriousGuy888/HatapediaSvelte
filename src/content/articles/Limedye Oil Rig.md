@@ -1,7 +1,10 @@
 ---
 subtitle: Billzonian Oil Rig in the Remy Sea
 date_created: 2023-06-27
-date_modified: 2023-11-11
+date_modified: 2024-03-13
+tags:
+  - place
+  - hata1
 ---
 
 # Arnold and Amy

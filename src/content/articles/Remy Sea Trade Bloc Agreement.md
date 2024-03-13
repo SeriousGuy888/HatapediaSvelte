@@ -1,7 +1,10 @@
 ---
 subtitle: Bilateral Trade Deal
 date_created: 2023-05-01
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - treaty
+  - hata1
 ---
 
 | Signing Date | Signatories                        |

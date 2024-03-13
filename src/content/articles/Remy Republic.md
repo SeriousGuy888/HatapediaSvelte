@@ -3,10 +3,11 @@ title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 image: "[[Remy Republic Banner.png]]"
 date_created: 2023-05-01
-date_modified: 2023-12-31
+date_modified: 2024-03-13
 tags:
   - country
   - place
+  - hata1
 ---
 
 The Remy Republic a state that was originally founded by [[Remy]] on the southern 1000 block worldborder of the server map.

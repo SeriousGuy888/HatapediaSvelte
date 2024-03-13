@@ -2,7 +2,10 @@
 title: Mangrovepox
 subtitle: Infectious botanical disease
 date_created: 2023-05-01
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - event
+  - hata1
 ---
 
 # About Mangrovepox

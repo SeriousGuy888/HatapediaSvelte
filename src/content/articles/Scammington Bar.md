@@ -1,7 +1,10 @@
 ---
 subtitle: Alcohol Establishment in Scammington
 date_created: 2023-05-01
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - place
+  - hata1
 ---
 
 ![[Scammington Bar 2023-04-12.png|The Scammington Bar on 2023-04-12, still standing, after Arvi's threats but before he actually burned it down.]]

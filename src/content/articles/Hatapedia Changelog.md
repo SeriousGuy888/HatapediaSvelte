@@ -1,7 +1,7 @@
 ---
 subtitle: About Hatapedia
 date_created: 2023-05-01
-date_modified: 2024-01-02
+date_modified: 2024-03-13
 tags:
   - meta
 ---

@@ -1,17 +1,16 @@
 ---
 aliases:
-- Zomboss's Coup
-- Zombitopia
+  - Zomboss's Coup
+  - Zombitopia
 subtitle: Zombic Junta State
 image: "[[Tobytopia Banner.png]]"
-timeline:
-  events:
-  - title: "Zombitopian Junta"
-    date:
-      start: 2023-05-22
-      end: 2023-05-22
 date_created: 2023-06-19
-date_modified: 2023-10-12
+date_modified: 2024-03-13
+tags:
+  - organisation
+  - country
+  - hata1
+  - event
 ---
 
 ```infobox-nation
