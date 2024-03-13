@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "prebuild": "node scripts/generate_slug_map.js && ts-node scripts/gather_inlinks.ts",
+    "prebuild": "node scripts/generate_slug_map.js && npm i -D tsx && npx tsx scripts/gather_inlinks.ts",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
