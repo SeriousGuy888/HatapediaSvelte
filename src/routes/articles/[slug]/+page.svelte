@@ -6,6 +6,7 @@
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
   import { onMount, tick } from "svelte"
   import { instantiateDynamicComponents } from "$lib/dynamic_components/dynamic_components_in_md.js"
+  import { ListIcon } from "lucide-svelte"
 
   export let data
 
@@ -20,6 +21,10 @@
 
   let headings: TocNode[] = []
   $: headings = data.meta.headings ?? []
+
+  let tocOpen = false // Used on small screens to toggle the table of contents
+
+  ///////
 
   const toIsoDate = (date: Date) => date.toISOString().split("T")[0]
 
@@ -59,21 +64,51 @@
   <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="grid grid-cols-[auto,1fr]" id="_top">
+<svelte:window
+  on:keydown={(e) => {
+    if (e.key === "t" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      // Toggle table of contents
+      tocOpen = !tocOpen
+    }
+  }}
+/>
+
+<div class="grid lg:grid-cols-[auto,1fr] isolate" id="_top">
   <aside
     class={`
-      h-full
-      w-0 lg:w-64 overflow-clip
+      h-full overflow-clip
+      bg-gray-200 dark:bg-gray-900
       transition-all duration-300 ease-in-out
-      bg-opacity-20 bg-gray-200 dark:bg-opacity-30 dark:bg-gray-900
+      z-10
+      
+      w-0 fixed
+      lg:w-64 lg:static
+      lg:bg-opacity-30
     `}
+    class:w-64={tocOpen}
   >
     <div class="sticky top-16 px-2 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto">
       <p class="text-center font-bold">Contents</p>
       <div class="-ml-3">
-        <TableOfContents headings={[topLink, ...headings]} />
+        <TableOfContents
+          headings={[topLink, ...headings]}
+          on:toc-click={(e) => {
+            // Close the table of contents (on small screens) when a link is clicked
+            tocOpen = false
+          }}
+        />
       </div>
     </div>
+  </aside>
+  <aside class="fixed lg:hidden bottom-4 right-4 grid">
+    <span class="text-sm hide-on-touch">Press <kbd>T</kbd></span>
+    <button
+      class="bg-brand rounded-full p-4"
+      aria-label="Toggle table of contents"
+      on:click={() => (tocOpen = !tocOpen)}
+    >
+      <ListIcon color="white" />
+    </button>
   </aside>
   <article class="article-container">
     <header>

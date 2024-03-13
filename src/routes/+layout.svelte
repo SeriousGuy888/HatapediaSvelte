@@ -34,4 +34,11 @@
     @apply transition-colors duration-300 ease-in-out;
     @apply text-foreground bg-background;
   }
+
+  /* Detect mobile devices (that can't hover because they don't have a mouse) */
+  @media (hover: none) {
+    :global(.hide-on-touch) {
+      display: none;
+    }
+  }
 </style>
