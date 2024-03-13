@@ -10,6 +10,8 @@ tags:
 
 This rewrite of the entire website in SvelteKit instead of NextJS has been a long time coming. It took a couple of months, but it is pretty epique.
 
+- **2024-03-13**
+  - Finished converting the timeline component to SvelteKit. Works the same as it did before.
 - **2024-01-01**
   - Added out of order notice to the world map page. It's currently broken and I'm not entirely sure why.
 - **2023-12-11** 
