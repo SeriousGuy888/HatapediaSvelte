@@ -19,6 +19,7 @@ facts:
   - God of News
   - Rather Underwhelming Leader
   species: Definitely Human (allegedly)
+  favourite font: Montserrat
   aka:
   - Billzo
   - Billzo Shoom
