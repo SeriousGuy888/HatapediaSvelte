@@ -27,7 +27,7 @@ facts:
 
 # Career
 
-## (2022-12 to present): Glorious Leader of the Remy Republic
+## (2022-12 to end of HATA 1): Glorious Leader of the Remy Republic
 
 *Please see: [[Remy Republic]]*
 
@@ -72,6 +72,12 @@ Upon his return to Remyan territory, the Glorious Leader addressed the people of
 It is unclear whether Remy's term as leader of Tobytopia was legitimate. Some say that it is a valid use of the [[Good Neighbour Policy]], but others still decry his actions as an illegal usurpation.
 
 Remy's political decisions are also called into question by this issue of legitimacy. It is worth noting that Toby made no attempt to repeal any of Remy's decisions after he successfully regained control.
+
+## (2024-02-17 to present) Host of Upcoming Television Show, *Roasting with Remy*
+
+On `2024-02-17`, [[Billzo Shoom|Bill]] constructed, for Remy, a kitchen on the second floor of the [[HATA Piracy Corporation]]'s warehouse, wrapping around the supersmelter, after Remy suggested that he could do a cooking show there.
+
+The cooking show to be filmed in Remy's kitchen, *[[Roasting with Remy]]*, has not yet started production, however it is very hype regardless.
 
 # Achievements
 
