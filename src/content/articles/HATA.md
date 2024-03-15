@@ -6,7 +6,7 @@ aliases:
   - HATAsurv
   - HATAwar
 date_created: 2023-06-21
-date_modified: 2024-03-13
+date_modified: 2024-03-15
 tags:
   - hata1
   - hata2
@@ -20,12 +20,12 @@ HATA is a Minecraft survival multiplayer server.
 
 HATA stands for
 
-|       | Correct       | Incorrect |
-| -----:|:------------- |:--------- |
-| **H** | Holden's      | [[Holden]]    |
-| **A** | Awesome       | [[Anna]]      |
-| **T** | Tyrannosaurus | [[Toby]]      |
-| **A** | Adventure     | [[Arvi]]      |
+|       | Correct       | Incorrect  |
+| ----: | :------------ | :--------- |
+| **H** | Holden's      | [[Holden]] |
+| **A** | Awesome       | [[Anna]]   |
+| **T** | Tyrannosaurus | [[Toby]]   |
+| **A** | Adventure     | [[Arvi]]   |
 
 .
 
@@ -33,7 +33,9 @@ It is unclear exactly where the tyrannosaurus is on the server. There have so fa
 
 # History
 
-HATA, originally known as HATAwar, first opened on `2022-12-02`.
+The original HATA, originally known as HATAwar, posthumously known as HATA 1, first opened on `2022-12-02`. HATA 1 lasted around a year, slowly fizzling out in activity.
+
+HATA 2 started on `2023-12-27`, this time intended to be a simple survival multiplayer server from the start, without a world border.
 
 ```infobox-timeline
 title: History of HATA
@@ -58,7 +60,13 @@ events:
   image: "[[jasper and remy sit opposite to toby in the unhq.png]]"
   date:
     start: 2023-06-21
-    end: 2023-07-30
+    end: 2023-12-26
+- title: "HATA 2"
+  lane: 2
+  colour: "#fce358"
+  date:
+    start: 2023-12-27
+    end: 2024-03-15
 ```
 
 # Logo
