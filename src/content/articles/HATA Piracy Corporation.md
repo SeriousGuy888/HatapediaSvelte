@@ -5,7 +5,7 @@ tags:
   - organisation
   - hata2
 date_created: 2024-03-13
-date_modified: 2024-03-13
+date_modified: 2024-03-15
 ---
 The HATA Piracy Corporation is a corporatocratic pirate republic, comprising [[Remy]], [[Toby]], [[Billzo Shoom|Bill]], [[Liam]], [[Hoang]], and [[Lili]].
 
