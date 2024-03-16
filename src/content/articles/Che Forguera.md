@@ -1,11 +1,11 @@
 ---
-image: "[[Che Forguera Portrait.png]]"
-subtitle: Leader of the Fortuguese Insurrection in Tobytopia
 date_created: 2023-05-09
-date_modified: 2024-03-13
+date_modified: 2024-03-16
+subtitle: Leader of the Fortuguese Insurrection in Tobytopia
 tags:
   - character
   - hata1
+image: "[[Che Forguera Portrait.png]]"
 ---
 
 <ruby>Che<rt>ˈt͡ʃeɪ</rt></ruby> <ruby>Forguera<rt>fɔɹˈgɛɹ.ə</rt></ruby> is a [[The Voices|character]] known for their leadership of the Fortuguese guerilla fighters rebelling against the [[Tobytopia|Tobytopian]] government in the [[Swamp of Secrets]].
