@@ -6,7 +6,7 @@ tags:
   - country
   - organisation
   - hata2
-image: "[[Pirate Banner.webp]]"
+image: "[[Pirate Banner.png]]"
 aliases:
   - Pirate
 ---
@@ -15,7 +15,7 @@ The HATA Piracy Corporation is a corporatocratic pirate republic, comprising [[R
 The Corporation's territories are chiefly situated upon the [[Untitled Mushroom Island]], though it also owns various other terriories, mainly islands, around the map.
 
 ```infobox-nation
-banner: "[[Pirate Banner.webp]]"
+banner: "[[Pirate Banner.png]]"
 facts:
   capital: Capital District
   founded: 2023-12-27
