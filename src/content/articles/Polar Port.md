@@ -5,12 +5,13 @@ subtitle: Arctic Pirate Town
 tags:
   - place
   - hata2
+image: "[[Polar Port 2024-01-10.webp]]"
 ---
 The **Town of Polar Port** is a province-level municipality in the [[HATA Piracy Corporation]], located quite far from the Pirate mainland, to the southeast of the [[Untitled Mushroom Island]], in the middle of the Trafficking Ocean where the cold ocean biome meets the frozen ocean biome.
 
 The town was founded by [[Billzo|Bill]] on `2024-01-10`.
 
-![[Polar Port-20240315214617928.webp]]
+![[Polar Port 2024-01-10.webp]]
 
 # Structures
 
