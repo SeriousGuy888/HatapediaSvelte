@@ -1,13 +1,13 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-03-15
 title: Tobytopia
 subtitle: Kratocracy
-image: "[[Tobytopia Banner.png]]"
-date_created: 2023-05-01
-date_modified: 2024-03-13
 tags:
   - country
   - place
   - hata1
+image: "[[Tobytopia Banner.png]]"
 ---
 
 Tobytopia is a nation situated deep within the the Swamp of Secrets, or the mangrove swamp
@@ -127,7 +127,7 @@ events:
 
 ## Remy's Coup
 
-*Please see: [[Remy#(2023-01-22 to 2023-01-22): Interim Dictator of Tobytopia]]*
+*Please see: [[Good Neighbour Coup]]*
 
 ## Fortuguese Rebellion
 
