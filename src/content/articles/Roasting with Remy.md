@@ -1,9 +1,10 @@
 ---
 date_created: 2024-03-15
-date_modified: 2024-03-15
+date_modified: 2024-03-16
 subtitle: Upcoming Television Series
 tags:
   - hata2
+image: "[[Remy's Kitchen-20240315225154786.webp]]"
 ---
 ***Roasting with Remy*** is an upcoming [[HATA Piracy Corporation|Pirate]] reality cooking show hosted by renowned pogstrie chef, [[Remy]]. The show was announced on `2024-02-17` after [[Billzo]] built a kitchen around the supersmelter that he had just built on the second floor of the Pirate warehouse.
 
