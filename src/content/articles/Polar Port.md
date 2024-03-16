@@ -35,7 +35,7 @@ Unfortunately, one of Remy's foxes was viciously mauled to death by polar bears 
 ![[Rascal at Polar Port-20240315214421518.webp]]
 ![[Foxes at Polar Port-20240315214539970.webp]]
 
-The surviving foxes live in boats at the Polar Port dock. Governor Snowball, as a polar bear, is locked in his house to prevent him from harming the visiting foxes, who, at this time, cannot be moved to the zoo remaining unconstructed.
+The surviving foxes live in boats at the Polar Port dock. Governor Snowball, as a polar bear, is locked in his house to prevent him from harming the visiting foxes, who, at this time, cannot be moved to the zoo, due to the zoo remaining unconstructed.
 
 ## Toby's Visit
 
