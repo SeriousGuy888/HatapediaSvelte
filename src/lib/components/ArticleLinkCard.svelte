@@ -104,7 +104,7 @@
 
     {#if article.image}
       <div class="thumbnail-container">
-        <img src={getImageWikilinkSrc(article.image)} alt="" />
+        <img src={getImageWikilinkSrc(article.image)} alt="" loading="lazy" />
       </div>
     {/if}
 
