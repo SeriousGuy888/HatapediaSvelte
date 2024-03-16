@@ -1,11 +1,11 @@
 ---
-subtitle: Remyan General and Leader of the Island Commune
-image: "[[Fletcher Quadratic Portrait.png]]"
 date_created: 2023-05-30
-date_modified: 2024-03-13
+date_modified: 2024-03-16
+subtitle: Remyan General and Leader of the Island Commune
 tags:
   - character
   - hata1
+image: "[[Fletcher Quadratic Portrait.png]]"
 ---
 
 Fletcher Quadratic is one of [[the Voices]] in Remy's head, physically manifesting as a villager.
