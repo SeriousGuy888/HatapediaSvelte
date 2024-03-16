@@ -158,11 +158,11 @@
   }
 
   .thumbnail-container img {
-    @apply h-full float-right object-cover relative;
+    @apply w-full h-full object-cover object-top relative;
     mask-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 40%) 0%,
-      rgba(0, 0, 0, 10%) 70%,
+      rgba(0, 0, 0, 50%) 0%,
+      rgba(0, 0, 0, 5%) 70%,
       rgba(0, 0, 0, 0%) 80%
     );
   }
