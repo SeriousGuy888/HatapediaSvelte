@@ -50,7 +50,7 @@
   <section class="major-section grid place-items-center">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl w-full">
       {#each $searchStore.results as result}
-        <ArticleLinkCard article={result} />
+        <ArticleLinkCard article={result} showTimeSinceUpdated />
       {/each}
     </div>
   </section>

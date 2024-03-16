@@ -6,6 +6,7 @@
 
   export let article: Article
   export let selected = false
+  export let showTimeSinceUpdated = false
 
   const dispatch = createEventDispatcher()
 
@@ -27,6 +28,25 @@
   function goThere() {
     goto(target)
     dispatch("navigate")
+  }
+
+  function daysAgo(date: Date): string {
+    const daysDifference = ~~((Date.now() - new Date(date).getTime()) / (1000 * 60 * 60 * 24))
+
+    if (daysDifference === 0) return "today"
+    if (daysDifference === 1) return "yesterday"
+
+    if (daysDifference >= 30) {
+      const monthsDifference = ~~(daysDifference / 30)
+      return `${monthsDifference} months ago`
+    }
+
+    if (daysDifference >= 365) {
+      const yearsDifference = ~~(daysDifference / 365)
+      return `${yearsDifference} years ago`
+    }
+
+    return `${daysDifference} days ago`
   }
 </script>
 
@@ -85,6 +105,9 @@
       {/each}
     </div>
   </div>
+  {#if showTimeSinceUpdated}
+    <p class="mt-3 text-xs opacity-50">Updated {daysAgo(new Date(article.date_modified))}</p>
+  {/if}
 </div>
 
 <style lang="postcss">
