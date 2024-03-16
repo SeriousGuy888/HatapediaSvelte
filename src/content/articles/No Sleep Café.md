@@ -19,6 +19,8 @@ On `2023-08-11`, moderately wonky sketches were produced which contained the cit
 
 ![[2023-08-11 Billzoplace City Sketches.jpg]]
 ![[No Sleep Cafe 2023-08-18.png]]
+![[No Sleep Café-20240316175016431.webp]]
+![[No Sleep Café-20240316175025522.webp]]
 
 [[Billzo|Billzo]] spent the following few days in his Minecraft architecture testing world and designing the café itself, which deviated slightly from the sketches. These were then put into a schematic and built on [[HATA]] itself with the help of Litematica.
 
@@ -35,3 +37,10 @@ On `2023-08-15`, the day the café opened, a number of people (namely [[Remy]], 
 Remy, after going AFK on the roof, had his broken mouse accidently right click him onto the head of [[Adam]], causing him to suffocate in the ceiling. After Remy returned, Adam attempted to frame Toby of being responsible for Remy's suffocation death, citing that Toby had logged on, Remy had died, and Toby had then logged off.
 
 Remy told several jokes during this comedy show, which garnered a non-zero amount of laughter from the audience.
+
+### Videos of Other Comedy Performances
+
+```youtube
+video: zktJnilU7ZQ
+```
+
