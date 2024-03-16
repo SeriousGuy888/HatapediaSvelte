@@ -23,7 +23,7 @@ events:
 
 ## Construction
 
-Arvi Tower was built by [[Arvi]] on `2022-12-29` while [[Billzo Shoom|Bill]] was in the process of expanding the wheat fields in [[No]] while [[Remy]] was on vacation under authority of the [[Treaty of No (2022)]].
+Arvi Tower was built by [[Arvi]] on `2022-12-29` while [[Billzo|Bill]] was in the process of expanding the wheat fields in [[No]] while [[Remy]] was on vacation under authority of the [[Treaty of No (2022)]].
 
 > i made a very bad tower
 > 

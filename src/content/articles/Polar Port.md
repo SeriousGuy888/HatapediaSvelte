@@ -8,7 +8,7 @@ tags:
 ---
 The **Town of Polar Port** is a province-level municipality in the [[HATA Piracy Corporation]], located quite far from the Pirate mainland, to the southeast of the [[Untitled Mushroom Island]], in the middle of the Trafficking Ocean where the cold ocean biome meets the frozen ocean biome.
 
-The town was founded by [[Billzo Shoom|Bill]] on `2024-01-10`.
+The town was founded by [[Billzo|Bill]] on `2024-01-10`.
 
 ![[Polar Port-20240315214617928.webp]]
 
@@ -16,7 +16,7 @@ The town was founded by [[Billzo Shoom|Bill]] on `2024-01-10`.
 
 The town is quite isolated, with not much in terms of transporation links. It has a small dock for people arriving or leaving by boat, and it also has a nether portal whose hellside is connected to the *Stone Brick Nether Road Network*. A small tunnel through the iceberg at the back of the town is also available, built by [[Remy]] during his visit to Polar Port on `2024-01-11`.
 
-The other major building in the town is the governor's house, built by [[Billzo Shoom|Bill]] on the day of the town's founding. The governor's house is built next to the glacier, and it houses the governor of the province-level municipality.
+The other major building in the town is the governor's house, built by [[Billzo|Bill]] on the day of the town's founding. The governor's house is built next to the glacier, and it houses the governor of the province-level municipality.
 
 # Politics
 

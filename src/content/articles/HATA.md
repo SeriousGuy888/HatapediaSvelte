@@ -71,7 +71,7 @@ events:
 
 # Logo
 
-This is the current official logo of Hata. It was made by [[Billzo Shoom|Bill]] in [Witeboard](https://witeboard.com/) in approximately ten seconds. It is highly epique, and it depicts a green tyrannosaurus, symbolising the tyrannosaurus in [[Holden]]'s awesome adventure.
+This is the current official logo of Hata. It was made by [[Billzo|Bill]] in [Witeboard](https://witeboard.com/) in approximately ten seconds. It is highly epique, and it depicts a green tyrannosaurus, symbolising the tyrannosaurus in [[Holden]]'s awesome adventure.
 
 The logo was officially adopted by [[Toby]], as admin of the server, on `2023-06-20` at `23:58` EDT.
 

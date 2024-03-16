@@ -21,7 +21,7 @@ The Mushroom War was a brief war between the [[Remy Republic]] and the [[Neville
 
 # Nevillian Invasion of Auze
 
-On `2023-07-08`, [[Arvi]], the Doomslayer Nine Thousand of the City of Neville, was exploring the ocean east of (what is now known as) [[Layon]] and, receiving word from [[Billzo Shoom|Bill]] that he was near Auze, decided to make a visit to the island.
+On `2023-07-08`, [[Arvi]], the Doomslayer Nine Thousand of the City of Neville, was exploring the ocean east of (what is now known as) [[Layon]] and, receiving word from [[Billzo|Bill]] that he was near Auze, decided to make a visit to the island.
 
 ## Nevillian Landing
 
@@ -122,7 +122,7 @@ Arvi did not fold to Remy's demands, instead resolving to form a coalition with 
 
 At approximately `00:15` on `2023-07-09`, [[Arvi]], [[Anna]], and [[Holden]], together forming a *Triple Trouble Tower* (they were sitting on each other's heads) arrived in [[No]] via the nether portal in the [[Wheat Sacrifice Shrine]]. Although it was not their original intention, their arrival immediately triggered a pillager raid on No as Anna was unintentionally carrying the Bad Omen status effect.
 
-The [[Remy|Glorious Leader]] was notified of this raid by the [[Billzo Shoom|God of News]] as the Triple Trouble Tower was crossing Fluffy Bridge. Upon noticing the raid bossbar, he was reportedly very unhappy with the actions of <ruby>Holden and the Nevillians<rt>This is not a band name.</rt></ruby>.
+The [[Remy|Glorious Leader]] was notified of this raid by the [[Billzo|God of News]] as the Triple Trouble Tower was crossing Fluffy Bridge. Upon noticing the raid bossbar, he was reportedly very unhappy with the actions of <ruby>Holden and the Nevillians<rt>This is not a band name.</rt></ruby>.
 
 ![[Raid triggered on No 2023-07-09.png]]
 

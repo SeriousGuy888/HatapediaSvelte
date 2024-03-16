@@ -39,7 +39,7 @@ facts:
 
 ## (2024-02-17 to present) Host of Upcoming Television Show, *Roasting with Remy*
 
-On `2024-02-17`, [[Billzo Shoom|Bill]] constructed, for Remy, a kitchen on the second floor of the [[HATA Piracy Corporation]]'s warehouse, wrapping around the supersmelter, after Remy suggested that he could do a cooking show there.
+On `2024-02-17`, [[Billzo|Bill]] constructed, for Remy, a kitchen on the second floor of the [[HATA Piracy Corporation]]'s warehouse, wrapping around the supersmelter, after Remy suggested that he could do a cooking show there.
 
 The cooking show to be filmed in Remy's kitchen, *[[Roasting with Remy]]*, has not yet started production, however it is very hype regardless.
 

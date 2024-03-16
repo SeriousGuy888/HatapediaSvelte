@@ -47,7 +47,7 @@ People frequently visited his base and took items as part of their inheritance. 
 During Toby's presumed death, the [[United Nations]] officially passed their first resolution: *Resolution 1: Regarding Toby's Exodus*, which most notably "*Condemn[ed]* the actions of Toby, the Ultimate Kaiser of Doom Three Thousand of the [[Tobytopia|Tobytopian Empire]], as **baseless**, **cringeworthy**, and **sus**."
 
 This resolution was signed by six separate nations:
-- **Billzoplace**, represented by [[Billzo Shoom|Bill]]
+- **Billzoplace**, represented by [[Billzo|Bill]]
 - **Remy Republic**, represented by [[Remy]]
 - **Korolarachi**, represented by [[bill the Allay]]
 - **Neville**, represented by [[Anna]]

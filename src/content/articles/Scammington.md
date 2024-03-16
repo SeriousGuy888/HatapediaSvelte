@@ -39,7 +39,7 @@ The Glorious Leader accidentally called Order 66 in Scammington, which resulted 
 
 ## Refugee Crisis of the Sandy Island Demolition
 
-The large population of turtles in Scammington can be attributed to the refugee crisis<sup>[exact dates needed]</sup> caused by [[Billzo Shoom]] deciding one day to demolish a sandy island where a large number of turtles lived.
+The large population of turtles in Scammington can be attributed to the refugee crisis<sup>[exact dates needed]</sup> caused by [[Billzo]] deciding one day to demolish a sandy island where a large number of turtles lived.
 
 As a result, many of these turtles fled to the Remy Republic, specifically to Scammington, perhaps due to the familiarity of its climate and environment. The Glorious Leader, during this refugee crisis, issued a statement, saying that the Remy Republic would welcome these refugees with open arms.
 

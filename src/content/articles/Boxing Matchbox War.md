@@ -77,7 +77,7 @@ Remy and Holden met at [[Arvi Tower]] at approximately `02:20`, where Holden gav
 - Holden's new title shall be the Glorious Not-Peasant of Holdentopia
 - ~~At least 50% [[No]]'s wheat fields shall be repurposed for pumpkin production~~
 
-Remy continuously drew out the negotiations, pretending to write in the book and quill provided to him to record the terms while he sent secret communications to [[Billzo Shoom|Bill]], requesting that he help to "assinate" Holden. (Holden was not assinated.)
+Remy continuously drew out the negotiations, pretending to write in the book and quill provided to him to record the terms while he sent secret communications to [[Billzo|Bill]], requesting that he help to "assinate" Holden. (Holden was not assinated.)
 
 ![[assinate.png]]
 

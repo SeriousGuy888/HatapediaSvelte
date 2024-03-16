@@ -1,14 +1,14 @@
 ---
-title: Billzoshoom
-subtitle: God of News
-image: "[[Billzo Portrait.png]]"
-aliases:
-  - Bill
-  - Billzo
 date_created: 2023-05-01
-date_modified: 2024-03-13
+date_modified: 2024-03-15
+title: Billzo
+subtitle: God of News
 tags:
   - character
+aliases:
+  - Bill
+  - Billzo Shoom
+image: "[[Billzo Portrait.png]]"
 ---
 
 ```infobox-character
