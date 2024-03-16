@@ -1,10 +1,20 @@
 ---
-subtitle: About Hatapedia
 date_created: 2023-05-01
-date_modified: 2024-03-13
+date_modified: 2024-03-16
+subtitle: About Hatapedia
 tags:
   - meta
 ---
+
+# 2024-03-16
+
+## Quickswitcher Now Sorts by Last Modified
+
+The quickswitcher will now, just like the home page, when there's no search term, sort articles by when they were last updated.
+
+## Homepage Links Now Display Last Modified
+
+On the homepage, article links will display how long it has been since each article was updated.
 
 # SvelteKit Rewrite of Hatapedia
 
