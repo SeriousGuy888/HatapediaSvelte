@@ -159,7 +159,8 @@
 
   .thumbnail-container img {
     @apply w-full h-full object-cover object-top relative;
-    mask-image: linear-gradient(
+    image-rendering: pixelated; // because minecraft banner images are so low-res
+    mask-image: linear-gradient( // fade the left side of the image
       to left,
       rgba(0, 0, 0, 50%) 0%,
       rgba(0, 0, 0, 5%) 70%,
