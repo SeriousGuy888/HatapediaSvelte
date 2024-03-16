@@ -68,7 +68,9 @@ While in charge, Billzo convinced [[Remyforg]] to sign a treaty with [[Billzopla
 
 During the era of Billzo's rule as provisional glorious leader, the wheat field in No underwent an rapid, explosive expansion. At this time, [[Arvi]] also helped to build the [[Arvi Tower]] and [[Remy's Home Sweet Home]], while Billzo built the [[No Windmill]].
 
-![[remy_republic_farm_maplapse.mp4]]
+```youtube
+video: nXnrFmh6yEM
+```
 
 Billzo released a maplapse of the wheat field expansion in the news channel after Remy returned from his vacation.
 
