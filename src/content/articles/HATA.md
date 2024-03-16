@@ -9,7 +9,7 @@ tags:
 aliases:
   - HATAsurv
   - HATAwar
-image: "[[epic hata logo.png]]"
+image: "[[server-icon.webp]]"
 ---
 
 # What is HATA?
