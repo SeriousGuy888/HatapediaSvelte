@@ -35,7 +35,7 @@
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "date_created\ndate_modified\ntitle\nsubtitle\ntags\naliases",
+      "yaml-key-priority-sort-order": "date_created\ndate_modified\ntitle\nsubtitle\ntags\nimage\naliases",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
     },

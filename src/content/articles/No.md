@@ -5,6 +5,7 @@ subtitle: Province of the Remy Republic
 tags:
   - place
   - hata1
+image: "[[No 2023-01-15.png]]"
 ---
 
 **No** is a province of the [[Remy Republic]], located directly to the east of [[Forgsville]], across the [[Fluffy Bridge]].

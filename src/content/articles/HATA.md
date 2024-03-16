@@ -6,10 +6,10 @@ subtitle: Holden's Awesome Tyrannosaurus Adventure
 tags:
   - hata1
   - hata2
+image: "[[server-icon.webp]]"
 aliases:
   - HATAsurv
   - HATAwar
-image: "[[server-icon.webp]]"
 ---
 
 # What is HATA?
