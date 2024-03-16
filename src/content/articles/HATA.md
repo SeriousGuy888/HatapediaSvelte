@@ -1,15 +1,15 @@
 ---
+date_created: 2023-06-21
+date_modified: 2024-03-16
 title: HATA
 subtitle: Holden's Awesome Tyrannosaurus Adventure
-image: "[[epic hata logo.png]]"
-aliases:
-  - HATAsurv
-  - HATAwar
-date_created: 2023-06-21
-date_modified: 2024-03-15
 tags:
   - hata1
   - hata2
+aliases:
+  - HATAsurv
+  - HATAwar
+image: "[[epic hata logo.png]]"
 ---
 
 # What is HATA?
