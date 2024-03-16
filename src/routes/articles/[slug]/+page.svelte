@@ -104,7 +104,7 @@
       </div>
     </div>
   </aside>
-  <aside class="fixed lg:hidden bottom-4 right-4 grid">
+  <aside class="fixed lg:hidden bottom-4 right-4 grid z-10">
     <span class="text-sm hide-on-touch">Press <kbd>T</kbd></span>
     <button
       class="bg-brand rounded-full p-4"
