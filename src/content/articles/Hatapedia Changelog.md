@@ -8,6 +8,18 @@ tags:
 
 # 2024-03-16
 
+## Article Link Card Thumbnails
+
+Article link cards now display the article image behind the text to the right side of the card, all with a very cool gradient that fades it to transparent. It looks very epique.
+
+## Fixed YouTube Embeds Causing Horizontal Overflow
+
+Embedded YouTube videos will no longer break the page layout on mobile devices by being too wide. It now properly adapts to the available screen width. As a bonus, YouTube embeds will also now be wider on desktop.
+
+## Fixed Table of Contents Toggle Button Layering
+
+There was an issue where the floating table of contents toggle button on mobile devices would render *behind* the article content, rather than in front of it, which would cause issues when you scroll down to the inlinks section on an article, making it hard to tap the button. This has now been fixed.
+
 ## Quickswitcher Now Sorts by Last Modified
 
 The quickswitcher will now, just like the home page, when there's no search term, sort articles by when they were last updated.
@@ -22,6 +34,8 @@ This rewrite of the entire website in SvelteKit instead of NextJS has been a lon
 
 - **2024-03-13**
   - Finished converting the timeline component to SvelteKit. Works the same as it did before.
+  - Readded the feature that allows the table of contents to be hidden on small screens and be toggled with a floating button.
+  - Timeline infoboxes can now break out of their container, displaying a little bit wider than the rest of the article, on larger screens. This allows you to see a bit more of the timeline at once.
 - **2024-01-01**
   - Added out of order notice to the world map page. It's currently broken and I'm not entirely sure why.
 - **2023-12-11** 
