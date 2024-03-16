@@ -10,7 +10,13 @@ injectSpeedInsights()
 
 export async function load({ fetch }) {
   const response = await fetch("/api/articles")
-  const articles: Article[] = await response.json()
+
+  const articles: Article[] = (await response.json()).sort((a: Article, b: Article) => {
+    // Move more recently modified articles to the top
+    if (a.date_modified > b.date_modified) return -1
+    if (a.date_modified < b.date_modified) return 1
+    return 0
+  })
 
   allArticleMeta.set(articles)
 

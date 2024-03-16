@@ -7,14 +7,7 @@
   import { onDestroy } from "svelte"
   import SearchBox from "./SearchBox.svelte"
 
-  const articles = [...$allArticleMeta].sort((a, b) => {
-    // Move more recently modified articles to the top
-    if (a.date_modified > b.date_modified) return -1
-    if (a.date_modified < b.date_modified) return 1
-    return 0
-  })
-
-  const searchStore = createSearchStore(articles, articleSearchConfig)
+  const searchStore = createSearchStore($allArticleMeta, articleSearchConfig)
   const unsubscribe = searchStore.subscribe((value) => handleSearch(value))
   onDestroy(() => unsubscribe()) // When user leaves the page, unsubscribe from the store
 </script>
