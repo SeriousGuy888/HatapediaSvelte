@@ -1,14 +1,15 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-03-16
 title: Kingdom of Neville
 subtitle: Monarchy and City State
-aliases:
-  - Kingdom of Neville
-date_created: 2023-05-01
-date_modified: 2024-03-13
 tags:
   - country
   - place
   - hata1
+image: "[[Neville Banner.png]]"
+aliases:
+  - Kingdom of Neville
 ---
 
 Neville is a city state to the northeast of spawn. It was founded by [[Arvi]].
