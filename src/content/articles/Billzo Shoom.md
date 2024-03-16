@@ -24,7 +24,3 @@ facts:
   - Billzo
   - Billzo Shoom
 ```
-
-# woggi
-
-qwa
