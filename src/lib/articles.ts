@@ -55,7 +55,7 @@ async function preprocessMetadata(
     metadata.tags = []
   }
 
-  delete metadata.image
+  // delete metadata.image
   delete metadata.outlinks
   delete metadata.headings
 

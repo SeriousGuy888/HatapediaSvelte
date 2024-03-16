@@ -5,6 +5,7 @@ export type Article = {
   title: string
   subtitle: string
   tags: string[]
+  image?: string
 
   date_created: Date
   date_modified: Date

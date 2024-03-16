@@ -3,6 +3,7 @@
   import ArticleTag from "$lib/components/ArticleTag.svelte"
   import { goto } from "$app/navigation"
   import { createEventDispatcher } from "svelte"
+  import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser"
 
   export let article: Article
   export let selected = false
@@ -50,18 +51,24 @@
   }
 </script>
 
-<div
-  class:selected
-  bind:this={elem}
-  on:click={goThere}
-  on:keydown={(e) => {
-    if (e.key === "Enter") goThere()
-  }}
-  class="card relative isolate"
-  role="link"
-  tabindex="0"
->
+<div class="card-rounding">
   <!--
+    This wrapping div is needed because if the rounding were applied directly to its child,
+    the thumbnail image would be cut off by the transparent border.
+  -->
+
+  <div
+    class:selected
+    bind:this={elem}
+    on:click={goThere}
+    on:keydown={(e) => {
+      if (e.key === "Enter") goThere()
+    }}
+    class="card relative isolate"
+    role="link"
+    tabindex="0"
+  >
+    <!--
     This <a> is here because it's illegal to have an <a> inside another <a>, and
     it will render incorrectly if JavaScript is disabled. (ArticleLink has an
     <a> inside it, so it's illegal to put it inside another <a>.)
@@ -81,41 +88,54 @@
     just with a slightly better experience if JS is enabled, and the card will
     still render correctly if JS is disabled.
   -->
-  <a
-    href={target}
-    on:click|preventDefault
-    class="absolute inset-0 z-10 text-transparent select-none"
-  >
-    Link to {article.title}
-  </a>
-  <h2 class="title dotdotdot">
-    {article.title}
-  </h2>
-  <p class="subtitle dotdotdot">
-    {article.subtitle}
-  </p>
-  <!--
+    <a
+      href={target}
+      on:click|preventDefault
+      class="absolute inset-0 z-10 text-transparent select-none"
+    >
+      Link to {article.title}
+    </a>
+    <h2 class="dotdotdot text-lg lg:text-xl font-bold">
+      {article.title}
+    </h2>
+    <p class="dotdotdot text-xs opacity-75 uppercase">
+      {article.subtitle}
+    </p>
+
+    {#if article.image}
+      <div class="thumbnail-container">
+        <img src={getImageWikilinkSrc(article.image)} alt="" />
+      </div>
+    {/if}
+
+    <!--
     Render tags on top of the <a> tag that covers everything else so that you
     can still click on the tags.
   -->
-  <div class="mt-4 h-5 relative">
-    <div class="flex flex-nowrap gap-2 absolute z-20 max-w-full overflow-auto no-scrollbar">
-      {#each article.tags as tag}
-        <ArticleTag {tag} size="small" />
-      {/each}
+    <div class="mt-4 h-5 relative">
+      <div class="flex flex-nowrap gap-2 absolute z-20 max-w-full overflow-auto no-scrollbar">
+        {#each article.tags as tag}
+          <ArticleTag {tag} size="small" />
+        {/each}
+      </div>
     </div>
+    {#if showTimeSinceUpdated}
+      <p class="mt-3 text-xs opacity-50">Updated {daysAgo(new Date(article.date_modified))}</p>
+    {/if}
   </div>
-  {#if showTimeSinceUpdated}
-    <p class="mt-3 text-xs opacity-50">Updated {daysAgo(new Date(article.date_modified))}</p>
-  {/if}
 </div>
 
 <style lang="postcss">
+  .card-rounding {
+    @apply overflow-hidden;
+    @apply rounded-lg;
+    @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
+  }
+
   .card {
-    @apply p-4 rounded-lg;
+    @apply p-4;
     @apply bg-gray-100 dark:bg-gray-900;
     @apply text-black dark:text-white;
-    @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
     @apply border-t-8 border-transparent;
     @apply transition-colors duration-100 ease-in-out;
     @apply outline-none cursor-pointer;
@@ -127,15 +147,23 @@
     @apply border-t-primary;
   }
 
-  .title {
-    @apply text-lg lg:text-xl font-bold;
-  }
-
-  .subtitle {
-    @apply text-xs opacity-75 uppercase;
-  }
-
   .dotdotdot {
     @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+  }
+
+  .thumbnail-container {
+    @apply select-none pointer-events-none;
+    @apply absolute -top-2 bottom-0 right-0 left-[50%];
+    @apply -z-10;
+  }
+
+  .thumbnail-container img {
+    @apply h-full float-right object-cover relative;
+    mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 40%) 0%,
+      rgba(0, 0, 0, 10%) 70%,
+      rgba(0, 0, 0, 0%) 80%
+    );
   }
 </style>
