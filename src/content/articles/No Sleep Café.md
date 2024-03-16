@@ -1,10 +1,11 @@
 ---
-subtitle: Café in Billzoplace City
 date_created: 2023-08-16
-date_modified: 2024-03-13
+date_modified: 2024-03-16
+subtitle: Café in Billzoplace City
 tags:
   - place
   - hata1
+image: "[[No Sleep Cafe 2023-08-18.png]]"
 ---
 
 No Sleep Café is a building on the [[Billzoplace]] City north coast.
@@ -43,4 +44,3 @@ Remy told several jokes during this comedy show, which garnered a non-zero amoun
 ```youtube
 video: zktJnilU7ZQ
 ```
-
