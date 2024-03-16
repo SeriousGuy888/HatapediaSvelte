@@ -16,7 +16,17 @@ The treaty stipulates that Billzoplace may import wheat from the Remy Republic i
 # Original Text
 
 ```book-and-quill
-{ pages: ['{"extra":[{"text":"\n\n"},{"bold":true,"text":"Treaty ov No"},{"text":"\n"},{"color":"dark_gray","text":"2022-12-25"},{"text":"\n\nRemy Republik\nBillzoplace"}],"text":""}', '{"extra":[{"bold":true,"color":"dark_gray","text":"Artikle I"},{"text":"\n\nBillzoplace shall enoolah enchambiment ov le qweat field in No.\n "}],"text":""}', '{"extra":[{"bold":true,"color":"dark_gray","text":"Artikle II"},{"text":"\n\nLe Remy Republik shall export qweat tu Billzoplace pour Billzonium teir sniki zel nefarious purposes."}],"text":""}', '{"extra":[{"bold":true,"color":"dark_gray","text":"Signatories"},{"text":"\n\n\n"},{"underlined":true,"text":"Billzo"},{"text":"\n"},{"color":"black","text":"Billzoplace"},{"text":"\n"},{"italic":true,"color":"dark_blue","text":"billzonium"},{"text":"\n\n"},{"underlined":true,"text":"Remyforg"},{"text":"\nle Remy Republik\n"},{"italic":true,"color":"dark_blue","text":"Remyforg"}],"text":""}'], author: "Remyforg & SeriousGuy888", title: "Treaty ov No", generation: 1 }
+{
+  "pages": [
+    "{\"extra\":[{\"text\":\"\n\n\"},{\"bold\":true,\"text\":\"Treaty ov No\"},{\"text\":\"\n\"},{\"color\":\"dark_gray\",\"text\":\"2022-12-25\"},{\"text\":\"\n\nRemy Republik\nBillzoplace\"}],\"text\":\"\"}",
+    "{\"extra\":[{\"bold\":true,\"color\":\"dark_gray\",\"text\":\"Artikle I\"},{\"text\":\"\n\nBillzoplace shall enoolah enchambiment ov le qweat field in No.\n \"}],\"text\":\"\"}",
+    "{\"extra\":[{\"bold\":true,\"color\":\"dark_gray\",\"text\":\"Artikle II\"},{\"text\":\"\n\nLe Remy Republik shall export qweat tu Billzoplace pour Billzonium teir sniki zel nefarious purposes.\"}],\"text\":\"\"}",
+    "{\"extra\":[{\"bold\":true,\"color\":\"dark_gray\",\"text\":\"Signatories\"},{\"text\":\"\n\n\n\"},{\"underlined\":true,\"text\":\"Billzo\"},{\"text\":\"\n\"},{\"color\":\"black\",\"text\":\"Billzoplace\"},{\"text\":\"\n\"},{\"italic\":true,\"color\":\"dark_blue\",\"text\":\"billzonium\"},{\"text\":\"\n\n\"},{\"underlined\":true,\"text\":\"Remyforg\"},{\"text\":\"\nle Remy Republik\n\"},{\"italic\":true,\"color\":\"dark_blue\",\"text\":\"Remyforg\"}],\"text\":\"\"}"
+  ],
+  "author": "Remyforg & SeriousGuy888",
+  "title": "Treaty ov No",
+  "generation": 1
+}
 ```
 
 # English Translation
