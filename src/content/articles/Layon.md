@@ -1,11 +1,12 @@
 ---
+date_created: 2023-07-15
+date_modified: 2024-03-16
 title: City of Layon
 subtitle: Capital of the Kingdom of Neville
-date_created: 2023-07-15
-date_modified: 2024-03-13
 tags:
   - place
   - hata1
+image: "[[Archie Bridge 2023-07-14.png]]"
 ---
 
 The City of <ruby>Layon<rt>/ˈleɪ.jɑn/</rt></ruby> is the capital city and, as of writing, the sole city of the [[Neville|Kingdom of Neville]]. The City's name is derived from a [Tagalog word](https://en.wiktionary.org/wiki/layon#Tagalog) meaning "purpose; aim; objective".

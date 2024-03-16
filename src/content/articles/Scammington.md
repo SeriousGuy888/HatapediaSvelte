@@ -5,6 +5,7 @@ subtitle: Province of the Remy Republic
 tags:
   - place
   - hata1
+image: "[[Scammington 2023-04-13.png]]"
 ---
 
 Scammington is located on the southern tip of the island of [[Sheapland]], separated from [[Forgsville]] by approximately 80 meters of water. It is a province of the [[Remy Republic]].

@@ -6,6 +6,7 @@ date_modified: 2024-03-13
 tags:
   - event
   - hata1
+image: "[[jasper inherits toby's stuff.png]]"
 ---
 
 # Chronicle
