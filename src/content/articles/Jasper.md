@@ -4,6 +4,7 @@ date_modified: 2024-03-16
 subtitle: Unbiased Jaspeur
 tags:
   - character
+image: "[[Jasper Portrait.webp]]"
 ---
 
 ```infobox-character
