@@ -81,17 +81,23 @@
   <aside
     class={`
       h-full overflow-clip
-      bg-gray-200 dark:bg-gray-900
       transition-all duration-300 ease-in-out
-      z-10
       
+      z-20
       w-0 fixed
       lg:w-64 lg:static
-      lg:bg-opacity-30
+
+      bg-background lg:bg-none
+      shadow-2xl shadow-gray-200 dark:shadow-gray-800 lg:shadow-none
     `}
     class:w-64={tocOpen}
   >
-    <div class="sticky top-16 px-2 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto">
+    <div
+      class={`
+        sticky top-16 px-2 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto h-full
+        border-none lg:border-dotted border-r-2 border-gray-200 dark:border-gray-900
+      `}
+    >
       <p class="text-center font-bold">Contents</p>
       <div class="-ml-3">
         <TableOfContents
@@ -104,7 +110,7 @@
       </div>
     </div>
   </aside>
-  <aside class="fixed lg:hidden bottom-4 right-4 grid z-10">
+  <div class="fixed lg:hidden bottom-4 right-4 grid z-20">
     <span class="text-sm hide-on-touch">Press <kbd>T</kbd></span>
     <button
       class="bg-brand rounded-full p-4"
@@ -113,7 +119,14 @@
     >
       <ListIcon color="white" />
     </button>
-  </aside>
+  </div>
+  <div
+    class={`${tocOpen ? "block" : "hidden"} lg:hidden fixed inset-0 bg-black/90 z-10`}
+    tabindex="-1"
+    role="button"
+    on:click={() => (tocOpen = false)}
+    on:keydown={() => (tocOpen = false)}
+  />
   <article class="article-container">
     <header>
       <hgroup>
