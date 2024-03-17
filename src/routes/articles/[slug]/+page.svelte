@@ -7,6 +7,7 @@
   import { onMount, tick } from "svelte"
   import { instantiateDynamicComponents } from "$lib/dynamic_components/dynamic_components_in_md.js"
   import { ListIcon } from "lucide-svelte"
+  import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser.js"
 
   export let data
 
@@ -127,39 +128,53 @@
     on:click={() => (tocOpen = false)}
     on:keydown={() => (tocOpen = false)}
   />
-  <article class="article-container">
-    <header>
-      <hgroup>
-        <h1>{data.meta.title}</h1>
-        {#if data.meta.subtitle}
-          <p>{data.meta.subtitle}</p>
-        {/if}
-      </hgroup>
-      {#if data.meta.tags?.length > 0}
-        <div class="tag-list">
-          {#each data.meta.tags as tag}
-            <ArticleTag {tag} />
-          {/each}
-        </div>
+  <article class="w-full mb-16 min-h-screen">
+    <header class="relative pb-8 mb-8">
+      {#if data.meta.image}
+        <section class="-z-10 absolute inset-0">
+          <div
+            style="background-image: url('{getImageWikilinkSrc(data.meta.image ?? '')}')"
+            class="banner"
+          />
+        </section>
       {/if}
-      <ul class="article-properties">
-        <li>
-          Published
-          <span>{toIsoDate(data.meta.date_created)}</span>
-        </li>
-        <li>
-          Updated
-          <span>{toIsoDate(data.meta.date_modified)}</span>
-        </li>
-      </ul>
+      <section class="restricted-width py-8">
+        <hgroup>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-2 break-words w-fit">{data.meta.title}</h1>
+          {#if data.meta.subtitle}
+            <p class="text-gray-600 dark:text-gray-300 uppercase text-sm break-words w-fit">
+              {data.meta.subtitle}
+            </p>
+          {/if}
+        </hgroup>
+
+        {#if data.meta.tags?.length > 0}
+          <div class="tag-list">
+            {#each data.meta.tags as tag}
+              <ArticleTag {tag} />
+            {/each}
+          </div>
+        {/if}
+
+        <ul class="article-properties">
+          <li>
+            Published
+            <span>{toIsoDate(data.meta.date_created)}</span>
+          </li>
+          <li>
+            Updated
+            <span>{toIsoDate(data.meta.date_modified)}</span>
+          </li>
+        </ul>
+      </section>
     </header>
 
-    <section class="prose dark:prose-invert article-content">
+    <section class="article-content prose dark:prose-invert restricted-width">
       {@html data.content}
     </section>
 
     {#if data.meta.inlinks?.length}
-      <section class="pt-16 mt-16 border-t-2 border-gray-200 dark:border-gray-700">
+      <section class="pt-16 mt-16 border-t-2 border-gray-200 dark:border-gray-700 restricted-width">
         <div class="pb-6">
           <h2 class="text-3xl font-bold">Inlinks</h2>
           <p class="text-sm italic">
@@ -181,19 +196,20 @@
 </div>
 
 <style lang="postcss">
-  header {
-    @apply border-b-2 border-gray-200 dark:border-gray-700 pb-8 mb-8;
+  .restricted-width {
+    @apply max-w-sm md:max-w-prose mx-auto;
   }
 
-  hgroup h1 {
-    @apply text-4xl sm:text-5xl font-bold mb-2 break-words;
-  }
-  hgroup p {
-    @apply text-gray-600 dark:text-gray-300 uppercase text-sm break-words;
-  }
+  .banner {
+    @apply bg-contain bg-repeat w-full h-full;
 
-  .article-container {
-    @apply w-full max-w-sm md:max-w-prose mx-auto px-4 my-8 min-h-screen;
+    image-rendering: pixelated;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 30%) 0%,
+      rgba(0, 0, 0, 5%) 80%,
+      rgba(0, 0, 0, 0%) 90%
+    );
   }
 
   .tag-list {
