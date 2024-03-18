@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-16
+date_modified: 2024-03-17
 subtitle: About Hatapedia
 tags:
   - meta
@@ -17,6 +17,10 @@ The table of contents on article pages has had its background colour removed, re
 The article image will now be displayed as a banner at the top of the article page, behind the article title and subtitle. It uses a similar opacity gradient to the article link cards. This makes the article page look a bit more interesting.
 
 I've also added a translucent bubble to the subtitle, which makes it a bit more legible against the background image when there is one.
+
+## Focus Searchbar on Homepage on Page Load
+
+The searchbar on the homepage will now be focused automatically when the page loads, so you can start typing right away.
 
 # 2024-03-16
 
