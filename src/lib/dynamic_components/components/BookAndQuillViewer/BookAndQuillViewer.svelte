@@ -30,7 +30,8 @@
     try {
       currPageData = JSON.parse(pages[page - 1])
     } catch (e) {
-      currPageData = { text: "Error parsing page data", color: "red" }
+      currPageData = { text: "Error parsing page data: " + e, color: "red" }
+      console.error(e)
     }
   }
 
