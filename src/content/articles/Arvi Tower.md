@@ -1,10 +1,12 @@
 ---
-subtitle: Destroyed Tower in No
 date_created: 2023-07-09
-date_modified: 2024-03-13
+date_modified: 2024-03-17
+subtitle: Destroyed Tower in No
 tags:
   - place
   - hata1
+image: "[[remy stands atop arvi tower with white banners 2023-01-15.png]]"
+subtitle: Destroyed Tower in No
 ---
 
 # History
