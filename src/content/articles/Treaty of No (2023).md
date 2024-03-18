@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-16
+date_modified: 2024-03-18
 subtitle: Trade Agreement
 tags:
   - treaty

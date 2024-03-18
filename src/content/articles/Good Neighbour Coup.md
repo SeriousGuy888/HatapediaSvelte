@@ -1,11 +1,12 @@
 ---
 date_created: 2024-03-15
-date_modified: 2024-03-15
+date_modified: 2024-03-18
 title: The Good Neighbour Coup
 subtitle: Remy's Coup on Tobytopia by Invocation of the Good Neighbour Policy
 tags:
   - event
   - hata1
+image: "[[Toby Returns to Propagule Palace.png]]"
 ---
 
 On `2023-01-22`, [[Remy]] staged a coup d'état on [[Tobytopia]].
