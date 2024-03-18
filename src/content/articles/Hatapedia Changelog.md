@@ -6,6 +6,18 @@ tags:
   - meta
 ---
 
+# 2024-03-17
+
+## Improved Appearance of Table of Contents
+
+The table of contents on article pages has had its background colour removed, replaced with a dotted border, which makes it look a bit less intrusive. I've also added a background fade effect when the table of contents is opened on small screens.
+
+## Display Article Image as Banner in Header of Article Pages
+
+The article image will now be displayed as a banner at the top of the article page, behind the article title and subtitle. It uses a similar opacity gradient to the article link cards. This makes the article page look a bit more interesting.
+
+I've also added a translucent bubble to the subtitle, which makes it a bit more legible against the background image when there is one.
+
 # 2024-03-16
 
 ## Article Link Card Thumbnails
