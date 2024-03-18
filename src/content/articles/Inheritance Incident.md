@@ -1,8 +1,8 @@
 ---
+date_created: 2023-06-30
+date_modified: 2024-03-16
 title: The Inheritance Incident
 subtitle: Incident Between Jasper and Toby
-date_created: 2023-06-30
-date_modified: 2024-03-13
 tags:
   - event
   - hata1

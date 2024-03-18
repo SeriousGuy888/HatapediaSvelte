@@ -1,7 +1,7 @@
 ---
-subtitle: Capital of the Remy Republic
 date_created: 2023-06-27
-date_modified: 2024-03-13
+date_modified: 2024-03-17
+subtitle: Capital of the Remy Republic
 tags:
   - place
   - hata1

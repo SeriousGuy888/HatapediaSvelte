@@ -1,11 +1,12 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-03-17
 title: Mangrovepox
 subtitle: Infectious botanical disease
-date_created: 2023-05-01
-date_modified: 2024-03-13
 tags:
   - event
   - hata1
+image: "[[Remy removes mangrovepox 2023-01-06.png]]"
 ---
 
 # About Mangrovepox

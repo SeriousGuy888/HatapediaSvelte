@@ -1,10 +1,11 @@
 ---
-subtitle: Territory of the Remy Republic
 date_created: 2023-08-16
-date_modified: 2024-03-13
+date_modified: 2024-03-17
+subtitle: Territory of the Remy Republic
 tags:
   - place
   - hata1
+image: "[[Floridanot Banner.png]]"
 ---
 
 Floridanot is a territory of the [[Remy Republic]].

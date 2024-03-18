@@ -1,11 +1,12 @@
 ---
+date_created: 2023-07-08
+date_modified: 2024-03-17
 title: The Mushroom War
 subtitle: War Between Neville and the Remy Republic
-date_created: 2023-07-08
-date_modified: 2024-03-13
 tags:
   - event
   - hata1
+image: "[[Liam Forg Ashwin killed during Raid on No 2023-07-09.png]]"
 ---
 
 > [!tip] Timezone
