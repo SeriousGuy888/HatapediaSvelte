@@ -35,7 +35,6 @@
             width="16"
             height="32"
             class="w-full"
-            style="image-rendering: pixelated;"
           />
         {/if}
       </figure>
