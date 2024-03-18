@@ -199,7 +199,7 @@
 
 <style lang="postcss">
   .restricted-width {
-    @apply max-w-sm md:max-w-prose mx-auto;
+    @apply max-w-sm md:max-w-prose mx-auto px-4;
   }
 
   .banner {
@@ -248,6 +248,11 @@
     overflow: hidden;
     min-height: 8rem;
     object-fit: cover;
+  }
+
+  :global(.article-content .responsive-table) {
+    max-width: 100%;
+    overflow-x: auto;
   }
 
   /* Animation to highlight headings when their anchor link is followed */

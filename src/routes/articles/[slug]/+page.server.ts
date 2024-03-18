@@ -19,6 +19,7 @@ import remarkRehype from "remark-rehype"
 
 import rehypeExternalLinks from "rehype-external-links"
 import rehypeStringify from "rehype-stringify"
+import rehypeWrap from "rehype-wrap-all"
 import rehypeSlug from "rehype-slug"
 
 export const prerender = true
@@ -66,6 +67,10 @@ export async function load({ params }) {
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
       .use(rehypeExternalLinks, { target: "_blank" })
+
+      // so that css can make the table scrollable horizontally on small screens
+      .use(rehypeWrap, { selector: "table", wrapper: "div.responsive-table" })
+
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(content)
 
