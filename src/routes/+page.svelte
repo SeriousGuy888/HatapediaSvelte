@@ -16,19 +16,17 @@
   <title>
     {config.title}
   </title>
-  <meta property="og:title" content="HATApedia">
+  <meta property="og:title" content="HATApedia" />
   <meta property="og:description" content="A resource for all things HATA." />
 </svelte:head>
 
 <div class="w-full p-12 sm:p-24">
   <div class="bg-image-container">
-    <div class="bg-image hidden dark:block">
-      <div class="bg-fade" />
-    </div>
+    <div class="bg-image" />
   </div>
   <hgroup class="text-center">
     <h1 class="text-3xl sm:text-6xl font-bold tracking-tight">HATApedia</h1>
-    <p class="text-xs sm:text-sm opacity-75">Maintained by the God of News</p>
+    <p class="text-xs sm:text-sm mt-0.5">Maintained by the God of News</p>
   </hgroup>
   <section class="major-section flex gap-2 sm:gap-3 justify-center">
     <a href="/map" aria-label="Link to map page">
@@ -48,7 +46,9 @@
     <SearchBox {searchStore} placeholder="Search for an article..." />
   </section>
   <section class="major-section grid place-items-center">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl w-full">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl w-full"
+    >
       {#each $searchStore.results as result}
         <ArticleLinkCard article={result} showTimeSinceUpdated />
       {/each}
@@ -75,13 +75,9 @@
     /* prevents blur filter from fraying at the edges */
     transform: scale(1.1);
 
-    filter: brightness(0.5) grayscale(0.5) blur(3px);
-  }
+    filter: brightness(1.25) grayscale(0.5) blur(3px);
 
-  .bg-fade {
-    @apply absolute inset-0;
-
-    background-image: linear-gradient(#0000, #000f);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 40%), rgba(0, 0, 0, 0%) 90%);
   }
 
   .major-section {
