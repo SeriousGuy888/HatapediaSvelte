@@ -142,7 +142,9 @@
         <hgroup>
           <h1 class="text-4xl sm:text-5xl font-bold mb-2 break-words w-fit">{data.meta.title}</h1>
           {#if data.meta.subtitle}
-            <p class="text-gray-600 dark:text-gray-300 uppercase text-sm break-words w-fit">
+            <p
+              class="p-1 -mx-1 -mt-1 rounded-lg bg-background/25 text-foreground/80 uppercase text-sm tracking-wide break-words w-fit"
+            >
               {data.meta.subtitle}
             </p>
           {/if}
