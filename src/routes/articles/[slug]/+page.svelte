@@ -208,7 +208,7 @@
     image-rendering: pixelated;
     mask-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 30%) 0%,
+      rgba(0, 0, 0, 25%) 0%,
       rgba(0, 0, 0, 5%) 80%,
       rgba(0, 0, 0, 0%) 90%
     );
