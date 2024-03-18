@@ -12,11 +12,11 @@ export default {
     },
     extend: {
       colors: {
-        brand: "var(--brand)",
-        foreground: "var(--foreground)",
-        background: "var(--background)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
+        brand: "hsl(var(--brand) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
+        background: "hsl(var(--background) / <alpha-value>)",
+        primary: "hsl(var(--primary) / <alpha-value>)",
+        secondary: "hsl(var(--secondary) / <alpha-value>)",
       },
       typography: (theme) => ({
         DEFAULT: {
