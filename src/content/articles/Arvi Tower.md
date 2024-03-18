@@ -6,7 +6,6 @@ tags:
   - place
   - hata1
 image: "[[remy stands atop arvi tower with white banners 2023-01-15.png]]"
-subtitle: Destroyed Tower in No
 ---
 
 # History
