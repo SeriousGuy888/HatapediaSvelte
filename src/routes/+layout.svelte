@@ -22,6 +22,10 @@
     max-width: 100vw;
   }
 
+  :global(html, body) {
+    height: 100%;
+  }
+
   /* 
     Prevents the content from being hidden behind the header, such as the
     target heading of an anchor link.
