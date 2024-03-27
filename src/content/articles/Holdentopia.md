@@ -35,9 +35,11 @@ facts:
 
 ## The Murder
 
-At approximately 02:20 EDT on 2023-05-07, [[Holden]] staged a coup d'état by killing Toby in his cave base.
+At approximately 02:20 EDT on 2023-05-07, [[Holden]] staged a coup d'état on [[Tobytopia]] by killing [[Toby]] in his cave base.
 
-Holden reportedly calculated this murder meticulously. Toby had for some reason been on a single heart of health when he came down the elevator. Holden then started punching Toby, getting him down to half a heart, after which Toby logged out of the server in an attempt to prevent himself from being punched to death by Holden, probably hoping that Holden would just go away. Holden, in an act of genius, simply waited for Toby to log back on in the same place. After a few minutes, Toby did, in fact, log back in, and Holden was able to brutally beat Toby to death as soon as that happened.
+Holden reportedly calculated this murder meticulously. Toby had, for some reason, been on a single heart of health when he came down the elevator into his base. Holden then started punching Toby, reducing Toby's health down to half a heart, after which Toby logged out of the server in an attempt to prevent himself from being punched to death by Holden, probably hoping that Holden would just go away.
+
+Holden, in an act of genius, simply waited for Toby to log back on in the same place. After a few minutes, Toby did, in fact, log back in, and Holden was able to brutally beat Toby to death as soon as that happened.
 
 By killing Toby, Holden managed to acquire everything Toby had on him at the time — his netherite armour and gear as well as his political authority. This included Toby's riptide trident, which allowed Holden to quickly escape the fray, utilising the ongoing thunderstorm to fly west into the jungle.
 
