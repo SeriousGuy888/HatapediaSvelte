@@ -1,12 +1,12 @@
 ---
+date_created: 2023-07-08
+date_modified: 2024-03-27
 title: The Boxing Matchbox War
 subtitle: Holdentopian Coup Attempt on the Remy Republic
-image: "[[remy under duress atop arvi tower.png]]"
-date_created: 2023-07-08
-date_modified: 2024-03-13
 tags:
   - event
   - hata1
+image: "[[remy under duress atop arvi tower.png]]"
 ---
 
 > [!tip] Timezone

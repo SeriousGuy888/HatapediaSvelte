@@ -1,8 +1,8 @@
 ---
+date_created: 2023-06-21
+date_modified: 2024-03-27
 title: The Fortuguese Republic
 subtitle: Unrecognised Forguik Rebel State
-date_created: 2023-06-21
-date_modified: 2024-03-13
 tags:
   - country
   - place
