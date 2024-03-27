@@ -1,9 +1,7 @@
 ---
-subtitle: Investment and Trade Agreement
-timeline:
-  date: 2023-04-07
 date_created: 2023-06-30
-date_modified: 2024-03-13
+date_modified: 2024-03-27
+subtitle: Investment and Trade Agreement
 tags:
   - treaty
   - hata1

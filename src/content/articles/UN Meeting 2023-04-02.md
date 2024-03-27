@@ -1,13 +1,13 @@
 ---
-subtitle: Meeting Minutes
-timeline:
-  date: 2023-04-02
 date_created: 2023-05-01
-date_modified: 2024-03-13
+date_modified: 2024-03-27
+subtitle: Meeting Minutes
 tags:
   - event
   - hata1
 ---
+
+On 2023-04-02, the first [[United Nations]] meeting in the UNHQ building was held. In attendence were [[Billzoplace]], the [[Remy Republic]], [[Tobytopia]], [[Korolarachi]], and [[Bakaville]].
 
 ![[Pasted image 20230402192537.png]]
 
