@@ -90,9 +90,10 @@ events:
   date:
     start: 2023-05-08
     end: 2023-05-21
-- title: "Zombitopian Junta"
+- title: "Zombitopia I"
   lane: 20
   image: "[[Zomboss Eliminated.png]]"
+  colour: "#567d35"
   date:
     start: 2023-05-22
     end: 2023-05-22
@@ -103,8 +104,10 @@ events:
   date:
     start: 2023-05-23
     end: 2023-06-25
-- title: "Slimetopia"
+- title: "Slimetopia I"
   lane: 20
+  image: "[[Slimetopia 2 Banner.webp]]"
+  colour: "#4caf50"
   date:
     start: 2023-06-26
     end: 2023-06-26
@@ -114,7 +117,35 @@ events:
   colour: "#d60"
   date:
     start: 2023-06-27
-    end: 2023-07-05
+    end: 2023-09-18
+- title: "Zombitopia II"
+  lane: 20
+  image: "[[zomboss eliminated again.webp]]"
+  colour: "#567d35"
+  date:
+    start: 2023-09-19
+    end: 2023-09-26
+- title: "Fifth Tobytopian Empire"
+  lane: 20
+  image: "[[Tobytopia Banner.png]]"
+  colour: "#d60"
+  date:
+    start: 2023-09-27
+    end: 2023-10-24
+- title: "Slimetopia II"
+  lane: 20
+  image: "[[Slimetopia 2 Banner.webp]]"
+  colour: "#4caf50"
+  date:
+    start: 2023-10-25
+    end: 2023-10-25
+- title: "Sixth Tobytopian Empire"
+  lane: 20
+  image: "[[Tobytopia Banner.png]]"
+  colour: "#d60"
+  date:
+    start: 2023-10-26
+    end: 2023-12-26
     
 - title: "Fortuguese Rebellion"
   lane: 30
