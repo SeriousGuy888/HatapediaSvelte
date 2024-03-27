@@ -19,8 +19,8 @@ Main article: [[Tobytopia#History]]
 
 - [[Tobytopia#Remy's Coup]] — Remy Republic Exercises Good Neighbour Policy
   - Toby returns and deposes Remy
-- [[Tobytopia#Holden's Coup]]
-  - [[Tobytopia#Toby's Countercoup]]
+- [[Holdentopia]] — Holden's brief takeover of Tobytopia
+  - [[Holdentopia#Toby's Countercoup]]
 - [[Zombitopian Junta#Zomboss's Coup]]
   - [[Zombitopian Junta#Deposition]]
 - Doctor Slimeboss's coup
