@@ -153,7 +153,7 @@ events:
   image: "[[Authentic Fortuguese Army.png]]"
   date:
     start: 2023-02-25
-    end: 2023-07-05
+    end: 2023-12-26
 ```
 
 ## Remy's Coup
