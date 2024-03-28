@@ -5,8 +5,9 @@
 export function sluggify(fileName) {
   return fileName
     .toLowerCase()
-    .replace(/\s/g, "_")
-    .replace(/\.md$/, "")
-    .normalize("NFD") // Remove diacritics from letters, eg: café -> cafe
-    .replace(/\p{Diacritic}/gu, "")
+    .replace(/\.md$/, "") // Remove .md file extension
+    .replace(/\s+/g, "_") // Replace spaces with underscores
+    .replace(/[^a-z0-9_-]/g, "") // Remove anything not alphanumeric, underscore, or hyphen
+    .normalize("NFD") // Split an accented character into the base character and the diacritics
+    .replace(/\p{Diacritic}/gu, "") // Remove diacritics. e.g. café -> cafe
 }
