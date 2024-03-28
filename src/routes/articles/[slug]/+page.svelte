@@ -199,7 +199,7 @@
 
 <style lang="postcss">
   .restricted-width {
-    @apply max-w-sm md:max-w-prose mx-auto px-4;
+    @apply max-w-md sm:max-w-lg md:max-w-prose w-full mx-auto px-4;
   }
 
   .banner {
