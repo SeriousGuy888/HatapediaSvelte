@@ -65,17 +65,21 @@ Remy's true ancestry and origins are unclear, but theories and fanfictions have 
 The following is a fanfiction about Remy written by [[Toby]].
 
 >[!quote] From the OctoSurv Catalogues
-> # Chapter 1: The birth
-> It was hot.
-> 
-> Very hot. At first it was just a spark. But then quickly a trail of fire. it grew and grew, snaking through the darkness. As it grew, it turned to a fire, engulfing the surounding darkness. Enveloping everthing it touched. Suddenly, It exploded!
-> As the ashes and embers floated down, there sat a baby blaze. But not just any blaze. Le Remy Blaze.
-> 
-> # Chapter 2: The Begining
-> Slowly, Remy grew up.
-> 
-> He grew up in the fortress, playing with the other blaze children and pulling pranks on the skeletons. But Remy wasn't a normal blaze. History would prove this. Ever since Remy was born, he dreamed to see the light. Not just the low lying flame of the nether. Remy, wanted to see the sky.
-> 
-> # Chapter 3: The Journey
-> Remy was soon an adult. As a thriving young blaze, Remy was ambitious. He soon began to spread his desires to see the overworld with his friends and family. Noone took him seriosly. All his friends began to leave him, saying he was crazy and would never make it to the overworld. The only person that beleived in him was his mother, Rita schulmerschludukie. 
-> She pulled him aside and
+
+### Chapter 1: The birth
+
+It was hot.
+
+Very hot. At first it was just a spark. But then quickly a trail of fire. it grew and grew, snaking through the darkness. As it grew, it turned to a fire, engulfing the surounding darkness. Enveloping everthing it touched. Suddenly, It exploded!
+As the ashes and embers floated down, there sat a baby blaze. But not just any blaze. Le Remy Blaze.
+
+### Chapter 2: The Begining
+
+Slowly, Remy grew up.
+
+He grew up in the fortress, playing with the other blaze children and pulling pranks on the skeletons. But Remy wasn't a normal blaze. History would prove this. Ever since Remy was born, he dreamed to see the light. Not just the low lying flame of the nether. Remy, wanted to see the sky.
+
+### Chapter 3: The Journey
+
+Remy was soon an adult. As a thriving young blaze, Remy was ambitious. He soon began to spread his desires to see the overworld with his friends and family. Noone took him seriosly. All his friends began to leave him, saying he was crazy and would never make it to the overworld. The only person that beleived in him was his mother, Rita schulmerschludukie. 
+She pulled him aside and
