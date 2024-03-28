@@ -34,11 +34,11 @@ The Kingdom of Neville was first to withdraw from the PP Treaty, releasing a vid
 
 In the announcement video, [[Arvi]] said the following:
 
-> I'm breaking up with you, Remy. You broke our relationship; you're not loyal, [...].
+> This is the leader of Neville, \*pushes up glasses\*, and today, I want to break the treaty of the PP Treaty, with [the] Remy Republic.
 > 
-> He did break the treaty. When [[Hoang|Markie]] declared war on me, …, I asked [for] help from the Remy Republic, and they stayed neutral.
+> I'm breaking up with you, Remy. You broke our relationship; you're not loyal…
 > 
-> …
+> He did break the treaty. When [[Hoang|Markie]] declared war on me, …, I asked [for] help from [the] Remy Republic, and they stayed neutral, but, in the treaty, it is written in the treaty, that we gotta help each other anytime they need, and I was in [a] time of need, and whenever some declares war on one of the countries, the allies have to help him, but this guy — you know? — said "nuh-uh!" and he went neutral, which is probably not allowed! Right?
 > 
 > Fuck you, Remy ❤️
 
