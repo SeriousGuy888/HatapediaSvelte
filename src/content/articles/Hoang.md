@@ -1,7 +1,7 @@
 ---
-subtitle: Inverted Capital T Architect
 date_created: 2023-08-16
-date_modified: 2023-11-12
+date_modified: 2024-03-27
+subtitle: Inverted Capital T Architect
 tags:
   - character
 ---

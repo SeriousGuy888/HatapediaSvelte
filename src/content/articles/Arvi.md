@@ -1,11 +1,11 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-03-27
 title: Arvi
 subtitle: The Stripper
-image: "[[Arvi Portrait.png]]"
-date_created: 2023-05-01
-date_modified: 2023-11-12
 tags:
   - character
+image: "[[Arvi Portrait.png]]"
 ---
 
 ```infobox-character
