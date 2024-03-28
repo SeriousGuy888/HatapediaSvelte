@@ -17,7 +17,7 @@ tags:
 
 Main article: [[Tobytopia#History]]
 
-- [[Tobytopia#Remy's Coup]] — Remy Republic Exercises Good Neighbour Policy
+- [[Good Neighbour Coup]] — Remy Republic Exercises Good Neighbour Policy
   - Toby returns and deposes Remy
 - [[Holdentopia]] — Holden's brief takeover of Tobytopia
   - [[Holdentopia#Toby's Countercoup]]
