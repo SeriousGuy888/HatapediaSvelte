@@ -86,12 +86,12 @@
       
       z-20
       w-0 fixed
-      lg:w-64 lg:static
+      lg:w-72 lg:static
 
       bg-background lg:bg-none
       shadow-2xl shadow-gray-200 dark:shadow-gray-800 lg:shadow-none
     `}
-    class:w-64={tocOpen}
+    class:w-72={tocOpen}
   >
     <div
       class={`
