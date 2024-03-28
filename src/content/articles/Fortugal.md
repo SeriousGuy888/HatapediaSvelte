@@ -12,6 +12,7 @@ tags:
 ```infobox-nation
 facts:
   leader: César Forguero
+  demonym: Fortuguese
 ```
 
 <ruby>Fortugal<rt>ˈfɔr.tʃʊ.gəl</rt></ruby> is a currently unrecognised <ruby>Forguik<rt>ˈfɔɹ.gɪk</rt></ruby> state, in a state of rebellion against [[Tobytopia]].
