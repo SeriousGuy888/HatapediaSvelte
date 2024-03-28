@@ -7,7 +7,7 @@
   const dispatch = createEventDispatcher()
 </script>
 
-<ul class="text-left text-sm leading-none list-outside ml-3">
+<ul class="text-left text-sm leading-none list-outside ml-6">
   {#each headings as heading}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->

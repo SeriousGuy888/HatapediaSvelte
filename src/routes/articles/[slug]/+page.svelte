@@ -100,7 +100,7 @@
       `}
     >
       <p class="text-center font-bold">Contents</p>
-      <div class="-ml-3">
+      <div class="-ml-6">
         <TableOfContents
           headings={[topLink, ...headings]}
           on:toc-click={(e) => {
