@@ -52,6 +52,8 @@ decided to claim it first.
 
 # History
 
+## Timeline
+
 ```infobox-timeline
 title: Timeline of Tobytopia
 events:
@@ -156,9 +158,17 @@ events:
     end: 2023-12-26
 ```
 
-## Remy's Coup
+## Coups and Takeovers
 
-*Please see: [[Good Neighbour Coup]]*
+Tobytopia's history of being ruled by [[Toby]] has frequently been interrupted by coups and takeovers, usually lasting less than a single day, but occasionally holding on power for a little bit longer.
+
+On 2023-01-22, [[Remy]] briefly took control of Tobytopia in the [[Good Neighbour Coup]]. It is notable that Remy did not do anything to alter the constitution of the country, and, from the perspective of Remy, he was simply doing what a good neighbour would do and looking after Tobytopia while Toby was missing. Although Toby did not appreciate Remy's initiative, this coup did not constitute a break in Tobytopia's continuity.
+
+On 2023-05-07, [[Holden]] overthrew Toby, renaming Tobytopia to [[Holdentopia]] and moving the capital elsewhere. Toby would later execute a countercoup and restore a new Tobytopia to power.
+
+On 2023-05-22, Doctor Zomboss, a character from the 2009 hit game *Plants vs Zombies*, overthrew Toby, briefly reorganising Tobytopia into the [[Zombitopian Junta]]. Toby would later retake power from Doctor Zomboss.
+
+Other coups also took place, which are present in the timeline but do not have articles written as of yet.
 
 ## Fortuguese Rebellion
 
@@ -171,14 +181,6 @@ video: m9Mk31BjK-Q
 On 2023-04-29, General Forguera officially met with [[Remy]], Glorious Leader of the [[Remy Republic]]. The Glorious Leader generously offered assistance in the form of forgutarian aid and infrastructure projects to General Forguera's forces, which Forguera graciously accepted. Four days later, on 2023-05-03, the Remyan Parliament officially approved further diplomatic negotiations with Che Forguera's forces, though details are not yet known.
 
 ![[Authentic Fortuguese Army.png]]
-
-## Holden's Coup
-
-*Please see [[Holdentopia]]*
-
-## Zomboss's Coup
-
-Please see: [[Zombitopian Junta|Zomboss's Coup]]
 
 # Structures
 
