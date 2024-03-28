@@ -209,4 +209,4 @@ The Glorious Leader also later officially abolished squatters rights in the Remy
 
 ## Holden's Title
 
-Although the terms that [[Holden]] had imposed upon Remy did not end up being signed, Holden still decided to implement one of the terms anyway. As of `2023-07-06`, Holden officially updated his title from the *Peasant of Holdentopia* (imposed upon him by [[Toby]] after [[Tobytopia#Holden's Coup|Holden's failed coup]]) to the *Glorious Not-Peasant of Holdentopia*.
+Although the terms that [[Holden]] had imposed upon Remy did not end up being signed, Holden still decided to implement one of the terms anyway. As of `2023-07-06`, Holden officially updated his title from the *Peasant of Holdentopia* (imposed upon him by [[Toby]] after [[Holdentopia|Holden's failed coup]]) to the *Glorious Not-Peasant of Holdentopia*.

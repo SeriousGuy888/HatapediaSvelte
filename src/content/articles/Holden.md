@@ -1,11 +1,11 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-03-27
 title: Holden
 subtitle: Self-Proclaimed Ecoterrorist
-image: "[[Holden Portrait.png]]"
-date_created: 2023-05-01
-date_modified: 2023-11-12
 tags:
   - character
+image: "[[Holden Portrait.png]]"
 ---
 
 ```infobox-character
@@ -27,15 +27,13 @@ Holden is canonically [[Toby]]'s son.
 
 ## Coup on Tobytopia
 
-Holden staged a coup on [[Tobytopia]], renaming the country and proclaiming himself to be the country's new *High Emperor*. This coup was very short lived as [[Toby]] successfully staged a countercoup just 10 minutes later.
-
-Please see: [[Tobytopia#Holden's Coup]]
+Holden staged a coup on [[Tobytopia]], renaming the country to [[Holdentopia]] and proclaiming himself to be the country's new *High Emperor*. This coup was very short lived as [[Toby]] successfully staged a countercoup just 10 minutes later.
 
 ## Attempted Takeover of the Remy Republic
 
 Holden attempted to overthrow the [[Remy Republic]], igniting the massively damaging [[Boxing Matchbox War]], during which he killed [[Remy]] several times and teamed up with [[Anna]] to try to make Remy sign over control of the country.
 
-Although the coup was not successful, Holden still decided to update his title regardless, changing it from from the *Peasant of Holdentopia* (imposed upon him by [[Toby]] after [[Tobytopia#Holden's Coup|his failed coup]]) to the *Glorious Not-Peasant of Holdentopia*.
+Although the coup was not successful, Holden still decided to update his title regardless, changing it from from the *Peasant of Holdentopia* (imposed upon him by [[Toby]] after [[Holdentopia|his failed coup]]) to the *Glorious Not-Peasant of Holdentopia*.
 
 ## Mushroom War
 
