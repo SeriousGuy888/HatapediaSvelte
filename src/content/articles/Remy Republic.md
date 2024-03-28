@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-27
+date_modified: 2024-03-28
 title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 tags:
@@ -91,8 +91,8 @@ It is worth noting that the vote was originally undecided, with the vote counts 
 
 The Slime Ball Party also won a majority in the Villager Council, although it was not a full sweep, unlike the Duck Nest. The final vote **percentages** for the Villager Council were as follows:
 
-| Province/Territory    | SBP    | MCP   | BNQ   | Ind   | 
-|:--------------------- |:------ |:----- |:----- |:----- |
+| Province/Territory    | SBP    | MCP   | BNQ   | Ind   |
+| :-------------------- | :----- | :---- | :---- | :---- |
 | Hawainot              | 95 🏆  | 5     |       |       |
 | Forgsville            | 75 🏆  | 25    |       |       |
 | No                    | 25     | 24    | 51 🏆 |       |
