@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-17
+date_modified: 2024-03-28
 subtitle: Alcohol Establishment in Scammington
 tags:
   - place
@@ -15,6 +15,8 @@ image: "[[Scammington Bar 2023-04-13.png]]"
 ## Construction
 
 The Scammington Bar is a bar built by [[Arvi]] in [[Scammington]] after negotiating with [[Remy]] for a building permit and a plot of land on which to build it<sup>[exact dates needed]</sup>.
+
+After acquiring the permit and choosing a location with Remy, Arvi built the bar some time between 2023-01-18 and 2023-01-21.
 
 ## Operation
 

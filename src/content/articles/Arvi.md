@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-27
+date_modified: 2024-03-28
 title: Arvi
 subtitle: The Stripper
 tags:
@@ -31,8 +31,30 @@ He would end up advocating his position as king to [[bill the Allay]] at the [[U
 
 Arvi left to found the new city of [[Neville]].
 
-# Minehut Ban
+## Builder of the Scammington Bar
 
-Arvi was banned from Minehut for a month on 2023-04-12 for saying the word "gay". He later appealed the ban.
+Arvi was the designer, builder, and destroyer of the [[Scammington Bar]] in [[Scammington]].
+
+### Poems About the Scammington Bar
+
+Arvi wrote a couple of poems around the time he was building the Scammington Bar. They are as follows.
+
+>[!quote] "What is the net" by Arvi, 2023-01-18
+> What is the net
+> Nut
+> Toby makes the nut
+> Toby became the nut
+> Toby is the nut
+
+>[!quote] "When their drunk" by Arvi, 2023-01-18
+> When their drunk
+> There are \*
+> I strike
+> I hunt
+> I becum
+
+## Minehut Ban
+
+Arvi was reportedly banned from Minehut for a month on 2023-04-12 for saying the word "gay". He later appealed the ban.
 
 > minehut moment
