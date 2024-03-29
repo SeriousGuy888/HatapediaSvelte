@@ -14,10 +14,10 @@ The **City of Layon** is the capital city and, as of writing, the sole city of t
 There are two main pronunciations of the city's name, detailed below.
 
 | Pronunciation of "Layon" |                                     1                                      |    2     |
-| -----------------------: | :------------------------------------------------------------------------: | :------: |
-|                      IPA |                                 /ˈleɪ.jɑn/                                 | /leˈjõ/ |
-|       English Respelling | [LAY-ahn](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) |          |
-|        French Respelling |                                                                            | leillon  |
+| :----------------------- | :------------------------------------------------------------------------: | :------: |
+| IPA                      |                                 /ˈleɪ.jɑn/                                 | /leˈjõ/ |
+| English Respelling       | [LAY-ahn](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) |          |
+| French Respelling        |                                                                            | leillon  |
 
 # History
 
