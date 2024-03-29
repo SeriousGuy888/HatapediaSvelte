@@ -13,6 +13,34 @@ export interface CityDisplayData {
 }
 
 const masterCityList: Record<string, City> = {
+  pirate_capital: {
+    weatherSource: "Antananarivo",
+    display: {
+      name: "Capital District",
+      country: "Piracy Corporation",
+    },
+  },
+  lighthouse_rock: {
+    weatherSource: "-43.81442286009742, -176.70929888107432", // Port Hutt, New Zealand
+    display: {
+      name: "Lighthouse Rock",
+      country: "Piracy Corporation",
+    },
+  },
+  polar_port: {
+    weatherSource: "Longyearbyen",
+    display: {
+      name: "Polar Port",
+      country: "Piracy Corporation",
+    },
+  },
+  shipwreck_village: {
+    weatherSource: "Cape Town",
+    display: {
+      name: "Shipwreck Village",
+      country: "Independent Territory",
+    },
+  },
   forgsville_and_no: {
     weatherSource: "Toronto",
     display: {
