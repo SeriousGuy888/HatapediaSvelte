@@ -1,6 +1,6 @@
 ---
 date_created: 2023-07-08
-date_modified: 2024-03-17
+date_modified: 2024-03-30
 title: The Mushroom War
 subtitle: War Between Neville and the Remy Republic
 tags:
@@ -90,6 +90,7 @@ At approximately `22:50`, after listing his demands, the Glorious Leader then cl
 > I, the Glorious Leader of the Remy Republic, proclaim this bridge to be the newest territory of the Remy Republic: the *Territory of Archie*.
 
 ![[Remy proclaims annexation of Archie Bridge 2023-07-08.png]]
+![[Map of Neville after Remy annexed the Archie Bridge 2023-07-08.webp]]
 
 ## Casualties for the Remyan Invasion of Archie Bridge
 
