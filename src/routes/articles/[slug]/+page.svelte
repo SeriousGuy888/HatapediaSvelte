@@ -133,8 +133,11 @@
       {#if data.meta.image}
         <section class="-z-10 absolute inset-0">
           <div
-            style="background-image: url('{getImageWikilinkSrc(data.meta.image ?? '')}')"
             class="banner"
+            style="background-image: url('{encodeURI(getImageWikilinkSrc(data.meta.image)).replace(
+              /'/g, // Escape single quotes so the url() function in CSS works correctly
+              '%27',
+            )}')"
           />
         </section>
       {/if}
