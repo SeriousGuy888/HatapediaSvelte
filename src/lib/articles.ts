@@ -4,12 +4,16 @@ import matter from "gray-matter"
 const slugMap: Record<string, string> = (await import("../content/slugs.json")).default
 
 export async function getArticles() {
-  const articleFiles = import.meta.glob("../content/articles/*.md", { as: "raw", eager: true })
+  const articleFiles = import.meta.glob("../content/articles/*.md", {
+    query: "?raw",
+    import: "default",
+    eager: true,
+  })
 
   let articles: Article[] = []
 
   for (const path in articleFiles) {
-    const fileContent: string = articleFiles[path]
+    const fileContent = articleFiles[path] as string
     const fileName = path.split("/").pop()!.replace(/.md$/i, "")
     const slug = Object.keys(slugMap).find((key) => slugMap[key] === fileName)
 

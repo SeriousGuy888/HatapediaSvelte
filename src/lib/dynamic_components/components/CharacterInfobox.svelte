@@ -46,7 +46,3 @@
     </div>
   </section>
 </aside>
-
-<style>
-  @import "/src/app.css";
-</style>

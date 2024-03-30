@@ -17,9 +17,10 @@
     "@rollup/plugin-dynamic-import-vars": "^2.1.0",
     "@rollup/plugin-typescript": "^11.1.5",
     "@svelte-drama/swr": "^1.2.3",
-    "@sveltejs/adapter-auto": "^2.1.1",
+    "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-vercel": "^4.0.3",
-    "@sveltejs/kit": "^1.30.3",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/hast": "^3.0.3",
     "@types/leaflet": "^1.9.8",
@@ -51,7 +52,7 @@
     "unified": "^11.0.4",
     "unist-util-visit": "^5.0.0",
     "vfile": "^6.0.1",
-    "vite": "^4.4.2",
+    "vite": "^5.0.0",
     "yaml": "^2.3.4"
   },
   "dependencies": {
