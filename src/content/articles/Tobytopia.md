@@ -33,14 +33,14 @@ facts:
 
 ## New Mangrovia
 
+*Main article: [[Great Mangrove War]]*
+
 An area of mangrove trees planted by [[Holden]] in what used to be the savanna.
 This area was at some point claimed by Remy, but this claim was disputed by Toby and
 Holden since Holden, a Tobytopian, planted the trees.
 
 When the conflict was resolved, it was agreed that the Remy Republic would own the area,
 but Holden would be awarded with the title of Founder of New Mangrovia.
-
-[[Remy Republic#The Great Mangrove War|More info in the Remy Republic article]]
 
 ## Unnamed Jungle Island
 
