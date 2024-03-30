@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-13
-date_modified: 2024-03-29
+date_modified: 2024-03-30
 subtitle: Corporatocratic One-Crew Pirate Republic
 tags:
   - country
@@ -10,6 +10,7 @@ image: "[[Pirate Banner.png]]"
 aliases:
   - Pirate
 ---
+
 The HATA Piracy Corporation is a corporatocratic pirate republic, comprising [[Remy]], [[Toby]], [[Billzo|Bill]], [[Liam]], [[Hoang]], and [[Lili]].
 
 The Corporation's territories are chiefly situated upon the [[Untitled Mushroom Island]], though it also owns various other terriories, mainly islands, around the map.
@@ -66,9 +67,11 @@ They frequently made stops in order to raid ocean ruins and ruined portals sight
 
 #### The Second Rest
 
-The party later stopped on an empty grassy island, now known as [[Rest Stop Island]], some hundred meters to the west of the mushroom island. The island contained a single tree, which was cut down by Billzo to craft a smoker. Billzo replanted four saplings in place of the tree, but, due to the remoteness of the island, the saplings were hardly within any player's simulation distance and are still yet to grow into trees as of writing on 2024-03-29.
+The party later stopped on an empty grassy island, now known as [[Rest Stop Island]], some hundred meters to the west of the mushroom island. The island contained a single tree, which was cut down by Billzo to craft a smoker. Billzo replanted three saplings in place of the tree, but, due to the remoteness of the island, the saplings were hardly within any player's simulation distance and are still yet to grow into trees as of writing on 2024-03-29.
 
 The purpose of this rest stop was to gather some food, chiefly <ruby>sea lettuce<rt>kelp</rt></ruby>, which was abundant in the ocean. They cooked the sea lettuce in the smokers, yielding <ruby>crispy sea lettuce<rt>dried kelp</rt></ruby>, enough to sustain Billzo and Remy for the remainder of the trip.
+
+![[rest stop island as of 2024-03-30_02.12.34.webp]]
 
 #### Toby's Departure
 
