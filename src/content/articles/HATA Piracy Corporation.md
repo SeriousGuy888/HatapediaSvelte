@@ -57,7 +57,7 @@ After the server officially opened, and everyone was online (Remy arrived late) 
 
 They reached a plains biome landmass, stopping there for a short while to gather wood, stone, coal, and food. This was also where Toby found some sheep, placing them into boats to be taken to the group's new home in their intended destination, making Toby the first person in the Corporation to have engaged in animal trafficking, something which came to be very important in Pirate culture.
 
-Exactly which landmass it was that the three landed on is a fact now lost to time, but it is theorised to be what later became the southern half of the Bilge Rats' old base, due to its proximity to spawn, the amount of grass and sand matching up with contemporary accounts, and its proximity to the strait through which the group sailed through to leave the Bay of Spawn.
+Exactly which landmass it was that the three landed on is likely to be what later became the southeastern portion of the Bilge Rats' old base, due to its proximity to spawn, the amount of grass and sand matching up with contemporary accounts, and its proximity to the strait through which the group sailed through to leave the Bay of Spawn.
 
 #### Sailing the Seas
 
@@ -69,9 +69,9 @@ They frequently made stops in order to raid ocean ruins and ruined portals sight
 
 The party later stopped on an empty grassy island, now known as [[Rest Stop Island]], some hundred meters to the west of the mushroom island. The island contained a single tree, which was cut down by Billzo to craft a smoker. Billzo replanted three saplings in place of the tree, but, due to the remoteness of the island, the saplings were hardly within any player's simulation distance and are still yet to grow into trees as of writing on 2024-03-29.
 
-The purpose of this rest stop was to gather some food, chiefly <ruby>sea lettuce<rt>kelp</rt></ruby>, which was abundant in the ocean. They cooked the sea lettuce in the smokers, yielding <ruby>crispy sea lettuce<rt>dried kelp</rt></ruby>, enough to sustain Billzo and Remy for the remainder of the trip.
-
 ![[rest stop island as of 2024-03-30_02.12.34.webp]]
+
+The purpose of this rest stop was to gather some food, chiefly <ruby>sea lettuce<rt>kelp</rt></ruby>, which was abundant in the ocean. They cooked the sea lettuce in the smokers, yielding <ruby>crispy sea lettuce<rt>dried kelp</rt></ruby>, enough to sustain Billzo and Remy for the remainder of the trip.
 
 #### Toby's Departure
 
