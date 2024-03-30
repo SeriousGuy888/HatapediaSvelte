@@ -57,7 +57,7 @@ After the server officially opened, and everyone was online (Remy arrived late) 
 
 They reached a plains biome landmass, stopping there for a short while to gather wood, stone, coal, and food. This was also where Toby found some sheep, placing them into boats to be taken to the group's new home in their intended destination, making Toby the first person in the Corporation to have engaged in animal trafficking, something which came to be very important in Pirate culture.
 
-Exactly which landmass it was that the three landed on is likely to be what later became the southeastern portion of the Bilge Rats' old base, due to its proximity to spawn, the amount of grass and sand matching up with contemporary accounts, and its proximity to the strait through which the group sailed through to leave the Bay of Spawn.
+Exactly which landmass it was that the three landed on is likely to be what later became the southeastern portion of the Bilge Rats' old base, due to its proximity to spawn, the amount of grass and sand matching up with contemporaneous accounts, and its proximity to the strait through which the group sailed through to leave the Bay of Spawn.
 
 #### Sailing the Seas
 
