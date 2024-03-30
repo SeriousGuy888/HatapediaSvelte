@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-27
+date_modified: 2024-03-30
 title: Tobytopia
 subtitle: Kratocracy
 tags:
@@ -168,7 +168,11 @@ On 2023-05-07, [[Holden]] overthrew Toby, renaming Tobytopia to [[Holdentopia]] 
 
 On 2023-05-22, Doctor Zomboss, a character from the 2009 hit game *Plants vs Zombies*, overthrew Toby, briefly reorganising Tobytopia into the [[Zombitopian Junta]]. Toby would later retake power from Doctor Zomboss.
 
-Other coups also took place, which are present in the timeline but do not have articles written as of yet.
+On 2023-06-26, a slime was able to overpower Toby while he was AFK, seizing control of the country and renaming it to [[Slimetopia]]. Toby was able to take back control on the same day, however.
+
+From 2023-09-19 to 2023-09-26, for eight days, Tobytopia had again been taken over by Doctor Zomboss. Zomboss had, during this time, once again renamed the country to Zombitopia.
+
+On 2023-10-25, *another* slime came and managed to kill Toby, renaming the country to [[Slimetopia]]. While in power, the slime also renamed [[Tobytown]] to Slime City, an action which was not undone by Toby until 2023-11-03, despite him having taken back control of the country on 2023-10-25.
 
 ## Fortuguese Rebellion
 
@@ -198,5 +202,4 @@ Toby's cave is located directly below the base above it.
 
 ![[Toby's Cave 2023-03-31.png|The main chamber of the cave]]
 ![[Toby's semiautomatic crop farms.png|Toby's auto wheat and carrot farm]]
-
 
