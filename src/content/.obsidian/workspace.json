@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7ca50b4a02798dd6",
+        "id": "66fc7b62edef0c56",
         "type": "tabs",
         "children": [
           {
-            "id": "f8616989e6a12084",
+            "id": "aff9d38a3098a4ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Tobytopia.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef4b9304c0f81417",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/Tobytown.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/Tobytown.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/Tobytown.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/Tobytown.md"
+                "file": "articles/HATA Piracy Corporation.md"
               }
             }
           }
@@ -157,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/Tobytown.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -180,7 +167,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.18462326225858175,
+                  "scale": 0.184623262258582,
                   "close": true
                 }
               }
@@ -204,10 +191,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ef4b9304c0f81417",
+  "active": "aff9d38a3098a4ef",
   "lastOpenFiles": [
-    "articles/Tobytopia.md",
+    "images/remy chase glow squid 2023-12-27.webp",
+    "articles/HATA Piracy Corporation.md",
+    "images/provisional pirate base.webp",
+    "images/remy makes first cocoa bean farm.webp",
+    "images/remy sleeps on the shore of the mushroom island.webp",
+    "images/land ho!!! 2023-12-27.webp",
     "articles/Tobytown.md",
+    "articles/Tobytopia.md",
     "articles/Mushroom War.md",
     "images/Map of Neville after Remy annexed the Archie Bridge 2023-07-08.webp",
     "images/Arvi tells Toby about his day on a Bench in Tobytown 2023-08-06.webp",
@@ -217,8 +210,6 @@
     "images/Tobytown Harbour under construction 2023-10-03.webp",
     "articles/Remy Republic.md",
     "articles/Great Mangrove War.md",
-    "articles/HATA Piracy Corporation.md",
-    "images/rest stop island as of 2024-03-30_02.12.34.webp",
     "articles/Layon.md",
     "articles/Pink and Purple Treaty.md",
     "articles/Polar Port.md",
@@ -237,10 +228,6 @@
     "articles/Billzo.md",
     "articles/Flagrant Fowls.md",
     "articles/Treaty of Neville.md",
-    "images/Che Forguera Portrait.png",
-    "images/Slimetopia 2 Banner.webp",
-    "images/zomboss eliminated again.webp",
-    "images/Pasted image 20230402192537.png",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",

@@ -82,8 +82,14 @@ Toby eventually had to leave the game, leaving Remy and Bill to continue to the 
 >"Land ho!"
 >—Remy
 
+![[land ho!!! 2023-12-27.webp]]
+
 “Land ho!” Remy exclaimed from the crow’s nest of his rowboat. They landed on the island, finding but mycelium and mushrooms — a blank canvas on which to build their pirate empire. A single grass block was present where they landed. Billzo broke some of the neighbouring mycelium blocks and replaced the dirt, hoping that the grass would spread.
 
 The sheep were left in the boats along the shore where they had landed, as the <ruby>Glorious Plunderer<rt>Remy</rt></ruby> and the <ruby>God of News<rt>Billzo</rt></ruby> explored the island and set up camp. Remy placed down his jungle logs on the shore and planted the cocoa beans upon them, starting the first cocoa bean farm. Nearby, Billzo converted some of the mycelium on the shore into farmland, where he planted wheat seeds, thereby establishing the first wheat farm on the island.
 
 They set up a provisional base further inland, containing a bed, a double chest, a crafting table, a furnace, and a smoker.
+
+![[remy sleeps on the shore of the mushroom island.webp]]
+![[remy makes first cocoa bean farm.webp]]
+![[provisional pirate base.webp]]![[remy chase glow squid 2023-12-27.webp]]
