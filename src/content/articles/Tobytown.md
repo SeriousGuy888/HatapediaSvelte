@@ -22,7 +22,7 @@ The first known use of the name "Tobytown" was on 2023-10-14, though the city's 
 
 Notable buildings in Tobytown include:
 
-- The [[DVD Player]]: Toby's base, his personal palace
+- The DVD Player: [[#Toby's Base|Toby's base]], his personal palace
 - The [[Tobytown Harbour]]
 - The [[Tobytown Frog Brothel]]
 - The [[Tobytown KFV]]
@@ -32,3 +32,19 @@ Toby also had plans to build
 
 - The [[Tobytopia Public Library]] (TPL), containing books from across the [[Polyoktosurv]]
 - A butchery
+
+## Toby's Base
+
+![[Toby's Base 2023-03-31 From Tree Level.png|Toby's base under construction]]
+![[Toby's Base 2023-03-31 From Above.png]]
+![[Pasted image 20230402161202.png|Remy swoops in on espionage mission]]
+![[Remy Infiltrates Toby's Moat 2023-04-26.png]]
+![[Remy sneaks around Toby's Palace 2023-04-26.png]]
+
+### Toby's Cave
+
+Toby's cave is located directly below the palace above it.
+
+![[Toby's Cave 2023-03-31.png|The main chamber of the cave]]
+![[Toby's semiautomatic crop farms.png|Toby's auto wheat and carrot farm]]
+

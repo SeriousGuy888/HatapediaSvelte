@@ -26,10 +26,13 @@ facts:
 # Territories
 
 - [[Swamp of Secrets]] (AKA Tobytopian Mangrovia)
+	- [[Tobytown]], the capital city
 - Unnamed Jungle Island
 - [[Tobytopian Southern Territories]]
 
 # Territorial Disputes
+
+Tobytopia does not currently have any territorial disputes, but there are some notable past disputes that have errupted into conflict.
 
 ## New Mangrovia
 
@@ -185,21 +188,4 @@ video: m9Mk31BjK-Q
 On 2023-04-29, General Forguera officially met with [[Remy]], Glorious Leader of the [[Remy Republic]]. The Glorious Leader generously offered assistance in the form of forgutarian aid and infrastructure projects to General Forguera's forces, which Forguera graciously accepted. Four days later, on 2023-05-03, the Remyan Parliament officially approved further diplomatic negotiations with Che Forguera's forces, though details are not yet known.
 
 ![[Authentic Fortuguese Army.png]]
-
-# Structures
-
-## Toby's Base
-
-![[Toby's Base 2023-03-31 From Tree Level.png|Toby's base under construction]]
-![[Toby's Base 2023-03-31 From Above.png]]
-![[Pasted image 20230402161202.png|Remy swoops in on espionage mission]]
-![[Remy Infiltrates Toby's Moat 2023-04-26.png]]
-![[Remy sneaks around Toby's Palace 2023-04-26.png]]
-
-## Toby's Cave
-
-Toby's cave is located directly below the base above it.
-
-![[Toby's Cave 2023-03-31.png|The main chamber of the cave]]
-![[Toby's semiautomatic crop farms.png|Toby's auto wheat and carrot farm]]
 
