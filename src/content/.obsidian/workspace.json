@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aff9d38a3098a4ef",
+            "id": "8d4309bc2b2275be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/big damage missile.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa509e64b7fdab65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Inheritance Incident.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/big damage missile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/big damage missile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md"
+                "file": "articles/big damage missile.md"
               }
             }
           }
@@ -144,7 +156,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/big damage missile.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -167,7 +179,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.184623262258582,
+                  "scale": 0.2588386562181639,
                   "close": true
                 }
               }
@@ -191,22 +203,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "aff9d38a3098a4ef",
+  "active": "8d4309bc2b2275be",
   "lastOpenFiles": [
-    "images/piston staircase 2023-12-27.webp",
+    "articles/Inheritance Incident.md",
+    "articles/big damage missile.md",
+    "images/firework_rocket.png",
+    "images/firework rocket.png",
+    "images/big damage missile-20240331171411110.webp",
     "articles/HATA Piracy Corporation.md",
+    "images/piston staircase 2023-12-27.webp",
     "images/first four villagers in pirate villager pen 2023-12-27.webp",
     "images/not slave trafficking 2023-12-27.webp",
     "images/HATA Piracy Corporation-20240313175955565.webp",
     "images/remy chase glow squid 2023-12-27.webp",
     "images/provisional pirate base.webp",
     "images/remy makes first cocoa bean farm.webp",
-    "images/remy sleeps on the shore of the mushroom island.webp",
-    "images/land ho!!! 2023-12-27.webp",
     "articles/Tobytown.md",
     "articles/Tobytopia.md",
     "articles/Mushroom War.md",
-    "images/Map of Neville after Remy annexed the Archie Bridge 2023-07-08.webp",
     "articles/Arvi.md",
     "articles/Remy Republic.md",
     "articles/Great Mangrove War.md",
@@ -227,7 +241,6 @@
     "articles/Billzoplace.md",
     "articles/Billzo.md",
     "articles/Flagrant Fowls.md",
-    "articles/Treaty of Neville.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",
