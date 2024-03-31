@@ -34,7 +34,7 @@ Please see: [[Inheritance Incident]]
 
 ## Period of Presumed Death
 
-From `2023-06-29` to some unknown date in the future, Toby left the server to its own devices and decided to go to camp or something like that.
+Leaving on 2023-06-29 and returning on 2023-07-26, Toby left the server to its own devices and decided to go to summer camp or something like that.
 
 ### Inheritances
 
