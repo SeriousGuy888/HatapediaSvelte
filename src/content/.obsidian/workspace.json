@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/Tobytopia.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef4b9304c0f81417",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Tobytown.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/Tobytown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/Tobytown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md"
+                "file": "articles/Tobytown.md"
               }
             }
           }
@@ -144,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/HATA Piracy Corporation.md",
+                "file": "articles/Tobytown.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -191,23 +204,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f8616989e6a12084",
+  "active": "ef4b9304c0f81417",
   "lastOpenFiles": [
+    "articles/Tobytopia.md",
+    "articles/Tobytown.md",
     "articles/Mushroom War.md",
+    "images/Map of Neville after Remy annexed the Archie Bridge 2023-07-08.webp",
+    "images/Arvi tells Toby about his day on a Bench in Tobytown 2023-08-06.webp",
+    "articles/Arvi.md",
+    "images/Tobytown at night 2023-09-09.webp",
+    "images/Liam visits Tobytown 2023-10-14.webp",
+    "images/Tobytown Harbour under construction 2023-10-03.webp",
+    "articles/Remy Republic.md",
+    "articles/Great Mangrove War.md",
     "articles/HATA Piracy Corporation.md",
+    "images/rest stop island as of 2024-03-30_02.12.34.webp",
     "articles/Layon.md",
     "articles/Pink and Purple Treaty.md",
     "articles/Polar Port.md",
     "articles/Remy.md",
-    "articles/Remy Republic.md",
     "articles/The Voices.md",
     "articles/Camel Heist and Counterheist.md",
     "articles/No.md",
     "articles/No Sleep Café.md",
     "articles/Scammington Bar.md",
-    "articles/Arvi.md",
     "articles/Good Neighbour Coup.md",
-    "articles/Tobytopia.md",
     "articles/List of Coups and Coup Attempts by Country.md",
     "articles/Holden.md",
     "articles/Boxing Matchbox War.md",
@@ -216,19 +237,10 @@
     "articles/Billzo.md",
     "articles/Flagrant Fowls.md",
     "articles/Treaty of Neville.md",
-    "articles/Great Mangrove War.md",
-    "articles/Anna.md",
-    "articles/Election Night Shooting.md",
     "images/Che Forguera Portrait.png",
     "images/Slimetopia 2 Banner.webp",
     "images/zomboss eliminated again.webp",
     "images/Pasted image 20230402192537.png",
-    "images/Jasper Portrait.webp",
-    "images/Pirate Banner.png",
-    "images/Pirate Banner.webp",
-    "images/HATA Piracy Corporation-20240316192219789.webp",
-    "images/Hoang and Toby ride Batman towards the nether portal while Anna and Holden pursue.webp",
-    "images/Hoang rides Batman with Toby helping while Holden pursues.webp",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",

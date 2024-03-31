@@ -3,7 +3,7 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "images",
   "spellcheck": false,
-  "useTab": false,
-  "tabSize": 2,
+  "useTab": true,
+  "tabSize": 4,
   "newFileFolderPath": "articles"
 }
