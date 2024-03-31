@@ -93,3 +93,18 @@ They set up a provisional base further inland, containing a bed, a double chest,
 ![[remy sleeps on the shore of the mushroom island.webp]]
 ![[remy makes first cocoa bean farm.webp]]
 ![[provisional pirate base.webp]]![[remy chase glow squid 2023-12-27.webp]]
+
+## Hoang's Arrival
+
+On the same day of the landing on the Untitled Mushroom Island, [[Hoang]], who had, up to that point, been mining to the southeast of spawn, managed to track down Billzo and Remy. He arrived on the island in full diamond armour, seeking to join the Corporation.
+
+## First Villager Trafficking
+
+On the same day, after Hoang arrived, he and Remy worked together to traffic villagers from the village now known as [[Toothbrush Town]], so named because of the last name "Toothbrush" being so prevalent among the villagers taken from the town, to the northwest of the mushroom island. Every last resident of the village was taken and shipped to the burgeoning pirate colony.
+
+They transported the villagers back to the island, where Billzo built a piston staircase to move their boats up onto the island and helped to place them in the new pen built to house the villagers.
+
+![[not slave trafficking 2023-12-27.webp]]
+![[first four villagers in pirate villager pen 2023-12-27.webp]]
+![[piston staircase 2023-12-27.webp]]
+
