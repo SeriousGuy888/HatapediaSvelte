@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-28
+date_modified: 2024-03-31
 title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 tags:
@@ -8,6 +8,8 @@ tags:
   - place
   - hata1
 image: "[[Remy Republic Banner.png]]"
+aliases:
+  - Remyan
 ---
 
 The Remy Republic a state that was originally founded by [[Remy]] on the southern 1000 block worldborder of the server map.

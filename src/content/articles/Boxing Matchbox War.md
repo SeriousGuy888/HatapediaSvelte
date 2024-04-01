@@ -1,6 +1,6 @@
 ---
 date_created: 2023-07-08
-date_modified: 2024-03-27
+date_modified: 2024-03-31
 title: The Boxing Matchbox War
 subtitle: Holdentopian Coup Attempt on the Remy Republic
 tags:
@@ -16,7 +16,7 @@ image: "[[remy under duress atop arvi tower.png]]"
 
 ## The Boxing Match
 
-On `2023-07-06` at approximately `01:50`, [[Remy]] and [[Holden]] were having a boxing match in the [[Scammington Boxing Ring|Scammington Boxing Ring]]. Holden, who for some reason had [[Order 66|Order 66 spawn eggs]], derailed the boxing match by spawning several clone troopers in the ring, which immediately erupted in chaos from the missile explosions.
+On `2023-07-06` at approximately `01:50`, [[Remy]] and [[Holden]] were having a boxing match in the [[Scammington Boxing Ring|Scammington Boxing Ring]]. Holden, who for some reason had [[Order 66 Spawn Egg|Order 66 spawn eggs]], derailed the boxing match by spawning several clone troopers in the ring, which immediately erupted in chaos from the missile explosions.
 
 ## Epique Chase
 
@@ -61,7 +61,7 @@ The Glorious Leader was killed by Holden a total of thirteen times during this e
 
 ## Order 66 in No
 
-Remy told Holden to meet him in [[No]], claiming that he would be willing to formally transfer rule of the Remy Republic over to Holden. However, when Holden arrived in No at `02:17`, Remy executed [[Order 66]], and Holden was shot and killed by one of the clone troopers by `02:18`.
+Remy told Holden to meet him in [[No]], claiming that he would be willing to formally transfer rule of the Remy Republic over to Holden. However, when Holden arrived in No at `02:17`, Remy executed [[Order 66 Spawn Egg|Order 66]], and Holden was shot and killed by one of the clone troopers by `02:18`.
 
 Rockets from the clone troopers also reached the animal pens in No, killing much of Remy's livestock.
 
@@ -108,7 +108,7 @@ After making his way back to Arvi Tower, the Glorious Leader started to stab and
 
 ![[epique naval battle boxing matchbox war.png]]
 
-The two returning to the mainland of No, Holden and Anna then chased Remy across [[Fluffy Bridge]] and across the [[Scammington]] Strait. Several [[Order 66]] spawn eggs were dropped out of the sky, and after Remy spawned in two clone troopers, chaos erupted across the beach and threw the pursuers into disarray to avoid being shot by the clone trooper missiles.
+The two returning to the mainland of No, Holden and Anna then chased Remy across [[Fluffy Bridge]] and across the [[Scammington]] Strait. Several [[Order 66 Spawn Egg|Order 66 spawn eggs]] were dropped out of the sky, and after Remy spawned in two clone troopers, chaos erupted across the beach and threw the pursuers into disarray to avoid being shot by the clone trooper missiles.
 
 ![[remy boxing matchbox war clone troopers chase anna.png]]
 

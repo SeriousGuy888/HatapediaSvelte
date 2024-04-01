@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "aa509e64b7fdab65",
+            "id": "18541eea9a2403a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Inheritance Incident.md",
+                "file": "articles/Order 66 Spawn Egg.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/big damage missile.md",
+                "file": "articles/Order 66 Spawn Egg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/big damage missile.md",
+                "file": "articles/Order 66 Spawn Egg.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/big damage missile.md"
+                "file": "articles/Order 66 Spawn Egg.md"
               }
             }
           }
@@ -156,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/big damage missile.md",
+                "file": "articles/Order 66 Spawn Egg.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -203,10 +204,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8d4309bc2b2275be",
+  "active": "18541eea9a2403a1",
   "lastOpenFiles": [
-    "articles/Inheritance Incident.md",
     "articles/big damage missile.md",
+    "articles/Order 66 Spawn Egg.md",
+    "articles/Boxing Matchbox War.md",
+    "articles/Remy Republic.md",
+    "images/pillager_spawn_egg.png",
+    "images/pillager_spawn_egg.png.0.pdnSave",
+    "articles/Inheritance Incident.md",
+    "articles/Untitled.md",
+    "articles/o.md",
     "images/firework_rocket.png",
     "images/firework rocket.png",
     "images/big damage missile-20240331171411110.webp",
@@ -217,12 +225,10 @@
     "images/HATA Piracy Corporation-20240313175955565.webp",
     "images/remy chase glow squid 2023-12-27.webp",
     "images/provisional pirate base.webp",
-    "images/remy makes first cocoa bean farm.webp",
     "articles/Tobytown.md",
     "articles/Tobytopia.md",
     "articles/Mushroom War.md",
     "articles/Arvi.md",
-    "articles/Remy Republic.md",
     "articles/Great Mangrove War.md",
     "articles/Layon.md",
     "articles/Pink and Purple Treaty.md",
@@ -236,11 +242,6 @@
     "articles/Good Neighbour Coup.md",
     "articles/List of Coups and Coup Attempts by Country.md",
     "articles/Holden.md",
-    "articles/Boxing Matchbox War.md",
-    "articles/Arvi Tower.md",
-    "articles/Billzoplace.md",
-    "articles/Billzo.md",
-    "articles/Flagrant Fowls.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",
