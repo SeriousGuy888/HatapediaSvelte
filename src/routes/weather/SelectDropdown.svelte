@@ -1,9 +1,9 @@
 <script lang="ts">
   import { ChevronDown } from "lucide-svelte"
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher } from "svelte"
 
-  export let options: Record<string, string>
-  export let value: string = Object.keys(options)[0]
+  export let options: Record<string, Record<string, string>> // { optgroup1: { id1: displayName, ... }, ... }
+  export let value: string
 
   const dispatch = createEventDispatcher()
 </script>
@@ -24,11 +24,15 @@
 
           overflow-x-hidden whitespace-nowrap text-ellipsis
         `}
-      bind:value={value}
+      bind:value
       on:change={() => dispatch("change", value)}
     >
-      {#each Object.keys(options) as id}
-        <option value={id}>{options[id]}</option>
+      {#each Object.entries(options) as [optgroupName, subOptions]}
+        <optgroup label={optgroupName}>
+          {#each Object.keys(subOptions) as subOptionId}
+            <option value={subOptionId}>{subOptions[subOptionId]}</option>
+          {/each}
+        </optgroup>
       {/each}
     </select>
     <span class="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">

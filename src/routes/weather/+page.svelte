@@ -1,17 +1,14 @@
 <script lang="ts">
   import WeatherCard from "./WeatherCard.svelte"
-  import type { CityDisplayData } from "$lib/weather/weatherCitiesManager"
   import type { TemperatureUnit, WeatherData } from "$lib/weather/weatherapi_types.js"
   import SelectDropdown from "./SelectDropdown.svelte"
   import { onMount } from "svelte"
   import { swr } from "@svelte-drama/swr"
   import RadioSwitch from "./RadioSwitch.svelte"
 
-  export let data
+  import { cities, citiesFlat } from "$lib/weather/master_cities_list"
 
-  const cities: Record<string, CityDisplayData> = data.cities
-
-  let selectedCityId = Object.keys(cities)[0]
+  let selectedCityId = Object.keys(citiesFlat)[0]
   let selectedTempUnit: TemperatureUnit = "celsius"
 
   let weatherData: WeatherData | null = null
@@ -55,11 +52,19 @@
   <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
     <SelectDropdown
       options={Object.entries(cities).reduce(
-        (acc, [id, displayData]) => ({
+        // Go through the cities, go into each optgroup, and replace all the `City`s with the city's name and country.
+
+        (acc, [optgroup, cities]) => ({
           ...acc,
-          [id]: `${displayData.name}, ${displayData.country}`,
+          [optgroup]: Object.entries(cities).reduce(
+            (acc, [id, city]) => ({
+              ...acc,
+              [id]: `${city.display.name}, ${city.display.country}`,
+            }),
+            {}, // Reconstruct the entries array into an object: [[a, b], ...] => { a: b, ... }
+          ),
         }),
-        {},
+        {}, // Reconstruct the entries array into an object: [[a, b], ...] => { a: b, ... }
       )}
       bind:value={selectedCityId}
       on:change={updateWeatherData}
@@ -73,8 +78,8 @@
     />
   </aside>
   <WeatherCard
-    cityName={cities[selectedCityId].name}
-    country={cities[selectedCityId].country}
+    cityName={citiesFlat[selectedCityId].display.name}
+    country={citiesFlat[selectedCityId].display.country}
     tempUnit={selectedTempUnit}
     ready={weatherData !== null}
     {weatherData}

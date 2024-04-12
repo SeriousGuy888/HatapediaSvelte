@@ -1,13 +1,13 @@
 import { WEATHER_API_COM_API_KEY as apiKey } from "$env/static/private"
 import type { WeatherData } from "../../../../lib/weather/weatherapi_types.ts"
-import { getFakeCityRealCityMap } from "../../../../lib/weather/weatherCitiesManager.ts"
 import { json } from "@sveltejs/kit"
+import { citiesFlat } from "$lib/weather/master_cities_list.ts"
 
 export async function GET({ params }) {
   const { city } = params
-  const fakeCityToRealCity = getFakeCityRealCityMap()
+  const foundCity = citiesFlat[city]
 
-  if (!fakeCityToRealCity[city]) {
+  if (!foundCity) {
     // I don't know how to return a 404 status code response with json body
     return json({
       status: 404,
@@ -20,11 +20,9 @@ export async function GET({ params }) {
     })
   }
 
-  const location = fakeCityToRealCity[city]
-
   try {
     const weatherRes = await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`,
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${foundCity.realWeatherSource}&aqi=no`,
     )
     const weatherData: WeatherData = await weatherRes.json()
 
@@ -34,7 +32,7 @@ export async function GET({ params }) {
     })
   } catch (err) {
     return json({
-      status: 400,
+      status: 500,
       body: {
         error: {
           code: -1,
