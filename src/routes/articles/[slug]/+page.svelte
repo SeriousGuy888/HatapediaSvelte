@@ -246,7 +246,7 @@
   }
 
   :global(.article-content .gallery > img) {
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     margin: 0;
     overflow: hidden;
     min-height: 8rem;
