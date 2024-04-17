@@ -33,4 +33,4 @@ i don't remember why i made these for remy
 ## Notable Appearances
 
 - [[Boxing Matchbox War]]
-- idk when else
+- [[Scammington#Order 66 Accident]]

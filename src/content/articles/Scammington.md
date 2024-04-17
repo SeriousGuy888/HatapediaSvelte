@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-16
+date_modified: 2024-04-16
 subtitle: Province of the Remy Republic
 tags:
   - place
@@ -36,7 +36,7 @@ According to a census of the population of Scammington on 2023-04-13, the popula
 
 ## Order 66 Accident
 
-The Glorious Leader accidentally called Order 66 in Scammington, which resulted in the death of almost the entirety of the Scammington villager population.<sup>[exact dates needed]</sup>
+The Glorious Leader accidentally called [[Order 66 Spawn Egg|Order 66]] in Scammington, which resulted in the death of almost the entirety of the Scammington villager population.<sup>[exact dates needed]</sup>
 
 ## Refugee Crisis of the Sandy Island Demolition
 

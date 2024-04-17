@@ -11,11 +11,28 @@
             "id": "c470d700b0696235",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "articles/Scammington.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "762718dda441577c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Order 66 Spawn Egg.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "articles/Order 66 Spawn Egg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "articles/Order 66 Spawn Egg.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "articles/Order 66 Spawn Egg.md"
+              }
             }
           }
         ],
@@ -136,6 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "articles/Order 66 Spawn Egg.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -182,8 +204,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c470d700b0696235",
+  "active": "762718dda441577c",
   "lastOpenFiles": [
+    "articles/Scammington.md",
     "articles/big damage missile.md",
     "articles/The Voices.md",
     "articles/Emerald Woveyad.md",
