@@ -1,12 +1,13 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-28
+date_modified: 2024-04-16
 title: The Voices
 subtitle: THEY'RE NOT REAL THEY'RE NOT REAL THEY'RE NOT REAL
 tags:
   - character
   - hata1
   - hata2
+image: "[[unknown_character_villager.webp]]"
 ---
 
 The Voices are an unknown entity that manifests as voices in the

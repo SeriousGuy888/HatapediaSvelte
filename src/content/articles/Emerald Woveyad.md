@@ -5,6 +5,7 @@ subtitle: Villager
 tags:
   - character
   - hata1
+image: "[[unknown_character_villager.webp]]"
 ---
 Emerald <ruby>Woveyad<rt>/ˈwoʊ.vi.jæd/</rt></ruby> was a [[Remy Republic|Remyan]] election official, overseeing voting for residents of [[Forgsville]] during the [[Remy Republic#Election|Remyan election]].
 
