@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/Emerald Woveyad.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/Emerald Woveyad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/Emerald Woveyad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md"
+                "file": "articles/Emerald Woveyad.md"
               }
             }
           }
@@ -157,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/Emerald Woveyad.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -206,8 +206,11 @@
   },
   "active": "18541eea9a2403a1",
   "lastOpenFiles": [
-    "articles/big damage missile.md",
+    "images/unknown_character_villager.webp",
+    "articles/Emerald Woveyad.md",
+    "articles/Fletcher Quadratic.md",
     "articles/Order 66 Spawn Egg.md",
+    "articles/big damage missile.md",
     "articles/Boxing Matchbox War.md",
     "articles/Remy Republic.md",
     "images/pillager_spawn_egg.png",
@@ -224,7 +227,6 @@
     "images/not slave trafficking 2023-12-27.webp",
     "images/HATA Piracy Corporation-20240313175955565.webp",
     "images/remy chase glow squid 2023-12-27.webp",
-    "images/provisional pirate base.webp",
     "articles/Tobytown.md",
     "articles/Tobytopia.md",
     "articles/Mushroom War.md",
@@ -240,8 +242,6 @@
     "articles/No Sleep Café.md",
     "articles/Scammington Bar.md",
     "articles/Good Neighbour Coup.md",
-    "articles/List of Coups and Coup Attempts by Country.md",
-    "articles/Holden.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",
