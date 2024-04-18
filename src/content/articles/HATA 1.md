@@ -4,7 +4,6 @@ date_modified: 2024-04-18
 subtitle: First Season of HATA
 tags:
   - hata1
-  - meta
 image: "[[server-icon.webp]]"
 aliases:
   - Hata 1
