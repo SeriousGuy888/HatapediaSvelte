@@ -1,7 +1,7 @@
 ---
 date_created: 2023-05-01
 date_modified: 2024-03-28
-subtitle: Glorious Leader of the Remy Republic
+subtitle: Renowned Pogstrie Chef
 tags:
   - character
 image: "[[Remy Portrait.png]]"
@@ -9,7 +9,9 @@ aliases:
   - Glorious Leader
 ---
 
-Remy, whose full name is RemyHemy, is one of the members of the [[HATA]] server. He is most well known for being the Glorious Leader of the [[Remy Republic]].
+Remy, whose full name is RemyHemy, is one of the members of the [[HATA]] server.
+
+He is most well known for being the Glorious Leader of the [[Remy Republic]] during HATA 1, but is also a renowned <ruby>pogstrie<rt>cookie</rt></ruby> chef and host of the upcoming reality cooking show *[[Roasting with Remy]]*.
 
 ```infobox-character
 name: Remy
@@ -20,6 +22,7 @@ facts:
   - Glorious Leader of the Remy Republic
   - Former Interim Dictator of Tobytopia
   - Former Captain of the Flagrant Fowls
+  - Host of Roasting With Remy
   full name: "RemyHemy"
   species: "Blaze"
   favourite font: Times New Roman
