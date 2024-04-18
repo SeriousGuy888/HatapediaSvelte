@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ea6354638cbffddf",
+        "id": "7220666ef1e19c7f",
         "type": "tabs",
         "children": [
           {
-            "id": "c470d700b0696235",
+            "id": "c12318af86524a65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Scammington.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "762718dda441577c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md"
+                "file": "articles/HATA Piracy Corporation.md"
               }
             }
           }
@@ -157,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/Order 66 Spawn Egg.md",
+                "file": "articles/HATA Piracy Corporation.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -201,18 +188,26 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "janitor:Janitor: scan vault": false
     }
   },
-  "active": "762718dda441577c",
+  "active": "c12318af86524a65",
   "lastOpenFiles": [
+    "images/first grassfication 1.webp",
+    "articles/HATA Piracy Corporation.md",
+    "images/first grassification 2.webp",
+    "images/Pasted image 20230427190358.png",
+    "images/remy does first murder on hata 2.webp",
+    "images/remy and billzo arrive with the cows.webp",
+    "images/remy and billzo traffic cows.webp",
+    "images/HATA Piracy Corporation-20240313175955565.webp",
     "articles/Scammington.md",
+    "articles/Order 66 Spawn Egg.md",
     "articles/big damage missile.md",
     "articles/The Voices.md",
     "articles/Emerald Woveyad.md",
     "images/unknown_character_villager.webp",
     "articles/Fletcher Quadratic.md",
-    "articles/Order 66 Spawn Egg.md",
     "articles/Boxing Matchbox War.md",
     "articles/Remy Republic.md",
     "images/pillager_spawn_egg.png",
@@ -221,14 +216,6 @@
     "articles/Untitled.md",
     "articles/o.md",
     "images/firework_rocket.png",
-    "images/firework rocket.png",
-    "images/big damage missile-20240331171411110.webp",
-    "articles/HATA Piracy Corporation.md",
-    "images/piston staircase 2023-12-27.webp",
-    "images/first four villagers in pirate villager pen 2023-12-27.webp",
-    "images/not slave trafficking 2023-12-27.webp",
-    "images/HATA Piracy Corporation-20240313175955565.webp",
-    "images/remy chase glow squid 2023-12-27.webp",
     "articles/Tobytown.md",
     "articles/Tobytopia.md",
     "articles/Mushroom War.md",
@@ -242,7 +229,6 @@
     "articles/No.md",
     "articles/No Sleep Café.md",
     "articles/Scammington Bar.md",
-    "articles/Good Neighbour Coup.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",

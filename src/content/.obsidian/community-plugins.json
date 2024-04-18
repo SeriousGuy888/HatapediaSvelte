@@ -1,11 +1,11 @@
 [
   "templater-obsidian",
-  "table-editor-obsidian",
   "obsidian-furigana",
   "keyshots",
   "obsidian-smart-typography",
   "settings-search",
   "obsidian-linter",
   "image-converter",
-  "obsidian-vault-statistics-plugin"
+  "obsidian-vault-statistics-plugin",
+  "janitor"
 ]

@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-13
-date_modified: 2024-03-30
+date_modified: 2024-04-18
 subtitle: Corporatocratic One-Crew Pirate Republic
 tags:
   - country
@@ -36,6 +36,9 @@ facts:
 ![[HATA Piracy Corporation-20240313175955565.webp]]
 
 # History
+
+>[!info] Timezone
+> Times are specified in Eastern Time ([UTC-5](https://en.wikipedia.org/wiki/UTC%E2%88%9205:00) during standard time and [UTC-4](https://en.wikipedia.org/wiki/UTC%E2%88%9204:00) during daylight saving time).
 
 ## Establishment of the Commune
 
@@ -108,3 +111,28 @@ They transported the villagers back to the island, where Billzo built a piston s
 ![[first four villagers in pirate villager pen 2023-12-27.webp]]
 ![[piston staircase 2023-12-27.webp]]
 
+## First Cow Trafficking
+
+On 2024-12-28, some time between 00:05 and 00:11, [[Billzo|Bill]] and [[Remy]] set off from the Untitled Mushroom Island northwards to the land now known as Horsy Hills, located close to the cherry grove on the mountainous landmass to the north of the island.
+
+At 00:11, Billzo and Remy placed the cows into boats and began to transport them back home, arriving at 00:13.
+
+![[remy and billzo traffic cows.webp]]
+![[remy and billzo arrive with the cows.webp]]
+
+## Remy Murders Toby
+
+On 2023-12-28 at 02:08 ([discordsrv death message](https://discord.com/channels/1046302463143194709/1189308205814268026/1189827038643757137)), [[Remy]] shot and killed [[Toby]].
+
+![[remy does first murder on hata 2.webp]]
+
+[[Hoang]] then threatened to execute Remy for the homicide. Remy insisted that his first death be a natural one, and that he would only undergo the death penalty after his first natural death during Hata 2.
+
+## Grassification Begins
+
+At around 20:52 on 2023-12-28, [[Billzo]] majorly expanded the grassification project on the untitled mushroom island from the initial tentative attempts at grassification following the initial landing with [[Remy]].
+
+Grass blocks were seeded around the provisional base area to begin the grassification process. Billzo pioneered a new grassification technique, quite different from those used during [[Polyoktosurv|cheezsurv4]], made possible by recent Minecraft updates at the time. Billzo used a shovel to turn mycellium into dirt paths, and then used a hoe to turn the dirt paths into farmland. The farmland would then dry out and turn into dirt onto which grass could spread.
+
+![[first grassfication 1.webp]]
+![[first grassification 2.webp]]
