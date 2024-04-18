@@ -1,11 +1,11 @@
 ---
+date_created: 2023-05-01
+date_modified: 2024-04-18
 title: Toby
 subtitle: Ultimate Kaiser of Doom Three Thousand of the Tobytopian Empire
-image: "[[Toby Portrait.png]]"
-date_created: 2023-05-01
-date_modified: 2023-11-12
 tags:
   - character
+image: "[[toby is gay.webp]]"
 ---
 
 Toby is the ruler of [[Tobytopia]], the owner of the [[HATA]] minecraft server, as well as an <ruby>ekto<rt>ghost</rt></ruby> notorious for various <ruby>sniki<rt>clandestine</rt></ruby> operations.

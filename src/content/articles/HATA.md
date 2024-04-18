@@ -1,6 +1,6 @@
 ---
 date_created: 2023-06-21
-date_modified: 2024-03-16
+date_modified: 2024-04-18
 title: HATA
 subtitle: Holden's Awesome Tyrannosaurus Adventure
 tags:
@@ -9,7 +9,6 @@ tags:
 image: "[[server-icon.webp]]"
 aliases:
   - HATAsurv
-  - HATAwar
 ---
 
 # What is HATA?
@@ -33,9 +32,9 @@ It is unclear exactly where the tyrannosaurus is on the server. There have so fa
 
 # History
 
-The original HATA, originally known as HATAwar, posthumously known as HATA 1, first opened on `2022-12-02`. HATA 1 lasted around a year, slowly fizzling out in activity.
+The original HATA, originally known as HATAwar, posthumously known as [[HATA 1]], first opened on 2022-12-02, lasting around a year but slowly fizzling out in activity.
 
-HATA 2 started on `2023-12-27`, this time intended to be a simple survival multiplayer server from the start, without a world border.
+[[HATA 2]] started on 2023-12-27, this time intended to be a simple survival multiplayer server from the start, without a world border.
 
 ```infobox-timeline
 title: History of HATA
