@@ -25,7 +25,7 @@ On 2023-06-21, HATA 1 officially transitioned from being a war server to a more 
 
 The worldborder was changed from a 1000 block diameter, centered on spawn, to a 10,000 block diameter, centered on (0, 0). This change to the worldborder was briefly preceded by the [[Border Disorder]].
 
->[!quote] An announcement made by [[Toby]] on 2023-06-20
+>[!quote] An announcement made by Toby on 2023-06-20
 > @everyone
 > Update to 1.20
 > On Wednesday, June 21 at 3pm HATAsurv (previously HATAwar) will open complete with the new Tails and Trails<sup>[sic]</sup> update. 
