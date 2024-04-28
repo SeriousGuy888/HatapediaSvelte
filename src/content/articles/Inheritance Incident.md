@@ -41,7 +41,7 @@ Meanwhile, Remy had returned and recovered his items. Remy and Jasper then proce
 
 Toby then fled from the Mailhouse and headed in to his [[Toby's Shady Building in Billzoplace|shady building]] through the S.E.K.S. Closet. Jasper managed to find the staircase hidden in the closet, heading up while Remy followed. Toby, still in ekto mode, had his nametag hidden from other players. He hid inside one of the walls by using a trick similar to the painting trick, jumping through one of the custom images pasted on his wall in the surveillance room.
 
-At some point, Toby used an escape tunnel he had preprepared in the shady facility, dropping down it, punched through the wall into the [[Billzoplace Station]]-[[Sheapland Station]] [[Hata Railways|subway]] tunnel and catching a train towards Sheapland Station.
+At some point, Toby used an escape tunnel he had preprepared in the shady facility, dropping down it, punched through the wall into the [[Billzoplace Station]]-[[Sheapland Station]] [[HATArail|subway]] tunnel and catching a train towards Sheapland Station.
 
 ![[toby sniki subway tunnel.png]]
 

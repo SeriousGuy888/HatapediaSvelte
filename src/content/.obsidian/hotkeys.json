@@ -89,10 +89,9 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Alt"
       ],
-      "key": "S"
+      "key": "]"
     }
   ],
   "app:toggle-left-sidebar": [
@@ -100,7 +99,7 @@
       "modifiers": [
         "Alt"
       ],
-      "key": "S"
+      "key": "["
     }
   ],
   "keyshots:split-selections-on-new-line": [],
@@ -206,5 +205,15 @@
       "key": "T"
     }
   ],
-  "keyshots:trim-selections": []
+  "keyshots:trim-selections": [],
+  "workspace:close-window": [],
+  "workspace:close-others": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ]
 }
