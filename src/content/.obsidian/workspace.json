@@ -8,12 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c7f2916a18fdf20c",
+            "id": "0596db64f1f7cabd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/HATArail.md",
+                "file": "articles/HATA 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "57627be1725b8ac5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73ce181bc5a7c026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/HATA 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "4f9d917516841cfe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cffab9207c0309c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/HATA.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "165b769f82dfe20c",
@@ -81,12 +118,22 @@
         "dimension": 66.25,
         "children": [
           {
+            "id": "e243592384762331",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "articles/HATA 2.md"
+              }
+            }
+          },
+          {
             "id": "2c075f1d0c461ce9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/HATArail.md",
+                "file": "articles/HATA 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/HATArail.md",
+                "file": "articles/HATA 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,16 +164,6 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "e243592384762331",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "articles/HATArail.md"
               }
             }
           }
@@ -143,7 +180,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/HATArail.md",
+                "file": "articles/HATA 2.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -176,7 +213,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,13 +228,14 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "c7f2916a18fdf20c",
+  "active": "0596db64f1f7cabd",
   "lastOpenFiles": [
+    "articles/HATA 1.md",
+    "articles/HATA 2.md",
+    "articles/HATA.md",
+    "articles/HATArail.md",
     "images/HATA Railways Map 2023-06-29.png",
     "articles/Billzoplace.md",
-    "articles/HATArail.md",
-    "articles/HATA 1.md",
-    "articles/HATA.md",
     "articles/Toby.md",
     "images/toby is gay.webp",
     "articles/Remy.md",
@@ -217,7 +256,6 @@
     "articles/Fletcher Quadratic.md",
     "articles/Boxing Matchbox War.md",
     "articles/Remy Republic.md",
-    "images/pillager_spawn_egg.png",
     "images/pillager_spawn_egg.png.0.pdnSave",
     "articles/Inheritance Incident.md",
     "articles/Untitled.md",
