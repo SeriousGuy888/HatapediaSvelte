@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "7220666ef1e19c7f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0596db64f1f7cabd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/HATA 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "57627be1725b8ac5",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/HATA 1.md",
+                "file": "articles/Rest Stop Island.md",
                 "mode": "source",
                 "source": false
               }
@@ -40,22 +22,35 @@
         ]
       },
       {
-        "id": "4f9d917516841cfe",
+        "id": "291af4d093149c8e",
         "type": "tabs",
         "children": [
           {
-            "id": "cffab9207c0309c4",
+            "id": "b1ab2ebfb8fcee5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/HATA.md",
+                "file": "articles/HATA Piracy Corporation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de0ef9dc450abd03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Stone Brick Nether Road Network.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "border",
+                "query": "stone brick ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -101,7 +96,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -123,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/HATA 2.md"
+                "file": "articles/Stone Brick Nether Road Network.md"
               }
             }
           },
@@ -133,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/HATA 2.md",
+                "file": "articles/Stone Brick Nether Road Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/HATA 2.md",
+                "file": "articles/Stone Brick Nether Road Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/HATA 2.md",
+                "file": "articles/Stone Brick Nether Road Network.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -228,8 +224,12 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "0596db64f1f7cabd",
+  "active": "de0ef9dc450abd03",
   "lastOpenFiles": [
+    "articles/Rest Stop Island.md",
+    "articles/Stone Brick Nether Road Network.md",
+    "articles/HATA Piracy Corporation.md",
+    "articles/Polar Port.md",
     "articles/HATA 1.md",
     "articles/HATA 2.md",
     "articles/HATA.md",
@@ -239,7 +239,6 @@
     "articles/Toby.md",
     "images/toby is gay.webp",
     "articles/Remy.md",
-    "articles/HATA Piracy Corporation.md",
     "images/first grassfication 1.webp",
     "images/first grassification 2.webp",
     "images/Pasted image 20230427190358.png",
@@ -264,9 +263,6 @@
     "articles/Tobytopia.md",
     "articles/Mushroom War.md",
     "articles/Arvi.md",
-    "articles/Great Mangrove War.md",
-    "articles/Layon.md",
-    "articles/Pink and Purple Treaty.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",

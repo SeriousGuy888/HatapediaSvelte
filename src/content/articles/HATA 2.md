@@ -1,6 +1,6 @@
 ---
 date_created: 2024-05-06
-date_modified: 2024-05-06
+date_modified: 2024-05-13
 subtitle: Second Season of HATA
 tags:
   - hata2
@@ -45,22 +45,26 @@ Eventually, with some amount of badgering from [[Adam]], Toby posted a poll on 2
 However, this poll was for naught, as March break came and went without the dragon being slain.
 
 > [[Adam]] — 2024-03-13 22:22
+>
 > > @Toby when ender dragon
-> 
+>
 > [[Toby]] — 2024-03-13 22:39
+>
 > > Uh
 > > Tommrow?
 > > Idk
-> 
+>
 > [[Billzo]] — 2024-03-13 23:43
+>
 > > tomorrow might not work for me, but the day after does
-> 
+>
 > [[Toby]] — 2024-03-13 23:55
+>
 > > friday i think might work for me
-> 
+>
 > Mongla — 2024-03-17 19:09
+>
 > > ender dragon today:
 > > ?
-> 
+>
 > *From [here](https://discord.com/channels/1046302463143194709/1046302463801692171/1217659110011703387).*
-
