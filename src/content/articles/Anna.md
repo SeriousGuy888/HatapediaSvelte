@@ -1,11 +1,11 @@
 ---
 date_created: 2023-05-29
-date_modified: 2024-03-18
+date_modified: 2024-05-20
 title: Anna
 subtitle: Axolotl Fiend
 tags:
   - character
-image: "[[Anna Portrait.png]]"
+image: "[[how is this news.webp]]"
 ---
 
 Anna is a human who lives in [[Layon]], [[Neville]].
