@@ -12,7 +12,7 @@ Captain **Beak Beetroot** is a [[Remy Republic|Remyan]] sailor from [[No]], most
 
 ```infobox-character
 name: Beak Beetroot
-image: ![[Beak Beetroot on his ship.webp]]
+image: "[[Beak Beetroot on his ship.webp]]"
 facts:
   title: Captain of the RRMS Musician
   nationality: Remyan
