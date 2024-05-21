@@ -7,7 +7,7 @@ tags:
   - hata1
 ---
 
-**Beak Beetroot** is a [[Remy Republic|Remyan]] sailor from [[No]], most well known for captaining and paddling the maiden voyage of the [[RRMS Musician]] on the trip to move the [[Crazy Straw Grave]].
+Captain **Beak Beetroot** is a [[Remy Republic|Remyan]] sailor from [[No]], most well known for commanding and paddling the maiden voyage of the [[RRMS Musician]] on the trip to move the [[Crazy Straw Grave]].
 
 ```infobox-character
 name: Beak Beetroot
@@ -17,6 +17,7 @@ facts:
   species: Duck
   favourite font: Helvetica Neue
   favourite colour: Aquamarine
+  birthday: June 11
 ```
 
 # Early Life
@@ -43,7 +44,7 @@ Covered in bubblewrap and styrofoam as it was carried the way down to the beach 
 
 ### Embarkation
 
-On 2023-10-29, Beak Beetroot set off from the southern beach in [[No]] on the [[RRMS Musician]] to ship the [[Crazy Straw Grave]] from No off to the [[Tobytopian First Empire Elites]], the wealthy buyers who won the auction for the gravestone.
+On 2023-10-29, Beak Beetroot set off from the southern beach in [[No]] on the [[RRMS Musician]] to ship the [[Crazy Straw Grave]] from No off to the [[Tobytopian First Empire Elites]], the shadowy, wealthy buyers who won the auction for the gravestone.
 
 > Finally got that squared away. More room for wheat.
 > —Liam Staig Music
@@ -52,5 +53,25 @@ The route to be sailed was filled with turns and bends through the [[Mediterrane
 
 Beetroot did not know this at the time, and set sail with the directions he was given.
 
-![[Beak Beetroot embarks on the RRMS Musician.webp]]
+![[Beak Beetroot-20240521111701133.webp]]
+![[Beak Beetroot-20240521111710909.webp]]
+
+### Stuck in the Layon River
+
+By 2023-11-01, Beetroot had sailed all the way from No, south into the Mediterraneanot, and back north into the [[Layon River]]. He had navigated several hundred meters north along the Layon river but hit a roadblock as he approached the [[Layon|City of Layon]].
+
+![[RRMS Musician Stuck in Layon River.webp]]
+
+A bridge, constructed of soil and grass, was blocking the Layon River and built too low for the RRMS Musician and its cargo to pass under. This obstacle was notably not charted on the course that Beetroot was provided, and it caused him great frustration.
+
+> I don't think I can move my boat _and_ the cargo across land all by myself. I mean, I could lift either _one_ of them on their own, but if I unloaded the cargo, I wouldn't be able to load it back on the ship on my own. I didn't bring a shovel to dig a canal either. I may have to turn back and find an alternate route.
+> —Beak Beetroot, Captain of the RRMS Musician
+
+When news of this broke, [[Liam Staig Music|Chairmain Music]] came under fire for providing Captain Beetroot with inaccurate directions.
+
+### Reverse Course
+
+After several days of searching for workarounds, Beetroot decided to turn back and take an alternate route that was transmitted to him by the Remyan government. It took a few weeks, but, by 2023-11-25, Beetroot had made his way all the way back to where he started and passed by it to the northwest, sailing by the [[Scammington Boxing Ring]].
+
+![[beak beetroot by the scammington boxing ring.webp]]
 
