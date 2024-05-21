@@ -39,10 +39,14 @@
         {/if}
       </figure>
     {/if}
-    <div class="flex flex-col content-start flex-[4] gap-2 min-w-[120px]">
-      {#each Object.keys(facts) as key}
-        <InfoboxFact title={key} value={facts?.[key]} />
-      {/each}
+    <div
+      class="flex flex-[3] bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
+    >
+      <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
+        {#each Object.keys(facts) as key}
+          <InfoboxFact title={key} value={facts?.[key]} />
+        {/each}
+      </dl>
     </div>
   </section>
 </aside>
