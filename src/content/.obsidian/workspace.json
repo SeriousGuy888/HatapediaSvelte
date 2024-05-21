@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "362bb26c81bf7a63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/No.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "11c7a58d8fbcbec1",
             "type": "leaf",
             "state": {
@@ -217,9 +229,12 @@
   },
   "active": "14f127e7d3527720",
   "lastOpenFiles": [
-    "articles/Remy.md",
+    "images/Beak Beetroot embarks on the RRMS Musician.webp",
     "articles/Beak Beetroot.md",
+    "articles/No.md",
+    "articles/Remy Republic.md",
     "articles/Hawainot Trident Attack on 2023-11-25.md",
+    "articles/Remy.md",
     "images/iron golem that neutralised the drowned.webp",
     "images/drowned attacks villagers in hawainot.webp",
     "articles/Stone Brick Nether Road Network.md",
@@ -240,7 +255,6 @@
     "images/first grassification 2.webp",
     "images/Pasted image 20230427190358.png",
     "images/remy does first murder on hata 2.webp",
-    "images/remy and billzo arrive with the cows.webp",
     "articles/Scammington.md",
     "articles/Order 66 Spawn Egg.md",
     "articles/big damage missile.md",
@@ -248,12 +262,9 @@
     "articles/Emerald Woveyad.md",
     "articles/Fletcher Quadratic.md",
     "articles/Boxing Matchbox War.md",
-    "articles/Remy Republic.md",
     "images/pillager_spawn_egg.png.0.pdnSave",
     "articles/Inheritance Incident.md",
     "articles/o.md",
-    "articles/Tobytown.md",
-    "articles/Tobytopia.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",
