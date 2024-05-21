@@ -5,12 +5,14 @@ subtitle: Remyan Sailor
 tags:
   - character
   - hata1
+image: "[[Beak Beetroot on his ship.webp]]"
 ---
 
 Captain **Beak Beetroot** is a [[Remy Republic|Remyan]] sailor from [[No]], most well known for commanding and paddling the maiden voyage of the [[RRMS Musician]] on the trip to move the [[Crazy Straw Grave]].
 
 ```infobox-character
 name: Beak Beetroot
+image: ![[Beak Beetroot on his ship.webp]]
 facts:
   title: Captain of the RRMS Musician
   nationality: Remyan
@@ -54,7 +56,7 @@ The route to be sailed was filled with turns and bends through the [[Mediterrane
 Beetroot did not know this at the time, and set sail with the directions he was given.
 
 ![[Beak Beetroot-20240521111701133.webp]]
-![[Beak Beetroot-20240521111710909.webp]]
+![[Beak Beetroot on his ship.webp]]
 
 ### Stuck in the Layon River
 
