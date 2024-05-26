@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-04-18
+date_modified: 2024-05-26
 title: Toby
 subtitle: Ultimate Kaiser of Doom Three Thousand of the Tobytopian Empire
 tags:
@@ -55,3 +55,7 @@ This resolution was signed by six separate nations:
 - **Holdentopia, Incorporated**, represented by [[Holden]]
 
 There was an attempt to mail this resolution to Toby while he was at camp, but Holden failed to provide the address, so this plan failed to come to fruition.
+
+# Statues
+
+![[slimetoby.webp]]
