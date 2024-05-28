@@ -1,11 +1,13 @@
 ---
 date_created: 2024-05-20
-date_modified: 2024-05-21
+date_modified: 2024-05-27
 subtitle: Remyan Sailor
 tags:
   - character
   - hata1
 image: "[[Beak_Beetroot_portrait.webp]]"
+aliases:
+  - Captain Beak Beetroot
 ---
 
 Captain **Beak Beetroot** is a [[Remy Republic|Remyan]] sailor from [[No]], most well known for commanding and paddling the maiden voyage of the [[RRMS Musician]] on the trip to move the [[Crazy Straw Grave]].
@@ -40,7 +42,7 @@ During this time, [[Grand Admiral Prawn]], head of the Remyan Navy once praised 
 
 ### Background
 
-[[Liam Staig Music]], the Chairmain of the [[Committee for the Wheat Field of the Province of No]] had long tried to get the gravestone out of the way, out of No, so he could expand the wheat field onto the land it occupied.
+[[Liam Staig Music]], the Chairman of the [[Committee for the Wheat Field of the Province of No]] had long tried to get the gravestone out of the way, out of No, so he could expand the wheat field onto the land it occupied.
 
 Covered in bubblewrap and styrofoam as it was carried the way down to the beach the gravestone was lifted and fastened onto the ship with locally made woven wheat rope by a group of dock ducks, temporarily hired from nearby Forgsville for this important job.
 
@@ -55,7 +57,7 @@ The route to be sailed was filled with turns and bends through the [[Mediterrane
 
 Beetroot did not know this at the time, and set sail with the directions he was given.
 
-![[Beak Beetroot-20240521111701133.webp]]
+![[looking back as the crazy straw grave leaving no.webp]]
 ![[Beak Beetroot on his ship.webp]]
 
 ### Stuck in the Layon River
