@@ -88,6 +88,8 @@ On 2023-10-21, the <ruby>Music and the Wheat Committee<rt>This is not a band nam
 
 The plan involved the felling of several hundred oak trees and birch trees from the surrounding, undeveloped, forested land.
 
+![[Liam Music deforestation plan.webp]]
+
 > The removal of these trees will allow for a lot of land to be dedicated to new construction. Though the expansion of the wheat field is one major area of focus, the freed up area can also be used for new residential developments in the future. After all, we are going to need farmers to tend to this wheat field at some point.
 > —Liam Staig Music, Chairman of the Committee
 
