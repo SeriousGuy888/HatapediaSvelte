@@ -56,7 +56,7 @@ This statement caused some to waver in their support for Music's plan, though Mu
 > —[[Liam Frog]]
 
 > Wheat is wheat. This grave is blocking the way to more wheat.
-> —[[Liam Staig Music]]
+> —Liam Staig Music
 
 It was [[Liam Frog Ashwin]] who first suggested the idea of selling the gravestone back to Holden instead of bulldozing it.
 
