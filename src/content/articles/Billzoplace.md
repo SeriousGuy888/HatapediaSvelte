@@ -1,6 +1,6 @@
 ---
 date_created: 2023-06-19
-date_modified: 2024-04-28
+date_modified: 2024-05-31
 title: Billzoplace
 subtitle: Unitary One-Party Republic
 tags:
@@ -38,7 +38,14 @@ The subway station in Billzoplace City is part of the [[HATArail|HATA Railways]]
 
 ## Builds
 
+- [[Billzoplace City Villager Residence 1]]
+- Billzoplace [[KFV]]
+- [[Toby's Shady Building in Billzoplace]]
+- [[Billzoplace Mailhouse]]
+- [[Billzoplace Tyran]]
 - [[No Sleep Café]]
+- [[Billzoplace Veggi Shop]]
+- [[Shakakowo Bridge]]
 
 # Diplomacy
 

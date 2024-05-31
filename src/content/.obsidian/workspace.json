@@ -8,55 +8,76 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a96c2f22097f7baf",
+            "id": "5324dde086086a34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Hawainot Trident Attack on 2023-11-25.md",
+                "file": "articles/KFV.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "14f127e7d3527720",
+            "id": "6cb567f2aa5a1777",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/KFV-20240531111648958.webp"
+              }
+            }
+          },
+          {
+            "id": "75b8fcda19402947",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Beak Beetroot.md",
+                "file": "articles/Arvi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "362bb26c81bf7a63",
+            "id": "40b3cf841b44f8c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/No.md",
+                "file": "articles/Che Forguera.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "11c7a58d8fbcbec1",
+            "id": "09f2ebf8ed75bcff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/Remy.md",
+                "file": "articles/Billzoplace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a683828168dcc35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Tobytown.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stone brick ",
+                "query": "youtube",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -102,7 +123,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -123,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/Beak Beetroot.md"
+                "file": "articles/KFV.md"
               }
             }
           },
@@ -133,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/Beak Beetroot.md",
+                "file": "articles/KFV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/Beak Beetroot.md",
+                "file": "articles/KFV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +202,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "articles/Beak Beetroot.md",
+                "file": "articles/KFV.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -227,25 +249,36 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "14f127e7d3527720",
+  "active": "5324dde086086a34",
   "lastOpenFiles": [
-    "images/Beak Beetroot on his ship.webp",
+    "images/tobytown kfv visit 2024-05-26.webp",
+    "articles/KFV.md",
+    "images/grand opening of tobytown kfv.webp",
+    "images/KFV-20240531111648958.webp",
+    "articles/Pasted image 20240531111647.png.md",
+    "articles/Arvi.md",
+    "articles/Che Forguera.md",
+    "images/kfv visit after gary poutine funeral.webp",
+    "images/kfv menu billzoplace.webp",
+    "articles/Billzoplace.md",
+    "articles/Tobytown.md",
+    "articles/Brewster.md",
     "articles/Beak Beetroot.md",
-    "images/Beak_Beetroot_portrait.webp",
-    "images/Beak_Beetroot_portrait-BxxFSzNj4-transformed.webp",
+    "articles/Boxing Matchbox War.md",
+    "articles/Liam Staig Music.md",
+    "images/Liam Music deforestation plan.webp",
+    "images/looking back as the crazy straw grave leaving no.webp",
+    "images/crazy straw grave 2023-10-07.webp",
+    "articles/Holden.md",
+    "articles/Toby.md",
+    "images/slimetoby.webp",
+    "articles/Remy.md",
+    "images/Beak Beetroot on his ship.webp",
     "images/Beak Beetroot portrait.webp.0.pdnSave",
-    "images/Beak Beetroot portrait.webp",
-    "images/Beak Beetroot portra.webp",
-    "images/Beak Beetroot on his ship - Copy.webp",
-    "images/beak beetroot by the scammington boxing ring.webp",
-    "images/RRMS Musician Stuck in Layon River.webp",
     "articles/HATA 1.md",
-    "images/Beak Beetroot-20240521111701133.webp",
-    "images/Beak Beetroot embarks on the RRMS Musician.webp",
     "articles/No.md",
     "articles/Remy Republic.md",
     "articles/Hawainot Trident Attack on 2023-11-25.md",
-    "articles/Remy.md",
     "articles/Stone Brick Nether Road Network.md",
     "articles/Anna.md",
     "articles/Rest Stop Island.md",
@@ -254,18 +287,7 @@
     "articles/HATA 2.md",
     "articles/HATA.md",
     "articles/HATArail.md",
-    "articles/Billzoplace.md",
-    "articles/Toby.md",
-    "articles/Scammington.md",
-    "articles/Order 66 Spawn Egg.md",
-    "articles/big damage missile.md",
-    "articles/The Voices.md",
-    "articles/Emerald Woveyad.md",
-    "articles/Fletcher Quadratic.md",
-    "articles/Boxing Matchbox War.md",
     "images/pillager_spawn_egg.png.0.pdnSave",
-    "articles/Inheritance Incident.md",
-    "articles/o.md",
     "images/remy_republic_farm_maplapse.mp4",
     "images/-- this folder is symlinked into the obsidian vault --",
     "images/__symlinked folder for obsidian__",

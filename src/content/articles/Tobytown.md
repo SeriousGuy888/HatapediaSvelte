@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-30
-date_modified: 2024-03-30
+date_modified: 2024-05-31
 subtitle: Capital of the Tobytopian Empire
 tags:
   - place
@@ -25,7 +25,7 @@ Notable buildings in Tobytown include:
 - The DVD Player: [[#Toby's Base|Toby's base]], his personal palace
 - The [[Tobytown Harbour]]
 - The [[Tobytown Frog Brothel]]
-- The [[Tobytown KFV]]
+- The Tobytown [[KFV]]
 - Some residential buildings for villagers
 
 Toby also had plans to build

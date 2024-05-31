@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-28
+date_modified: 2024-05-31
 title: Arvi
 subtitle: The Stripper
 tags:
@@ -15,6 +15,7 @@ facts:
   titles:
   - Doomslayer Nine Thousand of the City of Neville
   - The Stripper
+  - Head Chef and Manager of KFV Operations in Billzoplace City
   aka:
   - The Lorax
 ```
