@@ -5,8 +5,7 @@ tags:
   - organisation
   - place
   - hata1
-aliases:
-  - Fast Food Chain
+subtitle: Fast Food Chain
 ---
 **KFV** is a fast food chain that specialises in serving [[villagermeat]]-based meals. KFV officially stands for KFV Fried Villagermeat.
 
