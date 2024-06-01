@@ -1,6 +1,6 @@
 ---
 date_created: 2024-05-06
-date_modified: 2024-05-13
+date_modified: 2024-06-01
 subtitle: Second Season of HATA
 tags:
   - hata2
@@ -24,6 +24,12 @@ The idea to start HATA 2 was met by some protest from [[Remy]] and [[Billzo]].
 HATA 2 first opened on 2023-12-27, and, unlike [[HATA 1]], HATA 2 was intended as a survival multipler server from the very start, and, as such, no worldborder was defined this time.
 
 Unlike HATA 1, it was hosted on Minefort rather than Minehut because Minehut had recently introduced a new daily uptime limit for free servers hosted there, making it extremely impractical to use it.
+
+### Sponsorship
+
+HATA 2 and its opening ceremony was sponsored by [[KFV]].
+
+![[HATA 2 Opening Ceremony Banner.webp]]
 
 ## Ender Dragon Fight
 
