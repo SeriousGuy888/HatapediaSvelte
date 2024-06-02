@@ -22,7 +22,7 @@ facts:
 
 ## First Appearance
 
-The first known mention of Brewster the iron golem in [[HATA]] was on 2023-07-13, in a news article written by [[Remy]] regarding the [[Remy|Glorious Leader]]'s cleanup of Scammington after the "[[Night of Mischief|Night of Terror]]" caused by [[Holden]] and the "multiple creeper holes" caused by Arvi.
+The first known mention of Brewster the iron golem in [[HATA]] was on 2023-07-13, in a news article written by [[Remy]] regarding the [[Remy|Glorious Leader]]'s cleanup of Scammington after the "[[Night of Mischief|Night of Terror]]" caused by [[Holden]] and the "multiple creeper holes" caused by [[Arvi]].
 
 Brewster was found and rescued by the Remy Republic Search and Rescue Team, who found them "trapped in the Scammington underwater ravine for 146 days, as he jumped there to survive the accidental Order 66 deployment called on February 9th\[, 2023\]."
 
