@@ -1,7 +1,7 @@
 ---
 date_created: 2024-05-27
 date_modified: 2024-06-01
-subtitle: Former Guardian of Scammington
+subtitle: Guardian of Scammington
 tags:
   - character
   - hata1
