@@ -5,11 +5,13 @@ subtitle: Former Guardian of Scammington
 tags:
   - character
   - hata1
+image: "[[Brewster portrait.webp]]"
 ---
 **Brewster** is a [[Remy Republic|Remyan]] iron golem who now lives in [[No]], but formerly lived in [[Scammington]] and remains known as the Guardian of Scammington.
 
 ```infobox-character
 name: Brewster the iron golem
+image: "[[Brewster portrait.webp]]"
 facts:
   title: Guardian of Scammington
   status: Alive (revived)
