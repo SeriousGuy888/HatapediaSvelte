@@ -16,6 +16,14 @@ facts:
   hobby: Riding the Forgsville Rollercoaster
 ```
 
+Remyforg is not generally considered one of [[The Voices|the voices]].
+
+# Early Life
+
+Remyforg was first seen at the start of [[HATA 1]] near spawn. His exact origins are unclear, but due to the involvement of the [[Billzo|God of News]] in his creation, he is generally considered a manifestation and personification of the power of news.
+
+[[Remy]] and [[Arvi]] decided to put Remyforg in a boat, and [[Remy]] took him over Forgsville.
+
 # Rollercoaster Junkie
 
 Remyforg lives in [[Forgsville]] and can usually be found riding the [[Forgsville Rollercoaster]] around the clock.
@@ -24,4 +32,4 @@ Remyforg lives in [[Forgsville]] and can usually be found riding the [[Forgsvill
 video: RYNm6bNHnH8
 ```
 
-Remyforg's enthusiasm for the rollercoaster has caused great dismay for [[Toby]], who had agreed to sell [[No]] to the Remy Republic in exchange for a lifetime membership on the Forgsville Rollercoaster, has never been able to ride the rollercoaster due to Remyforg's refusal to get off.
+Remyforg's enthusiasm for the rollercoaster has caused great dismay for [[Toby]], who had agreed to sell [[No]] to the Remy Republic in exchange for a lifetime membership on the Forgsville Rollercoaster, but has never been able to ride the rollercoaster due to Remyforg's refusal to get off.
