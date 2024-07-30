@@ -6,7 +6,7 @@ tags:
   - hata2
 image: "[[Roasting with Remy logo.webp]]"
 ---
-***Roasting with Remy*** is an upcoming [[HATA Piracy Corporation|Pirate]] reality cooking show hosted by renowned pogstrie chef, [[Remy]]. The show was announced on 2024-02-17 after [[Billzo]] built a kitchen around the supersmelter that he had just built on the second floor of the Pirate warehouse.
+***Roasting with Remy*** is an upcoming [[HATA Piracy Corporation|Pirate]] reality cooking show hosted by renowned <ruby>pogstrie chef<rt>cookie cooker</rt></ruby>, [[Remy]]. The show was announced on 2024-02-17 after [[Billzo]] built a kitchen around the supersmelter that he had just built on the second floor of the Pirate warehouse.
 
 ![[Roasting with Remy logo.webp]]
 
