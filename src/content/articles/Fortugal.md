@@ -15,7 +15,7 @@ facts:
   demonym: Fortuguese
 ```
 
-<ruby>Fortugal<rt>/ˈfɔɹ.t͡ʃə.gəl/</rt></ruby> is a currently unrecognised <ruby>Forguik<rt>ˈfɔɹ.gɪk</rt></ruby> state, in a state of rebellion against [[Tobytopia]].
+<ruby>Fortugal<rt>/ˈfɔɹ.t͡ʃə.gəl/</rt></ruby> is a currently unrecognised <ruby>Forguik<rt>/ˈfɔɹ.gɪk/</rt></ruby> state, in a state of rebellion against [[Tobytopia]].
 
 # Rebellion Against Tobytopia
 
