@@ -1,6 +1,6 @@
 ---
 date_created: 2024-07-30
-date_modified: 2024-07-30
+date_modified: 2024-07-31
 subtitle: Marvellous Leader of the Remy Republic
 image: "[[Remyforg Portrait.webp]]"
 ---
@@ -24,7 +24,19 @@ Remyforg was first seen at the start of [[HATA 1]] near spawn. His exact origins
 
 [[Remy]] and [[Arvi]] decided to put Remyforg in a boat, and [[Remy]] took him over Forgsville.
 
-# Rollercoaster Junkie
+# Career
+
+## Marvellous Leader of the Remy Republic
+
+Remyforg has been the Marvellous Leader of the [[Remy Republic]] since the position was created — since the country was founded.
+
+As second in command to [[Remy]], Remyforg occasionally takes over as the leader of the country whenever Remy is for some reason unavailable, such as during Remy's vacations during which he is unable to play Minecraft.
+
+One such instance was around the end of 2022, when Remy left for a vacation and left Remyforg in charge. During his term, Remyforg decided to sign the first [[Treaty of No (2022)]], on behalf of the Remy Republic, with [[Billzoplace]].
+
+# Personal Life
+
+## Rollercoaster Junkie
 
 Remyforg lives in [[Forgsville]] and can usually be found riding the [[Forgsville Rollercoaster]] around the clock.
 
