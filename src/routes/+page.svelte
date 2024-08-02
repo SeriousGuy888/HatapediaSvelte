@@ -10,9 +10,6 @@
   const searchStore = createSearchStore($allArticleMeta, articleSearchConfig)
   const unsubscribe = searchStore.subscribe((value) => handleSearch(value))
   onDestroy(() => unsubscribe()) // When user leaves the page, unsubscribe from the store
-
-  let searchBoxRef: SearchBox | null = null
-  $: searchBoxRef?.focus()
 </script>
 
 <svelte:head>
@@ -46,7 +43,7 @@
     </a>
   </section>
   <section class="major-section mx-auto grid place-items-center max-w-7xl">
-    <SearchBox bind:this={searchBoxRef} {searchStore} placeholder="Search for an article..." />
+    <SearchBox {searchStore} placeholder="Search for an article..." />
   </section>
   <section class="major-section grid place-items-center">
     <div
