@@ -6,6 +6,7 @@
 
   const IMAGES = {
     PAGE: "/book_and_quill/page.png",
+    COVER: "/book_and_quill/cover.png",
     PREV: "/book_and_quill/prev.png",
     PREV_HOVER: "/book_and_quill/prev_hover.png",
     NEXT: "/book_and_quill/next.png",
@@ -20,7 +21,7 @@
 
 <div class="aspect-[146/180] w-full relative select-none">
   <img
-    src={IMAGES.PAGE}
+    src={currPage === 0 ? IMAGES.COVER : IMAGES.PAGE}
     aria-hidden
     alt=""
     width="146"
@@ -29,7 +30,7 @@
     draggable="false"
   />
   <button
-    class="left-[17.8%] top-[87.8%] {currPage === 1 ? 'hidden' : 'block'}"
+    class="left-[17.8%] top-[87.8%] {currPage === 0 ? 'hidden' : 'block'}"
     on:mouseenter={() => (isPrevHovered = true)}
     on:mouseleave={() => (isPrevHovered = false)}
     on:click={() => dispatch("click_prev")}
