@@ -1,15 +1,21 @@
 ---
 date_created: 2023-06-27
-date_modified: 2024-03-16
+date_modified: 2024-08-02
 subtitle: Billzonian Oil Rig in the Remy Sea
 tags:
   - place
   - hata1
 ---
 
-# Arnold and Amy
+The **Limedye Oil Rig** is a [[Billzoplace|Billzonian]] offshore <ruby>oil drilling<rt>slime farming</rt></ruby> operation out to the southwest of Billzoplace City in the [[Remy Sea]].
 
-The following book can be found in the oil rig and recounts the day of the founding of the oil rig's villager colony. It is available in English and Billzonian.
+It was built in mid-January of 2023.
+
+![[Toby jumping onto the crane of the Limedye Oil Rig 2023-06-23.webp]]
+
+# Villager Residents
+
+The following book can be found in the oil rig and recounts the day of the founding of the oil rig's villager colony, with the first two villagers, Arnold Isosceles and Amy Equilateral. It is available in English and Billzonian.
 
 ## English
 
