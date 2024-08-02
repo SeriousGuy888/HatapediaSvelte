@@ -8,7 +8,7 @@ const components: Record<string, () => Promise<any>> = {
   CharacterInfobox: () => import("$lib/dynamic_components/components/CharacterInfobox.svelte"),
   YouTubeVideo: () => import("$lib/dynamic_components/components/YouTubeVideo.svelte"),
   NationInfobox: () => import("$lib/dynamic_components/components/NationInfobox.svelte"),
-  BookAndQuillViewer: () => import("$lib/dynamic_components/components/BookAndQuillViewer/BookAndQuillViewer.svelte"),
+  BookAndQuillViewer: () => import("$lib/dynamic_components/components/BookAndQuillViewer/BookAndQuill.svelte"),
   TimelineInfobox: () => import("$lib/dynamic_components/components/TimelineInfobox/TimelineInfobox.svelte"),
 }
 
