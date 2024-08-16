@@ -6,6 +6,11 @@ tags:
   - list
 author: "[[Remy]]"
 ---
+
+>[!info] Author
+> This article was written by [[Remy]], and edited by [[Billzo|Bill]].
+
+
 In the [[Remy Republic]], there are four major media outlets: three newspapers and one magazine. The newspapers include *Remy Republic News* (*RRN*), *Flufftail News*, and *Le No Gazette*. *FORGS Magazine* is the most popular magazine publication of the Remy Republic. 
 
 # Origin
