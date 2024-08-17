@@ -10,7 +10,6 @@ author: "[[Remy]]"
 >[!info] Author
 > This article was written by [[Remy]], and edited by [[Billzo|Bill]].
 
-
 In the [[Remy Republic]], there are four major media outlets: three newspapers and one magazine. The newspapers include *Remy Republic News* (*RRN*), *Flufftail News*, and *Le No Gazette*. *FORGS Magazine* is the most popular magazine publication of the Remy Republic. 
 
 # Origin
@@ -31,9 +30,14 @@ All four of these publications were created for the purpose of broadcasting the 
 
 *Flufftail News* is less popular than *RRN* in the Remy Republic, with only 28% of Remyan citizens being subscribers. Interestingly, a study found that 55% of [[Tobytopia|Tobytopians]] surveyed were actually subscribed to this network. The study’s authors believe this to be because the [[Toby|Ultimate Kaiser of Doom 3000, Toby]], is a huge fan of the paper for its criticism of RemyHemy, the Glorious Leader. 
 
+![[Flufftail News - Entry 1 - 2023-01-30.webp]]
+![[Flufftail News - Entry 2 - 2023-10-16.webp]]
+
 ## *Le No Gazette*
 
 *Le No Gazette* is the youngest of the three major news publications in the Remy Republic. Its name is inspired by the *Montréal Gazette*. It was created to promote and unite the voices of the province of [[No]]; as such, it mainly covers provincial news or how new Remyan regulations and laws will affect No. The *Gazette* is also the first and only fully French publication in the Remy Republic. This was done to help promote the French language in No; however, due to instability in the form of wars and conflicts in or around No (see: [[No#Wars]]), the *Gazette* has not been able to publish very many articles, and has therefore not been very successful in fulfilling its stated purpose of promoting the French language. The *Gazette* is the favourite newspaper of the Bloc Nobecois, as it often shares the same ideals with the party. The *Gazette* will be receiving a headquarters in No at some point, but it is unclear when this will be, due to other projects in the Remy Republic being higher priority. 
+
+![[Le No Gazette - Entry 1 - 2023-02-20.webp]]
 
 ## *FORGS Magazine*
 
