@@ -1,6 +1,6 @@
 ---
 date_created: 2024-08-16
-date_modified: 2024-08-16
+date_modified: 2024-08-17
 tags:
   - hata1
   - list
@@ -23,6 +23,13 @@ All four of these publications were created for the purpose of broadcasting the 
 *Remy Republic News*, or *RRN*, is the oldest of the three major newspaper publications headquartered in the Remy Republic. Its name may or may not be a reference to *CNN*. *Remy Republic News* was created so that Remyan news and events would be fully reported to HATA’s general public. *RRN* was also created on the basis of helping promote Remyan culture and highlighting areas in the nation that need improvement. While they spend a lot of time writing about the Slimeball Party, *RRN* says that they aim to remain unbiased in their portrayals of events and are not afraid to critique the [[Remy|Glorious Leader]] when they need to. It is said that they will be receiving a new headquarters in Hawainot very soon.
 
 *RRN* is by far the most popular outlet of the Remy Republic, with nearly 67% of all Remyan citizens having a subscription. It is also one the most popular publications in all of HATA, sitting only behind *God of News* and *FORGS Magazine*.
+
+![[RRN - Entry 1 - 2023-01-03.webp]]
+![[RRN - Entry 2 - 2023-01-04 - Tensions Rise Over Remyan Mangrovia.png]]
+![[RRN - Entry 3 - 2023-01-05.webp]]
+![[RRN - Entry 4 - 2023-01-12.webp]]
+![[RRN - Entry 5 - 2023-04-10.webp]]
+![[RRN - Entry 6 - 2023-06-07.webp]]
 
 ## *Flufftail News*
 
