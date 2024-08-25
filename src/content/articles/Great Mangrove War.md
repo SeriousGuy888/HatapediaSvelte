@@ -1,6 +1,6 @@
 ---
 date_created: 2023-06-27
-date_modified: 2024-03-27
+date_modified: 2024-08-17
 title: The Great Mangrove War
 subtitle: conflict between Tobytopia and the Remy Republic
 tags:
@@ -78,7 +78,7 @@ Holden and Remy disagreed on who had the right to own the territory.
 Holden, being a Tobytopian subject, was backed by [[Tobytopia]]. On 2023-01-04, [[Toby]], the then untitled leader of Tobytopia, officially claimed Remyan Mangrovia as Tobytopian territory.
 
 ![[2023-01-04 HATA Map.png]]
-![[RRN 2023-01-04 - Tensions Rise Over Remyan Mangrovia.png]]
+![[RRN - Entry 2 - 2023-01-04 - Tensions Rise Over Remyan Mangrovia.png]]
 
 # Mangrovepox
 
