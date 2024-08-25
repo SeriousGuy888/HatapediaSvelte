@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-04-18
+date_modified: 2024-08-25
 subtitle: Renowned Pogstrie Chef
 tags:
   - character
@@ -86,3 +86,7 @@ He grew up in the fortress, playing with the other blaze children and pulling pr
 
 Remy was soon an adult. As a thriving young blaze, Remy was ambitious. He soon began to spread his desires to see the overworld with his friends and family. Noone took him seriosly. All his friends began to leave him, saying he was crazy and would never make it to the overworld. The only person that beleived in him was his mother, Rita schulmerschludukie. 
 She pulled him aside and
+
+# popcorn
+
+![[arvi does not want popcorn; remy wants popcorn.webp]]
