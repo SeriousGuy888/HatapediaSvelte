@@ -1,5 +1,5 @@
 <script>
-  const lastUpdated = "2024-03-23"
+  const lastUpdated = "2024-08-28"
   const title = "HATA 2 World Map"
 </script>
 
