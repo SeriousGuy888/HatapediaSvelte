@@ -1,6 +1,6 @@
 ---
 date_created: 2024-04-28
-date_modified: 2024-04-28
+date_modified: 2024-09-01
 subtitle: HATA 1 Transportation Network
 tags:
   - hata1
@@ -20,3 +20,7 @@ The network is made up of four lines, though only two are operational at time of
 4. The **Hawainot Line**: [[Scammington]] to [[Hawainot West]]
 
 ![[HATA Railways Map 2023-06-29.png]]
+
+# Gallery
+
+![[glorious leader reaps benefits of public transit 2023-12-07.webp]]
