@@ -41,13 +41,13 @@ UnminedCustomMarkers = {
 
   markers: [
     // Example 1: Simple marker
-    {
-      x: 1850,
-      z: -1460,
-      image:
-        "https://www.mapmarker.io/api/v3/font-awesome/v6/icon?size=25&icon=fa-solid%20fa-skull-crossbones&color=ffffff",
-      imageAnchor: [0.5, 1],
-      imageScale: 1,
-    },
+    // {
+    //   x: 1850,
+    //   z: -1460,
+    //   image:
+    //     "https://www.mapmarker.io/api/v3/font-awesome/v6/icon?size=25&icon=fa-solid%20fa-skull-crossbones&color=ffffff",
+    //   imageAnchor: [0.5, 1],
+    //   imageScale: 1,
+    // },
   ],
 }
