@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-13
-date_modified: 2024-04-18
+date_modified: 2024-09-21
 subtitle: Corporatocratic One-Crew Pirate Republic
 tags:
   - country
@@ -18,7 +18,7 @@ The Corporation's territories are chiefly situated upon the [[Untitled Mushroom 
 ```infobox-nation
 banner: "[[Pirate Banner.png]]"
 facts:
-  capital: Capital District
+  capital: Torrento
   founded: 2023-12-27
   demonym: Pirate
 ```
@@ -26,6 +26,7 @@ facts:
 # Territories
 
 - [[Untitled Mushroom Island]]
+	- [[Torrento]]
 - [[Hoang and Lili's Untitled Farm Island]]
 - [[Lighthouse Rock]]
 - [[Rest Stop Island]]
