@@ -1,10 +1,14 @@
 ---
 date_created: 2024-06-01
-date_modified: 2024-06-01
+date_modified: 2024-09-21
+subtitle: Sequence of Attacks on the Remy Republic
+tags:
+  - event
+  - hata1
 aliases:
   - Night of Terror
 ---
-The **Night of Mischief**, as its called by [[Remy]], also occasionally known as the **Night of Terror**, was a night during which several people did some mischievious stuff to Remy, kicked off by Holden's [[#Duck Heist|duck heist]].
+The **Night of Mischief**, also occasionally known as the **Night of Terror**, as called by [[Remy]], was a night during which several people did some mischievious stuff to Remy, kicked off by Holden's [[#Duck Heist|duck heist]].
 
 # Duck Heist
 
