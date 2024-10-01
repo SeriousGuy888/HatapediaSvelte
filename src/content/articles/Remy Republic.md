@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-06-01
+date_modified: 2024-10-01
 title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 tags:
@@ -37,11 +37,14 @@ The Remy Republic is subdivided into provinces and territories.
 Provinces in the Remy Republic are full parts of the country, and they are included and represented in the Duck Nest, the upper house of the Remyan legislature.
 
 The provinces of the Remy Republic are as follows:
-- [[Forgsville]]
-- [[Scammington]]
-- [[Hawainot]]
-- [[No]]
-- [[New Mangrovia]] (formerly Remyan Mangovia)
+- [[Forgsville]], founded 2022-12-02
+- [[Scammington]], founded 2022-12-02
+- [[Hawainot]], founded 2022-12-02
+- [[No]], purchased 2022-12-04
+- [[New Mangrovia]]
+	- first claimed 2022-12-21
+	- formally taken from [[Tobytopia]] 2023-01-22, after the [[Great Mangrove War]]
+	- (formerly Remyan Mangovia)
 
 ## Territories
 
@@ -163,7 +166,7 @@ The invasion was repulsed by the defending Tobytopian forces. The Glorious Leade
 
 #### Claiming of the Jungle Mainland
 
-After the glorious defeat on the jungle island, and on the suggestion of Toby, Remy rowed his boat westward again, and claimed the coastline of the large landmass further to the west of the jungle island. This landmass also had a large area of sparse jungle on it.
+After the glorious defeat on the jungle island, and on the suggestion of Toby, Remy rowed his boat westward again, and claimed the coastline of the large landmass, now known as [[Cocoa Bean Cove]], further to the west of the jungle island. This landmass also had a large area of sparse jungle on it.
 
 ## Mangrovepox Outbreak in No
 
