@@ -150,7 +150,7 @@ The military operation unfortunately was in fact very rushed in its planning and
 
 After planting his flag in Western Hawainot and acquiring his so coveted cocoa beans, Remy also claimed Southern No. This is an area of land that was originally labelled as being part of No on the first worldmap released, but tragically, in reality, lay outside the confines of the 1000 block worldborder.
 
-[[Toby|Toby from Tobytopia]] had threatened to claim Southern No before Remy could during the days leading up to the Border Disorder, but these threats did not come to fruition.
+[[Toby|Toby from Tobytopia]] had threatened to claim Southern No before Remy could during the days leading up to the [[Border Disorder]], but these threats did not come to fruition.
 
 ### Jungle Island Incident
 
