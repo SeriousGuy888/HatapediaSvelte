@@ -41,20 +41,22 @@ The provinces of the Remy Republic are as follows:
 - [[Scammington]], founded 2022-12-02
 - [[Hawainot]], founded 2022-12-02
 - [[No]], purchased 2022-12-04
-- [[New Mangrovia]]
+- [[New Mangrovia]] (formerly Remyan Mangovia)
 	- first claimed 2022-12-21
-	- formally taken from [[Tobytopia]] 2023-01-22, after the [[Great Mangrove War]]
-	- (formerly Remyan Mangovia)
+	- formally ceded to the Remy Republic by [[Tobytopia]] 2023-01-22, after the [[Great Mangrove War#Resolution|resolution of the Great Mangrove War]]
 
 ## Territories
 
 Territories are non-core parts of the Remy Republic. They are not colonies, per se, on account of not being called that, but they do not receive representation in the Duck Nest.
 
 The territories of the Remy Republic are as follows:
-- [[Cocoa Bean Cove]]
+- [[Cocoa Bean Cove]], founded 2023-01-28
 - [[Edmonton]] (formerly Cave Place)
-- [[Floridanot]]
-- [[Auze]]
+	- founding date unclear
+	- Renamed to "Edmonton" on 2023-04-02.
+- [[Floridanot]], founded 2023-01-30
+- [[Auze]], founded 2023-06-10
+	- The name "Auze" wasn't attested until 2023-07-08, after [[Neville]] invaded.
 
 ### Former Territories
 
