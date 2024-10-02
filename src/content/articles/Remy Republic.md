@@ -52,8 +52,8 @@ Territories are non-core parts of the Remy Republic. They are not colonies, per 
 The territories of the Remy Republic are as follows:
 - [[Cocoa Bean Cove]], founded 2023-01-28
 - [[Edmonton]] (formerly Cave Place)
-	- founding date unclear
-	- Renamed to "Edmonton" on 2023-04-02.
+	- founded 2023-01-29
+	- renamed to "Edmonton" on 2023-04-02
 - [[Floridanot]], founded 2023-01-30
 - [[Auze]], founded 2023-06-10
 	- The name "Auze" wasn't attested until 2023-07-08, after [[Neville]] invaded.
