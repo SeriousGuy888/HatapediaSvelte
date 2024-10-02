@@ -56,7 +56,7 @@ The territories of the Remy Republic are as follows:
 	- renamed to "Edmonton" on 2023-04-02
 - [[Floridanot]], founded 2023-01-30
 - [[Auze]], founded 2023-06-10
-	- The name "Auze" wasn't attested until 2023-07-08, after [[Neville]] invaded.
+	- The name "Auze" wasn't attested until 2023-07-08, after [[Neville]] invaded the island during the [[Mushroom War]].
 
 ### Former Territories
 
