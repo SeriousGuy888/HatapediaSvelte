@@ -46,7 +46,7 @@ Trafficking — mainly of animals, villagers, plants, and [[Liam]] — is a majo
 
 Due to the original Pirate settlement, now known as [[Torrento]], being built on a mushroom island, the Pirates found themselves lacking many things they needed, such as crops and livestock, which needed to be imported from elsewhere, as they could not be naturally found on the [[Untitled Mushroom Island]].
 
-As such, the Pirates spent a lot of time in the early game exploring the HATA 2 Minecraft world and placing unsuspecting animals into boats in order to ship them back to Torrento. Such is how the Pirates obtained their sheep, <ruby>ducks<rt>chickens</rt></ruby>, cows (though realising later that they could have just sheared a mooshroom), villagers, camels, goats, among other animals.
+As such, the Pirates spent a lot of time in the early game exploring the HATA 2 Minecraft world and placing unsuspecting animals into boats in order to ship them back to Torrento. Such is how the Pirates obtained their sheep, <ruby>ducks<rt>chickens</rt></ruby>, cows (though realising later that they could have just sheared a mooshroom), villagers, camels, and goats, among other animals.
 
 When [[Liam]] first joined [[HATA 2]] for the first time and was invited to join the Piracy Corporation, he was brought to Torrento by Bill, who went to spawn in a boat, picked up Liam, and brought him all the way to Torrento.
 
