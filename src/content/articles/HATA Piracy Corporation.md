@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-13
-date_modified: 2024-09-21
+date_modified: 2024-10-05
 subtitle: Corporatocratic One-Crew Pirate Republic
 tags:
   - country
@@ -11,7 +11,7 @@ aliases:
   - Pirate
 ---
 
-The HATA Piracy Corporation is a corporatocratic pirate republic, comprising [[Remy]], [[Toby]], [[Billzo|Bill]], [[Liam]], [[Hoang]], and [[Lili]].
+The **HATA Piracy Corporation**, or simply the **Corporation**, also sometimes called the **Pirate Colony**, is a corporatocratic pirate republic, comprising [[Remy]], [[Toby]], [[Billzo|Bill]], [[Liam]], [[Hoang]], and [[Lili]].
 
 The Corporation's territories are chiefly situated upon the [[Untitled Mushroom Island]], though it also owns various other terriories, mainly islands, around the map.
 
@@ -31,10 +31,27 @@ facts:
 - [[Lighthouse Rock]]
 - [[Rest Stop Island]]
 - [[Polar Port]]
+- [[Toothbrush Town]]
+	- Though neither founded by nor ever officially annexed by the Corporation, Toothbrush Town slowly drifted into the Corporation's sphere of influence after the arrival of the [[Path Network]].
 
 ## Map
 
 ![[HATA Piracy Corporation-20240313175955565.webp]]
+
+# Culture
+
+## Trafficking
+
+Trafficking — mainly of animals, villagers, plants, and [[Liam]] — is a major part of Pirate culture, and it was even more important during the early days of the Piracy Corporation.
+
+Due to the original Pirate settlement, now known as [[Torrento]], being built on a mushroom island, the Pirates found themselves lacking many things they needed, such as crops and livestock, which needed to be imported from elsewhere, as they could not be naturally found on the [[Untitled Mushroom Island]].
+
+As such, the Pirates spent a lot of time in the early game exploring the HATA 2 Minecraft world and placing unsuspecting animals into boats in order to ship them back to Torrento. Such is how the Pirates obtained their sheep, <ruby>ducks<rt>chickens</rt></ruby>, cows (though realising later that they could have just sheared a mooshroom), villagers, camels, goats, among other animals.
+
+When [[Liam]] first joined [[HATA 2]] for the first time and was invited to join the Piracy Corporation, he was brought to Torrento by Bill, who went to spawn in a boat, picked up Liam, and brought him all the way to Torrento.
+
+> I'm trafficking Liam!
+> —[[Billzo|Bill]], trafficking Liam
 
 # History
 
@@ -56,6 +73,8 @@ On 2023-12-27, the first day of HATA 2, before the start of the server, [[Toby]]
 ### The Journey
 
 After the server officially opened, and everyone was online (Remy arrived late) and had gathered some basic supplies, Remy, Toby, and Billzo set off together from the shipwreck at spawn in a pair of wooden rowboats. They rowed northeast from spawn.
+
+During the journey, Remy had his Minecraft client language set to **Pirate Speak (The Seven Seas)**, which inspired him to speak like a pirate. This also caused Bill to set his Minecraft language to Pirate Speak, and it is also part of the reason the group decided to begin calling themselves pirates.
 
 #### The First Rest
 
