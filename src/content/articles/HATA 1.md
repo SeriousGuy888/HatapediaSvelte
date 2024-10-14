@@ -1,6 +1,6 @@
 ---
 date_created: 2024-04-18
-date_modified: 2024-04-18
+date_modified: 2024-10-14
 subtitle: First Season of HATA
 tags:
   - hata1
@@ -41,4 +41,8 @@ The worldborder was changed from a 1000 block diameter, centered on spawn, to a 
 
 ## End
 
-it didn't end but every started playing on [[HATA 2]] instead.
+HATA 1 did not officially end, but activity on the server slowly fizzled out, and everyone started playing on [[HATA 2]] instead when it opened on 2023-12-27.
+
+The following is a map of the state of affairs on HATA 1 as of 2023-12-25.
+
+![[2023-12-25 HATA 1 Map.webp]]
