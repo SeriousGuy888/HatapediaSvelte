@@ -162,14 +162,22 @@
         {/if}
 
         <ul class="article-properties">
-          <li>
-            Published
-            <span>{toIsoDate(data.meta.date_created)}</span>
-          </li>
-          <li>
-            Updated
-            <span>{toIsoDate(data.meta.date_modified)}</span>
-          </li>
+          <ul>
+            <li>
+              Published
+              <span>{toIsoDate(data.meta.date_created)}</span>
+            </li>
+            <li>
+              Updated
+              <span>{toIsoDate(data.meta.date_modified)}</span>
+            </li>
+          </ul>
+          {#if data.meta.authors}
+            <li>
+              Written by
+              <span>{data.meta.authors.join(" & ")}</span>
+            </li>
+          {/if}
         </ul>
       </section>
     </header>
@@ -222,7 +230,7 @@
   }
 
   .article-properties {
-    @apply flex flex-wrap justify-between gap-2 mt-8;
+    @apply flex flex-wrap justify-between mt-8;
 
     li {
       @apply text-sm;

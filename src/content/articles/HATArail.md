@@ -7,6 +7,9 @@ tags:
   - organisation
 aliases:
   - HATA Railways
+authors:
+  - Billzo
+  - Remy
 ---
 **HATArail**, also known as **HATA Railways**, is the branch of [[Remy Republic Transit]] that operates a passenger rail subway service network across various locations in [[HATA 1]].
 
