@@ -278,7 +278,7 @@
         "Alt",
         "Shift"
       ],
-      "key": "Q"
+      "key": "E"
     }
   ],
   "theme:use-light": [
@@ -287,7 +287,7 @@
         "Alt",
         "Shift"
       ],
-      "key": "E"
+      "key": "Q"
     }
   ],
   "editor:set-heading-1": [
