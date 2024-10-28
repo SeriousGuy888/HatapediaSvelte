@@ -1,6 +1,6 @@
 ---
 date_created: 2023-06-19
-date_modified: 2024-05-31
+date_modified: 2024-10-27
 title: Billzoplace
 subtitle: Unitary One-Party Republic
 tags:
@@ -18,8 +18,10 @@ It was constructed by and is home to [[Billzo|Billzo]].
 banner: "[[Billzoplace Banner.png]]"
 facts:
   Ruler: Billzo le Magic Caterpillar
-  Demonym: Billzonian
-  Official Languages: Billzonian, English
+  Demonym: Billzonian or Billzoplacian
+  Official Languages:
+  - Billzonian
+  - English
 ```
 
 # The City
