@@ -20,17 +20,35 @@ The study of the Voices is sometimes referred to as **voicelore**, and scientist
 
 ## Noncorporeal
 
-Although collectively, they are often colloquially referred to as the Voices, many vocologists, based on observations of people ostensibly "talking to the Voices", believe that the Voices are not just a single entity. People observed during their interactions with the Voices do not always act the same way while talking to the Voices.
+Although collectively, they are often colloquially referred to as the Voices, many vocologists, based on observations of people ostensibly "talking to the Voices", believe that the Voices are not necessarily a single entity. People observed during their interactions with the Voices do not always act the same way while talking to the Voices.
 
 Though different vocologists have slightly different lists, most agree that that among the Voices, some of the Voices with the most prominent and distinct personalities include
-- The Laughs — believed to frequently interact with [[Remy]] and [[Harry Toothbrush]]
-- The Hornies — with [[Toby]]
+- The Laughs
+- The Hornies
+
+The terminology for these "personalities" is somewhat hazy. The current consensus among vocologists is that these personalities are separate Voices, though other vocologists may consider them to be different "branches" of the single entity of the Voices.
+
+### The Laughs
+
+The Laughs, first mentioned 2023-04-23, are one of the most famous Voices, most frequently interacting with [[Remy]] and [[Harry Toothbrush]]. The Laughs have frequently interviewed and ostensibly quoted in news articles reporting on major events, such as [[Zombitopian Junta#Laughing at Tobytopia|when Tobytopia was overthrown by Doctor Zomboss]].
+
+The Laughs has the most public facing persona of all the Voices, and much is therefore known about them, compared to the other Voices. The Laughs are known to love watching *Tom and Jerry* and are reportedly good friends with [[Harry Toothbrush]]. They would frequently watch television together in the [[Arvi Tower]] before it burned down.
+
+### The Hornies
+
+The Hornies, first mentioned 2024-10-26, are believed to most frequently interact with [[Toby]].
 
 ## Corporeal
 
-Though the scentific community is uncertain on whether the Voices may manifest as corporeal beings, it is nonetheless a common belief, especially in the folk beliefs of [[Remy Republic|Remyans]] and [[Billzoplace|Billzoplacians]], that the Voices can sometimes possess people in order to do their bidding.
+The scientific consensus among the voicelore community is that the Voices are purely noncorporeal and cannot be sensed or interacted with in the physical world.
 
-### Netherrack Incident
+Despite the consensus, some fringe vocologists and folk beliefs maintain that the Voices *can* have a physical form, though there is much variation in the exact manner of manifestation.
+
+### Possessions
+
+The most accepted of the fringe theories, as well as a common belief, especially in the folk traditions of [[Remy Republic|Remyans]] and [[Billzoplace|Billzoplacians]], is that the Voices can gain a physical form by possessing people to make them do their bidding.
+
+#### Netherrack Incident
 
 In one particular instance which some point to as evidence of the Voices' ability to possess people, Remy started noticing that netherrack keeps appearing behind him whenever he opens chests, crafting tables, or furnaces.
 
@@ -39,6 +57,10 @@ It is suspected that the placer of these netherrack blocks is, in fact, the Voic
 Remy was extremely disturbed by these occurences, believing them to be caused by some sort of incorporeal beings, such as ghosts. In order to prevent this from happening again in the future, Remy decided to put up a Ghostbusters poster up on his wall. This *may* have been effective, as the netherrack incident appears not to have recurred since.
 
 As [[Toby]] was one of the only other people online at the time, many Remyans believe that this was actually Toby's doing while he was being possessed by the Voices.
+
+### Wheat Shrine Misprints
+
+Some people, especially residents of [[No]], use the Voices to explain the mysterious workings of the [[Wheat Sacrifice Shrine]]. Citing the unexplained ability of the shrine, when given the name of a character to revive, to return [[Misprint|misprints]] — characters that have never existed in HATA — when the name is misspelled or mispronounced, subscribers to this theory say that misprints are actually puppets or manifestations of the Voices placed in the body of a villager. Some say that the Voices operate the Wheat Sacrifice Shrine as a way to sneak agents of chaos into the physical world while masquerading as normal characters and hiding in plain sight.
 
 # Influence
 
