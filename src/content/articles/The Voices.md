@@ -30,7 +30,7 @@ The terminology for these "personalities" is somewhat hazy. The current consensu
 
 ### The Laughs
 
-The Laughs, first mentioned 2023-04-23, are one of the most famous Voices, most frequently interacting with [[Remy]] and [[Harry Toothbrush]]. The Laughs have frequently interviewed and ostensibly quoted in news articles reporting on major events, such as [[Zombitopian Junta#Laughing at Tobytopia|when Tobytopia was overthrown by Doctor Zomboss]].
+The Laughs, first mentioned 2023-04-23, are one of the most famous Voices, most frequently interacting with [[Remy]] and [[Harry Toothbrush]]. The Laughs have frequently been interviewed and apparently quoted in news articles reporting on major events, such as [[Zombitopian Junta#Laughing at Tobytopia|when Tobytopia was overthrown by Doctor Zomboss]].
 
 The Laughs has the most public facing persona of all the Voices, and much is therefore known about them, compared to the other Voices. The Laughs are known to love watching *Tom and Jerry* and are reportedly good friends with [[Harry Toothbrush]]. They would frequently watch television together in the [[Arvi Tower]] before it burned down.
 
