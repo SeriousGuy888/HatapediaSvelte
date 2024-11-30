@@ -7,6 +7,7 @@ tags:
   - event
   - build
   - hata1
+image: "[[remy finds half built canal.webp]]"
 ---
 The **Untitled Canal** built through the isthmus between the [[HATA 1]] Spawn and the [[Swamp of Secrets]] has been the center of a **territorial dispute** between [[Tobytopia]] and the [[Remy Republic]], which has led to several brief clashes between [[Remy]] and [[Toby]] over the issue.
 

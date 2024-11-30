@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-10-01
+date_modified: 2024-11-30
 title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 tags:
@@ -189,6 +189,12 @@ After a boxing match with [[Holden]] ended in chaos and Remy was murdered by [[A
 *Main article: [[Mushroom War]]*
 
 After a [[Neville|Nevillian]] invasion of [[Auze]], the Remy Republic retalliated by occupying [[Layon#Archie Bridge|Archie Bridge]]. The conflict then further escalated, with [[Arvi]], [[Anna]], and [[Holden]] arriving in [[No]] and accidentally triggering a pillager raid.
+
+## Canal Dispute
+
+*Main article: [[Canal Dispute]]*
+
+In late 2024, the Remy Republic had a dispute with [[Tobytopia]] over a canal that they both wanted to build in the same place.
 
 # Sports
 

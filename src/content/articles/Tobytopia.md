@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-30
+date_modified: 2024-11-30
 title: Tobytopia
 subtitle: Kratocracy
 tags:
@@ -38,20 +38,19 @@ Tobytopia does not currently have any territorial disputes, but there are some n
 
 *Main article: [[Great Mangrove War]]*
 
-An area of mangrove trees planted by [[Holden]] in what used to be the savanna.
-This area was at some point claimed by Remy, but this claim was disputed by Toby and
-Holden since Holden, a Tobytopian, planted the trees.
+An area of mangrove trees planted by [[Holden]] in what used to be the savanna. This area was at some point claimed by Remy, but this claim was disputed by Toby and Holden since Holden, a Tobytopian, planted the trees.
 
-When the conflict was resolved, it was agreed that the Remy Republic would own the area,
-but Holden would be awarded with the title of Founder of New Mangrovia.
+When the conflict was resolved, it was agreed that the Remy Republic would own the area, but Holden would be awarded with the title of Founder of New Mangrovia.
 
 ## Unnamed Jungle Island
 
-This island, which is currently under Tobytopian sovereignty, was once part of a
-dispute with Remy. Remy had intended to claim this island, but forgotten, and Toby
-decided to claim it first.
+*Main article: [[Remy Republic#Jungle Island Incident]]*
 
-[[Remy Republic#Jungle Island Incident|More info in the Remy Republic article]]
+This island, which is currently under Tobytopian sovereignty, was once part of a dispute with Remy. Remy had intended to claim this island, but forgotten, and Toby decided to claim it first.
+
+## Canal Dispute
+
+*See: [[Canal Dispute]]*
 
 # History
 
@@ -150,7 +149,7 @@ events:
   colour: "#d60"
   date:
     start: 2023-10-26
-    end: 2023-12-26
+    end: 2024-11-30
     
 - title: "Fortuguese Rebellion"
   lane: 30
