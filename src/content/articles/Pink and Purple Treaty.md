@@ -1,6 +1,6 @@
 ---
 date_created: 2023-07-18
-date_modified: 2024-03-28
+date_modified: 2024-12-30
 title: The Pink and Purple Treaty
 subtitle: Treaty of Alliance Between the Remy Republic and the Kingdom of Neville
 tags:
