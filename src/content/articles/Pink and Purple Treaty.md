@@ -57,6 +57,17 @@ Two days after the Nevillian withdrawal from the treaty, on 2023-10-27, [[Remy]]
 
 From this moment, the Pink and Purple Treaty was officially no longer in force, having lasted 104 days from 2023-07-13 after the initial signing, to 2023-10-25, when Neville released their announcement video.
 
+## Reactions to the Termination of the Treaty
+
+After the Remy Republic withdrew from the treaty, international observers made comments such as the following on the end of the alliance between Neville and the Remy Republic.
+
+> No more pink and purple
+> ✖️
+> —[[Holden]], 2023-10-29
+
+> No more pp 😔
+> —[[Toby]], 2023-10-29
+
 # Original Document
 
 ```book-and-quill
