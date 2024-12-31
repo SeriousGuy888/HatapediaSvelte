@@ -23,7 +23,7 @@ facts:
   - English
   - French
   - Billzonian
-  national anthem: "Always Look on the Bright Side of Life" from the musical "Monty Python Spamalot"
+  national anthem: "\"Always Look on the Bright Side of Life\" from the musical \"Monty Python Spamalot\""
   founded: 2022-12-02
 ```
 
