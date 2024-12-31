@@ -1,6 +1,6 @@
 ---
 date_created: 2024-05-06
-date_modified: 2024-06-01
+date_modified: 2024-12-30
 subtitle: Second Season of HATA
 tags:
   - hata2
@@ -74,3 +74,9 @@ However, this poll was for naught, as March break came and went without the drag
 > > ?
 >
 > *From [here](https://discord.com/channels/1046302463143194709/1046302463801692171/1217659110011703387).*
+
+## Minefort Implements Inactive Server Locking
+
+Around Christmas of 2024 (earliest known mention on Minefort Discord being 2024-12-23), Minefort enacted a new policy, which from then on required free-tier Minecraft servers hosted on Minefort to be started at least once every 72 hours to avoid "deactivation" or "locking". When a Minefort server is locked, it is not possible to start the server again unless the server owner purchases a paid plan on Minefort for the locked server.
+
+This caused [[Remy]] to, in a panic, attempt to log on to HATA 2 to prevent it from being locked.
