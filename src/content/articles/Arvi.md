@@ -30,7 +30,7 @@ He would end up advocating his position as king to [[bill the Allay]] at the [[U
 
 ## Ruler of Neville
 
-Arvi, after he abandoned his first attempt at building a country, left to found a new city on 2023-04-07. This city, originally called Neville, later renamed to [[Layon]], is the capital of the [[Neville|Nevillian Empire]].
+Arvi, after he abandoned his first attempt at building a country, left to found a new city on 2023-04-07. This city, originally called Neville, later renamed to [[Layon]], is the capital of the [[Neville|Kingdom of Neville]].
 
 On 2023-07-06, Arvi announced that his title as ruler of Neville would now officially be the **Doomslayer Nine Thousand of the City of Neville**.
 
