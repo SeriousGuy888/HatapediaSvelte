@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-11-30
+date_modified: 2024-12-30
 title: The Remy Republic
 subtitle: Federal Parliamentary Republic
 tags:
@@ -23,6 +23,7 @@ facts:
   - English
   - French
   - Billzonian
+  national anthem: "Always Look on the Bright Side of Life" from the musical "Monty Python Spamalot"
   founded: 2022-12-02
 ```
 
