@@ -9,7 +9,7 @@
 >
   <section class="text-sm text-text">
     <Logo />
-    <a href="https://hatapedia-old.vercel.app/map">Map1</a>
+    <a href="https://hatapedia-old.vercel.app/map" target="_blank">Map1</a>
     <a href="/map">Map2</a>
     <a href="/weather">Weather</a>
   </section>
