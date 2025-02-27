@@ -135,13 +135,13 @@
 </div>
 
 <style lang="postcss">
-  .card-rounding {
+  .card-rounding :global {
     @apply overflow-hidden;
     @apply rounded-lg;
     @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
   }
 
-  .card {
+  .card :global {
     @apply h-full p-4;
     @apply bg-gray-100 dark:bg-gray-900;
     @apply text-black dark:text-white;
