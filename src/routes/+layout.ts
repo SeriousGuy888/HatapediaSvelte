@@ -20,5 +20,5 @@ export async function load({ fetch }) {
 
   allArticleMeta.set(articles)
 
-  return {}
+  return new Response("{}")
 }
