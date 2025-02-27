@@ -1,6 +1,10 @@
 <script lang="ts">
-  export let title: string
-  export let value: string | string[] | undefined
+  interface Props {
+    title: string;
+    value: string | string[] | undefined;
+  }
+
+  let { title, value }: Props = $props();
 </script>
 
 <dt class="uppercase font-normal text-gray-600 dark:text-gray-300 print:text-black text-xs m-0">

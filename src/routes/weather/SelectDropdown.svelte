@@ -2,8 +2,12 @@
   import { ChevronDown } from "lucide-svelte"
   import { createEventDispatcher } from "svelte"
 
-  export let options: Record<string, Record<string, string>> // { optgroup1: { id1: displayName, ... }, ... }
-  export let value: string
+  interface Props {
+    options: Record<string, Record<string, string>>;
+    value: string;
+  }
+
+  let { options, value = $bindable() }: Props = $props();
 
   const dispatch = createEventDispatcher()
 </script>
@@ -25,7 +29,7 @@
           overflow-x-hidden whitespace-nowrap text-ellipsis
         `}
       bind:value
-      on:change={() => dispatch("change", value)}
+      onchange={() => dispatch("change", value)}
     >
       {#each Object.entries(options) as [optgroupName, subOptions]}
         <optgroup label={optgroupName}>

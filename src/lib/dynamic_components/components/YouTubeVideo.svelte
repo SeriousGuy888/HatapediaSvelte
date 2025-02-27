@@ -1,5 +1,9 @@
 <script lang="ts">
-  export let video: string
+  interface Props {
+    video: string;
+  }
+
+  let { video }: Props = $props();
 </script>
 
 {#if video}
@@ -10,7 +14,7 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
     class="w-full aspect-video"
-  />
+></iframe>
 {:else}
   <div
     class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded text-center grid place-items-center w-full h-full"

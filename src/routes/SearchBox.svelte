@@ -2,8 +2,12 @@
   import type { createSearchStore } from "$lib/stores/search"
   import { Search } from "lucide-svelte"
 
-  export let placeholder = "Search..."
-  export let searchStore: ReturnType<typeof createSearchStore>
+  interface Props {
+    placeholder?: string;
+    searchStore: ReturnType<typeof createSearchStore>;
+  }
+
+  let { placeholder = "Search...", searchStore }: Props = $props();
   export function focus() {
     // Focus the input after the modal opens
     // Delay of 0 required because the modal is not yet in the DOM
@@ -12,7 +16,7 @@
     }, 0)
   }
 
-  let inputRef: HTMLInputElement | null = null
+  let inputRef: HTMLInputElement | null = $state(null)
 </script>
 
 <div class="relative w-full">

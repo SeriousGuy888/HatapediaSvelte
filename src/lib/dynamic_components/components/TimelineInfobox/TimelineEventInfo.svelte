@@ -3,7 +3,11 @@
   import { getEventDateString } from "./timeline_dates"
   import type { TimelineEventData } from "./timeline_interfaces"
 
-  export let event: TimelineEventData
+  interface Props {
+    event: TimelineEventData;
+  }
+
+  let { event }: Props = $props();
 </script>
 
 <section

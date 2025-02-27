@@ -10,7 +10,7 @@
   }
   const DARK_CLASS = "dark"
 
-  let darkMode = false
+  let darkMode = $state(false)
 
   const getRootEl = () => document.querySelector("html")
 
@@ -40,7 +40,7 @@
   }
 </script>
 
-<button aria-label="Toggle colour theme" on:click={toggleDarkMode}>
+<button aria-label="Toggle colour theme" onclick={toggleDarkMode}>
   {#if darkMode}
     <div in:fly={{ y: -5 }}>
       <Moon size="24" />

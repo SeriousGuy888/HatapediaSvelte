@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import ArticleTag from "../../../lib/components/ArticleTag.svelte"
   import "@portaljs/remark-callouts/styles.css"
   import TableOfContents from "./TableOfContents.svelte"
@@ -9,7 +11,11 @@
   import { ListIcon } from "lucide-svelte"
   import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser.js"
 
-  export let data
+  interface Props {
+    data: any;
+  }
+
+  let { data }: Props = $props();
 
   // A link in the table of contents that links to the top of the page
   // always exists, and is always the first element in the array.
@@ -20,10 +26,12 @@
     depth: 0,
   }
 
-  let headings: TocNode[] = []
-  $: headings = data.meta.headings ?? []
+  let headings: TocNode[] = $state([])
+  run(() => {
+    headings = data.meta.headings ?? []
+  });
 
-  let tocOpen = false // Used on small screens to toggle the table of contents
+  let tocOpen = $state(false) // Used on small screens to toggle the table of contents
 
   ///////
 
@@ -56,7 +64,9 @@
   }
 
   // When the page changes, remount the dynamic components
-  $: data.content, remountDynamicComponents()
+  run(() => {
+    data.content, remountDynamicComponents()
+  });
 </script>
 
 <svelte:head>
@@ -70,7 +80,7 @@
 </svelte:head>
 
 <svelte:window
-  on:keydown={(e) => {
+  onkeydown={(e) => {
     if (e.key === "t" && !e.ctrlKey && !e.metaKey && !e.altKey) {
       // Toggle table of contents
       tocOpen = !tocOpen
@@ -116,7 +126,7 @@
     <button
       class="bg-brand rounded-full p-4"
       aria-label="Toggle table of contents"
-      on:click={() => (tocOpen = !tocOpen)}
+      onclick={() => (tocOpen = !tocOpen)}
     >
       <ListIcon color="white" />
     </button>
@@ -125,9 +135,9 @@
     class={`${tocOpen ? "block" : "hidden"} lg:hidden fixed inset-0 bg-black/90 z-10`}
     tabindex="-1"
     role="button"
-    on:click={() => (tocOpen = false)}
-    on:keydown={() => (tocOpen = false)}
-  />
+    onclick={() => (tocOpen = false)}
+    onkeydown={() => (tocOpen = false)}
+></div>
   <article class="w-full mb-16 min-h-screen">
     <header class="relative pb-8 mb-8">
       {#if data.meta.image}
@@ -138,7 +148,7 @@
               /'/g, // Escape single quotes so the url() function in CSS works correctly
               '%27',
             )}')"
-          />
+></div>
         </section>
       {/if}
       <section class="restricted-width py-8">

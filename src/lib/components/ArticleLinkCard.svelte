@@ -1,19 +1,26 @@
 <script lang="ts">
+  import { run, createBubbler, preventDefault } from 'svelte/legacy';
+
+  const bubble = createBubbler();
   import type { Article } from "$lib/types"
   import ArticleTag from "$lib/components/ArticleTag.svelte"
   import { goto } from "$app/navigation"
   import { createEventDispatcher } from "svelte"
   import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser"
 
-  export let article: Article
-  export let selected = false
-  export let showTimeSinceUpdated = false
+  interface Props {
+    article: Article;
+    selected?: boolean;
+    showTimeSinceUpdated?: boolean;
+  }
+
+  let { article, selected = false, showTimeSinceUpdated = false }: Props = $props();
 
   const dispatch = createEventDispatcher()
 
-  let elem: HTMLDivElement | null = null
+  let elem: HTMLDivElement | null = $state(null)
 
-  $: {
+  run(() => {
     if (selected) {
       elem?.scrollIntoView({
         behavior: "smooth",
@@ -22,10 +29,12 @@
       })
       elem?.focus()
     }
-  }
+  });
 
-  let target = `/articles/${article.slug}`
-  $: target = `/articles/${article.slug}`
+  let target = $state(`/articles/${article.slug}`)
+  run(() => {
+    target = `/articles/${article.slug}`
+  });
   function goThere() {
     goto(target)
     dispatch("navigate")
@@ -60,8 +69,8 @@
   <div
     class:selected
     bind:this={elem}
-    on:click={goThere}
-    on:keydown={(e) => {
+    onclick={goThere}
+    onkeydown={(e) => {
       if (e.key === "Enter") goThere()
     }}
     class="card relative isolate"
@@ -90,7 +99,7 @@
   -->
     <a
       href={target}
-      on:click|preventDefault
+      onclick={preventDefault(bubble('click'))}
       class="absolute inset-0 z-10 text-transparent select-none"
     >
       Link to {article.title}

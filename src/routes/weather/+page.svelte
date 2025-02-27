@@ -8,10 +8,10 @@
 
   import { cities, citiesFlat } from "$lib/weather/master_cities_list"
 
-  let selectedCityId = Object.keys(citiesFlat)[0]
-  let selectedTempUnit: TemperatureUnit = "celsius"
+  let selectedCityId = $state(Object.keys(citiesFlat)[0])
+  let selectedTempUnit: TemperatureUnit = $state("celsius")
 
-  let weatherData: WeatherData | null = null
+  let weatherData: WeatherData | null = $state(null)
 
   // Create a SWR model to fetch the weather data
   // will cache the data so if the user switches back to the same city it will be instant

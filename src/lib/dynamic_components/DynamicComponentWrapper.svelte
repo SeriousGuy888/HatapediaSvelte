@@ -4,10 +4,16 @@
 -->
 
 <script lang="ts">
-  export let component: any
-  export let props: Record<string, any> = {}
+  interface Props {
+    component: any;
+    props?: Record<string, any>;
+  }
+
+  let { component, props = {} }: Props = $props();
+
+  const SvelteComponent = $derived(component);
 </script>
 
 <div>
-  <svelte:component this={component} {...props} />
+  <SvelteComponent {...props} />
 </div>

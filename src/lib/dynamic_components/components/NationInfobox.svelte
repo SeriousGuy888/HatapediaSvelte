@@ -2,9 +2,13 @@
   import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
-  export let name: string | null = null
-  export let facts: Record<string, string[] | string> = {}
-  export let banner: string | null = null
+  interface Props {
+    name?: string | null;
+    facts?: Record<string, string[] | string>;
+    banner?: string | null;
+  }
+
+  let { name = null, facts = {}, banner = null }: Props = $props();
 </script>
 
 <aside class="my-12">

@@ -22,7 +22,7 @@
 
 <div class="w-full p-12 sm:p-24">
   <div class="bg-image-container">
-    <div class="bg-image" />
+    <div class="bg-image"></div>
   </div>
   <hgroup class="text-center">
     <h1 class="text-3xl sm:text-6xl font-bold tracking-tight">HATApedia</h1>

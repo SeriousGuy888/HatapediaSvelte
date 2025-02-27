@@ -1,7 +1,7 @@
 // Largely stolen from
 // https://github.com/dimfeld/website/blob/54c30d47ecaa02fabfc5c5ccedf419035da02c77/src/dynamicComponents.ts
 
-import { tick, type SvelteComponent } from "svelte"
+import { tick, type SvelteComponent, mount } from "svelte"
 import DynamicComponentWrapper from "./DynamicComponentWrapper.svelte"
 
 const components: Record<string, () => Promise<any>> = {
@@ -56,13 +56,13 @@ async function instantiateComponent(element: Element) {
     console.log("Instantiating dynamic component", component.name, "in place of", element)
     console.log("Props:", props)
 
-    const instance = new DynamicComponentWrapper({
-      target: element,
-      props: {
-        component,
-        props,
-      },
-    })
+    const instance = mount(DynamicComponentWrapper, {
+          target: element,
+          props: {
+            component,
+            props,
+          },
+        })
 
     element.classList.add("has-component")
 

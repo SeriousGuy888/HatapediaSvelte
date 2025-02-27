@@ -1,8 +1,12 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte"
 
-  export let currPage: number
-  export let maxPage: number
+  interface Props {
+    currPage: number;
+    maxPage: number;
+  }
+
+  let { currPage, maxPage }: Props = $props();
 
   const IMAGES = {
     PAGE: "/book_and_quill/page.png",
@@ -13,8 +17,8 @@
     NEXT_HOVER: "/book_and_quill/next_hover.png",
   }
 
-  let isPrevHovered = false
-  let isNextHovered = false
+  let isPrevHovered = $state(false)
+  let isNextHovered = $state(false)
 
   const dispatch = createEventDispatcher()
 </script>
@@ -31,9 +35,9 @@
   />
   <button
     class="left-[17.8%] top-[87.8%] {currPage === 0 ? 'hidden' : 'block'}"
-    on:mouseenter={() => (isPrevHovered = true)}
-    on:mouseleave={() => (isPrevHovered = false)}
-    on:click={() => dispatch("click_prev")}
+    onmouseenter={() => (isPrevHovered = true)}
+    onmouseleave={() => (isPrevHovered = false)}
+    onclick={() => dispatch("click_prev")}
   >
     <img
       src={isPrevHovered ? IMAGES.PREV_HOVER : IMAGES.PREV}
@@ -43,9 +47,9 @@
   </button>
   <button
     class="left-[67.9%] top-[87.8%] {currPage === maxPage ? 'hidden' : 'block'}"
-    on:mouseenter={() => (isNextHovered = true)}
-    on:mouseleave={() => (isNextHovered = false)}
-    on:click={() => dispatch("click_next")}
+    onmouseenter={() => (isNextHovered = true)}
+    onmouseleave={() => (isNextHovered = false)}
+    onclick={() => dispatch("click_next")}
   >
     <img src={isNextHovered ? IMAGES.NEXT_HOVER : IMAGES.NEXT} alt="Next Page" draggable="false" />
   </button>
