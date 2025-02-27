@@ -1,17 +1,16 @@
-@layer base {
-  :root {
-    --brand: 19 67% 26%;
+/* @import "tailwindcss"; */
+@theme {
+  --color-brand: hsl(19 67% 26%);
 
-    --foreground: 18 72% 7%;
-    --background: 0 0% 98%;
-    --primary: 20 66% 68%;
-    --secondary: 20 66% 38%;
+  --color-foreground: hsl(18 72% 7%);
+  --color-background: hsl(0 0% 98%);
+  --color-primary: hsl(20 66% 68%);
+  --color-secondary: hsl(20 66% 38%);
 
-    &.dark {
-      --foreground: 18 72% 93%;
-      --background: 18 100% 2%;
-      --primary: 20 66% 32%;
-      --secondary: 20 66% 62%;
-    }
-  }
+  /* &.dark {
+    --color-foreground: 18 72% 93%;
+    --color-background: 18 100% 2%;
+    --color-primary: 20 66% 32%;
+    --color-secondary: 20 66% 62%;
+  } */
 }

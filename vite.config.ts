@@ -1,9 +1,7 @@
-import { sveltekit } from "@sveltejs/kit/vite"
-import { defineConfig } from "vite"
-
-// https://stackoverflow.com/a/71350674/18947288
-import dynamicImportVars from "@rollup/plugin-dynamic-import-vars"
+import tailwindcss from "@tailwindcss/vite";
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [sveltekit(), dynamicImportVars({ include: ["**/*.md"] })],
-})
+	plugins: [sveltekit(), tailwindcss()]
+});

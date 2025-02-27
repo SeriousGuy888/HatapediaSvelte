@@ -1,16 +1,17 @@
 <script>
   import "../app.css"
   import Header from "./Header.svelte"
+  let props = $props()
 </script>
 
 <Header />
 <div class="layout">
   <!-- Used to push content down so it's not hidden behind the header -->
-  <div class="h-16" />
+  <div class="h-16" ></div>
 
   <!-- grid gets rid of some weird spacing for some reason -->
   <main class="grid">
-    <slot />
+    {@render props.children()}
   </main>
 </div>
 
@@ -35,8 +36,8 @@
   }
 
   :global(:root) {
-    @apply transition-colors duration-300 ease-in-out;
-    @apply text-foreground bg-background;
+    @reference transition-colors duration-300 ease-in-out;
+    @reference text-foreground bg-background;
   }
 
   /* Detect mobile devices (that can't hover because they don't have a mouse) */

@@ -64,7 +64,7 @@
     on:keydown={(e) => {
       if (e.key === "Enter") goThere()
     }}
-    class="card relative isolate"
+    class="card relative isolate hover:border-t-primary focus:border-t-primary"
     role="link"
     tabindex="0"
   >
@@ -126,6 +126,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "tailwindcss/theme";
+
   .card-rounding {
     @apply overflow-hidden;
     @apply rounded-lg;
@@ -141,11 +143,11 @@
     @apply outline-none cursor-pointer;
   }
 
-  .card:hover,
+  /* .card:hover,
   .card:focus,
   .selected {
     @apply border-t-primary;
-  }
+  } */
 
   .dotdotdot {
     @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
@@ -159,12 +161,12 @@
 
   .thumbnail-container img {
     @apply w-full h-full object-cover object-top relative;
-    
+
     /* because minecraft banner images are so low-res */
     image-rendering: pixelated;
-    
+
     /* fade the left side of the image */
-    mask-image: linear-gradient( 
+    mask-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 50%) 0%,
       rgba(0, 0, 0, 5%) 70%,

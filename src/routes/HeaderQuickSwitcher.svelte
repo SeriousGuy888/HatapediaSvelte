@@ -106,7 +106,7 @@
       on:click={(e) => {
         e.stopPropagation()
       }}
-      aria-hidden
+      aria-hidden="true"
       in:fly={{ duration: 100, y: 100 }}
       out:fly={{ duration: 100, y: 100 }}
     >
@@ -131,6 +131,8 @@
 {/if}
 
 <style lang="postcss">
+  @reference "tailwindcss/theme";
+
   kbd {
     @apply bg-gray-700;
     @apply rounded border border-gray-500;

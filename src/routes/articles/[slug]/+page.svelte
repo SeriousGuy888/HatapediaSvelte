@@ -78,7 +78,7 @@
   }}
 />
 
-<div class="grid lg:grid-cols-[auto,1fr] isolate" id="_top">
+<div class="grid lg:grid-cols-2 isolate" id="_top">
   <aside
     class={`
       h-full overflow-clip
@@ -127,7 +127,7 @@
     role="button"
     on:click={() => (tocOpen = false)}
     on:keydown={() => (tocOpen = false)}
-  />
+  ></div>
   <article class="w-full mb-16 min-h-screen">
     <header class="relative pb-8 mb-8">
       {#if data.meta.image}
@@ -138,7 +138,7 @@
               /'/g, // Escape single quotes so the url() function in CSS works correctly
               '%27',
             )}')"
-          />
+          ></div>
         </section>
       {/if}
       <section class="restricted-width py-8">
@@ -209,6 +209,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "tailwindcss/theme";
+
   .restricted-width {
     @apply max-w-md sm:max-w-lg md:max-w-prose w-full mx-auto px-4;
   }

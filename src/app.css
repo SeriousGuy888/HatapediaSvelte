@@ -5,6 +5,9 @@
 @import "./styles/tailwind.css";
 @import "./styles/scrollbars.css";
 
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
 /*
   TODO: move this red-link stuff to somewhere better
 */

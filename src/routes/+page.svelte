@@ -22,7 +22,7 @@
 
 <div class="w-full p-12 sm:p-24">
   <div class="bg-image-container">
-    <div class="bg-image" />
+    <div class="bg-image"></div>
   </div>
   <hgroup class="text-center">
     <h1 class="text-3xl sm:text-6xl font-bold tracking-tight">HATApedia</h1>
@@ -57,6 +57,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "tailwindcss/theme";
+
   .bg-image-container {
     @apply absolute inset-0 max-w-full overflow-hidden;
 
@@ -89,8 +91,8 @@
     @apply transition-colors duration-300 ease-in-out;
     @apply flex gap-2 items-center;
     @apply sm:border-2;
-    @apply border-foreground text-foreground;
-    @apply hover:bg-foreground hover:text-background;
+    /* @apply border-foreground text-foreground;
+    @apply hover:bg-foreground hover:text-background; */
   }
 
   .link-label {

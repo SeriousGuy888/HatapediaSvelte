@@ -2,7 +2,7 @@
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/container-queries")],
-  darkMode: "class",
+  darkMode: "selector",
   theme: {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
@@ -11,13 +11,13 @@ export default {
       minecraft: ["MinecraftSeven", "monospace"], // Minecraft font
     },
     extend: {
-      colors: {
-        brand: "hsl(var(--brand) / <alpha-value>)",
-        foreground: "hsl(var(--foreground) / <alpha-value>)",
-        background: "hsl(var(--background) / <alpha-value>)",
-        primary: "hsl(var(--primary) / <alpha-value>)",
-        secondary: "hsl(var(--secondary) / <alpha-value>)",
-      },
+      // colors: {
+      //   brand: "hsl(var(--brand) / <alpha-value>)",
+      //   foreground: "hsl(var(--foreground) / <alpha-value>)",
+      //   background: "hsl(var(--background) / <alpha-value>)",
+      //   primary: "hsl(var(--primary) / <alpha-value>)",
+      //   secondary: "hsl(var(--secondary) / <alpha-value>)",
+      // },
       typography: (theme) => ({
         DEFAULT: {
           css: {

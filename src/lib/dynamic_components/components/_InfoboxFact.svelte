@@ -16,6 +16,8 @@
 {/if}
 
 <style lang="postcss">
+  @reference "tailwindcss/theme";
+
   dd {
     @apply text-black dark:text-white print:text-black my-0 text-base;
   }
