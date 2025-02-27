@@ -83,10 +83,10 @@ export const cities: CityList = {
         country: "Billzoplace City State",
       },
     },
-    swamp_of_secrets: {
+    tobytown: {
       realWeatherSource: "New Orleans",
       display: {
-        name: "Swamp of Secrets",
+        name: "Tobytown",
         country: "Tobytopia",
       },
     },
