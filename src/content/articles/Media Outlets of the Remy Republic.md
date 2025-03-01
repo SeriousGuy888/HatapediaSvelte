@@ -1,10 +1,11 @@
 ---
 date_created: 2024-08-16
-date_modified: 2024-08-17
+date_modified: 2025-03-01
 tags:
   - hata1
   - list
-author: "[[Remy]]"
+authors:
+  - Remy
 ---
 
 >[!info] Author
