@@ -1,6 +1,6 @@
 ---
 date_created: 2024-04-18
-date_modified: 2024-10-14
+date_modified: 2025-03-01
 subtitle: First Season of HATA
 tags:
   - hata1
@@ -21,7 +21,7 @@ Members of HATA 1 were, generally speaking, quite scattered, living separately a
 
 ## HATAsurv Era
 
-On 2023-06-21, HATA 1 officially transitioned from being a war server to a more regular style SMP, similar in spirit to [[Polyoktosurv|CheezSurv]].
+On an unclear date no later than 2023-01-27, HATA 1 officially transitioned from being a war server to a more regular style SMP, similar in spirit to [[Polyoktosurv|CheezSurv]], though the server continued to be named "HATAwar" until 2023-06-20, when it was renamed to "HATAsurv".
 
 The worldborder was changed from a 1000 block diameter, centered on spawn, to a 10,000 block diameter, centered on (0, 0). This change to the worldborder was briefly preceded by the [[Border Disorder]].
 
