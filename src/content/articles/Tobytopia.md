@@ -1,13 +1,15 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-11-30
-title: Tobytopia
+date_modified: 2025-03-01
+title: Tobytopian Empire
 subtitle: Kratocracy
 tags:
   - country
   - place
   - hata1
 image: "[[Tobytopia Banner.png]]"
+aliases:
+  - Tobytopian
 ---
 
 Tobytopia is a nation situated deep within the the Swamp of Secrets, or the mangrove swamp
