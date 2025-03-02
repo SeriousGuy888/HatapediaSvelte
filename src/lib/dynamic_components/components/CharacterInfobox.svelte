@@ -33,7 +33,7 @@
           />
         {:else if mcUuid}
           <img
-            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow-sm"
+            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow"
             alt="Minecraft skin"
             loading="lazy"
             width="16"
