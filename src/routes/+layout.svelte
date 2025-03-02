@@ -1,16 +1,21 @@
-<script>
+<script lang="ts">
   import "../app.css"
   import Header from "./Header.svelte"
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <Header />
 <div class="layout">
   <!-- Used to push content down so it's not hidden behind the header -->
-  <div class="h-16" />
+  <div class="h-16"></div>
 
   <!-- grid gets rid of some weird spacing for some reason -->
   <main class="grid">
-    <slot />
+    {@render children?.()}
   </main>
 </div>
 

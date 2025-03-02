@@ -4,9 +4,13 @@
   import { DAY_WIDTH, LANE_HEIGHT, LANE_GAP, MILLIS_PER_DAY } from "./timeline_constants"
   import type { Lane } from "./timeline_lanes"
 
-  export let hidden: boolean = false
-  export let months: Date[] = []
-  export let lanes: Lane[] = []
+  interface Props {
+    hidden?: boolean;
+    months?: Date[];
+    lanes?: Lane[];
+  }
+
+  let { hidden = false, months = [], lanes = [] }: Props = $props();
 
   const dispatch = createEventDispatcher()
 
@@ -55,7 +59,7 @@
             width: ${DAY_WIDTH * getNumDaysInMonth(month) + "rem"};
             left: ${DAY_WIDTH * daysOffsetFromStart + "rem"};
           `}
-        />
+></div>
       {/each}
     </section>
     {#each lanes as lane, laneIndex}

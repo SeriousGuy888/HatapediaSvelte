@@ -6,9 +6,13 @@
   import { getEventDateString } from "./timeline_dates"
   import { getEventColours } from "./timeline_event_colours"
 
-  export let event: TimelineEventData
-  export let laneToUse: number
-  export let timelineStartMonth: Date
+  interface Props {
+    event: TimelineEventData;
+    laneToUse: number;
+    timelineStartMonth: Date;
+  }
+
+  let { event, laneToUse, timelineStartMonth }: Props = $props();
 
   const dispatch = createEventDispatcher()
 
@@ -37,8 +41,8 @@
     background-color: {colour};
     color: {textCol};
   "
-  on:click={() => dispatch("select", event)}
-  on:keydown={(e) => {
+  onclick={() => dispatch("select", event)}
+  onkeydown={(e) => {
     if (e.key === "Enter") {
       dispatch("select", event)
     }
@@ -52,7 +56,7 @@
       <div
         class="absolute inset-0 opacity-75 group-hover/event:opacity-100 transition-all duration-300"
         style="background: linear-gradient(to bottom, {colour} 60%, transparent 100%)"
-      />
+></div>
     </div>
 
     <h2 class="font-bold text-sm whitespace-nowrap overflow-ellipsis overflow-clip sticky left-0">

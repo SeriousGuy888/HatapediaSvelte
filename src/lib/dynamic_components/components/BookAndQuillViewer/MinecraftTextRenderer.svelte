@@ -1,11 +1,17 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import type { MinecraftTextComponent } from "./book_and_quill_interfaces"
 
-  export let textData: MinecraftTextComponent | MinecraftTextComponent[]
+  interface Props {
+    textData: MinecraftTextComponent | MinecraftTextComponent[];
+  }
 
-  let flattenedExtras: MinecraftTextComponent[] = []
+  let { textData = $bindable() }: Props = $props();
 
-  $: {
+  let flattenedExtras: MinecraftTextComponent[] = $state([])
+
+  run(() => {
     flattenedExtras = []
 
     if (!Array.isArray(textData)) {
@@ -23,7 +29,7 @@
         })
       }
     }
-  }
+  });
 
   function mcColourToHex(mcCol: string) {
     // https://minecraft.wiki/w/Formatting_codes#Color_codes

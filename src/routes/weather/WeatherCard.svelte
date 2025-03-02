@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import type {
     TemperatureUnit,
     WeatherCondition,
@@ -9,16 +11,28 @@
   import _weatherConditions from "./weather_conditions.json"
   const weatherConditions = _weatherConditions as unknown as Record<string, WeatherCondition>
 
-  export let cityName: string
-  export let country: string
-  export let weatherData: WeatherData | null = null
-  export let tempUnit: TemperatureUnit = "celsius"
-  export let ready = false
+  interface Props {
+    cityName: string;
+    country: string;
+    weatherData?: WeatherData | null;
+    tempUnit?: TemperatureUnit;
+    ready?: boolean;
+  }
 
-  let currWeather: WeatherData["current"] | null = null
-  let unitSymbol: string
-  $: currWeather = weatherData?.current ?? null
-  $: unitSymbol = tempUnit === "celsius" ? "°C" : "K"
+  let {
+    cityName,
+    country,
+    weatherData = null,
+    tempUnit = "celsius",
+    ready = false
+  }: Props = $props();
+
+  let currWeather: WeatherData["current"] | null = $state(null)
+  let unitSymbol: string = $derived(tempUnit === "celsius" ? "°C" : "K")
+  run(() => {
+    currWeather = weatherData?.current ?? null
+  });
+  
 
   function getWeatherCondition(code: number, defaultConditionText: string, isDay: boolean) {
     const conditionObj = weatherConditions[code.toString()]
@@ -53,13 +67,13 @@
     }
   }
 
-  let actualTemp = 0
-  let feelsLikeTemp = 0
-  $: {
+  let actualTemp = $state(0)
+  let feelsLikeTemp = $state(0)
+  run(() => {
     tempUnit
     actualTemp = getTemp(currWeather?.temp_c ?? 0)
     feelsLikeTemp = getTemp(currWeather?.feelslike_c ?? 0)
-  }
+  });
 </script>
 
 {#if weatherData?.error}
@@ -85,7 +99,7 @@
         aria-hidden="true"
         alt=""
       />
-      <span class="absolute inset-0 bg-blue-900 opacity-60" />
+      <span class="absolute inset-0 bg-blue-900 opacity-60"></span>
     </div>
     <header class="flex justify-between gap-4 flex-col-reverse @md:flex-row">
       <section class="flex flex-col items-center @md:items-start">

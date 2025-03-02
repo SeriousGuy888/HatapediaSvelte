@@ -6,11 +6,15 @@
   import type { TimelineEventData } from "./timeline_interfaces"
   import { arrangeLanes } from "./timeline_lanes"
 
-  export let title: string | undefined
-  export let events: TimelineEventData[]
+  interface Props {
+    title: string | undefined;
+    events: TimelineEventData[];
+  }
 
-  let selectedEvent: TimelineEventData | null = null
-  let selectedEventColours: EventColours | null = null
+  let { title, events }: Props = $props();
+
+  let selectedEvent: TimelineEventData | null = $state(null)
+  let selectedEventColours: EventColours | null = $state(null)
 
   const isInvalid =
     !title ||

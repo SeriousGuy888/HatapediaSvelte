@@ -1,6 +1,10 @@
 <script lang="ts">
-  export let tag: string
-  export let size: "small" | "regular" = "regular"
+  interface Props {
+    tag: string;
+    size?: "small" | "regular";
+  }
+
+  let { tag, size = "regular" }: Props = $props();
 </script>
 
 <a href={`/tags/${tag}`} aria-label={`Tag: ${tag}`}>

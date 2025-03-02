@@ -1,8 +1,12 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte"
 
-  export let options: Record<string, string>
-  export let value: string = Object.keys(options)[0]
+  interface Props {
+    options: Record<string, string>;
+    value?: string;
+  }
+
+  let { options, value = $bindable(Object.keys(options)[0]) }: Props = $props();
 
   const dispatch = createEventDispatcher()
 </script>
@@ -27,7 +31,7 @@
       <li class={`w-full ${value === id ? "bg-blue-800 font-bold text-white" : ""}`}>
         <button
           class="w-full h-full p-2"
-          on:click={() => {
+          onclick={() => {
             value = id
             dispatch("change", id)
           }}
