@@ -84,7 +84,7 @@
   }}
 />
 
-<div class="grid lg:grid-cols-[auto,1fr] isolate" id="_top">
+<div class="grid lg:grid-cols-[auto_1fr] isolate" id="_top">
   <aside
     class={`
       h-full overflow-clip
@@ -215,6 +215,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "../../../app.css";
+
   .restricted-width {
     @apply max-w-md sm:max-w-lg md:max-w-prose w-full mx-auto px-4;
   }

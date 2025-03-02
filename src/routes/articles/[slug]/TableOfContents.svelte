@@ -23,7 +23,7 @@
     <li class="w-full" onclick={() => dispatch("toc-click")}>
       <a
         href="#{heading.id}"
-        class="w-full inline-block p-1 rounded hover:bg-slate-200 dark:hover:bg-slate-700"
+        class="w-full inline-block p-1 rounded-sm hover:bg-slate-200 dark:hover:bg-slate-700"
       >
         {heading.value}
       </a>

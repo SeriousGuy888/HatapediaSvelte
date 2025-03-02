@@ -40,7 +40,7 @@
   }
 </script>
 
-<button aria-label="Toggle colour theme" onclick={toggleDarkMode}>
+<button aria-label="Toggle colour theme" onclick={toggleDarkMode} class="cursor-pointer">
   {#if darkMode}
     <div in:fly={{ y: -5 }}>
       <Moon size="24" />

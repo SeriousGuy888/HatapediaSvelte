@@ -1,17 +1,23 @@
+@theme {
+  --color-brand: hsl(19 67% 26%);
+  --color-foreground: var(--theme-color-foreground);
+  --color-background: var(--theme-color-background);
+  --color-primary: var(--theme-color-primary);
+  --color-secondary: var(--theme-color-secondary);
+}
+
 @layer base {
   :root {
-    --brand: 19 67% 26%;
+    --theme-color-foreground: hsl(18 72% 7%);
+    --theme-color-background: hsl(0 0% 98%);
+    --theme-color-primary: hsl(20 66% 68%);
+    --theme-color-secondary: hsl(20 66% 38%);
+  }
 
-    --foreground: 18 72% 7%;
-    --background: 0 0% 98%;
-    --primary: 20 66% 68%;
-    --secondary: 20 66% 38%;
-
-    &.dark {
-      --foreground: 18 72% 93%;
-      --background: 18 100% 2%;
-      --primary: 20 66% 32%;
-      --secondary: 20 66% 62%;
-    }
+  .dark {
+    --theme-color-foreground: hsl(18 72% 93%);
+    --theme-color-background: hsl(18 100% 2%);
+    --theme-color-primary: hsl(20 66% 32%);
+    --theme-color-secondary: hsl(20 66% 62%);
   }
 }

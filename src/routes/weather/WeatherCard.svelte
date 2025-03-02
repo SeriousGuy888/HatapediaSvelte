@@ -115,7 +115,7 @@
             : "\u200b"}
         </p>
       </section>
-      <section class="flex-shrink text-center @md:text-right">
+      <section class="shrink text-center @md:text-right">
         <p class="text-xl @md:text-lg font-bold">
           {ready ? cityName : "Waiting..."}
         </p>
@@ -136,7 +136,7 @@
       </p>
     </section>
     {#if ready && currWeather}
-      <ul class="grid gap-2 grid-cols-[repeat(auto-fit,_minmax(40%,1fr))]">
+      <ul class="grid gap-2 grid-cols-[repeat(auto-fit,minmax(40%,1fr))]">
         <WeatherCardField title={"Humidity"} data={`${currWeather.humidity}%`} />
         <WeatherCardField
           title={"Wind"}
@@ -147,7 +147,7 @@
       </ul>
     {/if}
     <footer class="flex justify-between items-center gap-4">
-      <p class="flex-grow text-right text-[0.5rem] uppercase opacity-30">
+      <p class="grow text-right text-[0.5rem] uppercase opacity-30">
         Last Updated:{" "}
         {#if currWeather}
           {currWeather.last_updated}

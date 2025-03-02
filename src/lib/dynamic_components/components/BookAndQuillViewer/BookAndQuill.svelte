@@ -93,7 +93,7 @@
       </p>
     </div>
   {/if}
-  <div class="leading-tight break-words [&>*]:z-20 [&>*]:m-0">
+  <div class="leading-tight break-words *:z-20 *:m-0">
     {#if page !== 0}
       <div class="absolute left-[11%] top-[16.1%] w-[78.1%]">
         <MinecraftTextRenderer textData={currPageData} />

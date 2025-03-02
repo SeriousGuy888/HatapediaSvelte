@@ -9,7 +9,7 @@
 
 <li
   class="
-    bg-black bg-opacity-10
+    bg-black/10
     filter backdrop-blur-xl
 
     rounded-md p-4 text-center break-words

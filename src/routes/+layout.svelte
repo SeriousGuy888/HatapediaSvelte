@@ -2,10 +2,10 @@
   import "../app.css"
   import Header from "./Header.svelte"
   interface Props {
-    children?: import('svelte').Snippet;
+    children?: import("svelte").Snippet
   }
 
-  let { children }: Props = $props();
+  let { children }: Props = $props()
 </script>
 
 <Header />
@@ -20,6 +20,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "../app.css";
+  
   .layout {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -40,7 +42,7 @@
   }
 
   :global(:root) {
-    @apply transition-colors duration-300 ease-in-out;
+    @apply transition-colors duration-300;
     @apply text-foreground bg-background;
   }
 

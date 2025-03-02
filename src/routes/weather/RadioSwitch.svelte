@@ -30,7 +30,7 @@
     {#each Object.keys(options) as id}
       <li class={`w-full ${value === id ? "bg-blue-800 font-bold text-white" : ""}`}>
         <button
-          class="w-full h-full p-2"
+          class="w-full h-full p-2 cursor-pointer"
           onclick={() => {
             value = id
             dispatch("change", id)

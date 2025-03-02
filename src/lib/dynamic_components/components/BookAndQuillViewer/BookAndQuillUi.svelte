@@ -23,7 +23,7 @@
   const dispatch = createEventDispatcher()
 </script>
 
-<div class="aspect-[146/180] w-full relative select-none">
+<div class="aspect-146/180 w-full relative select-none">
   <img
     src={currPage === 0 ? IMAGES.COVER : IMAGES.PAGE}
     aria-hidden

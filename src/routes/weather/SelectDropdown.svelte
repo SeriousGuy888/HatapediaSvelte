@@ -21,12 +21,14 @@
           w-full h-full
           py-2 px-4 rounded-xl
           appearance-none
-          focus:outline-none focus:ring-2 focus:border-blue-800
+          focus:outline-hidden focus:ring-2 focus:border-blue-800
           
           bg-gray-200 dark:bg-gray-700
           border-2 border-gray-300 dark:border-gray-600
 
           overflow-x-hidden whitespace-nowrap text-ellipsis
+
+          cursor-pointer
         `}
       bind:value
       onchange={() => dispatch("change", value)}

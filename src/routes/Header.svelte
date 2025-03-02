@@ -20,6 +20,8 @@
 </nav>
 
 <style lang="postcss">
+  @reference "../app.css";
+  
   section {
     @apply flex gap-4 items-center;
   }

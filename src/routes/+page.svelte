@@ -57,6 +57,8 @@
 </div>
 
 <style lang="postcss">
+  @reference "../app.css";
+  
   .bg-image-container {
     @apply absolute inset-0 max-w-full overflow-hidden;
 

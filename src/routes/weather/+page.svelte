@@ -49,7 +49,7 @@
   <noscript class="block text-center text-xl mb-8">
     <p>Please enable JavaScript in your browser to view the weather.</p>
   </noscript>
-  <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
+  <aside class="w-full flex gap-2 *:flex-1 items-stretch mb-8">
     <SelectDropdown
       options={Object.entries(cities).reduce(
         // Go through the cities, go into each optgroup, and replace all the `City`s with the city's name and country.

@@ -59,7 +59,7 @@
 ></div>
     </div>
 
-    <h2 class="font-bold text-sm whitespace-nowrap overflow-ellipsis overflow-clip sticky left-0">
+    <h2 class="font-bold text-sm whitespace-nowrap text-ellipsis overflow-clip sticky left-0">
       {event.title}
     </h2>
     <p class="text-xs font-mono opacity-50 whitespace-nowrap">

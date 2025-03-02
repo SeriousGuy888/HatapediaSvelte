@@ -39,7 +39,7 @@
 </script>
 
 <!-- Button to open search -->
-<button onclick={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle">
+<button onclick={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle cursor-pointer">
   <div class="hidden sm:flex gap-1 hide-on-touch">
     <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
     <kbd>K</kbd>
@@ -131,6 +131,8 @@
 {/if}
 
 <style lang="postcss">
+  @reference "../app.css";
+
   kbd {
     @apply bg-gray-700;
     @apply rounded border border-gray-500;

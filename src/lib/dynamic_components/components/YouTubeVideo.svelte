@@ -17,7 +17,7 @@
 ></iframe>
 {:else}
   <div
-    class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded text-center grid place-items-center w-full h-full"
+    class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-sm text-center grid place-items-center w-full h-full"
   >
     <div>
       <p class="font-bold">Invalid YouTube video specified.</p>

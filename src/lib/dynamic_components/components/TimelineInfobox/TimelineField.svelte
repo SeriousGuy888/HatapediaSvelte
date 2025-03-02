@@ -31,7 +31,7 @@
   <div class="flex">
     {#each months as month}
       <div
-        class={`py-2 border-b-[1px] bg-slate-200 dark:bg-slate-900 text-center flex-shrink-0 h-full ${gridLineStyles}`}
+        class={`py-2 border-b-[1px] bg-slate-200 dark:bg-slate-900 text-center shrink-0 h-full ${gridLineStyles}`}
         style="width: {DAY_WIDTH * getNumDaysInMonth(month)}rem"
       >
         <h2 class="m-0 text-sm tracking-widest whitespace-nowrap font-bold">
@@ -54,7 +54,7 @@
         )}
 
         <div
-          class={`h-full flex-shrink-0 ${gridLineStyles}`}
+          class={`h-full shrink-0 ${gridLineStyles}`}
           style={`
             width: ${DAY_WIDTH * getNumDaysInMonth(month) + "rem"};
             left: ${DAY_WIDTH * daysOffsetFromStart + "rem"};

@@ -3,18 +3,13 @@
   import InfoboxFact from "./_InfoboxFact.svelte"
 
   interface Props {
-    name: string | undefined;
-    facts?: Record<string, string[] | string>;
-    image?: string | null;
-    mcUuid?: string | null;
+    name: string | undefined
+    facts?: Record<string, string[] | string>
+    image?: string | null
+    mcUuid?: string | null
   }
 
-  let {
-    name,
-    facts = {},
-    image = null,
-    mcUuid = null
-  }: Props = $props();
+  let { name, facts = {}, image = null, mcUuid = null }: Props = $props()
 </script>
 
 <aside class="my-12">
@@ -38,7 +33,7 @@
           />
         {:else if mcUuid}
           <img
-            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow"
+            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow-sm"
             alt="Minecraft skin"
             loading="lazy"
             width="16"
@@ -49,7 +44,7 @@
       </figure>
     {/if}
     <div
-      class="flex flex-[3] bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
+      class="flex flex-3 bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
     >
       <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
         {#each Object.keys(facts) as key}
