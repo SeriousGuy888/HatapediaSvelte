@@ -1,10 +1,16 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-03-17
+date_modified: 2025-03-02
 subtitle: About Hatapedia
 tags:
   - meta
 ---
+
+# 2025-03-02
+
+## Upgraded to Svelte 5
+
+The website is now running on Svelte 5.
 
 # 2024-03-17
 
