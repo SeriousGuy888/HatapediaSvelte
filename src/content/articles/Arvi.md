@@ -1,8 +1,8 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-12-30
+date_modified: 2025-03-01
 title: Arvi
-subtitle: The Stripper
+subtitle: Doomslayer Nine Thousand of the Kingdom of Neville
 tags:
   - character
 image: "[[Arvi Portrait.png]]"
@@ -14,8 +14,8 @@ mcUuid: "5d5d50e051bc40a182f5a21f8bb2c116"
 facts:
   titles:
   - Doomslayer Nine Thousand of the Kingdom of Neville
-  - The Stripper
   - Head Chef and Manager of KFV Operations in Billzoplace City
+  - The Stripper (allegedly)
   aka:
   - The Lorax
 ```
