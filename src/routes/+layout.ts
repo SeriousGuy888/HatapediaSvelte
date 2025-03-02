@@ -10,7 +10,7 @@ injectSpeedInsights()
 
 export async function load({ fetch }) {
   const response = await fetch("/api/articles")
-  response.json().then(console.log).catch(console.error)
+  response.text().then(console.log).catch(console.error)
 
   // const articles: Article[] = (await response.json()).sort((a: Article, b: Article) => {
   //   // Move more recently modified articles to the top
