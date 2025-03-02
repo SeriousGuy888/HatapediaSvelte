@@ -284,7 +284,12 @@
     }
   }
 
-  :global(.prose :target):is(:global(h1, h2, h3, h4, h5, h6)) {
+  :global(.prose h1:target),
+  :global(.prose h2:target),
+  :global(.prose h3:target),
+  :global(.prose h4:target),
+  :global(.prose h5:target),
+  :global(.prose h6:target) {
     animation: target 1s;
   }
 </style>
