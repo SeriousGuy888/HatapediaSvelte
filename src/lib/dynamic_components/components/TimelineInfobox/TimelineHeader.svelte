@@ -7,8 +7,12 @@
 
   const dispatch = createEventDispatcher()
 
-  export let selectedEvent: TimelineEventData | null = null
-  export let selectedEventColours: EventColours | null = null
+  interface Props {
+    selectedEvent?: TimelineEventData | null;
+    selectedEventColours?: EventColours | null;
+  }
+
+  let { selectedEvent = null, selectedEventColours = null }: Props = $props();
 </script>
 
 <section
@@ -22,7 +26,7 @@
     {selectedEvent?.title ?? "Timeline"}
   </h2>
   {#if selectedEvent}
-    <button on:click={() => dispatch("reset_selected_event")}>
+    <button onclick={() => dispatch("reset_selected_event")}>
       <X color={selectedEvent ? selectedEventColours?.textCol : ""} />
     </button>
   {/if}

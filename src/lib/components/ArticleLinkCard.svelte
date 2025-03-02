@@ -1,19 +1,26 @@
 <script lang="ts">
+  import { run, createBubbler, preventDefault } from "svelte/legacy"
+
+  const bubble = createBubbler()
   import type { Article } from "$lib/types"
   import ArticleTag from "$lib/components/ArticleTag.svelte"
   import { goto } from "$app/navigation"
   import { createEventDispatcher } from "svelte"
   import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser"
 
-  export let article: Article
-  export let selected = false
-  export let showTimeSinceUpdated = false
+  interface Props {
+    article: Article
+    selected?: boolean
+    showTimeSinceUpdated?: boolean
+  }
+
+  let { article, selected = false, showTimeSinceUpdated = false }: Props = $props()
 
   const dispatch = createEventDispatcher()
 
-  let elem: HTMLDivElement | null = null
+  let elem: HTMLDivElement | null = $state(null)
 
-  $: {
+  run(() => {
     if (selected) {
       elem?.scrollIntoView({
         behavior: "smooth",
@@ -22,10 +29,12 @@
       })
       elem?.focus()
     }
-  }
+  })
 
-  let target = `/articles/${article.slug}`
-  $: target = `/articles/${article.slug}`
+  let target = $state(`/articles/${article.slug}`)
+  run(() => {
+    target = `/articles/${article.slug}`
+  })
   function goThere() {
     goto(target)
     dispatch("navigate")
@@ -51,7 +60,7 @@
   }
 </script>
 
-<div class="card-rounding">
+<div class="card-rounding shadow-gray-300 dark:shadow-gray-700">
   <!--
     This wrapping div is needed because if the rounding were applied directly to its child,
     the thumbnail image would be cut off by the transparent border.
@@ -60,11 +69,11 @@
   <div
     class:selected
     bind:this={elem}
-    on:click={goThere}
-    on:keydown={(e) => {
+    onclick={goThere}
+    onkeydown={(e) => {
       if (e.key === "Enter") goThere()
     }}
-    class="card relative isolate"
+    class="card relative isolate bg-gray-100 dark:bg-gray-900 text-black dark:text-white"
     role="link"
     tabindex="0"
   >
@@ -90,7 +99,7 @@
   -->
     <a
       href={target}
-      on:click|preventDefault
+      onclick={preventDefault(bubble("click"))}
       class="absolute inset-0 z-10 text-transparent select-none"
     >
       Link to {article.title}
@@ -126,19 +135,19 @@
 </div>
 
 <style lang="postcss">
+  @reference "../../app.css";
+
   .card-rounding {
     @apply overflow-hidden;
     @apply rounded-lg;
-    @apply shadow-md shadow-gray-300 dark:shadow-gray-700;
+    @apply shadow-md;
   }
 
   .card {
     @apply h-full p-4;
-    @apply bg-gray-100 dark:bg-gray-900;
-    @apply text-black dark:text-white;
     @apply border-t-8 border-transparent;
     @apply transition-colors duration-100 ease-in-out;
-    @apply outline-none cursor-pointer;
+    @apply outline-hidden cursor-pointer;
   }
 
   .card:hover,
@@ -148,7 +157,7 @@
   }
 
   .dotdotdot {
-    @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+    @apply overflow-hidden whitespace-nowrap text-ellipsis;
   }
 
   .thumbnail-container {
@@ -159,12 +168,12 @@
 
   .thumbnail-container img {
     @apply w-full h-full object-cover object-top relative;
-    
+
     /* because minecraft banner images are so low-res */
     image-rendering: pixelated;
-    
+
     /* fade the left side of the image */
-    mask-image: linear-gradient( 
+    mask-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 50%) 0%,
       rgba(0, 0, 0, 5%) 70%,

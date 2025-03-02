@@ -1,12 +1,16 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import { title as siteTitle } from "$lib/config"
   import { page } from "$app/stores"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
 
-  export let data
+  let { data } = $props();
 
-  let title = ""
-  $: title = `#${$page.params.tag} - ${siteTitle}`
+  let title = $state("")
+  run(() => {
+    title = `#${$page.params.tag} - ${siteTitle}`
+  });
 </script>
 
 <svelte:head>

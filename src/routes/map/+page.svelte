@@ -12,4 +12,4 @@
   />
 </svelte:head>
 
-<iframe src="/map/unmined.index.html" {title} width="100%" height="100%" />
+<iframe src="/map/unmined.index.html" {title} width="100%" height="100%"></iframe>

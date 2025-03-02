@@ -2,10 +2,14 @@
   import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
-  export let name: string | undefined
-  export let facts: Record<string, string[] | string> = {}
-  export let image: string | null = null
-  export let mcUuid: string | null = null
+  interface Props {
+    name: string | undefined
+    facts?: Record<string, string[] | string>
+    image?: string | null
+    mcUuid?: string | null
+  }
+
+  let { name, facts = {}, image = null, mcUuid = null }: Props = $props()
 </script>
 
 <aside class="my-12">
@@ -40,7 +44,7 @@
       </figure>
     {/if}
     <div
-      class="flex flex-[3] bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
+      class="flex flex-3 bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
     >
       <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
         {#each Object.keys(facts) as key}

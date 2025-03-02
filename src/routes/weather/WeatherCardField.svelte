@@ -1,11 +1,15 @@
 <script lang=ts>
-  export let title: string
-  export let data: string
+  interface Props {
+    title: string;
+    data: string;
+  }
+
+  let { title, data }: Props = $props();
 </script>
 
 <li
   class="
-    bg-black bg-opacity-10
+    bg-black/10
     filter backdrop-blur-xl
 
     rounded-md p-4 text-center break-words

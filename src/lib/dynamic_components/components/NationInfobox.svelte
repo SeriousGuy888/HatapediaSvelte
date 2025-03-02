@@ -2,9 +2,13 @@
   import { getImageWikilinkSrc } from "../imageWikilinkParser"
   import InfoboxFact from "./_InfoboxFact.svelte"
 
-  export let name: string | null = null
-  export let facts: Record<string, string[] | string> = {}
-  export let banner: string | null = null
+  interface Props {
+    name?: string | null;
+    facts?: Record<string, string[] | string>;
+    banner?: string | null;
+  }
+
+  let { name = null, facts = {}, banner = null }: Props = $props();
 </script>
 
 <aside class="my-12">
@@ -20,16 +24,16 @@
       name ? "rounded-b-lg" : "rounded-lg"
     } flex flex-wrap items-start gap-4`}
   >
-    <div class="flex-1 min-w-[80px] aspect-[1/2] relative" style="image-rendering: pixelated;">
+    <div class="flex-1 min-w-[80px] aspect-1/2 relative" style="image-rendering: pixelated;">
       <img
         src={banner ? getImageWikilinkSrc(banner) : "/images/no_banner.png"}
         alt={name ? `Banner of ${name}` : `Banner`}
-        class="rounded-md m-0 w-full"
+        class="rounded-md w-full m-0"
         loading="lazy"
       />
     </div>
     <div
-      class="flex flex-[3] bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
+      class="flex flex-3 bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
     >
       <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
         {#each Object.keys(facts) as key}

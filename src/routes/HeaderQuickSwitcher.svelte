@@ -13,10 +13,10 @@
   let unsubscribe = searchStore.subscribe((value) => handleSearch(value))
   onDestroy(() => unsubscribe())
 
-  let selectedResultIndex = 0
+  let selectedResultIndex = $state(0)
 
-  let searchBox: SearchBox | null = null
-  let modalOpen = false
+  let searchBox: SearchBox | null = $state(null)
+  let modalOpen = $state(false)
 
   function openModal() {
     modalOpen = true
@@ -39,7 +39,7 @@
 </script>
 
 <!-- Button to open search -->
-<button on:click={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle">
+<button onclick={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle cursor-pointer">
   <div class="hidden sm:flex gap-1 hide-on-touch">
     <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
     <kbd>K</kbd>
@@ -49,7 +49,7 @@
 
 <!-- Listen for keyboard shortcut globally while component is mounted -->
 <svelte:window
-  on:keydown={(e) => {
+  onkeydown={(e) => {
     if (e.key === "k" && e.ctrlKey) {
       // Prevents the browser from focusing the address bar
       e.preventDefault()
@@ -72,8 +72,8 @@
     cursor-zoom-out
     select-none
   `}
-    on:click={closeModal}
-    on:keydown={(e) => {
+    onclick={closeModal}
+    onkeydown={(e) => {
       switch (e.key) {
         case "Escape":
           closeModal()
@@ -103,7 +103,7 @@
   >
     <aside
       class="cursor-default bg-slate-100 dark:bg-slate-800 rounded-lg w-full max-w-2xl @container"
-      on:click={(e) => {
+      onclick={(e) => {
         e.stopPropagation()
       }}
       aria-hidden
@@ -131,6 +131,8 @@
 {/if}
 
 <style lang="postcss">
+  @reference "../app.css";
+
   kbd {
     @apply bg-gray-700;
     @apply rounded border border-gray-500;

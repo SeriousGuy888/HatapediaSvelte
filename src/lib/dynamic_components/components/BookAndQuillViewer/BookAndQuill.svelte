@@ -1,15 +1,27 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import MinecraftTextRenderer from "./MinecraftTextRenderer.svelte"
   import BookAndQuillUi from "./BookAndQuillUi.svelte"
   import type { MinecraftTextComponent } from "./book_and_quill_interfaces"
 
-  // https://minecraft.wiki/w/Written_Book#Data_values
-  export let pages: string[] = []
-  export let title: string | null = null
-  export let author: string | null = null
-  export let generation: number | null = null
+  
+  interface Props {
+    // https://minecraft.wiki/w/Written_Book#Data_values
+    pages?: string[];
+    title?: string | null;
+    author?: string | null;
+    generation?: number | null;
+  }
 
-  let page = 0
+  let {
+    pages = [],
+    title = null,
+    author = null,
+    generation = null
+  }: Props = $props();
+
+  let page = $state(0)
   let maxPage = pages.length
 
   function gotoNextPage() {
@@ -24,8 +36,8 @@
     }
   }
 
-  let currPageData: MinecraftTextComponent = {}
-  $: {
+  let currPageData: MinecraftTextComponent = $state({})
+  run(() => {
     page
     try {
       currPageData = JSON.parse(pages[page - 1])
@@ -33,12 +45,12 @@
       currPageData = { text: "Error parsing page data: " + e, color: "red" }
       console.error(e)
     }
-  }
+  });
 
-  let fontSize = 18
-  let bookContainer: HTMLDivElement | null = null
+  let fontSize = $state(18)
+  let bookContainer: HTMLDivElement | null = $state(null)
 
-  $: {
+  run(() => {
     if (bookContainer) {
       new ResizeObserver(() => {
         if (!bookContainer) return
@@ -49,7 +61,7 @@
         fontSize = containerHeight / 22.5
       }).observe(bookContainer)
     }
-  }
+  });
 </script>
 
 <div
@@ -65,13 +77,13 @@
   />
   {#if page !== 0}
     <div class="absolute right-[13.7%] top-[8.3%] z-30 text-right">
-      <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+      <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
       <p
         class="m-0"
-        on:keypress={() => {
+        onkeypress={() => {
           /* makes a11y warning go away */
         }}
-        on:click={(e) => {
+        onclick={(e) => {
           if (e.shiftKey || e.ctrlKey || e.altKey) {
             alert(`/give @p written_book${JSON.stringify({ pages, title, author, generation })} 1`)
           }
@@ -81,7 +93,7 @@
       </p>
     </div>
   {/if}
-  <div class="leading-tight break-words [&>*]:z-20 [&>*]:m-0">
+  <div class="leading-tight break-words *:z-20 *:m-0">
     {#if page !== 0}
       <div class="absolute left-[11%] top-[16.1%] w-[78.1%]">
         <MinecraftTextRenderer textData={currPageData} />

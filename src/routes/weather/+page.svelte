@@ -8,10 +8,10 @@
 
   import { cities, citiesFlat } from "$lib/weather/master_cities_list"
 
-  let selectedCityId = Object.keys(citiesFlat)[0]
-  let selectedTempUnit: TemperatureUnit = "celsius"
+  let selectedCityId = $state(Object.keys(citiesFlat)[0])
+  let selectedTempUnit: TemperatureUnit = $state("celsius")
 
-  let weatherData: WeatherData | null = null
+  let weatherData: WeatherData | null = $state(null)
 
   // Create a SWR model to fetch the weather data
   // will cache the data so if the user switches back to the same city it will be instant
@@ -49,7 +49,7 @@
   <noscript class="block text-center text-xl mb-8">
     <p>Please enable JavaScript in your browser to view the weather.</p>
   </noscript>
-  <aside class="w-full flex gap-2 [&>*]:flex-1 items-stretch mb-8">
+  <aside class="w-full flex gap-2 *:flex-1 items-stretch mb-8">
     <SelectDropdown
       options={Object.entries(cities).reduce(
         // Go through the cities, go into each optgroup, and replace all the `City`s with the city's name and country.
