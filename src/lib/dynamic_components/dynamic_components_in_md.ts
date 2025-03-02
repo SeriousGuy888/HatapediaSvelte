@@ -1,15 +1,17 @@
 // Largely stolen from
 // https://github.com/dimfeld/website/blob/54c30d47ecaa02fabfc5c5ccedf419035da02c77/src/dynamicComponents.ts
 
-import { tick, type SvelteComponent, mount } from "svelte"
+import { tick, type SvelteComponent, mount, unmount } from "svelte"
 import DynamicComponentWrapper from "./DynamicComponentWrapper.svelte"
 
 const components: Record<string, () => Promise<any>> = {
   CharacterInfobox: () => import("$lib/dynamic_components/components/CharacterInfobox.svelte"),
   YouTubeVideo: () => import("$lib/dynamic_components/components/YouTubeVideo.svelte"),
   NationInfobox: () => import("$lib/dynamic_components/components/NationInfobox.svelte"),
-  BookAndQuillViewer: () => import("$lib/dynamic_components/components/BookAndQuillViewer/BookAndQuill.svelte"),
-  TimelineInfobox: () => import("$lib/dynamic_components/components/TimelineInfobox/TimelineInfobox.svelte"),
+  BookAndQuillViewer: () =>
+    import("$lib/dynamic_components/components/BookAndQuillViewer/BookAndQuill.svelte"),
+  TimelineInfobox: () =>
+    import("$lib/dynamic_components/components/TimelineInfobox/TimelineInfobox.svelte"),
 }
 
 async function instantiateComponent(element: Element) {
@@ -57,12 +59,12 @@ async function instantiateComponent(element: Element) {
     console.log("Props:", props)
 
     const instance = mount(DynamicComponentWrapper, {
-          target: element,
-          props: {
-            component,
-            props,
-          },
-        })
+      target: element,
+      props: {
+        component,
+        props,
+      },
+    })
 
     element.classList.add("has-component")
 
@@ -74,7 +76,7 @@ async function instantiateComponent(element: Element) {
 
 export async function instantiateDynamicComponents() {
   const divs = document.querySelectorAll("[data-component]")
-  const components: SvelteComponent[] = []
+  const components: Exclude<Awaited<ReturnType<typeof instantiateComponent>>, undefined>[] = []
 
   for (const div of divs) {
     const component = await instantiateComponent(div)
@@ -85,11 +87,7 @@ export async function instantiateDynamicComponents() {
 
   return () => {
     for (const component of components) {
-      try {
-        component.$destroy()
-      } catch (e) {
-        console.error(e)
-      }
+      unmount(component).catch(console.error)
     }
   }
 }
