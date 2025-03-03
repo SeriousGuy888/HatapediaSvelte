@@ -144,6 +144,7 @@
     }
   }}
   onwheel={(event) => {
+    event.preventDefault()
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
   }}
 >
