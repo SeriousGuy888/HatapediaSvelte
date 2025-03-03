@@ -40,6 +40,15 @@
       const boundingBox = mapCamera.getBoundingClientRect()
       cameraLeft = boundingBox.left
       cameraTop = boundingBox.top
+
+      // Register event listener here because {passive:false} is needed.
+      mapCamera.addEventListener(
+        "touchmove",
+        (event) => {
+          event.preventDefault()
+        },
+        { passive: false },
+      )
     }
   })
 
