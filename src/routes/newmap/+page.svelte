@@ -32,20 +32,28 @@
     }
   })
 
-  function beginDrag(mouseX: number, mouseY: number) {
+  let mouseX = $state(0)
+  let mouseY = $state(0)
+
+  function updateMousePos(event: MouseEvent) {
+    mouseX = event.clientX - cameraLeft
+    mouseY = event.clientY - cameraTop
+  }
+
+  function beginDrag(x: number, y: number) {
     isDragging = true
-    lastDragPosition = [mouseX, mouseY]
+    lastDragPosition = [x, y]
   }
 
   function endDrag() {
     isDragging = false
   }
 
-  function doDrag(mouseX: number, mouseY: number) {
+  function doDrag(x: number, y: number) {
     if (isDragging) {
-      frameOffsetX -= mouseX - lastDragPosition[0]
-      frameOffsetY -= mouseY - lastDragPosition[1]
-      lastDragPosition = [mouseX, mouseY]
+      frameOffsetX -= x - lastDragPosition[0]
+      frameOffsetY -= y - lastDragPosition[1]
+      lastDragPosition = [x, y]
     }
   }
 
@@ -80,9 +88,12 @@
   class="relative overflow-hidden"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
-  onmousedown={(event) => beginDrag(event.clientX, event.clientY)}
+  onmousedown={(event) => beginDrag(mouseX, mouseY)}
   onmouseup={endDrag}
-  onmousemove={(event) => doDrag(event.clientX, event.clientY)}
+  onmousemove={(event) => {
+    updateMousePos(event)
+    doDrag(mouseX, mouseY)
+  }}
   ontouchstart={(event) => {
     if (event.touches.length === 1) {
       beginDrag(event.touches[0].clientX, event.touches[0].clientY)
@@ -99,10 +110,6 @@
     }
   }}
   onwheel={(event) => {
-    // Screenspace Coordinates
-    const mouseX = event.clientX - cameraLeft
-    const mouseY = event.clientY - cameraTop
-
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseX, mouseY)
   }}
 >
@@ -127,5 +134,8 @@
 <aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono">
   <p>isDragging = {isDragging}</p>
   <p>lastDragPosition = {lastDragPosition}</p>
-  <p>offsets: {[~~frameOffsetX, ~~frameOffsetY]}</p>
+  <p>offsets: {~~frameOffsetX}, {~~frameOffsetY}</p>
+  <p>zoom: {zoom.toFixed(3)}</p>
+  <p>mouse: {mouseX}, {mouseY}</p>
+  <p>camera: {cameraWidth}×{cameraHeight}</p>
 </aside>
