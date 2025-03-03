@@ -39,7 +39,11 @@
 </script>
 
 <!-- Button to open search -->
-<button onclick={openModal} aria-label="Open the search modal" class="flex gap-4 align-middle cursor-pointer">
+<button
+  onclick={openModal}
+  aria-label="Open the search modal"
+  class="flex gap-4 align-middle cursor-pointer"
+>
   <div class="hidden sm:flex gap-1 hide-on-touch">
     <kbd>{browser && navigator.platform.match(/Mac/) ? "⌘" : "Ctrl"}</kbd>
     <kbd>K</kbd>
@@ -106,7 +110,7 @@
       onclick={(e) => {
         e.stopPropagation()
       }}
-      aria-hidden
+      aria-hidden="true"
       in:fly={{ duration: 100, y: 100 }}
       out:fly={{ duration: 100, y: 100 }}
     >
