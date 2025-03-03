@@ -180,6 +180,8 @@
 
 <aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono">
   <pre>
+(work in progress)
+
 isDragging = {isDragging}
 lastDragPosition = {lastDragPosition}
 offsets: {~~frameOffsetX}, {~~frameOffsetY}
