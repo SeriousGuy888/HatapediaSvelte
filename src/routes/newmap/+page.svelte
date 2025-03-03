@@ -13,8 +13,8 @@
   let cameraTop = $state(0)
 
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
-  let frameOffsetX = $state(MAP_DIMENSIONS.width / 2)
-  let frameOffsetY = $state(MAP_DIMENSIONS.height / 2)
+  let frameOffsetX = $state(0)
+  let frameOffsetY = $state(0)
 
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
@@ -22,7 +22,7 @@
   const minZoom = 1 / 16
   const maxZoom = 8
   const zoomFactor = 9 / 8
-  let zoom = $state(1)
+  let zoom = $state(0.5)
 
   $effect(() => {
     if (mapCamera) {
@@ -31,6 +31,42 @@
       cameraTop = boundingBox.top
     }
   })
+
+  function beginDrag(mouseX: number, mouseY: number) {
+    isDragging = true
+    lastDragPosition = [mouseX, mouseY]
+  }
+
+  function endDrag() {
+    isDragging = false
+  }
+
+  function doDrag(mouseX: number, mouseY: number) {
+    if (isDragging) {
+      frameOffsetX -= mouseX - lastDragPosition[0]
+      frameOffsetY -= mouseY - lastDragPosition[1]
+      lastDragPosition = [mouseX, mouseY]
+    }
+  }
+
+  /**
+   * @param direction Zoom in or zoom out?
+   * @param centerX Screenspace x coordinate around which zooming should occur.
+   * @param centerY Screenspace y coordinate around which zooming should occur.
+   */
+  function changeZoom(direction: "in" | "out", centerX: number, centerY: number) {
+    const oldZoom = zoom
+
+    if (direction == "in") {
+      zoom = Math.min(zoom * zoomFactor, maxZoom)
+    } else if (direction == "out") {
+      zoom = Math.max(zoom / zoomFactor, minZoom)
+    }
+
+    // Adjust offset to make sure that the zooming is happening around the cursor location.
+    frameOffsetX = zoom * (frameOffsetX / oldZoom + centerX / oldZoom - centerX / zoom)
+    frameOffsetY = zoom * (frameOffsetY / oldZoom + centerY / oldZoom - centerY / zoom)
+  }
 </script>
 
 <svelte:head>
@@ -44,48 +80,39 @@
   class="relative overflow-hidden"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
-  onmousedown={(event) => {
-    isDragging = true
-    lastDragPosition = [event.clientX, event.clientY]
-  }}
-  onmousemove={(event) => {
-    if (event.buttons === 1) {
-      frameOffsetX -= event.clientX - lastDragPosition[0]
-      frameOffsetY -= event.clientY - lastDragPosition[1]
-      lastDragPosition = [event.clientX, event.clientY]
+  onmousedown={(event) => beginDrag(event.clientX, event.clientY)}
+  onmouseup={endDrag}
+  onmousemove={(event) => doDrag(event.clientX, event.clientY)}
+  ontouchstart={(event) => {
+    if (event.touches.length === 1) {
+      beginDrag(event.touches[0].clientX, event.touches[0].clientY)
+    } else {
+      console.log("multiple touches not implemented yet")
     }
   }}
-  onmouseup={() => {
-    isDragging = false
+  ontouchend={endDrag}
+  ontouchmove={(event) => {
+    if (event.touches.length === 1) {
+      doDrag(event.touches[0].clientX, event.touches[0].clientY)
+    } else {
+      console.log("multiple touches not implemented yet")
+    }
   }}
   onwheel={(event) => {
     // Screenspace Coordinates
     const mouseX = event.clientX - cameraLeft
     const mouseY = event.clientY - cameraTop
-    // console.log(mouseX, mouseY)
 
-    const oldZoom = zoom
-
-    if (event.deltaY > 0) {
-      // Scrolled down; zoom out.
-      zoom = Math.max(zoom / zoomFactor, minZoom)
-    } else if (event.deltaY < 0) {
-      // Scrolled up; zoom in.
-      zoom = Math.min(zoom * zoomFactor, maxZoom)
-    }
-
-    // Adjust offset to make sure that the zooming is happening around the cursor location.
-    frameOffsetX = zoom * (frameOffsetX / oldZoom + mouseX / oldZoom - mouseX / zoom)
-    frameOffsetY = zoom * (frameOffsetY / oldZoom + mouseY / oldZoom - mouseY / zoom)
+    changeZoom(event.deltaY > 0 ? "out" : "in", mouseX, mouseY)
   }}
 >
   <div
     bind:this={mapFrame}
-    class="absolute select-none"
+    class="absolute select-none shadow-xl shadow-gray-700"
     style:width={`${MAP_DIMENSIONS.width * zoom}px`}
     style:height={`${MAP_DIMENSIONS.height * zoom}px`}
-    style:left={`-${frameOffsetX}px`}
-    style:top={`-${frameOffsetY}px`}
+    style:left={`${-frameOffsetX}px`}
+    style:top={`${-frameOffsetY}px`}
   >
     <img
       src={mapImage}
@@ -96,3 +123,9 @@
     />
   </div>
 </div>
+
+<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono">
+  <p>isDragging = {isDragging}</p>
+  <p>lastDragPosition = {lastDragPosition}</p>
+  <p>offsets: {[~~frameOffsetX, ~~frameOffsetY]}</p>
+</aside>
