@@ -1,5 +1,9 @@
 <script lang="ts">
+  import { mount, onMount } from "svelte"
   import mapImage from "./map.png"
+  import BannerMarker from "./BannerMarker.svelte"
+  import type { BannerColour } from "./icons"
+  import { locations } from "./map_locations"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -28,6 +32,13 @@
   const zoomFactor = 9 / 8
   let zoom = $state(0.5)
 
+  onMount(() => {
+    for (const locationId in locations) {
+      const location = locations[locationId]
+      createMapMarker(location.name, location.banner ?? "white", ...location.coordinates)
+    }
+  })
+
   $effect(() => {
     if (mapCamera) {
       const boundingBox = mapCamera.getBoundingClientRect()
@@ -52,6 +63,10 @@
 
   function imageSpaceToWorldSpace(imageX: number, imageY: number): [number, number] {
     return [imageX - MAP_WORLD_ORIGIN_OFFSET[0], imageY - MAP_WORLD_ORIGIN_OFFSET[1]]
+  }
+
+  function worldSpaceToImageSpace(worldX: number, worldY: number): [number, number] {
+    return [worldX + MAP_WORLD_ORIGIN_OFFSET[0], worldY + MAP_WORLD_ORIGIN_OFFSET[1]]
   }
 
   function beginDrag(x: number, y: number) {
@@ -89,6 +104,17 @@
     frameOffsetX = zoom * (frameOffsetX / oldZoom + centerX / oldZoom - centerX / zoom)
     frameOffsetY = zoom * (frameOffsetY / oldZoom + centerY / oldZoom - centerY / zoom)
   }
+
+  function createMapMarker(name: string, colour: BannerColour, worldX: number, worldY: number) {
+    const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldY)
+    const xPosRatio = imageX / MAP_DIMENSIONS.width
+    const yPosRatio = imageY / MAP_DIMENSIONS.height
+
+    mount(BannerMarker, {
+      target: mapFrame,
+      props: { name, colour, xPosRatio, yPosRatio, selected: false },
+    })
+  }
 </script>
 
 <svelte:head>
@@ -107,6 +133,13 @@
   onmousemove={(event) => {
     updateMousePos(event)
     doDrag(mouseScreenX, mouseScreenY)
+  }}
+  onclick={(event) => {
+    if (!event.shiftKey) {
+      return
+    }
+
+    createMapMarker("yes", "lime", mouseWorldX, mouseWorldY)
   }}
   ontouchstart={(event) => {
     if (event.touches.length === 1) {
