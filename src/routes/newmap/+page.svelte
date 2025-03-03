@@ -32,12 +32,8 @@
   const zoomFactor = 9 / 8
   let zoom = $state(0.5)
 
-  onMount(() => {
-    for (const locationId in locations) {
-      const location = locations[locationId]
-      createMapMarker(location.name, location.banner ?? "white", ...location.coordinates)
-    }
-  })
+  let mapPinContainer: HTMLDivElement // Holds map pins as children
+  let selectedPin = $state<string | null>(null)
 
   $effect(() => {
     if (mapCamera) {
@@ -104,17 +100,6 @@
     frameOffsetX = zoom * (frameOffsetX / oldZoom + centerX / oldZoom - centerX / zoom)
     frameOffsetY = zoom * (frameOffsetY / oldZoom + centerY / oldZoom - centerY / zoom)
   }
-
-  function createMapMarker(name: string, colour: BannerColour, worldX: number, worldY: number) {
-    const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldY)
-    const xPosRatio = imageX / MAP_DIMENSIONS.width
-    const yPosRatio = imageY / MAP_DIMENSIONS.height
-
-    mount(BannerMarker, {
-      target: mapFrame,
-      props: { name, colour, xPosRatio, yPosRatio, selected: false },
-    })
-  }
 </script>
 
 <svelte:head>
@@ -133,13 +118,6 @@
   onmousemove={(event) => {
     updateMousePos(event)
     doDrag(mouseScreenX, mouseScreenY)
-  }}
-  onclick={(event) => {
-    if (!event.shiftKey) {
-      return
-    }
-
-    createMapMarker("yes", "lime", mouseWorldX, mouseWorldY)
   }}
   ontouchstart={(event) => {
     if (event.touches.length === 1) {
@@ -175,10 +153,27 @@
       style:image-rendering="pixelated"
       alt=""
     />
+    <div bind:this={mapPinContainer} class="absolute inset-0">
+      {#each Object.keys(locations) as locationId}
+        {@const location = locations[locationId]}
+        {@const [imageX, imageY] = worldSpaceToImageSpace(...location.coordinates)}
+        {@const xPosRatio = imageX / MAP_DIMENSIONS.width}
+        {@const yPosRatio = imageY / MAP_DIMENSIONS.height}
+
+        <BannerMarker
+          name={location.name}
+          colour={location.banner ?? "white"}
+          {xPosRatio}
+          {yPosRatio}
+          selected={selectedPin == locationId}
+          onclick={() => (selectedPin = locationId)}
+        ></BannerMarker>
+      {/each}
+    </div>
   </div>
 </div>
 
-<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono">
+<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-sm">
   <pre>
 (work in progress)
 
@@ -191,5 +186,7 @@ camera: {cameraWidth}×{cameraHeight}
 mouse (screenspace): {mouseScreenX}, {mouseScreenY}
 mouse (imagespace):  {mouseImageX}, {mouseImageY}
 mouse (worldspace):  {mouseWorldX}, {mouseWorldY}
+
+selectedPin: {selectedPin}
 </pre>
 </aside>

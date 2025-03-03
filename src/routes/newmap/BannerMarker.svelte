@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { MouseEventHandler } from "svelte/elements"
   import type { BannerColour } from "./icons.ts"
 
   const BANNER_MARKER_URL_PATH = "/banner_markers/banner_"
@@ -11,9 +12,10 @@
     xPosRatio: number // A number in [0, 1] representing how far from the left of the parent this should be positioned.
     yPosRatio: number
     selected: boolean
+    onclick: MouseEventHandler<HTMLButtonElement>
   }
 
-  let { colour, name, xPosRatio, yPosRatio, selected = false }: Props = $props()
+  let { colour, name, xPosRatio, yPosRatio, selected = false, onclick }: Props = $props()
 </script>
 
 <button
@@ -22,9 +24,7 @@
   style:top={yPosRatio * 100 + "%"}
   style:translate="-50% -100%"
   tabindex="0"
-  onclick={() => {
-    selected = !selected
-  }}
+  {onclick}
 >
   <img
     src={BANNER_MARKER_URL_PATH + colour + ".png"}
