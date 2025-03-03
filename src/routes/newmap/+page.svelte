@@ -145,6 +145,10 @@
     style:height={`${MAP_DIMENSIONS.height * zoom}px`}
     style:left={`${-frameOffsetX}px`}
     style:top={`${-frameOffsetY}px`}
+    role="button"
+    tabindex="0"
+    onkeypress={null}
+    onclick={() => (selectedPin = null)}
   >
     <img
       src={mapImage}
@@ -166,7 +170,10 @@
           {xPosRatio}
           {yPosRatio}
           selected={selectedPin == locationId}
-          onclick={() => (selectedPin = locationId)}
+          onclick={(event) => {
+            event.stopPropagation() // prevent click event from passing through & clicking the map behind this pin
+            selectedPin = locationId
+          }}
         ></BannerMarker>
       {/each}
     </div>
@@ -188,5 +195,6 @@ mouse (imagespace):  {mouseImageX}, {mouseImageY}
 mouse (worldspace):  {mouseWorldX}, {mouseWorldY}
 
 selectedPin: {selectedPin}
+description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "..." : ""}
 </pre>
 </aside>
