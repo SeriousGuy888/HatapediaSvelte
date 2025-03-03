@@ -6,6 +6,10 @@
     height: 10001,
   }
 
+  // The map image is a map of a Minecraft world.
+  // This constant stores the *image* coordinates at which the *Minecraft* coordinates (0, 0) are located.
+  const MAP_WORLD_ORIGIN_OFFSET = [5001, 5001]
+
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let cameraWidth = $state(0)
   let cameraHeight = $state(0)
@@ -20,7 +24,7 @@
   let lastDragPosition = $state([0, 0])
 
   const minZoom = 1 / 16
-  const maxZoom = 8
+  const maxZoom = 16
   const zoomFactor = 9 / 8
   let zoom = $state(0.5)
 
@@ -32,12 +36,22 @@
     }
   })
 
-  let mouseX = $state(0)
-  let mouseY = $state(0)
+  let mouseScreenX = $state(0)
+  let mouseScreenY = $state(0)
+  let [mouseImageX, mouseImageY] = $derived(screenSpaceToImageSpace(mouseScreenX, mouseScreenY))
+  let [mouseWorldX, mouseWorldY] = $derived(imageSpaceToWorldSpace(mouseImageX, mouseImageY))
 
   function updateMousePos(event: MouseEvent) {
-    mouseX = event.clientX - cameraLeft
-    mouseY = event.clientY - cameraTop
+    mouseScreenX = event.clientX - cameraLeft
+    mouseScreenY = event.clientY - cameraTop
+  }
+
+  function screenSpaceToImageSpace(screenX: number, screenY: number): [number, number] {
+    return [~~((screenX + frameOffsetX) / zoom), ~~((screenY + frameOffsetY) / zoom)]
+  }
+
+  function imageSpaceToWorldSpace(imageX: number, imageY: number): [number, number] {
+    return [imageX - MAP_WORLD_ORIGIN_OFFSET[0], imageY - MAP_WORLD_ORIGIN_OFFSET[1]]
   }
 
   function beginDrag(x: number, y: number) {
@@ -88,11 +102,11 @@
   class="relative overflow-hidden"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
-  onmousedown={(event) => beginDrag(mouseX, mouseY)}
+  onmousedown={(event) => beginDrag(mouseScreenX, mouseScreenY)}
   onmouseup={endDrag}
   onmousemove={(event) => {
     updateMousePos(event)
-    doDrag(mouseX, mouseY)
+    doDrag(mouseScreenX, mouseScreenY)
   }}
   ontouchstart={(event) => {
     if (event.touches.length === 1) {
@@ -110,7 +124,7 @@
     }
   }}
   onwheel={(event) => {
-    changeZoom(event.deltaY > 0 ? "out" : "in", mouseX, mouseY)
+    changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
   }}
 >
   <div
@@ -132,10 +146,15 @@
 </div>
 
 <aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono">
-  <p>isDragging = {isDragging}</p>
-  <p>lastDragPosition = {lastDragPosition}</p>
-  <p>offsets: {~~frameOffsetX}, {~~frameOffsetY}</p>
-  <p>zoom: {zoom.toFixed(3)}</p>
-  <p>mouse: {mouseX}, {mouseY}</p>
-  <p>camera: {cameraWidth}×{cameraHeight}</p>
+  <pre>
+isDragging = {isDragging}
+lastDragPosition = {lastDragPosition}
+offsets: {~~frameOffsetX}, {~~frameOffsetY}
+zoom: {zoom.toFixed(3)}
+
+camera: {cameraWidth}×{cameraHeight}
+mouse (screenspace): {mouseScreenX}, {mouseScreenY}
+mouse (imagespace):  {mouseImageX}, {mouseImageY}
+mouse (worldspace):  {mouseWorldX}, {mouseWorldY}
+</pre>
 </aside>
