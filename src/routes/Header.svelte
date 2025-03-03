@@ -7,13 +7,14 @@
 <nav
   class="fixed flex justify-between items-center py-4 px-8 gap-8 bg-brand text-white inset-x-0 max-w-[100vw] z-10 h-16"
 >
-  <section class="text-sm text-text">
+  <section class="text-xs gap-2">
     <Logo />
     <a href="https://hatapedia-old.vercel.app/map" target="_blank">Map1</a>
     <a href="/map">Map2</a>
+    <a href="/newmap">newmap</a>
     <a href="/weather">Weather</a>
   </section>
-  <section>
+  <section class="gap-4">
     <HeaderSearchBar />
     <ThemeToggle />
   </section>
@@ -21,8 +22,8 @@
 
 <style lang="postcss">
   @reference "../app.css";
-  
+
   section {
-    @apply flex gap-4 items-center;
+    @apply flex items-center;
   }
 </style>
