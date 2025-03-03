@@ -13,6 +13,13 @@ const config = {
       handleHttpError: "warn",
     },
   },
+  onwarn: (warning, handler) => {
+    if (warning.code === "vite-plugin-svelte-preprocess-many-dependencies") {
+      return
+    }
+
+    handler(warning)
+  },
 }
 
 export default config
