@@ -158,6 +158,8 @@
           changeZoom("out", cameraWidth / 2, cameraHeight / 2)
         }
       }
+
+      prevSquareDist = currSquareDist
     }
   }}
   onpointerup={(event) => {
