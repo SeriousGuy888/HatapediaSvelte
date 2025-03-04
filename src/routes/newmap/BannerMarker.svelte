@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { MouseEventHandler } from "svelte/elements"
   import type { BannerColour } from "./icons.ts"
-  import { preventDefault } from "svelte/legacy"
 
   const BANNER_MARKER_URL_PATH = "/banner_markers/banner_"
   const SMALL_SIZE = 16
