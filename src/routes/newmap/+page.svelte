@@ -54,7 +54,7 @@
   let mouseScreenX = $state(0)
   let mouseScreenY = $state(0)
   let [mouseImageX, mouseImageY] = $derived(screenSpaceToImageSpace(mouseScreenX, mouseScreenY))
-  let [mouseWorldX, mouseWorldY] = $derived(imageSpaceToWorldSpace(mouseImageX, mouseImageY))
+  let [mouseWorldX, mouseWorldZ] = $derived(imageSpaceToWorldSpace(mouseImageX, mouseImageY))
 
   function updateMousePos(event: MouseEvent) {
     mouseScreenX = event.clientX - cameraLeft
@@ -187,7 +187,9 @@
       {/each}
     </div>
   </div>
-  <nav class="absolute top-2 left-2 flex flex-col rounded border-2 bg-background border-foreground z-10">
+  <nav
+    class="absolute top-2 left-2 flex flex-col rounded border-2 bg-background border-foreground z-10"
+  >
     <button
       class="cursor-pointer p-1 hover:bg-brand/20"
       onclick={() => changeZoom("in", cameraWidth / 2, cameraHeight / 2)}
@@ -203,21 +205,26 @@
       <Minus class="w-4 h-4" />
     </button>
   </nav>
+  <nav
+    class={`
+      absolute top-2 right-2
+      z-10 p-1
+      bg-background
+      rounded border-2 border-foreground
+      cursor-not-allowed pointer-events-none
+      font-mono
+    `}
+  >
+    <p>{mouseWorldX}, {mouseWorldZ}</p>
+  </nav>
 </div>
 
 <aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-xs">
   <pre>
-(work in progress)
-
 isDragging = {isDragging}
 lastDragPosition = {lastDragPosition}
 offsets: {~~frameOffsetX}, {~~frameOffsetY}
 zoom: {zoom.toFixed(3)}
-
-camera: {cameraWidth}×{cameraHeight}
-mouse (screenspace): {mouseScreenX}, {mouseScreenY}
-mouse (imagespace):  {mouseImageX}, {mouseImageY}
-mouse (worldspace):  {mouseWorldX}, {mouseWorldY}
 
 selectedPin: {selectedPin}
 description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "..." : ""}
