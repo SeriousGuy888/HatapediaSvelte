@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { MouseEventHandler } from "svelte/elements"
   import type { BannerColour } from "./icons.ts"
+  import { preventDefault } from "svelte/legacy"
 
   const BANNER_MARKER_URL_PATH = "/banner_markers/banner_"
   const SMALL_SIZE = 16
@@ -32,5 +33,6 @@
     style:image-rendering="pixelated"
     width={selected ? LARGE_SIZE : SMALL_SIZE + "px"}
     height={selected ? LARGE_SIZE : SMALL_SIZE + "px"}
+    class="pointer-events-none"
   />
 </button>
