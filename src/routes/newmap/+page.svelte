@@ -114,10 +114,6 @@
   }
 
   function pointerUp(event: PointerEvent) {
-    if(!isDragging) {
-      selectedPin = null
-    }
-
     isDragging = false
 
     // Remove this pointer from the cache
@@ -189,7 +185,13 @@
       prevPointerSquareDist = currSquareDist
     }
   }}
-  onpointerup={pointerUp}
+  onpointerup={(event) => {
+    // Deselect the selected map pin only if the pointer was released without dragging (i.e. a single click.)
+    if (!isDragging) {
+      selectedPin = null
+    }
+    pointerUp(event)
+  }}
   onpointercancel={pointerUp}
   onpointerleave={pointerUp}
   onwheel={(event) => {
