@@ -114,7 +114,11 @@
   }
 
   function pointerUp(event: PointerEvent) {
-    endDrag()
+    if(!isDragging) {
+      selectedPin = null
+    }
+
+    isDragging = false
 
     // Remove this pointer from the cache
     const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
