@@ -62,8 +62,16 @@
   let [mouseWorldX, mouseWorldZ] = $derived(imageSpaceToWorldSpace(mouseImageX, mouseImageY))
 
   function updateMousePos(event: MouseEvent) {
-    mouseScreenX = event.clientX - cameraLeft
-    mouseScreenY = event.clientY - cameraTop
+    ;[mouseScreenX, mouseScreenY] = clientSpaceToScreenSpace(event.clientX, event.clientY)
+  }
+
+  /**
+   * "Clientspace" is the position in the window, with the top left corner of the webpage being 0, 0.
+   * "Screenspace" is the position in the view of the camera, with the top left corner of the visible part
+   * of the map being 0, 0.
+   */
+  function clientSpaceToScreenSpace(clientX: number, clientY: number): [number, number] {
+    return [clientX - cameraLeft, clientY - cameraTop]
   }
 
   function screenSpaceToImageSpace(screenX: number, screenY: number): [number, number] {
@@ -149,13 +157,19 @@
         (pointerCache[0].clientX - pointerCache[1].clientX) ** 2 +
         (pointerCache[0].clientY - pointerCache[1].clientY) ** 2
 
+      // The midpoint in screenspace between the two pointers.
+      const [centerX, centerY] = clientSpaceToScreenSpace(
+        (pointerCache[0].clientX + pointerCache[1].clientX) / 2,
+        (pointerCache[0].clientY + pointerCache[1].clientY) / 2,
+      )
+
       if (prevSquareDist > 0) {
         if (currSquareDist > prevSquareDist) {
           console.log("Pinching out; zooming in")
-          changeZoom("in", cameraWidth / 2, cameraHeight / 2)
+          changeZoom("in", centerX, centerY)
         } else if (currSquareDist < prevSquareDist) {
           console.log("Pinching in; zooming out")
-          changeZoom("out", cameraWidth / 2, cameraHeight / 2)
+          changeZoom("out", centerX, centerY)
         }
       }
 
@@ -166,7 +180,7 @@
     endDrag()
 
     const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
-    if(idx >= 0) {
+    if (idx >= 0) {
       pointerCache.splice(idx, 1)
     }
   }}
