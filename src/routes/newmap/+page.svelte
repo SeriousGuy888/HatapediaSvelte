@@ -132,6 +132,8 @@
       hadMultiplePointers = false
     }
   }
+
+  let bottomSheetShown = $state(false)
 </script>
 
 <svelte:head>
@@ -147,7 +149,7 @@
   role="presentation"
   onpointerdown={(event) => {
     pointerCache.push(event)
-    if(pointerCache.length >= 2) {
+    if (pointerCache.length >= 2) {
       hadMultiplePointers = true
     }
 
@@ -264,22 +266,19 @@
       <Minus class="w-4 h-4" />
     </button>
   </nav>
-  <nav
-    class={`
-      absolute top-2 right-2
-      z-10 p-1
-      bg-background
+  <nav class="absolute top-2 right-2 not-[]:z-10 flex flex-col gap-2 items-end">
+    <div
+      class={`
+      p-1 bg-background
       rounded border-2 border-foreground
       cursor-not-allowed pointer-events-none
-      font-mono
+      font-mono w-fit
     `}
-  >
-    <p>{mouseWorldX}, {mouseWorldZ}</p>
-  </nav>
-</div>
-
-<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-xs">
-  <pre>
+    >
+      <p>{mouseWorldX}, {mouseWorldZ}</p>
+    </div>
+    <aside class="p-2 bg-background border-2 rounded font-mono text-xs">
+      <pre>
 isDragging: {isDragging}
 lastDragPosition: {lastDragPosition}
 offsets: {~~frameOffsetX}, {~~frameOffsetY}
@@ -291,4 +290,43 @@ prev sq dist: {prevPointerSquareDist}
 selectedPin: {selectedPin}
 description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "..." : ""}
 </pre>
+    </aside>
+  </nav>
+</div>
+
+<aside
+  class={`
+      fixed bottom-0 inset-x-2
+      p-4
+      rounded-t-lg
+      border-2 border-b-0 border-foreground
+      bg-background
+      max-w-4xl
+      cursor-auto
+      z-20
+      transition-transform
+    `}
+  style:translate={bottomSheetShown ? "0% 0%" : "0% 80%"}
+>
+  <header class="pb-4">
+    <div
+      class="w-xl mx-auto h-2 bg-foreground/20 rounded-full cursor-grab"
+      onpointerdown={(event) => {
+        bottomSheetShown = !bottomSheetShown
+      }}
+    ></div>
+  </header>
+  <article class="max-h-32 overflow-y-scroll">
+    <h2>epic heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora. Quis voluptates
+      quaerat facilis! Cum soluta adipisci, cumque expedita autem nulla natus, asperiores sint
+      similique sapiente, quod ullam laborum qui.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt, impedit, doloremque
+      delectus vitae obcaecati qui voluptates, suscipit quibusdam at aut minus nostrum officia.
+      Illum molestias dolorum natus sapiente alias!
+    </p>
+  </article>
 </aside>
