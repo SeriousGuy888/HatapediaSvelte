@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { mount, onMount } from "svelte"
   import mapImage from "./map.png"
   import BannerMarker from "./BannerMarker.svelte"
-  import type { BannerColour } from "./icons"
   import { locations } from "./map_locations"
+  import { Plus, Minus } from "lucide-svelte"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -188,9 +187,25 @@
       {/each}
     </div>
   </div>
+  <nav class="absolute top-2 left-2 flex flex-col rounded border-2 bg-background border-foreground z-10">
+    <button
+      class="cursor-pointer p-1 hover:bg-brand/20"
+      onclick={() => changeZoom("in", cameraWidth / 2, cameraHeight / 2)}
+      aria-label="Zoom in"
+    >
+      <Plus class="w-4 h-4" />
+    </button>
+    <button
+      class="cursor-pointer p-1 hover:bg-brand/20"
+      onclick={() => changeZoom("out", cameraWidth / 2, cameraHeight / 2)}
+      aria-label="Zoom out"
+    >
+      <Minus class="w-4 h-4" />
+    </button>
+  </nav>
 </div>
 
-<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-sm">
+<aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-xs">
   <pre>
 (work in progress)
 
