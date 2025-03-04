@@ -26,6 +26,11 @@
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
 
+  // Used for pinch zoom gestures
+  // https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Pinch_zoom_gestures
+  let pointerCache = $state<PointerEvent[]>([])
+  let prevSquareDist = $state(-1)
+
   const minZoom = 1 / 16
   const maxZoom = 16
   const zoomFactor = 9 / 8
@@ -121,25 +126,46 @@
   class="relative overflow-hidden"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
-  onmousedown={(event) => beginDrag(mouseScreenX, mouseScreenY)}
-  onmouseup={endDrag}
-  onmousemove={(event) => {
+  onpointerdown={(event) => {
+    pointerCache.push(event)
+    console.log("pointerDown", event)
     updateMousePos(event)
-    doDrag(mouseScreenX, mouseScreenY)
+    beginDrag(mouseScreenX, mouseScreenY)
   }}
-  ontouchstart={(event) => {
-    if (event.touches.length === 1) {
-      beginDrag(event.touches[0].clientX, event.touches[0].clientY)
-    } else {
-      console.log("multiple touches not implemented yet")
+  onpointermove={(event) => {
+    updateMousePos(event)
+
+    console.log("pointerMove", event)
+
+    // Write to the cache this current event as the latest event pertaining to this pointer.
+    const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
+    pointerCache[idx] = event
+
+    if (pointerCache.length === 1) {
+      doDrag(mouseScreenX, mouseScreenY)
+    } else if (pointerCache.length === 2) {
+      // If two fingers/styluses on screen
+      const currSquareDist =
+        (pointerCache[0].clientX - pointerCache[1].clientX) ** 2 +
+        (pointerCache[0].clientY - pointerCache[1].clientY) ** 2
+
+      if (prevSquareDist > 0) {
+        if (currSquareDist > prevSquareDist) {
+          console.log("Pinching out; zooming in")
+          changeZoom("in", cameraWidth / 2, cameraHeight / 2)
+        } else if (currSquareDist < prevSquareDist) {
+          console.log("Pinching in; zooming out")
+          changeZoom("out", cameraWidth / 2, cameraHeight / 2)
+        }
+      }
     }
   }}
-  ontouchend={endDrag}
-  ontouchmove={(event) => {
-    if (event.touches.length === 1) {
-      doDrag(event.touches[0].clientX, event.touches[0].clientY)
-    } else {
-      console.log("multiple touches not implemented yet")
+  onpointerup={(event) => {
+    endDrag()
+
+    const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
+    if(idx >= 0) {
+      pointerCache.splice(idx, 1)
     }
   }}
   onwheel={(event) => {
