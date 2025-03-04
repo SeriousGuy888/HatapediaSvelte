@@ -86,15 +86,6 @@
     return [worldX + MAP_WORLD_ORIGIN_OFFSET[0], worldY + MAP_WORLD_ORIGIN_OFFSET[1]]
   }
 
-  function beginDrag(x: number, y: number) {
-    isDragging = true
-    lastDragPosition = [x, y]
-  }
-
-  function endDrag() {
-    isDragging = false
-  }
-
   function doDrag(x: number, y: number) {
     if (isDragging) {
       frameOffsetX -= x - lastDragPosition[0]
@@ -151,11 +142,19 @@
   role="presentation"
   onpointerdown={(event) => {
     pointerCache.push(event)
+
     updateMousePos(event)
-    beginDrag(mouseScreenX, mouseScreenY)
+    lastDragPosition = [mouseScreenX, mouseScreenY]
   }}
   onpointermove={(event) => {
     updateMousePos(event)
+
+    if (
+      pointerCache.length > 0 &&
+      (mouseScreenX != lastDragPosition[0] || mouseScreenY != lastDragPosition[1])
+    ) {
+      isDragging = true
+    }
 
     // Write to the cache this current event as the latest event pertaining to this pointer.
     const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
@@ -188,7 +187,6 @@
   }}
   onpointerup={pointerUp}
   onpointercancel={pointerUp}
-  onpointerout={pointerUp}
   onpointerleave={pointerUp}
   onwheel={(event) => {
     event.preventDefault()
@@ -205,7 +203,6 @@
     role="button"
     tabindex="0"
     onkeypress={null}
-    onclick={() => (selectedPin = null)}
   >
     <img
       src={mapImage}
@@ -269,8 +266,8 @@
 
 <aside class="absolute left-2 bottom-2 p-2 bg-background border-2 rounded font-mono text-xs">
   <pre>
-isDragging = {isDragging}
-lastDragPosition = {lastDragPosition}
+isDragging: {isDragging}
+lastDragPosition: {lastDragPosition}
 offsets: {~~frameOffsetX}, {~~frameOffsetY}
 zoom: {zoom.toFixed(3)}
 
