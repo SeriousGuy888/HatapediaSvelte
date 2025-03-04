@@ -23,13 +23,17 @@
   let frameOffsetX = $state(0)
   let frameOffsetY = $state(0)
 
-  let isDragging = $state(false)
-  let lastDragPosition = $state([0, 0])
-
   // Used for pinch zoom gestures
   // https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Pinch_zoom_gestures
   let pointerCache = $state<PointerEvent[]>([])
   let prevPointerSquareDist = $state(-1)
+
+  // Set to true when >=2 pointers. Set to false when ==0 pointers.
+  // Used to prevent map markers from being deselected after pinch zooming.
+  let hadMultiplePointers = $state(false)
+
+  let isDragging = $state(false)
+  let lastDragPosition = $state([0, 0])
 
   const minZoom = 1 / 16
   const maxZoom = 16
@@ -125,6 +129,7 @@
     // If less than two fingers on the screen, reset the zooming distance cache.
     if (pointerCache.length < 2) {
       prevPointerSquareDist = -1
+      hadMultiplePointers = false
     }
   }
 </script>
@@ -142,6 +147,9 @@
   role="presentation"
   onpointerdown={(event) => {
     pointerCache.push(event)
+    if(pointerCache.length >= 2) {
+      hadMultiplePointers = true
+    }
 
     updateMousePos(event)
     lastDragPosition = [mouseScreenX, mouseScreenY]
