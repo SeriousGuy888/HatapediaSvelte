@@ -121,6 +121,21 @@
     frameOffsetX = zoom * (frameOffsetX / oldZoom + centerX / oldZoom - centerX / zoom)
     frameOffsetY = zoom * (frameOffsetY / oldZoom + centerY / oldZoom - centerY / zoom)
   }
+
+  function pointerUp(event: PointerEvent) {
+    endDrag()
+
+    // Remove this pointer from the cache
+    const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
+    if (idx >= 0) {
+      pointerCache.splice(idx, 1)
+    }
+
+    // If less than two fingers on the screen, reset the zooming distance cache.
+    if (pointerCache.length < 2) {
+      prevPointerSquareDist = -1
+    }
+  }
 </script>
 
 <svelte:head>
@@ -171,20 +186,10 @@
       prevPointerSquareDist = currSquareDist
     }
   }}
-  onpointerup={(event) => {
-    endDrag()
-
-    // Remove this pointer from the cache
-    const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
-    if (idx >= 0) {
-      pointerCache.splice(idx, 1)
-    }
-
-    // If less than two fingers on the screen, reset the zooming distance cache.
-    if (pointerCache.length < 2) {
-      prevPointerSquareDist = -1
-    }
-  }}
+  onpointerup={pointerUp}
+  onpointercancel={pointerUp}
+  onpointerout={pointerUp}
+  onpointerleave={pointerUp}
   onwheel={(event) => {
     event.preventDefault()
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
@@ -268,6 +273,9 @@ isDragging = {isDragging}
 lastDragPosition = {lastDragPosition}
 offsets: {~~frameOffsetX}, {~~frameOffsetY}
 zoom: {zoom.toFixed(3)}
+
+num pointers: {pointerCache.length}
+prev sq dist: {prevPointerSquareDist}
 
 selectedPin: {selectedPin}
 description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "..." : ""}
