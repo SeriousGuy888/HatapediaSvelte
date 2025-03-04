@@ -2,7 +2,7 @@
   import mapImage from "./map.png"
   import BannerMarker from "./BannerMarker.svelte"
   import { locations } from "./map_locations"
-  import { Plus, Minus } from "lucide-svelte"
+  import { Plus, Minus, ChevronUp, ChevronDown } from "lucide-svelte"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -297,31 +297,36 @@ description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "
 <aside
   class={`
       fixed bottom-0 inset-x-2
-      p-4
-      rounded-t-lg
-      border-2 border-b-0 border-foreground
-      bg-background
       max-w-4xl
       cursor-auto
       z-20
       transition-transform
+      ease-in-out
     `}
-  style:translate={bottomSheetShown ? "0% 0%" : "0% 80%"}
+  style:translate={bottomSheetShown ? "0% 0%" : "0% 100%"}
 >
-  <header class="pb-4">
-    <div
-      class="w-xl mx-auto h-2 bg-foreground/20 rounded-full cursor-grab"
-      onpointerdown={(event) => {
-        bottomSheetShown = !bottomSheetShown
-      }}
-    ></div>
-  </header>
-  <article class="max-h-32 overflow-y-scroll">
+  <button
+    class="w-full px-4 py-2 grid place-items-center cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl"
+    style:translate={bottomSheetShown ? "0% 0%" : "0% -100%"}
+    onclick={(event) => {
+      bottomSheetShown = !bottomSheetShown
+    }}
+    aria-label={bottomSheetShown ? "Hide sheet" : "Show sheet"}
+  >
+    {#if bottomSheetShown}
+      <ChevronDown />
+    {:else}
+      <ChevronUp />
+    {/if}
+  </button>
+  <article class="max-h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4">
     <h2>epic heading</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora. Quis voluptates
       quaerat facilis! Cum soluta adipisci, cumque expedita autem nulla natus, asperiores sint
-      similique sapiente, quod ullam laborum qui.
+      similique sapiente, quod ullam laborum qui. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Sit nisi unde ad esse ipsum fuga nesciunt adipisci veritatis corporis eaque
+      architecto, ut ea nobis, a, laborum quo eveniet. Minima, cumque.
     </p>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt, impedit, doloremque
