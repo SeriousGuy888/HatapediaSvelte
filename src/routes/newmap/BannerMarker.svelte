@@ -32,6 +32,6 @@
     style:image-rendering="pixelated"
     width={selected ? LARGE_SIZE : SMALL_SIZE + "px"}
     height={selected ? LARGE_SIZE : SMALL_SIZE + "px"}
-    class="pointer-events-none"
+    class="pointer-events-none transition-all"
   />
 </button>
