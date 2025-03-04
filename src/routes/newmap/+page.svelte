@@ -29,7 +29,7 @@
   // Used for pinch zoom gestures
   // https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Pinch_zoom_gestures
   let pointerCache = $state<PointerEvent[]>([])
-  let prevSquareDist = $state(-1)
+  let prevPointerSquareDist = $state(-1)
 
   const minZoom = 1 / 16
   const maxZoom = 16
@@ -136,14 +136,11 @@
   role="presentation"
   onpointerdown={(event) => {
     pointerCache.push(event)
-    console.log("pointerDown", event)
     updateMousePos(event)
     beginDrag(mouseScreenX, mouseScreenY)
   }}
   onpointermove={(event) => {
     updateMousePos(event)
-
-    console.log("pointerMove", event)
 
     // Write to the cache this current event as the latest event pertaining to this pointer.
     const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
@@ -163,25 +160,29 @@
         (pointerCache[0].clientY + pointerCache[1].clientY) / 2,
       )
 
-      if (prevSquareDist > 0) {
-        if (currSquareDist > prevSquareDist) {
-          console.log("Pinching out; zooming in")
+      if (prevPointerSquareDist > 0) {
+        if (currSquareDist > prevPointerSquareDist) {
           changeZoom("in", centerX, centerY)
-        } else if (currSquareDist < prevSquareDist) {
-          console.log("Pinching in; zooming out")
+        } else if (currSquareDist < prevPointerSquareDist) {
           changeZoom("out", centerX, centerY)
         }
       }
 
-      prevSquareDist = currSquareDist
+      prevPointerSquareDist = currSquareDist
     }
   }}
   onpointerup={(event) => {
     endDrag()
 
+    // Remove this pointer from the cache
     const idx = pointerCache.findIndex((cachedEvent) => cachedEvent.pointerId === event.pointerId)
     if (idx >= 0) {
       pointerCache.splice(idx, 1)
+    }
+
+    // If less than two fingers on the screen, reset the zooming distance cache.
+    if (pointerCache.length < 2) {
+      prevPointerSquareDist = -1
     }
   }}
   onwheel={(event) => {
