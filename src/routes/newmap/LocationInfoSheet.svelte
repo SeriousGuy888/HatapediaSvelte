@@ -12,7 +12,7 @@
   let initialSwipePos = $state([0, 0])
 </script>
 
-<div class="fixed bottom-0 inset-x-1 pointer-events-none">
+<div class="fixed bottom-0 inset-x-1 pointer-events-none touch-none">
   <aside
     class={`
       pointer-events-auto cursor-auto
@@ -64,7 +64,7 @@
       {/if}
     </button>
     <article
-      class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4"
+      class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4 touch-pan-y"
     >
       <p>
         {location?.description ?? ""}
