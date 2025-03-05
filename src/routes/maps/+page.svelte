@@ -18,7 +18,7 @@
     [&>a]:hover:text-background
   `}
 >
-  <a href="/newmap">Hata 1 World Map</a>
-  <a href="/map">Hata 2 World Map</a>
+  <a href="/maps/hata1">Hata 1 World Map</a>
+  <a href="/maps/hata2">Hata 2 World Map</a>
   <a href="https://hatapedia-old.vercel.app/map" target="_blank" class="text-sm">old hata 1 map</a>
 </section>
