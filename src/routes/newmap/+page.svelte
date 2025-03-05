@@ -292,4 +292,7 @@ prev sq dist: {prevPointerSquareDist}
   </nav>
 </div>
 
-<LocationInfoSheet expanded={bottomSheetShown} location={selectedPin ? locations[selectedPin] : null} />
+<LocationInfoSheet
+  expanded={bottomSheetShown}
+  location={selectedPin ? locations[selectedPin] : null}
+/>
