@@ -2,6 +2,7 @@
   import mapImage from "./map.png"
   import BannerMarker from "./BannerMarker.svelte"
   import { locations } from "./map_locations"
+  import type { MapLocation } from "./map_locations"
   import { Plus, Minus } from "lucide-svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
 
@@ -43,6 +44,7 @@
 
   let mapPinContainer: HTMLDivElement // Holds map pins as children
   let selectedPin = $state<string | null>(null)
+  let selectedLocation = $derived<MapLocation | null>(selectedPin ? locations[selectedPin] : null)
 
   $effect(() => {
     if (mapCamera) {
@@ -134,7 +136,7 @@
     }
   }
 
-  let bottomSheetShown = $state(true)
+  let bottomSheetShown = $state(false)
 </script>
 
 <svelte:head>
@@ -292,7 +294,4 @@ prev sq dist: {prevPointerSquareDist}
   </nav>
 </div>
 
-<LocationInfoSheet
-  expanded={bottomSheetShown}
-  location={selectedPin ? locations[selectedPin] : null}
-/>
+<LocationInfoSheet expanded={bottomSheetShown} location={selectedLocation} />
