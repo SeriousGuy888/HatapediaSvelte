@@ -5,6 +5,7 @@
   import type { MapLocation } from "./map_locations"
   import { Plus, Minus } from "lucide-svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
+  import { onMount } from "svelte"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -14,6 +15,9 @@
   // The map image is a map of a Minecraft world.
   // This constant stores the *image* coordinates at which the *Minecraft* coordinates (0, 0) are located.
   const MAP_WORLD_ORIGIN_OFFSET = [5001, 5001]
+
+  // Start with the camera centered at this location.
+  const WORLD_DEFAULT_LOCATION: [number, number] = [423, 875]
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let cameraWidth = $state(0)
@@ -46,21 +50,21 @@
   let selectedPin = $state<string | null>(null)
   let selectedLocation = $derived<MapLocation | null>(selectedPin ? locations[selectedPin] : null)
 
-  $effect(() => {
-    if (mapCamera) {
-      const boundingBox = mapCamera.getBoundingClientRect()
-      cameraLeft = boundingBox.left
-      cameraTop = boundingBox.top
+  onMount(() => {
+    const boundingBox = mapCamera.getBoundingClientRect()
+    cameraLeft = boundingBox.left
+    cameraTop = boundingBox.top
 
-      // Register event listener here because {passive:false} is needed.
-      mapCamera.addEventListener(
-        "touchmove",
-        (event) => {
-          event.preventDefault()
-        },
-        { passive: false },
-      )
-    }
+    // Register event listener here because {passive:false} is needed.
+    mapCamera.addEventListener(
+      "touchmove",
+      (event) => {
+        event.preventDefault()
+      },
+      { passive: false },
+    )
+
+    teleportToWorldCoords(...WORLD_DEFAULT_LOCATION)
   })
 
   let mouseScreenX = $state(0)
@@ -101,12 +105,19 @@
     }
   }
 
+  function teleportToWorldCoords(worldX: number, worldZ: number) {
+    const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldZ)
+    frameOffsetX = imageX * zoom - cameraWidth / 2
+    frameOffsetY = imageY * zoom - cameraHeight / 2
+  }
+
   /**
    * @param direction Zoom in or zoom out?
    * @param centerX Screenspace x coordinate around which zooming should occur.
    * @param centerY Screenspace y coordinate around which zooming should occur.
    */
   function changeZoom(direction: "in" | "out", centerX: number, centerY: number) {
+    console.log("zooming around ", centerX, centerY)
     const oldZoom = zoom
 
     if (direction == "in") {
