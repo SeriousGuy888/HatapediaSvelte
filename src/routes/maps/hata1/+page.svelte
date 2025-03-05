@@ -6,6 +6,7 @@
   import { Plus, Minus } from "lucide-svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
   import { onMount } from "svelte"
+  import { fade } from "svelte/transition"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -148,6 +149,7 @@
   }
 
   let bottomSheetShown = $state(false)
+  let isLoaded = $state(false)
 </script>
 
 <svelte:head>
@@ -223,6 +225,21 @@
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
   }}
 >
+  {#if !isLoaded}
+    <section
+      id="loading-overlay"
+      class={`
+        absolute inset-0 z-30
+        grid place-items-center
+        bg-background/95 text-foreground text-xl
+        select-none pointer-events-none
+      `}
+      transition:fade={{ duration: 500 }}
+    >
+      <p>Loading map...</p>
+    </section>
+  {/if}
+
   <div
     bind:this={mapFrame}
     class="absolute select-none shadow-xl shadow-gray-700"
@@ -240,6 +257,11 @@
       class="w-full h-full pointer-events-none"
       style:image-rendering="pixelated"
       alt=""
+      onload={() => (isLoaded = true)}
+      onerror={() => {
+        alert("Failed to load map image.")
+        isLoaded = true
+      }}
     />
     <div bind:this={mapPinContainer} class="absolute inset-0">
       {#each Object.keys(locations) as locationId}
@@ -291,17 +313,6 @@
     >
       <p>{mouseWorldX}, {mouseWorldZ}</p>
     </div>
-    <!-- <aside class="p-2 bg-background border-2 rounded font-mono text-xs">
-      <pre>
-isDragging: {isDragging}
-lastDragPosition: {lastDragPosition}
-offsets: {~~frameOffsetX}, {~~frameOffsetY}
-zoom: {zoom.toFixed(3)}
-
-num pointers: {pointerCache.length}
-prev sq dist: {prevPointerSquareDist}
-</pre>
-    </aside> -->
   </nav>
 </div>
 
