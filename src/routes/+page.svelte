@@ -29,10 +29,10 @@
     <p class="text-xs sm:text-sm mt-0.5">Maintained by the God of News</p>
   </hgroup>
   <section class="major-section flex gap-2 sm:gap-3 justify-center">
-    <a href="/map" aria-label="Link to map page">
+    <a href="/maps" aria-label="Link to maps">
       <div class="page-link">
         <Map class="w-6 h-6" />
-        <span class="link-label leading-none h-fit">World Map</span>
+        <span class="link-label leading-none h-fit">World Maps</span>
       </div>
     </a>
     <a href="/weather" aria-label="Link to weather page">
