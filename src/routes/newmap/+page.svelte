@@ -2,7 +2,8 @@
   import mapImage from "./map.png"
   import BannerMarker from "./BannerMarker.svelte"
   import { locations } from "./map_locations"
-  import { Plus, Minus, ChevronUp, ChevronDown } from "lucide-svelte"
+  import { Plus, Minus } from "lucide-svelte"
+  import LocationInfoSheet from "./LocationInfoSheet.svelte"
 
   const MAP_DIMENSIONS = {
     width: 10001,
@@ -291,41 +292,4 @@ prev sq dist: {prevPointerSquareDist}
   </nav>
 </div>
 
-<aside
-  class={`
-      fixed bottom-0 right-2 ml-2
-      max-w-xl w-full
-      cursor-auto
-      z-20
-      transition-transform
-      ease-in-out
-    `}
-  style:translate={bottomSheetShown ? "0% 0%" : "0% 100%"}
->
-  <button
-    class="w-full px-4 py-2 grid place-items-center cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl transition-transform"
-    style:translate={bottomSheetShown ? "0% 0%" : "0% -100%"}
-    onclick={(event) => {
-      bottomSheetShown = !bottomSheetShown
-    }}
-    aria-label={bottomSheetShown ? "Hide sheet" : "Show sheet"}
-  >
-    {#if bottomSheetShown}
-      <ChevronDown />
-    {:else}
-      <ChevronUp />
-    {/if}
-  </button>
-  <article
-    class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4 prose dark:prose-invert"
-  >
-    {#if selectedPin}
-      <h3>{locations[selectedPin].name}</h3>
-      <p>
-        {locations[selectedPin].description ?? ""}
-      </p>
-    {:else}
-      <p>Nothing selected.</p>
-    {/if}
-  </article>
-</aside>
+<LocationInfoSheet expanded={bottomSheetShown} location={selectedPin ? locations[selectedPin] : null} />
