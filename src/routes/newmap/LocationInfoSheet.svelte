@@ -55,7 +55,14 @@
       }}
     >
       <h2 class="grow text-left font-bold">
-        {location ? location.name : "Nothing selected."}
+        {#if location}
+          {location.name}
+          <span class="ml-1 font-minecraft font-normal"
+            >({location.coordinates[0]}, ~, {location.coordinates[1]})</span
+          >
+        {:else}
+          Nothing selected
+        {/if}
       </h2>
       {#if expanded}
         <ChevronDown />
