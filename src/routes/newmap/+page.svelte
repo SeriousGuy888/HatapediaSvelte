@@ -133,7 +133,7 @@
     }
   }
 
-  let bottomSheetShown = $state(false)
+  let bottomSheetShown = $state(true)
 </script>
 
 <svelte:head>
@@ -266,7 +266,7 @@
       <Minus class="w-4 h-4" />
     </button>
   </nav>
-  <nav class="absolute top-2 right-2 not-[]:z-10 flex flex-col gap-2 items-end">
+  <nav class="absolute top-2 right-2 z-10 flex flex-col gap-2 items-end">
     <div
       class={`
       p-1 bg-background
@@ -277,7 +277,7 @@
     >
       <p>{mouseWorldX}, {mouseWorldZ}</p>
     </div>
-    <aside class="p-2 bg-background border-2 rounded font-mono text-xs">
+    <!-- <aside class="p-2 bg-background border-2 rounded font-mono text-xs">
       <pre>
 isDragging: {isDragging}
 lastDragPosition: {lastDragPosition}
@@ -286,18 +286,15 @@ zoom: {zoom.toFixed(3)}
 
 num pointers: {pointerCache.length}
 prev sq dist: {prevPointerSquareDist}
-
-selectedPin: {selectedPin}
-description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "..." : ""}
 </pre>
-    </aside>
+    </aside> -->
   </nav>
 </div>
 
 <aside
   class={`
-      fixed bottom-0 inset-x-2
-      max-w-4xl
+      fixed bottom-0 right-2 ml-2
+      max-w-xl w-full
       cursor-auto
       z-20
       transition-transform
@@ -306,7 +303,7 @@ description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "
   style:translate={bottomSheetShown ? "0% 0%" : "0% 100%"}
 >
   <button
-    class="w-full px-4 py-2 grid place-items-center cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl"
+    class="w-full px-4 py-2 grid place-items-center cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl transition-transform"
     style:translate={bottomSheetShown ? "0% 0%" : "0% -100%"}
     onclick={(event) => {
       bottomSheetShown = !bottomSheetShown
@@ -319,19 +316,16 @@ description: {selectedPin ? locations[selectedPin].description?.slice(0, 32) + "
       <ChevronUp />
     {/if}
   </button>
-  <article class="max-h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4">
-    <h2>epic heading</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora. Quis voluptates
-      quaerat facilis! Cum soluta adipisci, cumque expedita autem nulla natus, asperiores sint
-      similique sapiente, quod ullam laborum qui. Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Sit nisi unde ad esse ipsum fuga nesciunt adipisci veritatis corporis eaque
-      architecto, ut ea nobis, a, laborum quo eveniet. Minima, cumque.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt, impedit, doloremque
-      delectus vitae obcaecati qui voluptates, suscipit quibusdam at aut minus nostrum officia.
-      Illum molestias dolorum natus sapiente alias!
-    </p>
+  <article
+    class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4 prose dark:prose-invert"
+  >
+    {#if selectedPin}
+      <h3>{locations[selectedPin].name}</h3>
+      <p>
+        {locations[selectedPin].description ?? ""}
+      </p>
+    {:else}
+      <p>Nothing selected.</p>
+    {/if}
   </article>
 </aside>
