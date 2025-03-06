@@ -23,7 +23,7 @@
     style:translate={expanded ? "0% 0%" : "0% 100%"}
   >
     <button
-      class="w-full px-4 py-2 cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl transition-transform flex gap-2 align-middle"
+      class="w-full px-4 py-2 cursor-pointer bg-background border-2 border-b-0 border-foreground rounded-t-xl transition-transform grid grid-cols-[auto_1fr] gap-2 align-middle"
       style:translate={expanded ? "0% 0%" : "0% -100%"}
       aria-label={expanded ? "Hide sheet" : "Show sheet"}
       onpointerdown={(event) => {
@@ -54,7 +54,7 @@
         expanded = !expanded
       }}
     >
-      <h2 class="grow text-left font-bold">
+      <h2 class="text-left font-bold text-nowrap min-w-0 max-w-full overflow-hidden text-ellipsis">
         {#if location}
           {location.name}
           <span class="ml-1 font-minecraft font-normal"
