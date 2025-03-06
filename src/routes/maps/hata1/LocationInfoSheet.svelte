@@ -64,11 +64,13 @@
           Nothing selected
         {/if}
       </h2>
-      {#if expanded}
-        <ChevronDown />
-      {:else}
-        <ChevronUp />
-      {/if}
+      <span class="justify-self-end">
+        {#if expanded}
+          <ChevronDown />
+        {:else}
+          <ChevronUp />
+        {/if}
+      </span>
     </button>
     <article
       class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4 touch-pan-y"
