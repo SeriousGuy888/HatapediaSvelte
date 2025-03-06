@@ -7,18 +7,7 @@
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
   import { onMount } from "svelte"
   import { fade } from "svelte/transition"
-
-  const MAP_DIMENSIONS = {
-    width: 10001,
-    height: 10001,
-  }
-
-  // The map image is a map of a Minecraft world.
-  // This constant stores the *image* coordinates at which the *Minecraft* coordinates (0, 0) are located.
-  const MAP_WORLD_ORIGIN_OFFSET = [5001, 5001]
-
-  // Start with the camera centered at this location.
-  const WORLD_DEFAULT_LOCATION: [number, number] = [423, 875]
+  import { MAP_DIMENSIONS, MAP_WORLD_ORIGIN_OFFSET, WORLD_DEFAULT_LOCATION } from "./map_config"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let cameraWidth = $state(0)
