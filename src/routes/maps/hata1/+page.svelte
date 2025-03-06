@@ -8,16 +8,10 @@
   import { onMount } from "svelte"
   import { fade } from "svelte/transition"
   import { MAP_DIMENSIONS, MAP_WORLD_ORIGIN_OFFSET, WORLD_DEFAULT_LOCATION } from "./map_config"
+  import { cameraState, changeZoom, frameState } from "./view_state.svelte"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
-  let cameraWidth = $state(0)
-  let cameraHeight = $state(0)
-  let cameraLeft = $state(0) // How far the camera div is offset from the left edge of the window.
-  let cameraTop = $state(0)
-
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
-  let frameOffsetX = $state(0)
-  let frameOffsetY = $state(0)
 
   // Used for pinch zoom gestures
   // https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Pinch_zoom_gestures
@@ -31,19 +25,14 @@
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
 
-  const minZoom = 1 / 16
-  const maxZoom = 16
-  const zoomFactor = 9 / 8
-  let zoom = $state(0.5)
-
   let mapPinContainer: HTMLDivElement // Holds map pins as children
   let selectedPin = $state<string | null>(null)
   let selectedLocation = $derived<MapLocation | null>(selectedPin ? locations[selectedPin] : null)
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()
-    cameraLeft = boundingBox.left
-    cameraTop = boundingBox.top
+    cameraState.left = boundingBox.left
+    cameraState.top = boundingBox.top
 
     // Register event listener here because {passive:false} is needed.
     mapCamera.addEventListener(
@@ -72,11 +61,14 @@
    * of the map being 0, 0.
    */
   function clientSpaceToScreenSpace(clientX: number, clientY: number): [number, number] {
-    return [clientX - cameraLeft, clientY - cameraTop]
+    return [clientX - cameraState.left, clientY - cameraState.top]
   }
 
   function screenSpaceToImageSpace(screenX: number, screenY: number): [number, number] {
-    return [~~((screenX + frameOffsetX) / zoom), ~~((screenY + frameOffsetY) / zoom)]
+    return [
+      ~~((screenX + frameState.offsetX) / cameraState.zoom),
+      ~~((screenY + frameState.offsetY) / cameraState.zoom),
+    ]
   }
 
   function imageSpaceToWorldSpace(imageX: number, imageY: number): [number, number] {
@@ -89,36 +81,16 @@
 
   function doDrag(x: number, y: number) {
     if (isDragging) {
-      frameOffsetX -= x - lastDragPosition[0]
-      frameOffsetY -= y - lastDragPosition[1]
+      frameState.offsetX -= x - lastDragPosition[0]
+      frameState.offsetY -= y - lastDragPosition[1]
       lastDragPosition = [x, y]
     }
   }
 
   function teleportToWorldCoords(worldX: number, worldZ: number) {
     const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldZ)
-    frameOffsetX = imageX * zoom - cameraWidth / 2
-    frameOffsetY = imageY * zoom - cameraHeight / 2
-  }
-
-  /**
-   * @param direction Zoom in or zoom out?
-   * @param centerX Screenspace x coordinate around which zooming should occur.
-   * @param centerY Screenspace y coordinate around which zooming should occur.
-   */
-  function changeZoom(direction: "in" | "out", centerX: number, centerY: number) {
-    console.log("zooming around ", centerX, centerY)
-    const oldZoom = zoom
-
-    if (direction == "in") {
-      zoom = Math.min(zoom * zoomFactor, maxZoom)
-    } else if (direction == "out") {
-      zoom = Math.max(zoom / zoomFactor, minZoom)
-    }
-
-    // Adjust offset to make sure that the zooming is happening around the cursor location.
-    frameOffsetX = zoom * (frameOffsetX / oldZoom + centerX / oldZoom - centerX / zoom)
-    frameOffsetY = zoom * (frameOffsetY / oldZoom + centerY / oldZoom - centerY / zoom)
+    frameState.offsetX = imageX * cameraState.zoom - cameraState.width / 2
+    frameState.offsetY = imageY * cameraState.zoom - cameraState.height / 2
   }
 
   function pointerUp(event: PointerEvent) {
@@ -147,8 +119,8 @@
 
 <div
   bind:this={mapCamera}
-  bind:clientWidth={cameraWidth}
-  bind:clientHeight={cameraHeight}
+  bind:clientWidth={cameraState.width}
+  bind:clientHeight={cameraState.height}
   class="relative overflow-hidden"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
@@ -232,10 +204,10 @@
   <div
     bind:this={mapFrame}
     class="absolute select-none shadow-xl shadow-gray-700"
-    style:width={`${MAP_DIMENSIONS.width * zoom}px`}
-    style:height={`${MAP_DIMENSIONS.height * zoom}px`}
-    style:left={`${-frameOffsetX}px`}
-    style:top={`${-frameOffsetY}px`}
+    style:width={`${MAP_DIMENSIONS.width * cameraState.zoom}px`}
+    style:height={`${MAP_DIMENSIONS.height * cameraState.zoom}px`}
+    style:left={`${-frameState.offsetX}px`}
+    style:top={`${-frameState.offsetY}px`}
     role="button"
     tabindex="0"
     onkeypress={null}
@@ -278,14 +250,14 @@
   >
     <button
       class="cursor-pointer p-1 hover:bg-brand/20"
-      onclick={() => changeZoom("in", cameraWidth / 2, cameraHeight / 2)}
+      onclick={() => changeZoom("in", cameraState.width / 2, cameraState.height / 2)}
       aria-label="Zoom in"
     >
       <Plus class="w-4 h-4" />
     </button>
     <button
       class="cursor-pointer p-1 hover:bg-brand/20"
-      onclick={() => changeZoom("out", cameraWidth / 2, cameraHeight / 2)}
+      onclick={() => changeZoom("out", cameraState.width / 2, cameraState.height / 2)}
       aria-label="Zoom out"
     >
       <Minus class="w-4 h-4" />
