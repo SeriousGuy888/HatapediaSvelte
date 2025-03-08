@@ -16,6 +16,7 @@
   } from "./coordinates.svelte"
 
   import MapMarkers from "./MapMarkers.svelte"
+  import RegionEditor from "./RegionEditor.svelte"
   import { getSelectedLocation, locationSelection } from "./map_markers.svelte.ts"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
@@ -196,6 +197,9 @@
   }}
   onkeydown={(event) => {
     console.log(event.key)
+    if (document.activeElement !== mapFrame) {
+      return
+    }
     switch (event.key) {
       case "w":
       case "ArrowUp":
@@ -308,9 +312,7 @@
         <div class="p-1 bg-background rounded border-2 border-foreground font-mono">
           <p>{mode.toUpperCase()}</p>
         </div>
-        <aside class="p-1 bg-background rounded border-2 border-foreground pointer-events-auto">
-          <button>Create Region</button>
-        </aside>
+        <RegionEditor />
       {/if}
     </div>
     <LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
