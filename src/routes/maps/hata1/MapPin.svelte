@@ -19,7 +19,7 @@
 </script>
 
 <button
-  class="absolute cursor-pointer"
+  class="absolute cursor-pointer pointer-events-auto"
   style:left={xPosRatio * 100 + "%"}
   style:top={yPosRatio * 100 + "%"}
   style:translate="-50% -100%"

@@ -1,6 +1,6 @@
-import type { MapRegion } from "./map_marker_types"
+import type { MapRegionData } from "./map_marker_types"
 
-export const regions: { [key: string]: MapRegion } = {
+export const regions: { [key: string]: MapRegionData } = {
   test: {
     name: "test region",
     description: "epic",

@@ -1,6 +1,6 @@
-import type { MapPin } from "./map_marker_types"
+import type { MapPinData } from "./map_marker_types"
 
-export const locations: { [key: string]: MapPin } = {
+export const pins: { [key: string]: MapPinData } = {
   spawn: {
     name: "Spawn",
     description:

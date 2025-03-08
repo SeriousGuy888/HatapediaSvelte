@@ -4,14 +4,14 @@
   import { Plus, Minus } from "lucide-svelte"
 
   import mapImage from "./map.png"
-  import BannerMarker from "./MapPin.svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
   import MapRegions from "./MapRegions.svelte"
-  import { locations } from "./map_pins"
+  import { pins } from "./map_pins"
   import { regions } from "./map_regions"
-  import type { MapPin } from "./map_marker_types"
+  import type { MapPinData } from "./map_marker_types"
+  import MapPins from "./MapPins.svelte"
 
-  import { MAP_DIMENSIONS, MAP_WORLD_ORIGIN_OFFSET, WORLD_DEFAULT_LOCATION } from "./map_config"
+  import { MAP_DIMENSIONS, WORLD_DEFAULT_LOCATION } from "./map_config"
   import { cameraState, changeZoom, frameState } from "./view_state.svelte"
   import {
     clientSpaceToScreenSpace,
@@ -35,9 +35,8 @@
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
 
-  let mapPinContainer: HTMLDivElement // Holds map pins as children
   let selectedPin = $state<string | null>(null)
-  let selectedLocation = $derived<MapPin | null>(selectedPin ? locations[selectedPin] : null)
+  let selectedLocation = $derived<MapPinData | null>(selectedPin ? pins[selectedPin] : null)
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()
@@ -210,30 +209,9 @@
         isLoaded = true
       }}
     />
-    <MapRegions
-      {regions}
-      width={MAP_DIMENSIONS.width}
-      height={MAP_DIMENSIONS.height}
-    />
-    <div bind:this={mapPinContainer} class="absolute inset-0">
-      {#each Object.keys(locations) as locationId}
-        {@const location = locations[locationId]}
-        {@const [imageX, imageY] = worldSpaceToImageSpace(...location.coordinates)}
-        {@const xPosRatio = imageX / MAP_DIMENSIONS.width}
-        {@const yPosRatio = imageY / MAP_DIMENSIONS.height}
-
-        <BannerMarker
-          name={location.name}
-          colour={location.banner ?? "white"}
-          {xPosRatio}
-          {yPosRatio}
-          selected={selectedPin == locationId}
-          onclick={(event) => {
-            event.stopPropagation() // prevent click event from passing through & clicking the map behind this pin
-            selectedPin = locationId
-          }}
-        ></BannerMarker>
-      {/each}
+    <div class="absolute inset-0 z-20 isolate">
+      <MapRegions {regions} width={MAP_DIMENSIONS.width} height={MAP_DIMENSIONS.height} />
+      <MapPins {pins} {selectedPin} setSelectedPin={(pinId: string) => (selectedPin = pinId)} />
     </div>
   </div>
   <nav

@@ -1,15 +1,15 @@
-export interface MapMarker {
+export interface MapMarkerData {
   name: string
   description?: string
 }
 
-export interface MapPin extends MapMarker {
+export interface MapPinData extends MapMarkerData {
   coordinates: [number, number]
   articles?: string[]
   banner?: BannerColour
 }
 
-export interface MapRegion extends MapMarker {
+export interface MapRegionData extends MapMarkerData {
   coordinates: [number, number][] // Used to draw an SVG Path polygon
 }
 

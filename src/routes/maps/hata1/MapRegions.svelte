@@ -1,9 +1,9 @@
 <script lang="ts">
   import { worldSpaceToImageSpace } from "./coordinates.svelte"
-  import type { MapRegion } from "./map_marker_types"
+  import type { MapRegionData } from "./map_marker_types"
 
   interface Props {
-    regions: { [key: string]: MapRegion }
+    regions: { [key: string]: MapRegionData }
     width: number
     height: number
   }
@@ -24,7 +24,7 @@
   }
 </script>
 
-<svg class="absolute inset-0 z-20 overflow-visible" viewBox={`0 0 ${width} ${height}`}>
+<svg class="absolute inset-0 overflow-visible" viewBox={`0 0 ${width} ${height}`}>
   {#each Object.entries(regions) as [id, region]}
     <path
       d={coordsListToPath(region.coordinates)}
