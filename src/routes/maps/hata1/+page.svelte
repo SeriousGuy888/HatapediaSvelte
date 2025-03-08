@@ -6,7 +6,7 @@
   import mapImage from "./map.png"
   import BannerMarker from "./MapPin.svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
-  import RegionCanvas from "./MapRegions.svelte"
+  import MapRegions from "./MapRegions.svelte"
   import { locations } from "./map_pins"
   import { regions } from "./map_regions"
   import type { MapPin } from "./map_marker_types"
@@ -228,7 +228,7 @@
         isLoaded = true
       }}
     />
-    <RegionCanvas
+    <MapRegions
       {regions}
       width={MAP_DIMENSIONS.width}
       height={MAP_DIMENSIONS.height}
