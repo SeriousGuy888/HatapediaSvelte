@@ -3,7 +3,7 @@
   import { clientSpaceToWorldSpace, worldSpaceToImageSpace } from "./coordinates.svelte"
   import type { MapRegionData } from "./map_marker_types"
   import { getSelectedRegion } from "./map_markers.svelte"
-  import { cameraState } from "./view_state.svelte"
+  import { cameraState, userState } from "./view_state.svelte"
 
   interface Props {
     regions: { [key: string]: MapRegionData }
@@ -66,7 +66,7 @@
     />
   {/each}
 
-  {#if selectedRegion}
+  {#if selectedRegion && userState.mode === "edit"}
     {#each selectedRegion.coordinates as [worldX, worldY], vertIdx}
       {@const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldY)}
       {@const [imageXNext, imageYNext] = worldSpaceToImageSpace(
@@ -80,7 +80,7 @@
         y2={imageYNext}
         stroke-width={4 / cameraState.zoom}
         stroke="#ff0"
-        class="cursor-alias"
+        class="cursor-alias outline-0"
         role="none"
         tabindex="-1"
         onclick={(e) => {
