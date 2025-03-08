@@ -206,9 +206,9 @@
     />
     <MapMarkers />
   </div>
-  <nav class="absolute inset-2 z-20 isolate">
+  <nav class="absolute inset-2 z-20 isolate pointer-events-none">
     <div
-      class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10"
+      class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10 pointer-events-auto"
     >
       <button
         class="cursor-pointer p-1 hover:bg-brand/20"
@@ -225,7 +225,7 @@
         <Minus class="w-4 h-4" />
       </button>
     </div>
-    <div class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end">
+    <div class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end pointer-events-auto">
       <div
         class={`
         p-1 bg-background
