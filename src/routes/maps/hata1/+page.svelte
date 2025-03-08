@@ -153,7 +153,7 @@
     pointerCache[idx] = event
 
     if (pointerCache.length === 1) {
-      if(event.buttons === 1 && userState.mode === "edit") {
+      if (event.buttons === 1 && userState.mode === "edit") {
         return
       }
       doDrag(mouseScreenX, mouseScreenY)
@@ -185,14 +185,22 @@
       return
     }
 
+    pointerUp(event)
+
+    if (userState.mode === "edit") {
+      return
+    }
+
     // Deselect the selected map pin only if the pointer was released without dragging (i.e. a single click.)
     if (!isDragging) {
       locationSelection.selectedLocationId = null
     }
-    pointerUp(event)
   }}
   onpointercancel={pointerUp}
   onpointerleave={pointerUp}
+  oncontextmenu={(event) => {
+    event.preventDefault()
+  }}
   onwheel={(event) => {
     event.preventDefault()
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)

@@ -1,11 +1,8 @@
 <script lang="ts">
-  import {
-    clientSpaceToWorldSpace,
-    screenSpaceToImageSpace,
-    worldSpaceToImageSpace,
-  } from "./coordinates.svelte"
+  import { ZoomIn } from "lucide-svelte"
+  import { clientSpaceToWorldSpace, worldSpaceToImageSpace } from "./coordinates.svelte"
   import type { MapRegionData } from "./map_marker_types"
-  import { getSelectedRegion, locationSelection } from "./map_markers.svelte"
+  import { getSelectedRegion } from "./map_markers.svelte"
   import { cameraState } from "./view_state.svelte"
 
   interface Props {
@@ -51,7 +48,6 @@
     }
   }}
   onmouseup={() => {
-    console.log("pjdfogijdfgh")
     prevDragPos = null
     draggingVertIdx = null
   }}
@@ -73,10 +69,30 @@
   {#if selectedRegion}
     {#each selectedRegion.coordinates as [worldX, worldY], vertIdx}
       {@const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldY)}
+      {@const [imageXNext, imageYNext] = worldSpaceToImageSpace(
+        ...selectedRegion.coordinates[(vertIdx + 1) % selectedRegion.coordinates.length],
+      )}
+
+      <line
+        x1={imageX}
+        y1={imageY}
+        x2={imageXNext}
+        y2={imageYNext}
+        stroke-width={4 / cameraState.zoom}
+        stroke="#ff0"
+        class="cursor-alias"
+        role="none"
+        tabindex="-1"
+        onclick={(e) => {
+          const [worldX, worldY] = clientSpaceToWorldSpace(e.clientX, e.clientY)
+          selectedRegion.coordinates.splice(vertIdx + 1, 0, [worldX, worldY])
+        }}
+      />
+
       <circle
         cx={imageX}
         cy={imageY}
-        r={5 / cameraState.zoom}
+        r={8 / cameraState.zoom}
         stroke-width={1 / cameraState.zoom}
         fill="#f00"
         stroke="#ff0"
@@ -85,9 +101,13 @@
         tabindex="-1"
         onmousedown={(e) => {
           e.preventDefault()
-          e.stopPropagation()
           prevDragPos = clientSpaceToWorldSpace(e.clientX, e.clientY)
           draggingVertIdx = vertIdx
+        }}
+        oncontextmenu={(e) => {
+          // i can't get the right-click event to fire
+          e.preventDefault()
+          selectedRegion.coordinates.splice(vertIdx, 1)
         }}
       />
     {/each}
