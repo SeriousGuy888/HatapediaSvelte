@@ -20,6 +20,7 @@
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
+  let uiContainer: HTMLElement // Holds the UI elements like the zoom buttons and the location info sheet.
 
   // Used for pinch zoom gestures
   // https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Pinch_zoom_gestures
@@ -105,6 +106,10 @@
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
   onpointerdown={(event) => {
+    if (uiContainer.contains(event.target as Node)) {
+      return
+    }
+
     pointerCache.push(event)
     if (pointerCache.length >= 2) {
       hadMultiplePointers = true
@@ -153,6 +158,10 @@
     }
   }}
   onpointerup={(event) => {
+    if (uiContainer.contains(event.target as Node)) {
+      return
+    }
+
     // Deselect the selected map pin only if the pointer was released without dragging (i.e. a single click.)
     if (!isDragging) {
       locationSelection.selectedLocationId = null
@@ -206,7 +215,7 @@
     />
     <MapMarkers />
   </div>
-  <nav class="absolute inset-2 z-20 pointer-events-none">
+  <nav bind:this={uiContainer} class="absolute inset-2 z-20 pointer-events-none">
     <div
       class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10 pointer-events-auto"
     >
