@@ -13,7 +13,7 @@ export const MAP_WORLD_ORIGIN_OFFSET: [number, number] = [5001, 5001]
 export const WORLD_DEFAULT_LOCATION: [number, number] = [423, 875]
 
 export const regions: { [key: string]: MapRegionData } = {
-  hawainot: {
+  hawainot_province: {
     name: "Hawainot",
     description: "(testing region)",
     coordinates: [
