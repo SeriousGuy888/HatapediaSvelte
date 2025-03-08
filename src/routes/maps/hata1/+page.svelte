@@ -5,11 +5,6 @@
 
   import mapImage from "./map.png"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
-  import MapRegions from "./MapRegions.svelte"
-  import { pins } from "./map_pins"
-  import { regions } from "./map_regions"
-  import type { MapPinData } from "./map_marker_types"
-  import MapPins from "./MapPins.svelte"
 
   import { MAP_DIMENSIONS, WORLD_DEFAULT_LOCATION } from "./map_config"
   import { cameraState, changeZoom, frameState } from "./view_state.svelte"
@@ -19,6 +14,9 @@
     screenSpaceToImageSpace,
     worldSpaceToImageSpace,
   } from "./coordinates.svelte"
+
+  import MapMarkers from "./MapMarkers.svelte"
+  import { getSelectedLocation, locationSelection } from "./map_marker_selection.svelte.ts"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
@@ -34,9 +32,6 @@
 
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
-
-  let selectedPin = $state<string | null>(null)
-  let selectedLocation = $derived<MapPinData | null>(selectedPin ? pins[selectedPin] : null)
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()
@@ -160,7 +155,7 @@
   onpointerup={(event) => {
     // Deselect the selected map pin only if the pointer was released without dragging (i.e. a single click.)
     if (!isDragging) {
-      selectedPin = null
+      locationSelection.selectedLocationId = null
     }
     pointerUp(event)
   }}
@@ -209,10 +204,7 @@
         isLoaded = true
       }}
     />
-    <div class="absolute inset-0 z-20 isolate">
-      <MapRegions {regions} width={MAP_DIMENSIONS.width} height={MAP_DIMENSIONS.height} />
-      <MapPins {pins} {selectedPin} setSelectedPin={(pinId: string) => (selectedPin = pinId)} />
-    </div>
+    <MapMarkers />
   </div>
   <nav
     class="absolute top-2 left-2 flex flex-col rounded border-2 bg-background border-foreground z-10"
@@ -246,4 +238,4 @@
   </nav>
 </div>
 
-<LocationInfoSheet expanded={bottomSheetShown} location={selectedLocation} />
+<LocationInfoSheet expanded={bottomSheetShown} location={getSelectedLocation()} />
