@@ -2,6 +2,7 @@
   import mapImage from "./map.png"
   import BannerMarker from "./BannerMarker.svelte"
   import { locations } from "./map_locations"
+  import { regions } from "./map_regions"
   import type { MapLocation } from "./map_locations"
   import { Plus, Minus } from "lucide-svelte"
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
@@ -9,6 +10,7 @@
   import { fade } from "svelte/transition"
   import { MAP_DIMENSIONS, MAP_WORLD_ORIGIN_OFFSET, WORLD_DEFAULT_LOCATION } from "./map_config"
   import { cameraState, changeZoom, frameState } from "./view_state.svelte"
+  import RegionCanvas from "./RegionCanvas.svelte"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
@@ -121,7 +123,7 @@
   bind:this={mapCamera}
   bind:clientWidth={cameraState.width}
   bind:clientHeight={cameraState.height}
-  class="relative overflow-hidden"
+  class="relative overflow-hidden isolate"
   style:cursor={isDragging ? "grabbing" : "grab"}
   role="presentation"
   onpointerdown={(event) => {
@@ -223,6 +225,12 @@
         alert("Failed to load map image.")
         isLoaded = true
       }}
+    />
+    <RegionCanvas
+      {regions}
+      width={MAP_DIMENSIONS.width}
+      height={MAP_DIMENSIONS.height}
+      {worldSpaceToImageSpace}
     />
     <div bind:this={mapPinContainer} class="absolute inset-0">
       {#each Object.keys(locations) as locationId}
