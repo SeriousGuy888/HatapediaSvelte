@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { MapRegion } from "./map_regions"
+  import type { MapRegion } from "./map_marker_types"
 
   interface Props {
     regions: { [key: string]: MapRegion }

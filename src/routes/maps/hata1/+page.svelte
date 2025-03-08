@@ -1,16 +1,18 @@
 <script lang="ts">
-  import mapImage from "./map.png"
-  import BannerMarker from "./BannerMarker.svelte"
-  import { locations } from "./map_locations"
-  import { regions } from "./map_regions"
-  import type { MapLocation } from "./map_locations"
-  import { Plus, Minus } from "lucide-svelte"
-  import LocationInfoSheet from "./LocationInfoSheet.svelte"
   import { onMount } from "svelte"
   import { fade } from "svelte/transition"
+  import { Plus, Minus } from "lucide-svelte"
+
+  import mapImage from "./map.png"
+  import BannerMarker from "./MapPin.svelte"
+  import LocationInfoSheet from "./LocationInfoSheet.svelte"
+  import RegionCanvas from "./MapRegions.svelte"
+  import { locations } from "./map_pins"
+  import { regions } from "./map_regions"
+  import type { MapPin } from "./map_marker_types"
+
   import { MAP_DIMENSIONS, MAP_WORLD_ORIGIN_OFFSET, WORLD_DEFAULT_LOCATION } from "./map_config"
   import { cameraState, changeZoom, frameState } from "./view_state.svelte"
-  import RegionCanvas from "./RegionCanvas.svelte"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
@@ -29,7 +31,7 @@
 
   let mapPinContainer: HTMLDivElement // Holds map pins as children
   let selectedPin = $state<string | null>(null)
-  let selectedLocation = $derived<MapLocation | null>(selectedPin ? locations[selectedPin] : null)
+  let selectedLocation = $derived<MapPin | null>(selectedPin ? locations[selectedPin] : null)
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()

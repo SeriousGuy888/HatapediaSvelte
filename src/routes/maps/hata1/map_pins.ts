@@ -1,14 +1,6 @@
-import type { BannerColour } from "./icons.ts"
+import type { MapPin } from "./map_marker_types"
 
-export interface MapLocation {
-  coordinates: [number, number]
-  name: string
-  description?: string
-  articles?: string[]
-  banner?: BannerColour
-}
-
-export const locations: { [key: string]: MapLocation } = {
+export const locations: { [key: string]: MapPin } = {
   spawn: {
     name: "Spawn",
     description:
@@ -93,8 +85,7 @@ export const locations: { [key: string]: MapLocation } = {
   },
   remy_waterfall: {
     name: "Remywaterfall",
-    description:
-      "A cool waterfall that Remy claimed on his way to claim Floridanot.",
+    description: "A cool waterfall that Remy claimed on his way to claim Floridanot.",
     articles: ["remy_republic"],
     coordinates: [-421, 2285],
     banner: "purple",
@@ -123,8 +114,7 @@ export const locations: { [key: string]: MapLocation } = {
   },
   tobytopia_jungle_island: {
     name: "Unnamed Tobytopian Jungle Island",
-    description:
-      "An island claimed by Toby right before Remy was going to claim it.",
+    description: "An island claimed by Toby right before Remy was going to claim it.",
     articles: ["tobytopia", "remy_republic", "remy", "toby"],
     coordinates: [-753, 1574],
     banner: "orange",

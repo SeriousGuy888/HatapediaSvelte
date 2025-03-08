@@ -1,14 +1,10 @@
-export interface MapRegion {
-  name: string
-  description: string
-  coords: [number, number][] // Used to draw an SVG Path polygon
-}
+import type { MapRegion } from "./map_marker_types"
 
 export const regions: { [key: string]: MapRegion } = {
   test: {
     name: "test region",
     description: "epic",
-    coords: [ // pentagon
+    coords: [
       [0, 0],
       [0, 100],
       [100, 100],

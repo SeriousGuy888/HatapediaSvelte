@@ -1,10 +1,10 @@
 <script lang="ts">
   import { ChevronDown, ChevronUp } from "lucide-svelte"
-  import type { MapLocation } from "./map_locations"
+  import type { MapPin } from "./map_pins"
 
   interface Props {
     expanded: boolean
-    location: MapLocation | null
+    location: MapPin | null
   }
   let { expanded, location }: Props = $props()
 
