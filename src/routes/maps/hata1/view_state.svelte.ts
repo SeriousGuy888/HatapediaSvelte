@@ -24,7 +24,6 @@ export const mouseState = $state({
  * @param centerY Screenspace y coordinate around which zooming should occur.
  */
 export function changeZoom(direction: "in" | "out", centerX: number, centerY: number) {
-  console.log("zooming around ", centerX, centerY)
   const oldZoom = cameraState.zoom
 
   if (direction == "in") {
