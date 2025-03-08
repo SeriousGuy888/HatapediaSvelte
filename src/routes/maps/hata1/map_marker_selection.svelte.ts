@@ -12,5 +12,7 @@ export function getSelectedLocation(): MapMarkerData | null {
   if (!id) {
     return null
   }
+
+  // TODO: do something about the possibility of pins and regions having the same id
   return pins?.[id] ?? regions?.[id]
 }
