@@ -206,36 +206,37 @@
     />
     <MapMarkers />
   </div>
-  <nav
-    class="absolute top-2 left-2 flex flex-col rounded border-2 bg-background border-foreground z-10"
-  >
-    <button
-      class="cursor-pointer p-1 hover:bg-brand/20"
-      onclick={() => changeZoom("in", cameraState.width / 2, cameraState.height / 2)}
-      aria-label="Zoom in"
-    >
-      <Plus class="w-4 h-4" />
-    </button>
-    <button
-      class="cursor-pointer p-1 hover:bg-brand/20"
-      onclick={() => changeZoom("out", cameraState.width / 2, cameraState.height / 2)}
-      aria-label="Zoom out"
-    >
-      <Minus class="w-4 h-4" />
-    </button>
-  </nav>
-  <nav class="absolute top-2 right-2 z-10 flex flex-col gap-2 items-end">
+  <nav class="absolute inset-2 z-20 isolate">
     <div
-      class={`
-      p-1 bg-background
-      rounded border-2 border-foreground
-      cursor-not-allowed pointer-events-none
-      font-mono w-fit
-    `}
+      class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10"
     >
-      <p>{mouseWorldX}, {mouseWorldZ}</p>
+      <button
+        class="cursor-pointer p-1 hover:bg-brand/20"
+        onclick={() => changeZoom("in", cameraState.width / 2, cameraState.height / 2)}
+        aria-label="Zoom in"
+      >
+        <Plus class="w-4 h-4" />
+      </button>
+      <button
+        class="cursor-pointer p-1 hover:bg-brand/20"
+        onclick={() => changeZoom("out", cameraState.width / 2, cameraState.height / 2)}
+        aria-label="Zoom out"
+      >
+        <Minus class="w-4 h-4" />
+      </button>
     </div>
+    <div class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end">
+      <div
+        class={`
+        p-1 bg-background
+        rounded border-2 border-foreground
+        cursor-not-allowed pointer-events-none
+        font-mono w-fit
+      `}
+      >
+        <p>{mouseWorldX}, {mouseWorldZ}</p>
+      </div>
+    </div>
+    <LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
   </nav>
 </div>
-
-<LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
