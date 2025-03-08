@@ -12,10 +12,10 @@
   let initialSwipePos = $state([0, 0])
 </script>
 
-<div class="fixed bottom-0 inset-x-1 pointer-events-none touch-none">
+<div class="fixed bottom-0 inset-x-1 pointer-events-auto touch-none">
   <aside
     class={`
-      pointer-events-auto cursor-auto
+      cursor-auto
       float-right z-20
       max-w-xl w-full
       transition-transform ease-in-out

@@ -206,7 +206,7 @@
     />
     <MapMarkers />
   </div>
-  <nav class="absolute inset-2 z-20 isolate pointer-events-none">
+  <nav class="absolute inset-2 z-20 pointer-events-none">
     <div
       class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10 pointer-events-auto"
     >
