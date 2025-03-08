@@ -68,6 +68,24 @@
     }
   }
 
+  function doPan(direction: "left" | "right" | "up" | "down") {
+    const stepSize = 50
+    switch (direction) {
+      case "left":
+        frameState.offsetX -= stepSize
+        break
+      case "right":
+        frameState.offsetX += stepSize
+        break
+      case "up":
+        frameState.offsetY -= stepSize
+        break
+      case "down":
+        frameState.offsetY += stepSize
+        break
+    }
+  }
+
   function teleportToWorldCoords(worldX: number, worldZ: number) {
     const [imageX, imageY] = worldSpaceToImageSpace(worldX, worldZ)
     frameState.offsetX = imageX * cameraState.zoom - cameraState.width / 2
@@ -173,6 +191,40 @@
   onwheel={(event) => {
     event.preventDefault()
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
+  }}
+  onkeydown={(event) => {
+    console.log(event.key)
+    switch(event.key) {
+      case "w":
+      case "ArrowUp":
+        doPan("up")
+        break
+      case "a":
+      case "ArrowLeft":
+        doPan("left")
+        break
+      case "s":
+      case "ArrowDown":
+        doPan("down")
+        break
+      case "d":
+      case "ArrowRight":
+        doPan("right")
+        break
+      case "=":
+      case "+":
+      case "Shift": // Fly down like in Minecraft
+        changeZoom("in", cameraState.width / 2, cameraState.height / 2)
+        break
+      case "-":
+      case "_":
+      case " ": // Fly up like in Minecraft
+        changeZoom("out", cameraState.width / 2, cameraState.height / 2)
+        break
+      case "Escape":
+        locationSelection.selectedLocationId = null
+        break
+    }
   }}
 >
   {#if !isLoaded}
