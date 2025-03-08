@@ -13,15 +13,31 @@ export const MAP_WORLD_ORIGIN_OFFSET: [number, number] = [5001, 5001]
 export const WORLD_DEFAULT_LOCATION: [number, number] = [423, 875]
 
 export const regions: { [key: string]: MapRegionData } = {
-  test: {
-    name: "test region",
-    description: "epic",
+  hawainot: {
+    name: "Hawainot",
+    description: "(testing region)",
     coordinates: [
-      [0, 0],
-      [0, 100],
-      [100, 100],
-      [100, 0],
-      [50, -50],
+      [-337, 1275],
+      [-285, 1276],
+      [-289, 1320],
+      [-250, 1340],
+      [-158, 1324],
+      [-124, 1352],
+      [-80, 1404],
+      [-21, 1405],
+      [13, 1448],
+      [-23, 1542],
+      [-104, 1568],
+      [-119, 1610],
+      [-129, 1630],
+      [-243, 1595],
+      [-253, 1527],
+      [-324, 1534],
+      [-402, 1520],
+      [-424, 1436],
+      [-480, 1414],
+      [-489, 1366],
+      [-353, 1307],
     ],
   },
 }
