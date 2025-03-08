@@ -4,7 +4,7 @@ export const regions: { [key: string]: MapRegion } = {
   test: {
     name: "test region",
     description: "epic",
-    coords: [
+    coordinates: [
       [0, 0],
       [0, 100],
       [100, 100],

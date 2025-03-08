@@ -27,7 +27,7 @@
 <svg class="absolute inset-0 z-20 overflow-visible" viewBox={`0 0 ${width} ${height}`}>
   {#each Object.entries(regions) as [id, region]}
     <path
-      d={coordsListToPath(region.coords)}
+      d={coordsListToPath(region.coordinates)}
       style:fill="#fff8"
       style:stroke="white"
       style:stroke-width="3"
