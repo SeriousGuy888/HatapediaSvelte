@@ -30,8 +30,8 @@
     <path
       d={coordsListToPath(region.coordinates)}
       style:fill="#fff8"
-      style:stroke="white"
-      style:stroke-width="3"
+      style:stroke="#fffc"
+      style:stroke-width="1"
       class="cursor-pointer outline-0"
       onclick={() => setSelectedRegion(id)}
       onkeypress={() => setSelectedRegion(id)}
