@@ -14,10 +14,9 @@
 
 <aside
   class={`
-      fixed bottom-0 inset-x-1 ml-auto
+      fixed bottom-0 inset-x-1
+      sm:max-w-xl sm:ml-auto sm:w-full
       pointer-events-auto cursor-auto
-      float-right z-20
-      max-w-xl w-full
       transition-transform ease-in-out
     `}
   style:translate={expanded ? "0% 0%" : "0% 100%"}
