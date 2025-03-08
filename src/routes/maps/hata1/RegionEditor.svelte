@@ -1,12 +1,13 @@
 <script lang="ts">
+  import type { MapRegionData } from "./map_marker_types"
   import { getSelectedRegion, locationSelection } from "./map_markers.svelte"
 
-  let regionIdInput: HTMLInputElement
+  let regionIdInput: HTMLInputElement | null = $state(null)
+  let selectedRegion: MapRegionData | null = $derived(getSelectedRegion())
 </script>
 
 <aside class="p-2 bg-background rounded border-2 border-foreground pointer-events-auto cursor-auto">
-  {#if getSelectedRegion()}
-    {@const selectedRegion = getSelectedRegion()}
+  {#if selectedRegion}
     <p>
       Selected Region: <span class="font-mono">{locationSelection.selectedLocationId}</span>
     </p>
@@ -39,7 +40,7 @@
         class="cursor-pointer hover:underline"
         type="button"
         onclick={() => {
-          const newRegionId = regionIdInput.value
+          const newRegionId = regionIdInput!.value
           if (!newRegionId || newRegionId in locationSelection.regions) {
             alert("Region ID already exists.")
             return
@@ -49,10 +50,10 @@
             description: "",
             coordinates: [
               // 4 random coordinates in the (-5000, -5000) to (5000, 5000) square
-              [Math.random() * 10000 - 5000, Math.random() * 10000 - 5000],
-              [Math.random() * 10000 - 5000, Math.random() * 10000 - 5000],
-              [Math.random() * 10000 - 5000, Math.random() * 10000 - 5000],
-              [Math.random() * 10000 - 5000, Math.random() * 10000 - 5000],
+              [~~(Math.random() * 10000 - 5000), ~~(Math.random() * 10000 - 5000)],
+              [~~(Math.random() * 10000 - 5000), ~~(Math.random() * 10000 - 5000)],
+              [~~(Math.random() * 10000 - 5000), ~~(Math.random() * 10000 - 5000)],
+              [~~(Math.random() * 10000 - 5000), ~~(Math.random() * 10000 - 5000)],
             ],
           }
           locationSelection.selectedLocationId = newRegionId

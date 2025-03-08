@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte"
+  import { onMount, type Component } from "svelte"
   import { fade } from "svelte/transition"
   import { Plus, Minus } from "lucide-svelte"
 
@@ -7,7 +7,7 @@
   import LocationInfoSheet from "./LocationInfoSheet.svelte"
 
   import { MAP_DIMENSIONS, WORLD_DEFAULT_LOCATION } from "./map_config"
-  import { cameraState, changeZoom, frameState } from "./view_state.svelte"
+  import { userState, cameraState, changeZoom, frameState } from "./view_state.svelte"
   import {
     clientSpaceToScreenSpace,
     imageSpaceToWorldSpace,
@@ -21,6 +21,7 @@
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
+  // let markerContainer: HTMLDivElement | null = $state(null) // Holds the map markers.
   let uiContainer: HTMLElement // Holds the UI elements like the zoom buttons and the location info sheet.
 
   // Used for pinch zoom gestures
@@ -34,8 +35,6 @@
 
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
-
-  let mode = $state<"view" | "edit">("edit")
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()
@@ -154,6 +153,9 @@
     pointerCache[idx] = event
 
     if (pointerCache.length === 1) {
+      if(event.buttons === 1 && userState.mode === "edit") {
+        return
+      }
       doDrag(mouseScreenX, mouseScreenY)
     } else if (pointerCache.length === 2) {
       // If two fingers/styluses on screen
@@ -232,7 +234,7 @@
         break
       case "F1":
         event.preventDefault()
-        mode = mode === "view" ? "edit" : "view"
+        userState.mode = userState.mode === "view" ? "edit" : "view"
         break
     }
   }}
@@ -308,9 +310,9 @@
       >
         <p>{mouseWorldX}, {mouseWorldZ}</p>
       </div>
-      {#if mode !== "view"}
+      {#if userState.mode !== "view"}
         <div class="p-1 bg-background rounded border-2 border-foreground font-mono">
-          <p>{mode.toUpperCase()}</p>
+          <p>{userState.mode.toUpperCase()}</p>
         </div>
         <RegionEditor />
       {/if}

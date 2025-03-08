@@ -5,9 +5,11 @@
 
   import { locationSelection } from "./map_markers.svelte.ts"
   const { pins, regions } = locationSelection
+
+  export let node: HTMLDivElement | null = null
 </script>
 
-<div class="absolute inset-0 z-20 isolate">
+<div bind:this={node} class="absolute inset-0 z-20 isolate">
   <MapRegions
     {regions}
     width={MAP_DIMENSIONS.width}

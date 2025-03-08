@@ -2,6 +2,10 @@ export const MIN_ZOOM = 1 / 16
 export const MAX_ZOOM = 16
 export const ZOOM_STEP_FACTOR = 9 / 8
 
+export const userState = $state({
+  mode: "edit" as "view" | "edit",
+})
+
 export const cameraState = $state({
   width: 0,
   height: 0,

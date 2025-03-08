@@ -23,3 +23,9 @@ export function imageSpaceToWorldSpace(imageX: number, imageY: number): [number,
 export function worldSpaceToImageSpace(worldX: number, worldY: number): [number, number] {
   return [worldX + MAP_WORLD_ORIGIN_OFFSET[0], worldY + MAP_WORLD_ORIGIN_OFFSET[1]]
 }
+
+export function clientSpaceToWorldSpace(clientX: number, clientY: number): [number, number] {
+  const [screenX, screenY] = clientSpaceToScreenSpace(clientX, clientY)
+  const [imageX, imageY] = screenSpaceToImageSpace(screenX, screenY)
+  return imageSpaceToWorldSpace(imageX, imageY)
+}
