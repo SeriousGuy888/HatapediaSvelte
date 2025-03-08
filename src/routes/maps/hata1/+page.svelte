@@ -214,7 +214,6 @@
       {regions}
       width={MAP_DIMENSIONS.width}
       height={MAP_DIMENSIONS.height}
-      {worldSpaceToImageSpace}
     />
     <div bind:this={mapPinContainer} class="absolute inset-0">
       {#each Object.keys(locations) as locationId}

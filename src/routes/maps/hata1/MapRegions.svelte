@@ -1,13 +1,13 @@
 <script lang="ts">
+  import { worldSpaceToImageSpace } from "./coordinates.svelte"
   import type { MapRegion } from "./map_marker_types"
 
   interface Props {
     regions: { [key: string]: MapRegion }
     width: number
     height: number
-    worldSpaceToImageSpace: (worldX: number, worldY: number) => [number, number]
   }
-  const { regions, width, height, worldSpaceToImageSpace }: Props = $props()
+  const { regions, width, height }: Props = $props()
 
   function coordsListToPath(coordsList: [number, number][]): string {
     let path = ""
