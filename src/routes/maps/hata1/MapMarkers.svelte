@@ -3,10 +3,8 @@
   import MapRegions from "./MapRegions.svelte"
   import { MAP_DIMENSIONS } from "./map_config"
 
-  import { pins } from "./map_pins"
-  import { regions } from "./map_regions"
-
-  import { locationSelection } from "./map_marker_selection.svelte.ts"
+  import { locationSelection } from "./map_markers.svelte.ts"
+  const { pins, regions } = locationSelection
 </script>
 
 <div class="absolute inset-0 z-20 isolate">

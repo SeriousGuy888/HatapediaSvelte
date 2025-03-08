@@ -16,7 +16,7 @@
   } from "./coordinates.svelte"
 
   import MapMarkers from "./MapMarkers.svelte"
-  import { getSelectedLocation, locationSelection } from "./map_marker_selection.svelte.ts"
+  import { getSelectedLocation, locationSelection } from "./map_markers.svelte.ts"
 
   let mapCamera: HTMLDivElement // Contains map frame, but hides overflow, only showing a part of the map frame.
   let mapFrame: HTMLDivElement // Holds the map image, and is transformed around with CSS to zoom and pan.
@@ -33,6 +33,8 @@
 
   let isDragging = $state(false)
   let lastDragPosition = $state([0, 0])
+
+  let mode = $state<"view" | "edit">("edit")
 
   onMount(() => {
     const boundingBox = mapCamera.getBoundingClientRect()
@@ -194,7 +196,7 @@
   }}
   onkeydown={(event) => {
     console.log(event.key)
-    switch(event.key) {
+    switch (event.key) {
       case "w":
       case "ArrowUp":
         doPan("up")
@@ -223,6 +225,10 @@
         break
       case "Escape":
         locationSelection.selectedLocationId = null
+        break
+      case "F1":
+        event.preventDefault()
+        mode = mode === "view" ? "edit" : "view"
         break
     }
   }}
@@ -286,17 +292,26 @@
         <Minus class="w-4 h-4" />
       </button>
     </div>
-    <div class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end pointer-events-auto">
+    <div
+      class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end pointer-events-none select-none"
+    >
       <div
         class={`
-        p-1 bg-background
-        rounded border-2 border-foreground
-        cursor-not-allowed pointer-events-none
-        font-mono w-fit
-      `}
+          p-1 bg-background
+          rounded border-2 border-foreground
+          font-mono w-fit
+        `}
       >
         <p>{mouseWorldX}, {mouseWorldZ}</p>
       </div>
+      {#if mode !== "view"}
+        <div class="p-1 bg-background rounded border-2 border-foreground font-mono">
+          <p>{mode.toUpperCase()}</p>
+        </div>
+        <aside class="p-1 bg-background rounded border-2 border-foreground pointer-events-auto">
+          <button>Create Region</button>
+        </aside>
+      {/if}
     </div>
     <LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
   </nav>

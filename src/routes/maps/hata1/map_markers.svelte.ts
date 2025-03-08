@@ -1,10 +1,11 @@
 import type { MapMarkerData } from "./map_marker_types"
 
-import { pins } from "./map_pins"
-import { regions } from "./map_regions"
+import { pins, regions } from "./map_config.ts"
 
 export const locationSelection = $state({
   selectedLocationId: null as string | null,
+  pins,
+  regions,
 })
 
 export function getSelectedLocation(): MapMarkerData | null {
@@ -13,6 +14,6 @@ export function getSelectedLocation(): MapMarkerData | null {
     return null
   }
 
-  // TODO: do something about the possibility of pins and regions having the same id
-  return pins?.[id] ?? regions?.[id]
+  // todo: handle case where id is duplicated in pins and regions
+  return locationSelection.pins?.[id] ?? locationSelection.regions?.[id]
 }
