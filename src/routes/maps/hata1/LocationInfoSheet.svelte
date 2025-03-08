@@ -1,12 +1,12 @@
 <script lang="ts">
   import { ChevronDown, ChevronUp } from "lucide-svelte"
-  import type { MapPin } from "./map_pins"
+  import type { MapMarkerData, MapPinData } from "./map_marker_types"
 
   interface Props {
     expanded: boolean
-    location: MapPin | null
+    marker: MapMarkerData | null
   }
-  let { expanded, location }: Props = $props()
+  let { expanded, marker }: Props = $props()
 
   let isSwiping = $state(false)
   let initialSwipePos = $state([0, 0])
@@ -55,11 +55,13 @@
       }}
     >
       <h2 class="text-left font-bold text-nowrap min-w-0 max-w-full overflow-hidden text-ellipsis">
-        {#if location}
-          {location.name}
-          <span class="ml-1 font-minecraft font-normal"
-            >({location.coordinates[0]}, ~, {location.coordinates[1]})</span
-          >
+        {#if marker}
+          {marker.name}
+          {#if "coordinates" in marker && marker.coordinates instanceof Array && marker.coordinates.length === 2}
+            <span class="ml-1 font-minecraft font-normal"
+              >({marker.coordinates[0]}, ~, {marker.coordinates[1]})</span
+            >
+          {/if}
         {:else}
           Nothing selected
         {/if}
@@ -76,7 +78,7 @@
       class="min-w-full h-48 overflow-y-scroll bg-background border-x-2 border-foreground px-4 touch-pan-y"
     >
       <p>
-        {location?.description ?? ""}
+        {marker?.description ?? ""}
       </p>
     </article>
   </aside>

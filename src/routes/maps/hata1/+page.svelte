@@ -238,4 +238,4 @@
   </nav>
 </div>
 
-<LocationInfoSheet expanded={bottomSheetShown} location={getSelectedLocation()} />
+<LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
