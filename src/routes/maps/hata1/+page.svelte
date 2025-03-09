@@ -236,7 +236,7 @@
       case "Escape":
         locationSelection.selectedLocationId = null
         break
-      case "F1":
+      case "F2":
         event.preventDefault()
         userState.mode = userState.mode === "view" ? "edit" : "view"
         break
