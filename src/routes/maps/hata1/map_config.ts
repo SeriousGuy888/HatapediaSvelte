@@ -103,6 +103,13 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [559, 813],
     banner: "cyan",
   },
+  arvi_craters: {
+    name: "The Arvi Craters",
+    description:
+      "Arvi attempted to fight a wither here, leaving a field of destroyed terrain. Nobody has cleaned it up yet.",
+    articles: ["arvi"],
+    coordinates: [412, 1038],
+  },
   billzoplace: {
     name: "Billzoplace City",
     description:
@@ -172,6 +179,14 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [248, 964],
     banner: "purple",
   },
+  north_mangrovia: {
+    name: "North Mangrovia",
+    description:
+      "Remy claimed this right after Toby started building his canal, and this area was the subject of a brief territorial dispute and the site of several skirmishes between the Remy Republic and Tobytopia.",
+    articles: ["remy_republic", "tobytopia"],
+    coordinates: [293, 841],
+    banner: "purple",
+  },
   remy_jungle: {
     name: "Remyjungle",
     description:
@@ -194,6 +209,14 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [-1072, 3388],
     banner: "purple",
   },
+  auze: {
+    name: "Auze",
+    description:
+      "A mushroom island claimed by Remy. Was invaded by Neville briefly during the Mushroom War.",
+    articles: ["remy_republic", "mushroom_war"],
+    coordinates: [2576, -746],
+    banner: "purple",
+  },
   toby_palace: {
     name: "Toby's Palace",
     description:
@@ -208,6 +231,14 @@ export const pins: { [key: string]: MapPinData } = {
       "Tobytown is the capital city of the Tobytopian Empire, and is a hub of international commerce. The Tobytown harbour facilitates trade from all over the world. A KFV is available in the city for those who need to eat something with a lot of protein.",
     articles: ["tobytopia"],
     coordinates: [227, 600],
+    banner: "orange",
+  },
+  toby_canal: {
+    name: "Toby's Canal",
+    description:
+      "Toby started building this canal so that trade could flow through a much shorter route between Tobytopia and other countries to the south.",
+    articles: ["tobytopia"],
+    coordinates: [330, 846],
     banner: "orange",
   },
   tobytopia_south_place: {
@@ -258,6 +289,13 @@ export const pins: { [key: string]: MapPinData } = {
       "Arvi lives here. He founded it after abandoning Korolarachi entirely and moving to so random remote place.",
     articles: ["neville", "layon", "arvi"],
     coordinates: [1375, 472],
+    banner: "pink",
+  },
+  nevillian_cherry_grove: {
+    name: "Untitled Cherry Grove",
+    description: "Arvi claimed this cherry grove, but is yet to do much with it.",
+    articles: ["neville"],
+    coordinates: [1657, -3300],
     banner: "pink",
   },
   bakaville: {
