@@ -204,9 +204,6 @@
   }}
   onpointercancel={pointerUp}
   onpointerleave={pointerUp}
-  oncontextmenu={(event) => {
-    event.preventDefault()
-  }}
   onwheel={(event) => {
     event.preventDefault()
     changeZoom(event.deltaY > 0 ? "out" : "in", mouseScreenX, mouseScreenY)
