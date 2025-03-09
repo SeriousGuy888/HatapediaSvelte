@@ -112,17 +112,20 @@
 
   let bottomSheetShown = $state(false)
   let isLoaded = $state(false)
+
+  const title = "HATA 1 World Map"
+  const description =
+    "An interactive map of the HATA 1 overworld, marked with notable locations on the server world."
 </script>
 
 <svelte:head>
-  <title>HATA 1 World Map</title>
-  <meta property="og:title" content="HATA 1 World Map" />
-  <meta
-    property="og:description"
-    content="An interactive map of the HATA 1 overworld, marked with notable locations on the server world."
-  />
+  <title>{title}</title>
+  <meta property="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
   <meta property="og:url" content="https://www.hatapedia.xyz/maps/hata1" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HATApedia" />
 </svelte:head>
 
 <div
