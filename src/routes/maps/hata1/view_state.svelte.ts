@@ -4,6 +4,8 @@ export const ZOOM_STEP_FACTOR = 9 / 8
 
 export const userState = $state({
   mode: "view" as "view" | "edit",
+  displayPins: true,
+  displayRegions: false,
 })
 
 export const cameraState = $state({

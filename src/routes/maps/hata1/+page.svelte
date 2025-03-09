@@ -284,26 +284,51 @@
     <MapMarkers />
   </div>
   <nav bind:this={uiContainer} class="absolute inset-2 z-20 pointer-events-none">
-    <div
-      class="absolute top-0 left-0 flex flex-col rounded border-2 bg-background border-foreground z-10 pointer-events-auto"
+    <section
+      class="absolute top-0 left-0 flex flex-col gap-2 items-start pointer-events-none select-none"
     >
-      <button
-        class="cursor-pointer p-1 hover:bg-brand/20"
-        onclick={() => changeZoom("in", cameraState.width / 2, cameraState.height / 2)}
-        aria-label="Zoom in"
+      <div
+        class="flex flex-col rounded border-2 bg-background border-foreground pointer-events-auto"
       >
-        <Plus class="w-4 h-4" />
-      </button>
-      <button
-        class="cursor-pointer p-1 hover:bg-brand/20"
-        onclick={() => changeZoom("out", cameraState.width / 2, cameraState.height / 2)}
-        aria-label="Zoom out"
-      >
-        <Minus class="w-4 h-4" />
-      </button>
-    </div>
-    <div
-      class="absolute top-0 right-0 z-10 flex flex-col gap-2 items-end pointer-events-none select-none"
+        <button
+          class="cursor-pointer p-1 hover:bg-brand/20"
+          onclick={() => changeZoom("in", cameraState.width / 2, cameraState.height / 2)}
+          aria-label="Zoom in"
+        >
+          <Plus class="w-4 h-4" />
+        </button>
+        <button
+          class="cursor-pointer p-1 hover:bg-brand/20"
+          onclick={() => changeZoom("out", cameraState.width / 2, cameraState.height / 2)}
+          aria-label="Zoom out"
+        >
+          <Minus class="w-4 h-4" />
+        </button>
+      </div>
+      <div class="p-1 bg-background rounded border-2 border-foreground text-sm pointer-events-auto cursor-default">
+        <p class="text-xs font-bold tracking-widest text-center mb-1">LAYERS</p>
+        <p>
+          <input
+            class="cursor-pointer"
+            type="checkbox"
+            id="show-pins"
+            bind:checked={userState.displayPins}
+          />
+          <label class="cursor-pointer" for="show-pins">Pins</label>
+        </p>
+        <p>
+          <input
+            class="cursor-pointer"
+            type="checkbox"
+            id="show-regions"
+            bind:checked={userState.displayRegions}
+          />
+          <label class="cursor-pointer" for="show-regions">Regions</label>
+        </p>
+      </div>
+    </section>
+    <section
+      class="absolute top-0 right-0 flex flex-col gap-2 items-end pointer-events-none select-none"
     >
       <div
         class={`
@@ -320,7 +345,7 @@
         </div>
         <RegionEditor />
       {/if}
-    </div>
+    </section>
     <LocationInfoSheet expanded={bottomSheetShown} marker={getSelectedLocation()} />
   </nav>
 </div>
