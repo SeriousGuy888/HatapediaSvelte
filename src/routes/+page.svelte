@@ -18,6 +18,9 @@
   </title>
   <meta property="og:title" content={config.title} />
   <meta property="og:description" content={config.description} />
+  <meta property="og:site_name" content="HATApedia" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={config.url} />
 </svelte:head>
 
 <div class="w-full p-12 sm:p-24">
@@ -58,7 +61,7 @@
 
 <style lang="postcss">
   @reference "../app.css";
-  
+
   .bg-image-container {
     @apply absolute inset-0 max-w-full overflow-hidden;
 
