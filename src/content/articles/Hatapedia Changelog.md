@@ -1,10 +1,16 @@
 ---
 date_created: 2023-05-01
-date_modified: 2025-03-02
+date_modified: 2025-03-08
 subtitle: About Hatapedia
 tags:
   - meta
 ---
+
+# 2025-03-08
+
+## HATA 1 Map Returns
+
+The HATA 1 map viewer was not immediately moved over after I migrated the site to Svelte. It's now been readded to the website, using a custom implementation (rather than the Leaflet library). In addition, the map's terrain has been updated to reflect the HATA 1 overworld as of today, and the map pins have also been updated to better reflect the current state of the world.
 
 # 2025-03-02
 
