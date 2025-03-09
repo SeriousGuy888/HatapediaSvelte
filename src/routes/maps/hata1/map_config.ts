@@ -235,11 +235,11 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [1507, 3779],
     banner: "lime",
   },
-  neville: {
-    name: "City of Neville",
+  layon: {
+    name: "City of Layon",
     description:
       "Arvi lives here. He founded it after abandoning Korolarachi entirely and moving to so random remote place.",
-    articles: ["neville", "arvi"],
+    articles: ["neville", "layon", "arvi"],
     coordinates: [1375, 472],
     banner: "pink",
   },
