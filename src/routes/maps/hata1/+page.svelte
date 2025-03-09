@@ -115,7 +115,14 @@
 </script>
 
 <svelte:head>
-  <title>Map</title>
+  <title>HATA 1 World Map</title>
+  <meta property="og:title" content="HATA 1 World Map" />
+  <meta
+    property="og:description"
+    content="An interactive map of the HATA 1 overworld, marked with notable locations on the server world."
+  />
+  <meta property="og:url" content="https://www.hatapedia.xyz/maps/hata1" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <div
@@ -305,7 +312,9 @@
           <Minus class="w-4 h-4" />
         </button>
       </div>
-      <div class="p-1 bg-background rounded border-2 border-foreground text-sm pointer-events-auto cursor-default">
+      <div
+        class="p-1 bg-background rounded border-2 border-foreground text-sm pointer-events-auto cursor-default"
+      >
         <p class="text-xs font-bold tracking-widest text-center mb-1">LAYERS</p>
         <p>
           <input
