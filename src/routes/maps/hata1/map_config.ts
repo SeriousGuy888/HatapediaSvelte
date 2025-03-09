@@ -105,14 +105,16 @@ export const pins: { [key: string]: MapPinData } = {
   },
   billzoplace: {
     name: "Billzoplace City",
-    description: "A small city state built mostly upon the island of Sheapland at the common mouth of the Spawn River and Sheapland River.",
+    description:
+      "A small city state built mostly upon the island of Sheapland at the common mouth of the Spawn River and Sheapland River.",
     articles: ["billzoplace"],
     coordinates: [113, 1135],
     banner: "blue",
   },
   villagermeat_harbour: {
     name: "Villagermeat Harbour",
-    description: "Also called Port de Villakameat, the Villagermeat Harbour is the main port of Billzoplace City, and a hub of trade and commerce. A parkour course between the hay carts and the big boat is available for those who wish to test their Minecraft prowess.",
+    description:
+      "Also called Port de Villakameat, the Villagermeat Harbour is the main port of Billzoplace City, and a hub of trade and commerce. A parkour course between the hay carts and the big boat is available for those who wish to test their Minecraft prowess.",
     articles: ["billzoplace"],
     coordinates: [6, 1170],
     banner: "blue",
@@ -192,12 +194,20 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [-1072, 3388],
     banner: "purple",
   },
-  tobytopia: {
-    name: "Toby's Base",
+  toby_palace: {
+    name: "Toby's Palace",
     description:
-      "Large DVD player. Toby's home. He has a lot of stuff here. Built in the Swamp of Secrets.",
+      "This is Toby's base: a tall, majestic structure with a very mysterious moat that once looked like a DVD player while Toby was building it. Its towering silhouette looms quite ominously over the rest of Tobytown, especially on foggy days.",
     articles: ["tobytopia"],
     coordinates: [141, 575],
+    banner: "orange",
+  },
+  tobytown: {
+    name: "Tobytown",
+    description:
+      "Tobytown is the capital city of the Tobytopian Empire, and is a hub of international commerce. The Tobytown harbour facilitates trade from all over the world. A KFV is available in the city for those who need to eat something with a lot of protein.",
+    articles: ["tobytopia"],
+    coordinates: [227, 600],
     banner: "orange",
   },
   tobytopia_south_place: {
