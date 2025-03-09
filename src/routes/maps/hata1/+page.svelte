@@ -185,16 +185,12 @@
       return
     }
 
-    pointerUp(event)
-
-    if (userState.mode === "edit") {
-      return
-    }
-
     // Deselect the selected map pin only if the pointer was released without dragging (i.e. a single click.)
-    if (!isDragging) {
+    if (!isDragging && userState.mode !== "edit") {
       locationSelection.selectedLocationId = null
     }
+
+    pointerUp(event)
   }}
   onpointercancel={pointerUp}
   onpointerleave={pointerUp}
