@@ -187,16 +187,16 @@ export const pins: { [key: string]: MapPinData } = {
     coordinates: [293, 841],
     banner: "purple",
   },
-  remy_jungle: {
-    name: "Remyjungle",
+  cocoa_bean_cove: {
+    name: "Cocoa Bean Cove",
     description:
       "Remy claimed this after Toby yoinked the nearby jungle island before Remy could claim it.",
     articles: ["remy_republic"],
     coordinates: [-865, 1423],
     banner: "purple",
   },
-  remy_waterfall: {
-    name: "Remywaterfall",
+  edmonton: {
+    name: "Edmonton",
     description: "A cool waterfall that Remy claimed on his way to claim Floridanot.",
     articles: ["remy_republic"],
     coordinates: [-421, 2285],
