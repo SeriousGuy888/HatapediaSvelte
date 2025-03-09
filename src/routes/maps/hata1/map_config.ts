@@ -104,10 +104,17 @@ export const pins: { [key: string]: MapPinData } = {
     banner: "cyan",
   },
   billzoplace: {
-    name: "Billzoplace",
-    description: "A small city state at the intersection of three rivers.",
+    name: "Billzoplace City",
+    description: "A small city state built mostly upon the island of Sheapland at the common mouth of the Spawn River and Sheapland River.",
     articles: ["billzoplace"],
-    coordinates: [47, 1061],
+    coordinates: [113, 1135],
+    banner: "blue",
+  },
+  villagermeat_harbour: {
+    name: "Villagermeat Harbour",
+    description: "Also called Port de Villakameat, the Villagermeat Harbour is the main port of Billzoplace City, and a hub of trade and commerce. A parkour course between the hay carts and the big boat is available for those who wish to test their Minecraft prowess.",
+    articles: ["billzoplace"],
+    coordinates: [6, 1170],
     banner: "blue",
   },
   oil_rig: {
