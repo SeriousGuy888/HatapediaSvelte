@@ -1,22 +1,23 @@
 <script lang="ts">
-  import { run } from 'svelte/legacy';
-
   import { title as siteTitle } from "$lib/config"
-  import { page } from "$app/stores"
+  import { page } from "$app/state"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"
+  import { onMount } from "svelte"
 
-  let { data } = $props();
+  let { data } = $props()
 
   let title = $state("")
-  run(() => {
-    title = `#${$page.params.tag} - ${siteTitle}`
-  });
+  onMount(() => {
+    title = `#${page.params.tag} - ${siteTitle}`
+  })
 </script>
 
 <svelte:head>
   <title>{title}</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={title} />
+  <meta property="og:description" content="Articles tagged with the tag {page.params.tag}." />
+  <meta property="og:site_name" content={siteTitle} />
 </svelte:head>
 
 <div class="w-full grid place-items-center p-8 sm:p-16">
@@ -24,7 +25,7 @@
     <h1
       class="text-2xl sm:text-4xl font-bold tracking-tight bg-primary w-fit px-4 py-2 sm:px-8 sm:py-4 rounded-full"
     >
-      #{$page.params.tag}
+      #{page.params.tag}
     </h1>
   </hgroup>
   <section

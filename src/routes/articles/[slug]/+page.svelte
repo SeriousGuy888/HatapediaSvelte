@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { run } from 'svelte/legacy';
+  import { run } from "svelte/legacy"
 
   import ArticleTag from "../../../lib/components/ArticleTag.svelte"
   import "@portaljs/remark-callouts/styles.css"
@@ -11,7 +11,7 @@
   import { ListIcon } from "lucide-svelte"
   import { getImageWikilinkSrc } from "$lib/dynamic_components/imageWikilinkParser.js"
 
-  let { data } = $props();
+  let { data } = $props()
 
   // A link in the table of contents that links to the top of the page
   // always exists, and is always the first element in the array.
@@ -25,7 +25,7 @@
   let headings: TocNode[] = $state([])
   run(() => {
     headings = data.meta.headings ?? []
-  });
+  })
 
   let tocOpen = $state(false) // Used on small screens to toggle the table of contents
 
@@ -62,17 +62,18 @@
   // When the page changes, remount the dynamic components
   run(() => {
     data.content, remountDynamicComponents()
-  });
+  })
 </script>
 
 <svelte:head>
-  <title>{data.meta.title}</title>
+  <title>{data.meta.title} - HATApedia</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.meta.title} />
   <meta
     property="og:description"
     content="{data.meta.subtitle}. [Tags]: {data.meta.tags.map((s) => '#' + s).join(', ')}"
   />
+  <meta property="og:site_name" content="HATApedia" />
 </svelte:head>
 
 <svelte:window
@@ -133,7 +134,7 @@
     role="button"
     onclick={() => (tocOpen = false)}
     onkeydown={() => (tocOpen = false)}
-></div>
+  ></div>
   <article class="w-full mb-16 min-h-screen">
     <header class="relative pb-8 mb-8">
       {#if data.meta.image}
@@ -144,7 +145,7 @@
               /'/g, // Escape single quotes so the url() function in CSS works correctly
               '%27',
             )}')"
-></div>
+          ></div>
         </section>
       {/if}
       <section class="restricted-width py-8">
