@@ -40,9 +40,11 @@
 </script>
 
 <svelte:head>
-  <title>HATA Weather</title>
+  <title>Weather - HATApedia</title>
   <meta property="og:title" content="HATA Weather" />
   <meta property="og:description" content="Live weather updates from HATA!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HATApedia" />
 </svelte:head>
 
 <section class="my-12 mx-auto w-[90%] sm:max-w-prose">
