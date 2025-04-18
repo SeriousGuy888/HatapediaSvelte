@@ -110,7 +110,7 @@
     }
   }
 
-  let bottomSheetShown = $state(false)
+  let bottomSheetShown = $state(true)
   let isLoaded = $state(false)
 
   const title = "HATA 1 World Map"
