@@ -1,10 +1,16 @@
 ---
 date_created: 2023-05-01
-date_modified: 2025-03-08
+date_modified: 2025-04-18
 subtitle: About Hatapedia
 tags:
   - meta
 ---
+
+# 2025-04-18
+
+## Added Country Outlines to HATA 1 Map
+
+The HATA 1 map viewer now includes a "Regions" layer which shows the outlines of the countries and miscellaneous regions in the HATA world. The layer is enabled by default, but can be disabled. Each region is like a map pin: you can click on it, and it will be selected and some info about it will be displayed in the box in the bottom corner.
 
 # 2025-03-08
 
@@ -66,7 +72,7 @@ This rewrite of the entire website in SvelteKit instead of NextJS has been a lon
   - Timeline infoboxes can now break out of their container, displaying a little bit wider than the rest of the article, on larger screens. This allows you to see a bit more of the timeline at once.
 - **2024-01-01**
   - Added out of order notice to the world map page. It's currently broken and I'm not entirely sure why.
-- **2023-12-11** 
+- **2023-12-11**
   - Made the scrollbar look nicer in light mode.
     - The scrollbar no longer changes width when switching between light and dark mode.
 - **2023-12-08**
