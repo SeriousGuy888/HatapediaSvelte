@@ -320,7 +320,7 @@
             id="show-pins"
             bind:checked={userState.displayPins}
           />
-          <label class="cursor-pointer" for="show-pins">Pins</label>
+          <label class="cursor-pointer tracking-tight" for="show-pins">Pins</label>
         </p>
         <p>
           <input
@@ -329,7 +329,7 @@
             id="show-regions"
             bind:checked={userState.displayRegions}
           />
-          <label class="cursor-pointer" for="show-regions">Regions</label>
+          <label class="cursor-pointer tracking-tight" for="show-regions">Regions</label>
         </p>
       </div>
     </section>
