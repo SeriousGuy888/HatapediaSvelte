@@ -163,9 +163,6 @@
     pointerCache[idx] = event
 
     if (pointerCache.length === 1) {
-      if (event.buttons === 1 && userState.mode === "edit") {
-        return
-      }
       doDrag(mouseScreenX, mouseScreenY)
     } else if (pointerCache.length === 2) {
       // If two fingers/styluses on screen
