@@ -1,16 +1,22 @@
 export interface MapMarkerData {
   name: string
   description?: string
+  articles?: string[]
 }
 
 export interface MapPinData extends MapMarkerData {
   coordinates: [number, number]
-  articles?: string[]
   banner?: BannerColour
 }
 
 export interface MapRegionData extends MapMarkerData {
-  coordinates: [number, number][] // Used to draw an SVG Path polygon
+  geometry: string // The key a geometry object stored elsewhere
+}
+
+export interface MapRegionGeometry {
+  // A list of lists of coordinates for each polygon.
+  // Each polygon is a list of coordinates.
+  polygons: [number, number][][]
 }
 
 export type BannerColour =

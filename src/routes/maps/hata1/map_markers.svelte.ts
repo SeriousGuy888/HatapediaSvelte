@@ -1,6 +1,8 @@
-import type { MapMarkerData, MapRegionData } from "./map_marker_types"
+import type { MapMarkerData, MapRegionData, MapRegionGeometry } from "./map_marker_types"
 
 import { pins, regions } from "./map_config.ts"
+import geometries from "./region_geometries.json"
+const GEOMETRIES = geometries as any as Record<string, MapRegionGeometry>
 
 export const locationSelection = $state({
   selectedLocationId: null as string | null,
@@ -29,4 +31,8 @@ export function getSelectedRegion(): MapRegionData | null {
   }
 
   return locationSelection.regions?.[id] ?? null
+}
+
+export function getRegionGeometry(geometryId: string): MapRegionGeometry {
+  return GEOMETRIES[geometryId] ?? []
 }
