@@ -1,10 +1,7 @@
 <script lang="ts">
-  import { clientSpaceToScreenSpace, clientSpaceToWorldSpace } from "./coordinates.svelte"
   import type { MapRegionData } from "./map_marker_types"
   import { getSelectedRegion, locationSelection } from "./map_markers.svelte"
-  import { cameraState } from "./view_state.svelte"
 
-  let regionIdInput: HTMLInputElement | null = $state(null)
   let selectedRegion: MapRegionData | null = $derived(getSelectedRegion())
 </script>
 
@@ -38,45 +35,7 @@
       </button>
     </form>
   {:else}
-    <form class="flex gap-2 flex-col" action="" onsubmit={(e) => e.preventDefault()}>
-      <input
-        bind:this={regionIdInput}
-        type="text"
-        placeholder="Region ID"
-        value={~~(Math.random() * 10 ** 8)}
-      />
-      <button
-        class="cursor-pointer hover:underline"
-        type="button"
-        onclick={() => {
-          const newRegionId = regionIdInput!.value
-          if (!newRegionId || newRegionId in locationSelection.regions) {
-            alert("Region ID already exists.")
-            return
-          }
-
-          const screenCenter = clientSpaceToWorldSpace(
-            cameraState.width / 2,
-            cameraState.height / 2,
-          )
-
-          locationSelection.regions[newRegionId] = {
-            name: newRegionId,
-            description: "",
-            coordinates: [
-              // make a square around the center of the screen
-              [screenCenter[0] - 100, screenCenter[1] - 100],
-              [screenCenter[0] + 100, screenCenter[1] - 100],
-              [screenCenter[0] + 100, screenCenter[1] + 100],
-              [screenCenter[0] - 100, screenCenter[1] + 100],
-            ],
-          }
-          locationSelection.selectedLocationId = newRegionId
-        }}
-      >
-        Create Region
-      </button>
-    </form>
+    <p>No region selected.</p>
   {/if}
 </aside>
 
