@@ -15,17 +15,20 @@
     let path = ""
 
     for (const polygon of polygonList) {
+      // temporary fix by adding 1.5 to everything
+      // because the geometry converter is off by 1.5 pixels for some reason
+
       const [firstPolygonX, firstPolygonY] = worldSpaceToImageSpace(...polygon[0])
-      path += `M ${firstPolygonX} ${firstPolygonY} `
+      path += `M ${firstPolygonX + 1.5} ${firstPolygonY + 1.5} `
 
       for (let i = 1; i < polygon.length; i++) {
         const [x, y] = worldSpaceToImageSpace(...polygon[i])
-        path += `L ${x} ${y} `
+        path += `L ${x + 1.5} ${y + 1.5} `
       }
 
       // Close the polygon by connecting to the first point
       // Otherwise there's a bit of a weird gap in the polygon's edge
-      path += `L ${firstPolygonX} ${firstPolygonY} `
+      path += `L ${firstPolygonX + 1.5} ${firstPolygonY + 1.5} `
     }
     path += "Z"
     return path
@@ -39,8 +42,8 @@
     <path
       d={polygonListToPath(geometry.polygons)}
       style:fill="#{fillColour}90"
-      style:stroke="#{fillColour}a0"
-      style:stroke-width="1"
+      style:stroke="#{fillColour}ef"
+      style:stroke-width="0.75"
       class="cursor-pointer outline-0"
       onclick={() => setSelectedRegion(id)}
       onkeypress={() => setSelectedRegion(id)}
