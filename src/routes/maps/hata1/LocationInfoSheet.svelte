@@ -1,6 +1,7 @@
 <script lang="ts">
   import { ChevronDown, ChevronUp } from "lucide-svelte"
   import type { MapMarkerData } from "./map_marker_types"
+  import { cameraState, frameState } from "./view_state.svelte"
 
   interface Props {
     expanded: boolean
@@ -79,5 +80,9 @@
     <p>
       {marker?.description ?? ""}
     </p>
+    <!-- {#if !marker}
+      <p>{cameraState.zoom}</p>
+      <p>{frameState.offsetX}, {frameState.offsetY}</p>
+    {/if} -->
   </article>
 </aside>

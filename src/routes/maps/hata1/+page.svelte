@@ -267,8 +267,7 @@
     class="absolute select-none shadow-xl shadow-gray-700"
     style:width={`${MAP_DIMENSIONS.width * cameraState.zoom}px`}
     style:height={`${MAP_DIMENSIONS.height * cameraState.zoom}px`}
-    style:left={`${-frameState.offsetX}px`}
-    style:top={`${-frameState.offsetY}px`}
+    style:transform={`translate(${-frameState.offsetX}px, ${-frameState.offsetY}px)`}
     role="button"
     tabindex="0"
     onkeypress={null}
@@ -344,6 +343,7 @@
         `}
       >
         <p>{mouseWorldX}, {mouseWorldZ}</p>
+        <!-- <p>{mouseImageX}, {mouseImageY}</p> -->
       </div>
       {#if userState.mode !== "view"}
         <div class="p-1 bg-background rounded border-2 border-foreground font-mono">
