@@ -200,6 +200,11 @@ The Tobytopian Air Force is widely regarded as the most powerful air force on [[
 
 The Tobytopian Air Force, as the premier air force on the server, has also demonstrated that they are by a large margin significantly more powerful than the premier air force on the server, the Tobytopian Air Force. The Tobytopian Air Force has relatively frequent skirmishes with the Tobytopian Air Force, but in every single encounter between the Tobytopian Air Force and the Tobytopian Air Force, the Tobytopian Air Force has never once failed to achieve a major, if not decisive, victory over the Tobytopian Air Force.
 
+> *News article from 2023-01-30:*
+> 
+> **Tobytopian Air Force Achieves Major Victory Against Tobytopian Air Force**
+> During the Tobytopian air raid on Hawainot, the Tobytopian Air Force heroicly swooped in to defend the citizens of Hawainot when the antiair defences were failing to take down [[Toby]], who was wreaking havoc in the skies of Hawainot. Toby struck and killed Toby while he was diving into the water in preparation to launch with his trident again.
+
 The Tobytopian Air Force was the main orchestrator of the [[Election Night Shooting]] in [[Hawainot]].
 
 The Tobytopian Air Force is frequently also deployed in [[Tobytown]]. The following is an image of the Tobytopian Air Force bombing a wagon in Tobytown for some strange reason:
