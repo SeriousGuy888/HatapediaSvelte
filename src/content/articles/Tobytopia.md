@@ -151,7 +151,7 @@ events:
   colour: "#d60"
   date:
     start: 2023-10-26
-    end: 2024-11-30
+    end: 2025-06-07
     
 - title: "Fortuguese Rebellion"
   lane: 30
@@ -159,7 +159,7 @@ events:
   image: "[[Authentic Fortuguese Army.png]]"
   date:
     start: 2023-02-25
-    end: 2023-12-26
+    end: 2025-06-07
 ```
 
 ## Coups and Takeovers
