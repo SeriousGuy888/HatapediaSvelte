@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-29
-date_modified: 2024-03-27
+date_modified: 2025-06-07
 title: Election Night Shooting
 subtitle: Shooting in Equalsosceles, Hawainot
 tags:
@@ -20,7 +20,7 @@ On 2023-02-16, the night of the [[Remy Republic#Election|Remyan election]], fire
 
 # Perpetrator
 
-[[Toby]]
+[[Toby]], acting on behalf of the [[Tobytopia#Air Force|Tobytopian Air Force]].
 
 # Aftermath
 

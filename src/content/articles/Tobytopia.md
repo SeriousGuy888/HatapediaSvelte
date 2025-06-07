@@ -1,8 +1,8 @@
 ---
 date_created: 2023-05-01
-date_modified: 2025-03-01
+date_modified: 2025-06-07
 title: Tobytopian Empire
-subtitle: Kratocracy
+subtitle: Kratocracy with a really good air force
 tags:
   - country
   - place
@@ -32,11 +32,11 @@ facts:
 - Unnamed Jungle Island
 - [[Tobytopian Southern Territories]]
 
-# Territorial Disputes
+## Territorial Disputes
 
 Tobytopia does not currently have any territorial disputes, but there are some notable past disputes that have errupted into conflict.
 
-## New Mangrovia
+### New Mangrovia
 
 *Main article: [[Great Mangrove War]]*
 
@@ -44,13 +44,13 @@ An area of mangrove trees planted by [[Holden]] in what used to be the savanna. 
 
 When the conflict was resolved, it was agreed that the Remy Republic would own the area, but Holden would be awarded with the title of Founder of New Mangrovia.
 
-## Unnamed Jungle Island
+### Unnamed Jungle Island
 
 *Main article: [[Remy Republic#Jungle Island Incident]]*
 
 This island, which is currently under Tobytopian sovereignty, was once part of a dispute with Remy. Remy had intended to claim this island, but forgotten, and Toby decided to claim it first.
 
-## Canal Dispute
+### Canal Dispute
 
 *See: [[Canal Dispute]]*
 
@@ -190,3 +190,18 @@ On 2023-04-29, General Forguera officially met with [[Remy]], Glorious Leader of
 
 ![[Authentic Fortuguese Army.png]]
 
+# Military
+
+The Tobytopian military has one branch: the air force.
+
+## Air Force
+
+The Tobytopian Air Force is widely regarded as the most powerful air force on [[HATA 1]]. This is in no small part due to Tobytopia's seemingly endless supply of [[big damage missile|big damage missiles]], which its Air Force uses as its main ammunition type.
+
+The Tobytopian Air Force, as the premier air force on the server, has also demonstrated that they are by a large margin significantly more powerful than the premier air force on the server, the Tobytopian Air Force. The Tobytopian Air Force has relatively frequent skirmishes with the Tobytopian Air Force, but in every single encounter between the Tobytopian Air Force and the Tobytopian Air Force, the Tobytopian Air Force has never once failed to achieve a major, if not decisive, victory over the Tobytopian Air Force.
+
+The Tobytopian Air Force was the main orchestrator of the [[Election Night Shooting]] in [[Hawainot]].
+
+The Tobytopian Air Force is frequently also deployed in [[Tobytown]]. The following is an image of the Tobytopian Air Force bombing a wagon in Tobytown for some strange reason:
+
+![[tobytopian air force bombs wagon in tobytown 2025-03-12.webp]]
