@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-12-30
+date_modified: 2025-07-22
 title: Kingdom of Neville
 subtitle: Monarchy and City State
 tags:
@@ -10,6 +10,7 @@ tags:
 image: "[[Neville Banner.png]]"
 aliases:
   - Kingdom of Neville
+  - Nevillian
 ---
 
 Neville is a city state to the northeast of spawn. It was founded by [[Arvi]].
@@ -45,9 +46,9 @@ The City of Neville was first founded on 2023-04-07 by [[Arvi]] when he first cr
 On 2023-06-17, Neville was admitted to the united nations with a unanimous vote.
 
 > **City State of Neville Joins the United Nations**
-> 
+>
 > In a meeting at the United Nations, the Untitled Leader of Neville started dancing on the table, attempted to convince Remy to strip, and was then voted into the United Nations.
-> 
+>
 > The votes were as follows:
 >
 > ```

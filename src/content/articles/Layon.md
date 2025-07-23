@@ -1,6 +1,6 @@
 ---
 date_created: 2023-07-15
-date_modified: 2024-12-30
+date_modified: 2025-07-22
 title: City of Layon
 subtitle: Capital of the Kingdom of Neville
 tags:
@@ -17,7 +17,6 @@ There are two main pronunciations of the city's name, detailed below.
 | :----------------------- | :------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
 | IPA                      |                                 /ˈleɪ.ɑn/                                  |                                /leˈjɔ̃/                                 |
 | English Respelling       | [LAY-ahn](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) |                                                                         |
-| French Respelling        |                                                                            |                                 laillon                                 |
 | Listen                   |   [link](http://ipa-reader.xyz/?text=%CB%88le%C9%AA.%C9%91n&voice=Joey)    | [link](http://ipa-reader.xyz/?text=le%CB%88j%C9%94%CC%83&voice=Mathieu) |
 
 # History
@@ -37,3 +36,7 @@ Arvi defined the boundaries of the city to effectively be everything that had so
 ![[Archie Bridge 2023-07-14.png]]
 ![[Archie Bridge North Side 2023-07-14.png]]
 ![[Archie Bridge South Side 2023-07-14.png]]
+
+## Crackin' Office
+
+*see [[Crackin' Office]]*

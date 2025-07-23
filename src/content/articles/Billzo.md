@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-06-01
+date_modified: 2025-07-22
 title: Billzo
 subtitle: God of News
 tags:
@@ -9,6 +9,7 @@ image: "[[Billzo Portrait.png]]"
 aliases:
   - Bill
   - Billzo Shoom
+  - God of News
 ---
 
 >[!info] Disambiguation
