@@ -31,7 +31,7 @@ image: "[[No 2023-01-15.png]]"
 ## Tobytopia Era
 
 The settlement that became No was originally founded by [[Toby]] on the first day of [[HATA]] 1, and given its name of "No" on `2022-12-03` at `00:22` EST.
- 
+
 The first player activity in what is now No was of Toby and Anna being there, duelling and recreationally murdering each other several times. In response to this, """""[[Remy|someone]]""""" placed a sign that said "Toby is a stinky poo" in Tobytopia. This was reportedly because this """""someone""""" thought that [[Toby]] and [[Anna]] were getting too chummy.
 
 ![[Remy writing sign in No.webp]]
@@ -69,7 +69,7 @@ By `18:05` on the same day, Remy had made the decision to convert No into a whea
 
 ### Expansion of the Wheat Field
 
-From approximately `2022-12-25` to approximately `2023-01-04`, during [[Remy]]'s vacation, [[Billzo]] was placed in charge of the Remy Republic.
+From approximately 2022-12-25 to approximately 2023-01-04, during [[Remy]]'s vacation, [[Billzo]] was placed in charge of the Remy Republic.
 
 While in charge, Billzo convinced [[Remyforg]] to sign a treaty with [[Billzoplace]], namely the [[Treaty of No (2022)]], which gave Billzoplace the rights to import wheat from the Remy Republic, in exchange for Billzoplace expanding the wheat field in No.
 
