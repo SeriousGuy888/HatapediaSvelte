@@ -1,6 +1,6 @@
 ---
 date_created: 2025-07-22
-date_modified: 2025-07-22
+date_modified: 2025-07-23
 subtitle: Alcohol Establishment in Scammington
 tags:
   - place
@@ -10,11 +10,15 @@ image: "[[the cow jumped over the spoon 2025-06-28.webp]]"
 ---
 **The Cow Jumped over the Spoon** is a bar selling alcoholic drinks in [[Scammington]] and is a successor to the [[Scammington Bar]] which burned down. The Cow Jumped over the Spoon was built in late June by [[Remy]], and it opened on 2025-06-28, with the promise that its owner is nonpyromaniacal in nature and will *not* burn down this time.
 
-Though it serves mostly alcoholic beverages, the Cow Jumped over the Spoon also sells nonalcoholic drinks such as water and chocolate milk.
-
 Like its predecessor, the Cow Jumped over the Spoon also has a fireplace and a jukebox — the same jukebox, in fact, from the original Scammington Bar — though it is greatly expanded in terms of seating and overall size and greatly improved in terms of visual design.
 
 ![[the cow jumped over the spoon 2025-06-28.webp]]
+
+# Menu
+
+Though it serves mostly alcoholic beverages, the Cow Jumped over the Spoon also sells nonalcoholic drinks such as water and chocolate milk.
+
+![[The Cow Jumped over the Spoon menu as of 2025-07-23.webp]]
 
 # History
 
