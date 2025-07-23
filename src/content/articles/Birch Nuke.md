@@ -40,7 +40,7 @@ William Scamsworth and Birch Nuke were both present at the Scammington Bar when 
 
 ## First Death by Drowned
 
-On 2023-06-08, Birch Nuke was killed in Scammington, having been zombified by a drowned. Nuke then burned in the blazing sunshine of that hot day on Scammington Beach, dropping some rotten flesh and three cuts of villagermeat. [[Billzo]] notified Birch Nuke's body in a makeshift coffin and notified [[Remy]].
+On 2023-06-08, Birch Nuke was killed in Scammington, having been zombified by a drowned. Nuke then burned in the blazing sunshine of that hot day on Scammington Beach, dropping some rotten flesh and three cuts of villagermeat. [[Billzo]] preserved Birch Nuke's body in a makeshift coffin and notified [[Remy]].
 
 Remy then brought Birch Nuke's remains to the [[Wheat Sacrifice Shrine]] in [[No]] and set up a campfire to perform a revival séance, successfully bringing Birch Nuke back to life. Birch Nuke was reportedly quite confused and disoriented upon his body's reanimation.
 
