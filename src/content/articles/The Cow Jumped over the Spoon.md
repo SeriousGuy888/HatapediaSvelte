@@ -12,7 +12,7 @@ image: "[[the cow jumped over the spoon 2025-06-28.webp]]"
 
 Though it serves mostly alcoholic beverages, the Cow Jumped over the Spoon also sells nonalcoholic drinks such as water and chocolate milk.
 
-Like its predecessor, the Cow Jumped over the Spoon also has a fireplace and a jukebox, though it is greatly expanded in terms of seating and overall size and greatly improved in terms of visual design.
+Like its predecessor, the Cow Jumped over the Spoon also has a fireplace and a jukebox — the same jukebox, in fact, from the original Scammington Bar — though it is greatly expanded in terms of seating and overall size and greatly improved in terms of visual design.
 
 ![[the cow jumped over the spoon 2025-06-28.webp]]
 

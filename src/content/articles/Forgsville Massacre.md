@@ -1,6 +1,6 @@
 ---
 date_created: 2025-04-06
-date_modified: 2025-04-06
+date_modified: 2025-07-22
 title: The Forgsville Massacre
 subtitle: Warcrime Perpetrated by Adam
 tags:
@@ -12,3 +12,5 @@ tags:
 ![[Forgsville Massacre-20250406155432714.webp]]
 
 The Remy Republic's official estimate was 212 ducks murdered in the first killing.
+
+[[Birch Nuke]], [[Miles Class]], [[Liam Forg Ashwin]], and [[Liam Staig Music]] were also killed by [[Adam]] on this day, though only Birch Nuke was actually in Forgsville at the time. They would each later be revived by [[Remy]] for plot armour purposes.
