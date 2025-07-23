@@ -1,6 +1,6 @@
 ---
 date_created: 2024-03-31
-date_modified: 2024-03-31
+date_modified: 2025-07-23
 subtitle: One of Remy's Unfair Advantages
 tags:
   - item
@@ -14,7 +14,7 @@ aliases:
 
 **Order 66 spawn eggs**, also known as **order 66 eggs** or **clone trooper spawn eggs**, are an item that allows the user to spawn a <ruby>pillager<rt>Remyan Clone Trooper</rt></ruby>, holding a crossbow in its mainhand, explosive fireworks in its left hand, and wearing a [[Remy Republic|Remyan]] banner on its head. These spawn eggs were occasionally given to [[Remy]] who could spawn them on his own, but Remy could also sometimes ask [[Billzo]] to use the same spawn eggs to spawn these clone troopers.
 
-These clone troopers, although they wear the Remyan banner on their heads, are not actually loyal to Remy. They appear to simply target whoever is closest to them when they are spawned, which often leads to Remy getting shot by his own clone troopers when he attempts to spawn them on someone else. This is regarded by [[the Laughs]] as well as the Writers of Hatapedia as something extremely funny.
+These clone troopers, although they wear the Remyan banner on their heads, are not actually loyal to Remy. They appear to simply target whoever is closest to them when they are spawned, which often leads to Remy getting shot by his own clone troopers when he attempts to spawn them on someone else. This is regarded by [[The Voices#The Laughs|the Laughs]] as well as the Writers of Hatapedia as something extremely funny.
 
 # Item Data
 
@@ -28,9 +28,12 @@ It is worth noting that the data on *these* spawn eggs are not exactly the same 
 
 # History
 
-i don't remember why i made these for remy
+I don't remember why i made these for Remy.
+
+Though originally meant for Remy's use, the spawn eggs have occasionally found their way into the possessions of other players. According to [[Arvi]], Remy has on multiple occasions attempted to bribe [[Anna]] using the spawn eggs into assassinating Arvi, but Anna always accepts the bribe and does not do the assassination.
 
 ## Notable Appearances
 
 - [[Boxing Matchbox War]]
 - [[Scammington#Order 66 Accident]]
+
