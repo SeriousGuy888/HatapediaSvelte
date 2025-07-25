@@ -192,27 +192,24 @@
 
     <section class="article-content prose dark:prose-invert restricted-width">
       {@html data.content}
-    </section>
 
-    {#if data.meta.inlinks?.length}
-      <section class="pt-16 mt-16 border-t-2 border-gray-200 dark:border-gray-700 restricted-width">
-        <div class="pb-6">
-          <h2 class="text-3xl font-bold">Inlinks</h2>
-          <p class="text-sm italic">
-            Links to
-            <strong>
-              {data.meta.title}
-            </strong>
-            from other articles in Hatapedia:
-          </p>
-        </div>
-        <ul class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+      {#if data.meta.inlinks?.length}
+        <hr />
+        <h1>Inlinks</h1>
+        <p class="text-sm m-0">
+          Links to
+          <strong>
+            {data.meta.title}
+          </strong>
+          from other articles in Hatapedia:
+        </p>
+        <ul class="grid gap-4 grid-cols-1 sm:grid-cols-2 pt-8 not-prose">
           {#each data.meta.inlinks as inlink}
             <ArticleLinkCard article={inlink} />
           {/each}
         </ul>
-      </section>
-    {/if}
+      {/if}
+    </section>
   </article>
 </div>
 
