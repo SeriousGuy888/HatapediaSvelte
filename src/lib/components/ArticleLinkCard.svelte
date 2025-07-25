@@ -112,7 +112,7 @@
     </p>
 
     {#if article.image}
-      <div class="thumbnail-container">
+      <div class="thumbnail-container print:hidden">
         <img src={getImageWikilinkSrc(article.image)} alt="" loading="lazy" />
       </div>
     {/if}

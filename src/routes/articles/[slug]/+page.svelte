@@ -94,6 +94,7 @@
       z-20
       w-0 fixed
       lg:w-72 lg:static
+      print:w-0
 
       bg-background lg:bg-none
       shadow-2xl shadow-gray-200 dark:shadow-gray-800 lg:shadow-none
@@ -118,7 +119,7 @@
       </div>
     </div>
   </aside>
-  <div class="fixed lg:hidden bottom-4 right-4 grid z-20">
+  <div class="fixed lg:hidden bottom-4 right-4 grid z-20 print:hidden">
     <span class="text-sm hide-on-touch">Press <kbd>T</kbd></span>
     <button
       class="bg-brand rounded-full p-4"
@@ -219,7 +220,7 @@
   @reference "../../../app.css";
 
   .restricted-width {
-    @apply max-w-md sm:max-w-lg md:max-w-prose w-full mx-auto px-4;
+    @apply max-w-md sm:max-w-lg md:max-w-prose print:max-w-full w-full mx-auto px-4 print:px-0;
   }
 
   .banner {
