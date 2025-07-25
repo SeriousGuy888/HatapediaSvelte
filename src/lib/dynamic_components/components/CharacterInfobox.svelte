@@ -16,13 +16,9 @@
   <section class="bg-blue-200 dark:bg-blue-900 mb-0 px-6 py-4 rounded-t-lg">
     <p class="m-0 text-black dark:text-white font-bold">{name}</p>
   </section>
-  <section
-    class={`p-6 bg-slate-100 dark:bg-slate-800 ${
-      name ? "rounded-b-lg" : "rounded-lg"
-    } flex flex-wrap items-start gap-8 @container`}
-  >
+  <section class={`p-6 bg-slate-100 dark:bg-slate-800 overflow-auto ${name ? "rounded-b-lg" : "rounded-lg"}`}>
     {#if image || mcUuid}
-      <figure class="@sm:flex-1 m-0 w-full flex justify-center">
+      <figure class="float-right m-0 ml-4 max-w-[30%] md:max-w-[40%]">
         {#if image}
           <img
             src={getImageWikilinkSrc(image)}
@@ -33,7 +29,7 @@
           />
         {:else if mcUuid}
           <img
-            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow"
+            src="https://visage.surgeplay.com/full/256/{mcUuid}.png?no=shadow&y=-40"
             alt="Minecraft skin"
             loading="lazy"
             width="16"
@@ -43,14 +39,11 @@
         {/if}
       </figure>
     {/if}
-    <div
-      class="flex flex-3 bg-slate-200 dark:bg-gray-700 rounded-md p-4 print:border-b-black print:border-2"
-    >
-      <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
-        {#each Object.keys(facts) as key}
-          <InfoboxFact title={key} value={facts?.[key]} />
-        {/each}
-      </dl>
-    </div>
+
+    <dl class="flex flex-col content-start gap-2 min-w-[120px] m-0">
+      {#each Object.keys(facts) as key}
+        <InfoboxFact title={key} value={facts?.[key]} />
+      {/each}
+    </dl>
   </section>
 </aside>
