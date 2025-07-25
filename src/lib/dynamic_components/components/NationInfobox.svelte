@@ -11,7 +11,7 @@
   let { name = null, facts = {}, banner = null }: Props = $props()
 </script>
 
-<aside class="my-12">
+<aside class="my-12 print:outline-2 outline-black">
   {#if name}
     <section class="bg-blue-200 dark:bg-blue-900 mb-0 px-6 py-4 rounded-t-lg">
       <p class="m-0 text-black dark:text-white">
