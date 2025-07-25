@@ -136,7 +136,7 @@
     onclick={() => (tocOpen = false)}
     onkeydown={() => (tocOpen = false)}
   ></div>
-  <article class="w-full mb-16 min-h-screen">
+  <article class="w-full mb-32 min-h-screen">
     <header class="relative pb-8 mb-8">
       {#if data.meta.image}
         <section class="-z-10 absolute inset-0">
