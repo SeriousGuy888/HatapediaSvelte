@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-09
-date_modified: 2024-03-27
+date_modified: 2025-07-25
 subtitle: Leader of the Fortuguese Insurrection in Tobytopia
 tags:
   - character
@@ -23,6 +23,10 @@ facts:
 ```youtube
 video: m9Mk31BjK-Q
 ```
+
+# Escape from Tobytopia
+
+![[Che Forguera Missing from Tobytopian Custody.png]]
 
 ---
 
