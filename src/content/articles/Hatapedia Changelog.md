@@ -8,9 +8,9 @@ tags:
 
 # 2025-07-25
 
-## Improved Character Infoboxes
+## Improved Character and Country Infoboxes
 
-The design of character infoboxes has been updated to a slightly more simplified design, with the text moved out of the ugly subcontainer and moved to the left to be easier to see. Character images are now floated on the right so that the text can flow around it naturally (rather than the text being trapped in a box before). It also allows the images to be displayed a bit larger than before.
+The design of character and nation infoboxes has been updated to a slightly more simplified design, with the text moved out of the ugly subcontainer and moved to the left to be easier to see. Skins/character images/banners are now floated on the right so that the text can flow around it naturally (rather than the text being trapped in a box before). It also allows the images to be displayed a bit larger than before.
 
 I think it looks nicer than before. The first image is the old style; the second is the new.
 
