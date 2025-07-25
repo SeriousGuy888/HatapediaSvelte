@@ -75,6 +75,7 @@ The Parliament of the Remy Republic is a bicameral legislature, with an upper ho
 *See also: [[Election Night Shooting]]*
 
 ![[First_Parliament_of_the_Remy_Republic.png|Result of the election: Remy gets another term as Glorious Leader, SBP wins both houses of parliament]]
+
 The election for the Villager Council occurred and concluded on 2023-02-16.
 
 The election for the Duck Nest occurred on 2023-02-16, although a second vote for the Duck Nest continued until 21:00 on the following day, 2023-02-17.
