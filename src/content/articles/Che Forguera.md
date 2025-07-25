@@ -15,7 +15,7 @@ name: Che Forguera
 image: "[[Che Forguera Portrait.png]]"
 facts:
   rank: General
-  status: Alive; imprisoned by Tobytopia in an unknown location
+  status: Missing
 ```
 
 # Declaration of War
@@ -28,9 +28,6 @@ video: m9Mk31BjK-Q
 
 ![[Che Forguera Missing from Tobytopian Custody.png]]
 
----
-
 # Images
 
 ![[Pasted image 20230427190358.png]]
-![[Che Forguera Portrait.png]]
