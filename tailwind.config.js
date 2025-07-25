@@ -1,3 +1,12 @@
+// https://github.com/tailwindlabs/tailwindcss-typography/blob/main/src/styles.js
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, "$1")
+    .replace(/\.0$/, "")
+const rem = (px) => `${round(px / 16)}rem`
+const em = (px, base) => `${round(px / base)}em`
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
@@ -52,13 +61,29 @@ export default {
             },
             img: {
               margin: 0,
-            }
-          },
-        },
-        base: {
-          css: {
+            },
             h1: {
-              marginTop: theme("spacing.12"),
+              fontSize: em(36, 16),
+              marginTop: em(48, 36),
+              marginBottom: em(12, 36),
+              lineHeight: round(40 / 36),
+            },
+            h2: {
+              fontSize: em(24, 16),
+              marginTop: em(32, 24),
+              marginBottom: em(8, 24),
+              lineHeight: round(32 / 24),
+            },
+            h3: {
+              fontSize: em(20, 16),
+              marginTop: em(24, 20),
+              marginBottom: em(6, 20),
+              lineHeight: round(32 / 20),
+            },
+            h4: {
+              marginTop: em(16, 16),
+              marginBottom: em(4, 16),
+              lineHeight: round(24 / 16),
             },
           },
         },
