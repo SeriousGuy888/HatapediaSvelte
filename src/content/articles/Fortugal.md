@@ -1,7 +1,6 @@
 ---
 date_created: 2023-06-21
 date_modified: 2025-07-26
-title: The Fortuguese Republic
 subtitle: Unrecognised Forguik Rebel State
 tags:
   - country
@@ -39,7 +38,7 @@ The forgs' anger seemingly increased during the [[Great Mangrove War]] between T
 
 On the day of the [[Great Mangrove War#Final Confrontation|final battle of the Great Mangrove War]], 2023-01-22, [[Holden]], on behalf of Tobytopia, tried to burn down [[Remy's Home Sweet Home|Remy's house]] and the Remy Republic's [[Fluffy Bridge]], which led to the Remy Republic's army, led by [[Remy]], getting on a boat and burning down a considerable portion of the Swamp of Secrets.
 
-This stoked the ire of the Fortuguese populace towards the Remy Republic, but Remyan historians say that due to the Remy Republic's immediate donations of money and mangrove propagules to repair some of the damage, as well as the Remy Republic being at odds with Tobytopia at the time, the forgs saw that they and the Remyans had a common rival in Tobytopia.
+Remyan historians say that although this incident briefly stoked the ire of the Fortuguese populace towards the Remy Republic, due to the Remy Republic's immediate donations of money and mangrove propagules to repair some of the damage, as well as the Remy Republic being at odds with Tobytopia at the time, the forgs saw that they and the Remyans had a common rival in Tobytopia.
 
 ## Rebellion Against Tobytopia
 
