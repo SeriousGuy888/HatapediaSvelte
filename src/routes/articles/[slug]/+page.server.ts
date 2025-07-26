@@ -14,7 +14,7 @@ import remarkWikiLinks from "$lib/plugins/remark-wikilink-syntax"
 import remarkYamlComponents from "$lib/plugins/remark-yaml-components"
 import remarkGroupImages from "$lib/plugins/remark-group-images"
 import remarkHeadingTree, { type TocNode } from "$lib/plugins/remark-heading-tree"
-import remarkCallouts from "@portaljs/remark-callouts"
+import remarkCallouts from "remark-callouts"
 import remarkRehype from "remark-rehype"
 
 import rehypeExternalLinks from "rehype-external-links"

@@ -1,8 +1,9 @@
 <script lang="ts">
   import { run } from "svelte/legacy"
+  
+  import "./callouts.css"
 
   import ArticleTag from "../../../lib/components/ArticleTag.svelte"
-  import "@portaljs/remark-callouts/styles.css"
   import TableOfContents from "./TableOfContents.svelte"
   import type { TocNode } from "$lib/plugins/remark-heading-tree"
   import ArticleLinkCard from "$lib/components/ArticleLinkCard.svelte"

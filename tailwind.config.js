@@ -31,15 +31,6 @@ export default {
                 textDecoration: "underline",
               },
             },
-            blockquote: {
-              fontStyle: "normal",
-            },
-            "blockquote p:first-of-type::before": {
-              content: "",
-            },
-            "blockquote p:last-of-type::after": {
-              content: "",
-            },
             pre: {
               color: theme("colors.gray.700"),
               backgroundColor: theme("colors.gray.100"),
@@ -65,25 +56,32 @@ export default {
             h1: {
               fontSize: em(36, 16),
               marginTop: em(48, 36),
-              marginBottom: em(12, 36),
+              marginBottom: em(16, 36),
               lineHeight: round(40 / 36),
             },
             h2: {
               fontSize: em(24, 16),
               marginTop: em(32, 24),
-              marginBottom: em(8, 24),
+              marginBottom: em(16, 24),
               lineHeight: round(32 / 24),
             },
             h3: {
               fontSize: em(20, 16),
               marginTop: em(24, 20),
-              marginBottom: em(6, 20),
+              marginBottom: em(16, 20),
               lineHeight: round(32 / 20),
             },
             h4: {
               marginTop: em(16, 16),
-              marginBottom: em(4, 16),
+              marginBottom: em(16, 16),
               lineHeight: round(24 / 16),
+            },
+            p: {
+              marginTop: em(16, 16),
+              marginBottom: em(16, 16),
+            },
+            blockquote: {
+              fontStyle: "normal",
             },
           },
         },
