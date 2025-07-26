@@ -19,13 +19,13 @@ When confronting Holden, the Glorious Leader was seen assaulting Holden, the per
 ![[Glorious Leader performs police brutality.png]]
 
 > [[Holden]]:
-> 
+>
 > I'm not resisting! I'm not resisting!
 
 > [[Remy]]:
-> 
+>
 > You don't need to file a _lawsuit_.
-> 
+>
 > You already owe me a date.
 
 Holden, at some point, managed to evade capture by Remyan authorities and twice escaped on escape vehicles driven by [[Arvi]] and [[Toby]], who were later caught stealing more ducks from the animal pens in [[No]].
@@ -47,11 +47,11 @@ The alliance between Toby's [[Tobytopia]], [[Holden's Regime]], and Arvi's [[Nev
 The Glorious Leader made the following speech on 2023-04-10 regarding the events of the previous night.
 
 > Citizens of the Remy Republic,
-> 
+>
 > An iron curtain has fallen upon us all. We have been misled by those we were led to trust. We have been beaten and bruised by those we thought were close to our hearts. We have been insulted by those who focus on harassing others rather than improving themselves. In short, we have been blindsided and betrayed.
-> 
+>
 > As the leader of the Remy Republic, I shall not let these recent attacks go unnoticed. The Night of Mischief was the unfortunate warning the Remy Republic needed to wake up and better prepare ourselves. I promise you that we will build back better and stronger, and we will vanquish those who try to go against us.
-> 
+>
 > This new gang of scallywags, the Allies of Tromos, will fall and get what they have been waiting for. Over the next few days, our government will band together and initiate a battle plan to combat the Tromos, and for the protection of the Remy Republic, the government will declare a state of emergency.
-> 
+>
 > The Remyan military will be commanded to patrol and keep the Remy Republic safe. As a final warning, those who betray the family that is the Remy Republic during the state of emergency shall be punished in Remyan court. That is all I have to say. Thank you, and goodnight.

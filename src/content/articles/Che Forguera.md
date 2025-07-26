@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-09
-date_modified: 2025-07-25
+date_modified: 2025-07-26
 subtitle: Leader of the Fortuguese Insurrection in Tobytopia
 tags:
   - character
@@ -16,6 +16,9 @@ image: "[[Che Forguera Portrait.png]]"
 facts:
   rank: General
   status: Missing
+  favourite font: Trebuchet MS
+  favourite colour: Kermit Green
+  birthday: June 14
 ```
 
 # Declaration of War
