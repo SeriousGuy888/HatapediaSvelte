@@ -7,7 +7,7 @@ tags:
   - place
   - hata1
 aliases:
-  - Remy's House
+  - Remy's house
 ---
 **Remy's Home Sweet Home** is the name of [[Remy]]'s house in [[Forgsville]].
 

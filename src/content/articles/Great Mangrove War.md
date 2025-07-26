@@ -1,6 +1,6 @@
 ---
 date_created: 2023-06-27
-date_modified: 2024-12-30
+date_modified: 2025-07-26
 title: The Great Mangrove War
 subtitle: conflict between Tobytopia and the Remy Republic
 tags:
@@ -56,7 +56,7 @@ events:
 On 2022-12-21 at 21:07 EDT, the [[Remy|Glorious Leader of the Remy Republic]], standing atop a tree and wearing [[Billzo|Billzo]]'s Minecraft skin, made a speech which formally laid claim to the area of savanna that would become known as Remyan Mangrovia which was covered by mangrove trees planted by Holden.
 
 > I CLAIM HOLDEN'S MANGROVE TREES IN THE NAME OF THE REMY REPUBLIC!
-> 
+>
 > ―RemyHemy, Glorious Leader ([message link](https://discord.com/channels/1046302463143194709/1046486451266793535/1055305451413180589))
 
 ![[Newsletter 2022-12-21 - Remy Lays Claim to the Mangrove.png]]
@@ -89,21 +89,23 @@ This rapid spread of mangrove trees starting on 2023-01-05 would become known as
 
 > **First Cases of Mangrovepox in No and Forgsville**
 > ([news report link](https://discord.com/channels/1046302463143194709/1048416479093198908/1060443810540302356))
-> 
+>
 > Mangrove trees have been spotted in the core territories of the Remy Republic. They have grown on top of Remyan buildings in Forgsville, the first province of the Remy Republic as well as in No, the core of the Remy Republic's agricultural industry. Experts had previously predicted that the Remy Republic would have more time to prepare for the treespores, but it seems that they have just been proven wrong.
 
 > **Remy Republic Closes Borders in Three Provinces**
 > ([link](https://discord.com/channels/1046302463143194709/1048416479093198908/1061056635541389322))
-> 
+>
 > The Remyan government has now closed borders for the provinces of No, Forgsville, and Scammington. Those with citizenship may still enter these territories, but will be required to stay until the area may be cleared of mangrove trees.
-> 
+>
 > Additionally, the Remyan government has recommended quarantining for residents of No and Forgsville. For any required excursions, the government recommends wearing a mask and remaining six meters apart.
-> 
+>
 > Mangrovepox is currently believed to only affect trees, and so the Remyan government does not believe a vaccine to be necessary. The government does, however, plan to chop down trees which are causing the problem, a drastic measure. They also intend on pressuring the Tobytopian authorities to punish Holden.
 
-# Epique Violencing
+# Final Confrontation
 
-On 2023-01-22, after Holden and Toby came to Forgsville and tried to burn down Remy's house, Remy retalliated by burning down a large portion of the Swamp of Secrets in Tobytopia. This crisis boiled over into an epique duel between Remy and Holden, which Remy would win 2 to 1.
+On 2023-01-22, after Holden and Toby came to Forgsville and tried to burn down Remy's house, Remy retalliated by burning down a large portion of the Swamp of Secrets in Tobytopia.
+
+This crisis boiled over into an epique duel between Remy and Holden, which Remy would win 2 to 1.
 
 ```youtube
 video: pXPVKZaFRZI
@@ -113,8 +115,8 @@ video: pXPVKZaFRZI
 
 On the same day, as a result of the Remyan victory, Remy and Holden came to the following agreement.
 - Remy gets to own Remyan Mangrovia
-- Remyan Mangrovia will be renamed to New Mangrovia
-- Holden gets the title of Founder of New Mangrovia
+- **Remyan Mangrovia** will be renamed to **New Mangrovia**
+- Holden gets the title of **Founder of New Mangrovia**
 - Holden gets to cleanup the mess from the crisis
 
 Toby would later allude to not recognising this settlement between Remy and Holden,
