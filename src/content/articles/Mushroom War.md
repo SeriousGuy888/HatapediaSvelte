@@ -16,19 +16,19 @@ aliases:
 > 
 > Times are estimated, not exact, based on the timestamps of news articles surrounding the event, as much of the events happened in voice channels and have no timestamped messages to refer to.
 
-The Mushroom War was a brief war between the [[Remy Republic]] and the [[Neville|City of Neville]] *(this was before Neville changed its official name to the Kingdom of Neville)*. [[Holdentopia, Incorporated]] also took part in the war as part of a coalition with Neville during the [[#Raid on No]]. The war took place from approximately `2023-07-08` at `22:25` to approximately `00:48` the next day.
+The Mushroom War was a brief war between the [[Remy Republic]] and the [[Neville|City of Neville]] *(this was before Neville changed its official name to the Kingdom of Neville)*. [[Holdentopia, Incorporated]] also took part in the war as part of a coalition with Neville during the [[#Raid on No]]. The war took place from approximately 2023-07-08 at 22:25 to approximately 00:48 the next day.
 
 # Background
 
-[[Auze]] is a territory of the Remy Republic — a mushroom island — [claimed](https://discord.com/channels/1046302463143194709/1048416479093198908/1116973796545544203) by the [[Remy|Glorious Leader]] on `2023-06-10` during his adventure to see the wizard, specifically the Wonderful Wizard of Oz.
+[[Auze]] is a territory of the Remy Republic — a mushroom island — [claimed](https://discord.com/channels/1046302463143194709/1048416479093198908/1116973796545544203) by the [[Remy|Glorious Leader]] on 2023-06-10 during his adventure to see the wizard, specifically the Wonderful Wizard of Oz.
 
 # Nevillian Invasion of Auze
 
-On `2023-07-08`, [[Arvi]], the Doomslayer Nine Thousand of the City of Neville, was exploring the ocean east of (what is now known as) [[Layon]] and, receiving word from [[Billzo|Bill]] that he was near Auze, decided to make a visit to the island.
+On 2023-07-08, [[Arvi]], the Doomslayer Nine Thousand of the City of Neville, was exploring the ocean east of (what is now known as) [[Layon]] and, receiving word from [[Billzo|Bill]] that he was near Auze, decided to make a visit to the island.
 
 ## Nevillian Landing
 
-Arvi crafted an oak boat and, with his newly assembled navy, sailed south-southeast towards the island. Making landfall on the north side of Auze at approximately `22:25`, Arvi was reportedly enthralled by the scenery and wonderstruck by the mushrooms and mooshrooms.
+Arvi crafted an oak boat and, with his newly assembled navy, sailed south-southeast towards the island. Making landfall on the north side of Auze at approximately 22:25, Arvi was reportedly enthralled by the scenery and wonderstruck by the mushrooms and mooshrooms.
 
 > Oh, [[Anna]] wanted some mushrooms.
 > 
@@ -36,7 +36,7 @@ Arvi crafted an oak boat and, with his newly assembled navy, sailed south-southe
 
 Arvi's invasion of the island was largely uncontested by the local Remyan garrison of zero troops, and the Nevillian forces were able to swiftly secure military control of the island within minutes.
 
-Arvi, at approximately `22:30` climbed to the tallest hill on Auze, where stood the banner of the Remy Republic first planted by Remy a month ago. He broke the banner and replaced it with the banner of Neville.
+Arvi, at approximately 22:30 climbed to the tallest hill on Auze, where stood the banner of the Remy Republic first planted by Remy a month ago. He broke the banner and replaced it with the banner of Neville.
 
 ![[Arvi prepares to land on Auze 2023-07-08.png]]
 ![[Arvi plants Neville banner on Auze 2023-07-08.png]]
@@ -65,7 +65,7 @@ The operation did not end up going ahead as the conflict had been resolved befor
 
 # Remyan Occupation of Archie Bridge
 
-Deciding to retalliate, at approximately `22:45`, the [[Remy|Glorious Leader]] gathered supplies from his [[Remy's Home Sweet Home|Home Sweet Home]] and stepped into the nether portal in the [[Wheat Sacrifice Shrine]].
+Deciding to retalliate, at approximately 22:45, the [[Remy|Glorious Leader]] gathered supplies from his [[Remy's Home Sweet Home|Home Sweet Home]] and stepped into the nether portal in the [[Wheat Sacrifice Shrine]].
 
 ## Invasion
 
@@ -87,7 +87,7 @@ He also placed signs outside the west entrance to the bridge, listing his demand
 
 ## Annexation
 
-At approximately `22:50`, after listing his demands, the Glorious Leader then climbed atop Archie bridge and announced its annexation into the Remy Republic, proclaiming its incorporation as a new administrative territory.
+At approximately 22:50, after listing his demands, the Glorious Leader then climbed atop Archie bridge and announced its annexation into the Remy Republic, proclaiming its incorporation as a new administrative territory.
 
 > I, the Glorious Leader of the Remy Republic, proclaim this bridge to be the newest territory of the Remy Republic: the *Territory of Archie*.
 
@@ -106,7 +106,7 @@ No casualties are known to have occurred, save for an allegedly [[Tobytopia|Toby
 > 
 > bros jealous of my bridge
 > 
-> ―[[Anna]], `2023-07-08` at `23:24`, (not yet having read the news about the [[#Nevillian Invasion of Auze]]). [Message Link](https://discord.com/channels/1046302463143194709/1046302463801692171/1127440080932442123)
+> ―[[Anna]], 2023-07-08 at 23:24, (not yet having read the news about the [[#Nevillian Invasion of Auze]]). [Message Link](https://discord.com/channels/1046302463143194709/1046302463801692171/1127440080932442123)
 
 ### Arvi
 
@@ -116,7 +116,7 @@ No casualties are known to have occurred, save for an allegedly [[Tobytopia|Toby
 > 
 > There will be a lot of casualties now
 > 
-> ―[[Arvi]], `23:30` and `23:33` ([message link 1](https://discord.com/channels/1046302463143194709/1046302463801692171/1127441538016882810), [message link 2](https://discord.com/channels/1046302463143194709/1046302463801692171/1127442493571600424))
+> ―[[Arvi]], 23:30 and 23:33 ([message link 1](https://discord.com/channels/1046302463143194709/1046302463801692171/1127441538016882810), [message link 2](https://discord.com/channels/1046302463143194709/1046302463801692171/1127442493571600424))
 
 # Raid on No
 
@@ -124,7 +124,7 @@ Arvi did not fold to Remy's demands, instead resolving to form a coalition with 
 
 ## Triggering of the Raid
 
-At approximately `00:15` on `2023-07-09`, [[Arvi]], [[Anna]], and [[Holden]], together forming a *Triple Trouble Tower* (they were sitting on each other's heads) arrived in [[No]] via the nether portal in the [[Wheat Sacrifice Shrine]]. Although it was not their original intention, their arrival immediately triggered a pillager raid on No as Anna was unintentionally carrying the Bad Omen status effect.
+At approximately 00:15 on 2023-07-09, [[Arvi]], [[Anna]], and [[Holden]], together forming a *Triple Trouble Tower* (they were sitting on each other's heads) arrived in [[No]] via the nether portal in the [[Wheat Sacrifice Shrine]]. Although it was not their original intention, their arrival immediately triggered a pillager raid on No as Anna was unintentionally carrying the Bad Omen status effect.
 
 The [[Remy|Glorious Leader]] was notified of this raid by the [[Billzo|God of News]] as the Triple Trouble Tower was crossing Fluffy Bridge. Upon noticing the raid bossbar, he was reportedly very unhappy with the actions of <ruby>Holden and the Nevillians<rt>This is not a band name.</rt></ruby>.
 
@@ -154,7 +154,7 @@ Bill, the God of News also arrived, firing arrows and [[big damage missile|rocke
 
 ## End of the Raid
 
-The raid continued until around `00:25`. Billzo trapped two pillagers in a boat outside the shrine, which Remy promised to torture comprehensively, but Holden stabbed them before Remy could do so.
+The raid continued until around 00:25. Billzo trapped two pillagers in a boat outside the shrine, which Remy promised to torture comprehensively, but Holden stabbed them before Remy could do so.
 
 ![[End of Raid on No 2023-07-09.png]]
 ![[Holden kills Remy's new pet Pillagers in No 2023-07-09.png]]
@@ -184,7 +184,7 @@ To celebrate the victory over the raiders, [[Gerry Flexagon]], who was standing 
 
 ## Arvi and Anna's Apology
 
-At `00:48`, Arvi and Anna then had Bill mail some items to Remy as an apology for the raid.
+At 00:48, Arvi and Anna then had Bill mail some items to Remy as an apology for the raid.
 
 ![[Arvi and Anna's apology gift to Remy 2023-07-09.png]]
 
@@ -210,7 +210,7 @@ No formal treaty was ever signed; the verbal agreement is the only agreement mad
 
 ## Pink and Purple Treaty
 
-A few days later, on `2023-07-13`, Arvi and Remy signed the [[Pink and Purple Treaty]], constituting a formal alliance between the [[Remy Republic]] and the, then newly renamed, [[Neville|Kingdom of Neville]].
+A few days later, on 2023-07-13, Arvi and Remy signed the [[Pink and Purple Treaty]], constituting a formal alliance between the [[Remy Republic]] and the, then newly renamed, [[Neville|Kingdom of Neville]].
 
 # Total Casualty Count
 
