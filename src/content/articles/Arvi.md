@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2025-03-01
+date_modified: 2025-07-25
 title: Arvi
 subtitle: Doomslayer Nine Thousand of the Kingdom of Neville
 tags:
@@ -40,9 +40,13 @@ On 2023-07-12, the country was renamed to the Kingdom of Neville, and as such, A
 
 Arvi was the designer, builder, and destroyer of the [[Scammington Bar]] in [[Scammington]].
 
-### Poems About the Scammington Bar
+## Poetry
 
-Arvi wrote a couple of poems around the time he was building the Scammington Bar. They are as follows.
+>[!quote] "no toby =" by Arvi, 2023-01-05
+> no toby = no bonwe
+> boner\*
+
+Arvi also wrote a couple of poems around the time he was building the Scammington Bar. They are as follows.
 
 >[!quote] "What is the net" by Arvi, 2023-01-18
 > What is the net
