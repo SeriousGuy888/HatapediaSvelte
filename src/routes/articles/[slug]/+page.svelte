@@ -74,7 +74,6 @@
     property="og:description"
     content="{data.meta.subtitle}. [Tags]: {data.meta.tags.map((s) => '#' + s).join(', ')}"
   />
-  <meta property="og:site_name" content="HATApedia" />
 </svelte:head>
 
 <svelte:window

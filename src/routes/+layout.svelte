@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../app.css"
+  import * as config from "$lib/config"
   import Header from "./Header.svelte"
   interface Props {
     children?: import("svelte").Snippet
@@ -9,6 +10,8 @@
 </script>
 
 <svelte:head>
+  <meta property="og:site_name" content="HATApedia" />
+  <meta property="og:url" content="{config.url}" />
   <meta name="theme-color" content="hsl(19, 67%, 26%)">
 </svelte:head>
 
