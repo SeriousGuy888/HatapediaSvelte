@@ -8,6 +8,10 @@
   let { children }: Props = $props()
 </script>
 
+<svelte:head>
+  <meta name="theme-color" content="hsl(19, 67%, 26%)">
+</svelte:head>
+
 <Header />
 <div class="layout">
   <!-- Used to push content down so it's not hidden behind the header -->
