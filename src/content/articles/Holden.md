@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-01
-date_modified: 2024-06-10
+date_modified: 2025-07-26
 title: Holden
 subtitle: Self-Proclaimed Ecoterrorist
 tags:
@@ -14,7 +14,8 @@ mcUuid: "aac23f239b554ee08001c97b5e4d34a9"
 facts:
   titles:
   - Glorious Not-Peasant of Holdentopia
-  - Chief Executive Officer (CEO) of Holdentopia, Incorporated
+  - Chief Executive Officer of Holdentopia, Incorporated
+  - Founder of New Mangrovia
   allegiance:
   - Holdentopia, Incorporated
 ```
