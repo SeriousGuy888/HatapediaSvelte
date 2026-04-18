@@ -1,6 +1,6 @@
 ---
 date_created: 2023-05-06
-date_modified: 2024-05-21
+date_modified: 2026-04-18
 subtitle: Province of the Remy Republic
 tags:
   - place
@@ -17,6 +17,7 @@ image: "[[No 2023-01-15.png]]"
 - [[No Sign]]
 - [[Arvi Tower]] (now destroyed)
 - [[Wheat Sacrifice Shrine]]
+- [[Noel Acciari's]]
 
 # Notable Characters
 
