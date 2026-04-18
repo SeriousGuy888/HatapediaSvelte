@@ -1,6 +1,6 @@
 ---
 date_created: 2024-04-28
-date_modified: 2024-10-19
+date_modified: 2026-04-18
 subtitle: HATA 1 Transportation Network
 tags:
   - hata1
@@ -22,7 +22,7 @@ The network is made up of four lines, though all are unfinished and only two are
 3. The **Peace Line**: [[New Mangrovia]] to [[United Nations|United Nations Headquarters]], via HATA 1 Spawn
 4. The **Hawainot Line**: [[Scammington]] to [[Hawainot West]], via [[Hawainot East]]
 
-![[HATA Railways Map 2023-06-29.png]]
+![[HATA Railways Map 2025-12-28.png]]
 
 # History
 
